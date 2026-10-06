@@ -13,6 +13,13 @@ PLURAL = {"dossier": "dossiers", "project": "projects", "pattern": "patterns"}
 MODES = ("argh-fr-cuisine", "argh-fr-specialist", "argh-en-kitchen", "argh-en-specialist")
 
 
+def forbidden_product_name(html: str) -> bool:
+    # The documented public source link is infrastructure, never editorial content.
+    # Keep checking every other byte, including hidden content and attributes.
+    html = html.replace('href="https://github.com/bacoco/loriq-argh-website"', 'href=""')
+    return re.search(r"loriq", html, re.I) is not None
+
+
 def main() -> int:
     index = json.loads((ROOT / "data/entities/index.json").read_text(encoding="utf-8"))
     expected = {kind: set() for kind in PLURAL}
@@ -59,7 +66,7 @@ def main() -> int:
         if image not in harness:
             raise SystemExit(f"missing harness illustration: {image}")
     for path in ROOT.rglob("*.html"):
-        if re.search(r"loriq", path.read_text(encoding="utf-8"), re.I):
+        if forbidden_product_name(path.read_text(encoding="utf-8")):
             raise SystemExit(f"forbidden product name in generated page: {path}")
     print(json.dumps({kind: len(slugs) for kind, slugs in expected.items()}, sort_keys=True))
     return 0
