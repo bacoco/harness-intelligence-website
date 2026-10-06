@@ -18,10 +18,11 @@
     ],
     "patterns": [],
     "dossiers": [
-      "plugin-init-before-control-load",
-      "runtime-skill-inventory-not-filesystem",
       "archon-installed-skill-drift",
-      "release-does-not-equal-observed-fix"
+      "background-artifacts-need-terminal-lifecycle",
+      "plugin-init-before-control-load",
+      "release-does-not-equal-observed-fix",
+      "runtime-skill-inventory-not-filesystem"
     ]
   },
   "slots": [

@@ -15,6 +15,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "scheduled-success-needs-effect-proof",
       "tool-results-need-execution-receipts"
     ]
   },

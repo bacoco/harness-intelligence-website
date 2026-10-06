@@ -14,7 +14,8 @@
     ],
     "patterns": [],
     "dossiers": [
-      "goose-protocol-pivot-acp"
+      "goose-protocol-pivot-acp",
+      "task-snapshot-needs-coherent-ordering"
     ]
   },
   "slots": [

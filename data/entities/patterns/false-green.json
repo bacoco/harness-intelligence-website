@@ -18,10 +18,12 @@
     "patterns": [],
     "dossiers": [
       "aider-false-success-family",
-      "gstack-false-green-second-fix",
-      "unknown-flattened-to-empty",
       "delivery-finished-user-got-nothing",
-      "green-test-wrong-seam"
+      "green-test-wrong-seam",
+      "gstack-false-green-second-fix",
+      "health-verdict-must-preserve-status-and-coverage",
+      "scheduled-success-needs-effect-proof",
+      "unknown-flattened-to-empty"
     ]
   },
   "slots": [

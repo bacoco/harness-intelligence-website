@@ -19,9 +19,11 @@
     ],
     "patterns": [],
     "dossiers": [
+      "consent-before-command-capable-config",
+      "control-files-interoperability",
       "gemini-trust-couples-hooks-mcp-instructions",
       "mcp-common-protocol-local-policy",
-      "control-files-interoperability"
+      "reject-path-shaped-fallback-names-before-io"
     ]
   },
   "slots": [

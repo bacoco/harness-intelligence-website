@@ -19,10 +19,11 @@
     ],
     "patterns": [],
     "dossiers": [
-      "subagent-routing-hidden-capability",
+      "agent-identity-does-not-prove-independent-authority",
+      "control-plane-convergence",
       "encrypted-subagents-lost-audit-trail",
-      "subagents-delegation-control-plane",
-      "control-plane-convergence"
+      "subagent-routing-hidden-capability",
+      "subagents-delegation-control-plane"
     ]
   },
   "slots": [

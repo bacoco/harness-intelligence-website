@@ -26,9 +26,10 @@
     ],
     "dossiers": [
       "gstack-false-green-second-fix",
-      "worktree-isolation-convergence",
+      "health-verdict-must-preserve-status-and-coverage",
       "session-scope-lock-became-global-state",
-      "tool-results-need-execution-receipts"
+      "tool-results-need-execution-receipts",
+      "worktree-isolation-convergence"
     ]
   },
   "slots": [

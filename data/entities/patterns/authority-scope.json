@@ -14,6 +14,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "agent-identity-does-not-prove-independent-authority",
       "stop-hook-authority-overreach"
     ]
   },

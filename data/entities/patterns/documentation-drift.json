@@ -14,6 +14,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "decisions-need-active-lifecycle",
       "skills-default-on-docs-lag"
     ]
   },

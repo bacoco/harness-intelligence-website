@@ -27,15 +27,16 @@
       "trust-boundary"
     ],
     "dossiers": [
+      "consent-before-command-capable-config",
+      "control-plane-convergence",
       "goose-hooks-observer-to-enforcer",
       "goose-protocol-pivot-acp",
-      "mcp-common-protocol-local-policy",
-      "skills-cross-harness-convergence",
       "hooks-cross-harness-convergence",
-      "subagents-delegation-control-plane",
+      "mcp-common-protocol-local-policy",
+      "retryable-auth-errors-must-not-delete-credentials",
       "safety-control-failure-became-permission",
-      "control-plane-convergence",
-      "retryable-auth-errors-must-not-delete-credentials"
+      "skills-cross-harness-convergence",
+      "subagents-delegation-control-plane"
     ]
   },
   "slots": [

@@ -31,16 +31,17 @@
       "trust-boundary"
     ],
     "dossiers": [
-      "skills-default-on-docs-lag",
-      "gemini-trust-couples-hooks-mcp-instructions",
-      "mcp-common-protocol-local-policy",
-      "skills-cross-harness-convergence",
-      "hooks-cross-harness-convergence",
-      "subagents-delegation-control-plane",
-      "release-does-not-equal-observed-fix",
+      "background-artifacts-need-terminal-lifecycle",
       "control-files-interoperability",
       "control-plane-convergence",
-      "redact-before-model-boundary"
+      "gemini-trust-couples-hooks-mcp-instructions",
+      "hooks-cross-harness-convergence",
+      "mcp-common-protocol-local-policy",
+      "redact-before-model-boundary",
+      "release-does-not-equal-observed-fix",
+      "skills-cross-harness-convergence",
+      "skills-default-on-docs-lag",
+      "subagents-delegation-control-plane"
     ]
   },
   "slots": [

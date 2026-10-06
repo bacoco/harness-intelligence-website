@@ -21,11 +21,13 @@
     ],
     "patterns": [],
     "dossiers": [
-      "conversation-rewind-workspace-stayed-mutated",
       "archon-session-resume-checkpoint",
-      "recovery-state-convergence",
+      "control-plane-convergence",
+      "conversation-rewind-workspace-stayed-mutated",
       "memory-kept-history-lost-mission",
-      "control-plane-convergence"
+      "recovery-state-convergence",
+      "resume-must-reconcile-control-state",
+      "task-snapshot-needs-coherent-ordering"
     ]
   },
   "slots": [

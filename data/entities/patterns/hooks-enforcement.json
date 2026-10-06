@@ -20,15 +20,16 @@
     ],
     "patterns": [],
     "dossiers": [
-      "stop-hook-authority-overreach",
-      "hook-shared-state-crossed-workers",
-      "goose-hooks-observer-to-enforcer",
       "cline-hooks-control-layer",
-      "openhands-hook-blocking-state",
+      "control-plane-convergence",
       "gemini-trust-couples-hooks-mcp-instructions",
+      "goose-hooks-observer-to-enforcer",
+      "hook-shared-state-crossed-workers",
       "hooks-cross-harness-convergence",
+      "existing-first-admission-landed",
+      "openhands-hook-blocking-state",
       "safety-control-failure-became-permission",
-      "control-plane-convergence"
+      "stop-hook-authority-overreach"
     ]
   },
   "slots": [

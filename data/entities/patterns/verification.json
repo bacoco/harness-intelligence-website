@@ -14,7 +14,10 @@
     ],
     "patterns": [],
     "dossiers": [
-      "agent-claims-need-evidence-labels"
+      "agent-claims-need-evidence-labels",
+      "health-verdict-must-preserve-status-and-coverage",
+      "existing-first-admission-landed",
+      "mechanical-rules-belong-in-deterministic-checks"
     ]
   },
   "slots": [

@@ -14,7 +14,9 @@
     ],
     "patterns": [],
     "dossiers": [
-      "permission-ui-approved-wrong-action"
+      "consent-before-command-capable-config",
+      "permission-ui-approved-wrong-action",
+      "resume-must-reconcile-control-state"
     ]
   },
   "slots": [

@@ -14,6 +14,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "reject-path-shaped-fallback-names-before-io",
       "session-scope-lock-became-global-state"
     ]
   },

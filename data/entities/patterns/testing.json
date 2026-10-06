@@ -15,8 +15,10 @@
     ],
     "patterns": [],
     "dossiers": [
+      "apply-patch-add-overwrite",
       "green-test-wrong-seam",
-      "apply-patch-add-overwrite"
+      "mechanical-rules-belong-in-deterministic-checks",
+      "shared-contract-prevents-provider-drift"
     ]
   },
   "slots": [

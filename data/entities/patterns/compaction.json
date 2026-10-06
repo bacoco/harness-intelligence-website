@@ -15,6 +15,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "append-only-snapshots-need-retention-bound",
       "memory-kept-history-lost-mission"
     ]
   },
