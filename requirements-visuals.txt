@@ -1,0 +1,2 @@
+# Visual synchronization only. Use a build with libwebp 1.6.0 (checked at runtime).
+Pillow==12.3.0

@@ -130,7 +130,7 @@ def page(title, body, desc=""):
       '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
       '<title>%s</title>\n<meta name="description" content="%s">\n'
       '<link rel="icon" href="/assets/logo.png">\n'
-      '<link rel="stylesheet" href="/assets/renderer.css?v=%s">\n'
+      '<link rel="stylesheet" href="/assets/renderer.css?v=%s-date-layout-1">\n'
       '<script src="/assets/renderer.js?v=%s" defer></script>\n</head>\n'
       '<body class="argh-fr argh-reader-simple argh-rendered-page">\n%s\n</body>\n</html>\n'
       % (esc(title), esc(desc), VERSION, VERSION, body))

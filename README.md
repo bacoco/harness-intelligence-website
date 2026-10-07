@@ -49,3 +49,33 @@ ChatGPT invocation and writes the verified result to `main` through the GitHub
 connector. GitHub Actions is not used for synchronization, recovery, validation,
 build or publication. No file may be added under `.github/workflows/`; a future
 workflow would violate this repository contract. GitHub Pages serves `main`.
+
+## Public teaching-card image derivatives
+
+Visual synchronization requires the pinned Pillow dependency in
+`requirements-visuals.txt` and libwebp 1.6.0. The encoder versions are checked before
+conversion so a different library build cannot silently replace public images.
+Entity-only synchronization and the static site do not require Pillow.
+
+`scripts/sync_from_argh.py --source-visuals ...` first validates every native image's
+SHA-256 and byte count against its generation receipt. It then creates public
+derivatives only for opaque, single-frame, lossless WebP sources larger than
+256 KiB. The derivative keeps the complete original dimensions and uses RGB WebP,
+quality 90, method 6, with no resize or metadata passed to the encoder. The original
+bytes are kept if the candidate is not strictly smaller. Small images (including
+the historical 34 KB teaching card), already-lossy WebPs, transparent or animated
+images, and other formats stay byte-identical. The conservative threshold avoids
+unnecessary quality loss; the lossless-only gate avoids second-generation lossy
+compression. Asset names, routes and authored content are unchanged. The historical
+`-640` filename suffix does not impose a 640-pixel resize.
+
+Every run derives from the validated native source, never a previous public
+derivative. Native images, masters, prompts, contexts and generation receipts are
+read-only inputs. For identical source bytes and the pinned encoder stack, repeated
+syncs produce identical output without rewriting unchanged files.
+
+The sync command's additive `visual_derivatives` JSON result records each source
+and served SHA-256, byte count, dimensions, format, decision, encoder parameters and
+library versions. Keep this operational report with private publication receipts;
+it is not written into site data, rendered pages or public asset metadata. Run the
+regressions with `python -m unittest discover -s tests` in the prepared environment.

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import json
 import re
 import shutil
@@ -26,6 +27,12 @@ VISUAL_GENERATION_SCHEMA = "argh/visual-generation/v1"
 VISUAL_BRIEF_SCHEMA = "argh/visual-brief/v1"
 PUBLIC_SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
 VISUAL_EXTENSIONS = {".webp", ".jpg", ".jpeg", ".png"}
+VISUAL_DERIVATIVE_MIN_BYTES = 256 * 1024
+VISUAL_ENCODER_VERSIONS = {"pillow": "12.3.0", "libwebp": "1.6.0"}
+VISUAL_ENCODING = {
+    "format": "WEBP", "mode": "RGB", "quality": 90, "method": 6,
+    "lossless": False, "resize": False, "metadata": "omitted",
+}
 
 
 class SyncError(ValueError):
@@ -134,8 +141,82 @@ def _sync_navigation(source: Path, website: Path) -> bool:
     return True
 
 
-def _sync_visuals(source_visuals: Path, website: Path) -> dict[str, int | bool]:
-    """Copy only generated teaching-card images into the public illustration set."""
+def _webp_is_lossless(raw: bytes) -> bool:
+    """Inspect RIFF chunks, rather than mistaking a metadata string for a codec."""
+    if raw[:4] != b"RIFF" or raw[8:12] != b"WEBP":
+        return False
+    position = 12
+    while position + 8 <= len(raw):
+        kind = raw[position:position + 4]
+        size = int.from_bytes(raw[position + 4:position + 8], "little")
+        if position + 8 + size > len(raw):
+            return False
+        if kind == b"VP8L":
+            return True
+        if kind in {b"VP8 ", b"ANIM", b"ANMF"}:
+            return False
+        position += 8 + size + (size % 2)
+    return False
+
+
+def _encode_visual_webp(image) -> bytes:
+    """Encode once from the validated native source, never from a served asset."""
+    output = io.BytesIO()
+    image.convert("RGB").save(output, format="WEBP", quality=90, method=6, lossless=False)
+    return output.getvalue()
+
+
+def _visual_payload(source: Path, raw: bytes) -> tuple[bytes, dict[str, object]]:
+    """Produce a public payload and a private-only source-to-served receipt."""
+    try:
+        import PIL
+        from PIL import Image, features
+    except ImportError as exc:
+        raise SyncError("visual sync requires Pillow; see requirements-visuals.txt") from exc
+    versions = {"pillow": PIL.__version__, "libwebp": features.version("webp")}
+    served = raw
+    encoding = None
+    try:
+        with Image.open(io.BytesIO(raw)) as image:
+            dimensions = list(image.size)
+            image_format = image.format
+            mode = image.mode
+            if source.suffix.lower() != ".webp" or image_format != "WEBP":
+                decision = "kept_non_webp"
+            elif len(raw) <= VISUAL_DERIVATIVE_MIN_BYTES:
+                decision = "kept_small_source"
+            elif getattr(image, "n_frames", 1) != 1:
+                decision = "kept_animation"
+            elif not _webp_is_lossless(raw):
+                decision = "kept_already_lossy"
+            elif image.convert("RGBA").getchannel("A").getextrema() != (255, 255):
+                decision = "kept_transparency"
+            else:
+                if versions != VISUAL_ENCODER_VERSIONS:
+                    raise SyncError(
+                        f"visual encoder version mismatch: expected {VISUAL_ENCODER_VERSIONS}, "
+                        f"got {versions}"
+                    )
+                encoding = dict(VISUAL_ENCODING)
+                candidate = _encode_visual_webp(image)
+                if len(candidate) < len(raw):
+                    served, decision = candidate, "compressed_lossless_source"
+                else:
+                    decision = "kept_derivative_not_smaller"
+    except (OSError, SyntaxError) as exc:
+        raise SyncError(f"cannot decode visual image: {source}") from exc
+    return served, {
+        "source": {"sha256": hashlib.sha256(raw).hexdigest(), "bytes": len(raw),
+                   "dimensions": dimensions, "format": image_format, "mode": mode},
+        "served": {"sha256": hashlib.sha256(served).hexdigest(), "bytes": len(served),
+                   "dimensions": dimensions, "format": image_format},
+        "derivative": served != raw, "decision": decision,
+        "encoding": encoding, "versions": versions,
+    }
+
+
+def _sync_visuals(source_visuals: Path, website: Path) -> dict[str, object]:
+    """Validate native receipts, then derive only eligible public teaching cards."""
     selected: dict[str, tuple[str, Path, bytes]] = {}
     for generation_path in sorted(source_visuals.glob("*/*/generation.json")):
         try:
@@ -174,11 +255,19 @@ def _sync_visuals(source_visuals: Path, website: Path) -> dict[str, int | bool]:
             selected[slug] = (stamp, image_path, raw)
 
     target_root = website / "assets" / "illustrations"
-    target_root.mkdir(parents=True, exist_ok=True)
     desired: dict[Path, bytes] = {}
-    for slug, (_, source, raw) in selected.items():
-        desired[target_root / f"dossier-{slug}-640{source.suffix.lower()}"] = raw
+    receipts: list[dict[str, object]] = []
+    # All source receipts above must pass before any decoding or encoding begins.
+    # Compute every payload before changing the existing illustration set.
+    for slug, (_, source, raw) in sorted(selected.items()):
+        target = target_root / f"dossier-{slug}-640{source.suffix.lower()}"
+        desired[target], receipt = _visual_payload(source, raw)
+        receipts.append({
+            "slug": slug, "source_image": source.relative_to(source_visuals).as_posix(),
+            "public_asset": target.relative_to(website).as_posix(), **receipt,
+        })
 
+    target_root.mkdir(parents=True, exist_ok=True)
     managed = {
         path for path in target_root.glob("dossier-*-640.*")
         if path.suffix.lower() in VISUAL_EXTENSIONS
@@ -191,7 +280,9 @@ def _sync_visuals(source_visuals: Path, website: Path) -> dict[str, int | bool]:
         if not path.exists() or path.read_bytes() != raw:
             path.write_bytes(raw)
             changed = True
-    return {"visuals_changed": changed, "visual_count": len(desired)}
+    # Return provenance to the private caller; never write it into served site data.
+    return {"visuals_changed": changed, "visual_count": len(desired),
+            "visual_derivatives": receipts}
 
 
 def _index_entries(root: Path) -> dict[str, str] | None:
@@ -343,7 +434,9 @@ def sync(source: Path, website: Path, source_head: str, generated_at: str,
     )
     visuals = (
         _sync_visuals(source_visuals, website)
-        if source_visuals is not None else {"visuals_changed": False, "visual_count": 0}
+        if source_visuals is not None else {
+            "visuals_changed": False, "visual_count": 0, "visual_derivatives": [],
+        }
     )
     return {"source_head": source_head, "data_changed": changed,
             "meta_changed": meta_changed, "navigation_changed": navigation_changed,
