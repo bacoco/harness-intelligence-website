@@ -14,7 +14,10 @@
     ],
     "patterns": [],
     "dossiers": [
-      "delivery-finished-user-got-nothing"
+      "delegated-results-return-to-requester-with-unresolved-delivery-reports",
+      "delivery-finished-user-got-nothing",
+      "only-deliverable-completions-should-wake-a-waiter",
+      "resumed-teammate-address-needs-current-inbox"
     ]
   },
   "slots": [

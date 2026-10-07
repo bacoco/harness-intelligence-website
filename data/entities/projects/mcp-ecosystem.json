@@ -15,7 +15,8 @@
       "ownership"
     ],
     "dossiers": [
-      "multiuser-connection-ownership"
+      "multiuser-connection-ownership",
+      "server-cards-locate-connections-without-granting-capabilities"
     ]
   },
   "slots": [

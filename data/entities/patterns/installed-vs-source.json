@@ -14,7 +14,13 @@
     ],
     "patterns": [],
     "dossiers": [
-      "archon-installed-skill-drift"
+      "approved-install-revision-and-retry-result-must-stay-bound",
+      "archon-installed-skill-drift",
+      "autopilot-proof-must-name-the-exercised-agent-path",
+      "handoff-text-must-not-be-reparsed-as-shell-code",
+      "hook-denial-must-reach-the-host-as-a-denial",
+      "portable-skill-profile-needs-offline-load-proof",
+      "skill-admission-checks-completeness-and-received-bytes"
     ]
   },
   "slots": [

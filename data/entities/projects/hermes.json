@@ -17,8 +17,11 @@
       "uncertainty"
     ],
     "dossiers": [
-      "unknown-flattened-to-empty",
-      "green-test-wrong-seam"
+      "approved-install-revision-and-retry-result-must-stay-bound",
+      "empty-tool-policy-must-survive-cron-roundtrips",
+      "green-test-wrong-seam",
+      "transcript-access-does-not-grant-worker-resume-ownership",
+      "unknown-flattened-to-empty"
     ]
   },
   "slots": [

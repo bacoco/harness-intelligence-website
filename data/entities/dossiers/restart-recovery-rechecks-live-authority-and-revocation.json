@@ -1,0 +1,130 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:restart-recovery-rechecks-live-authority-and-revocation",
+  "relationships": {
+    "dossiers": [
+      "remote-tools-injected-without-local-ownership"
+    ],
+    "patterns": [
+      "permissions",
+      "checkpoint",
+      "ownership"
+    ],
+    "projects": [
+      "OpenClaw"
+    ]
+  },
+  "route": "/dossiers/restart-recovery-rechecks-live-authority-and-revocation/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The selected release evidence makes restart dispatch an authorization decision, including for prepared replies. Persisted work alone is insufficient. These are official documented mechanisms, not independently verified runtime behavior.",
+            "kitchen": "After an interruption, the cook finds an old ticket and a reply already written. Neither establishes that work may still proceed. The stable announcement describes checking current authority and recorded human origin, but this review did not try those controls in service."
+          },
+          "fr": {
+            "cuisine": "Le commis revient après une coupure et retrouve ses tickets. Avant de repartir, il faut encore savoir qui les a demandés et si leur accord tient toujours. La maison annonce ces contrôles dans sa version stable. Nous avons lu une partie du cahier, sans essayer leur fonctionnement.",
+            "expert": "Les notes stables OpenClaw 2026.9.7 décrivent des contrôles d'autorité source survivante et d'origine humaine enregistrée avant reprise interne. Ils concernent aussi les réponses préparées. La publication est vérifiée ; seuls des passages sélectionnés ont été lus, sans test de code ni runtime."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "OpenClaw stable notes require surviving authority for restart recovery",
+          "kitchen": "Finding the old order does not renew its permission"
+        },
+        "fr": {
+          "cuisine": "Retrouver le ticket ne rend pas l'ancien accord valable",
+          "expert": "OpenClaw documente une reprise fondée sur l'autorité survivante"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Revocation is historical state, not merely the present value of a grant. The documented checks preserve that history across revoke-and-restore while avoiding broad invalidation from unrelated identity edits. Separate source-authority and human-origin requirements qualify restart eligibility.",
+            "kitchen": "Returning a key allows future work; it must not bring a cancelled permission back to life. Unrelated changes should leave other accepted orders alone. Internal work without recorded human origin is skipped, including the notice that would otherwise announce its return."
+          },
+          "fr": {
+            "cuisine": "Un ticket dont l'accord a été retiré reste retiré, même si les clés sont rendues plus tard. Un changement sans rapport ne supprime pas les autres commandes acceptées. Si l'origine humaine d'un travail interne n'est pas établie, il ne repart pas et n'annonce pas sa reprise.",
+            "expert": "Les notes distinguent révocation du grant propre au travail ou de politique globale, et modifications d'identité sans rapport. Ces dernières préservent le travail accepté. L'historique revoke-and-restore empêche la résurrection du travail révoqué ; une origine humaine interne non vérifiée produit ni dispatch ni notice de recovery."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Restoring the keys must not revive a revoked order"
+        },
+        "fr": {
+          "cuisine": "Redonner la clé ne réveille pas les commandes retirées",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Schema compatibility and authorization history are coupled in the documented downgrade warning. A pre-upgrade backup cannot contain revocations and receipts created afterward. This account reports the warning without validating a rollback procedure or asserting a safe migration outcome.",
+            "kitchen": "The shared notebook changes format too. Going back requires the matching copy from before the change, and later cancellations or receipts may disappear. That warning matters because lost revocation history can change what the next cook believes is allowed."
+          },
+          "fr": {
+            "cuisine": "La maison change aussi la forme de son cahier partagé. Pour revenir à l'ancien, elle demande la copie correspondante gardée avant le changement. Ce retour peut perdre les retraits d'accord et les reçus ajoutés ensuite. Garder ces traces fait partie de la sécurité de la reprise.",
+            "expert": "L'état partagé migre du schéma 18 vers le 19. Les notes avertissent qu'un downgrade nécessite une sauvegarde pré-upgrade correspondante et peut perdre les révocations et receipts postérieurs. Cette limite est documentaire ; aucun scénario de downgrade n'a été exécuté ici."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "An older notebook may forget recent revocations"
+        },
+        "fr": {
+          "cuisine": "Revenir à l'ancien cahier peut oublier les interdictions récentes",
+          "expert": "Réponse"
+        }
+      },
+      "id": "migration",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The established evidence is a published stable changelog with selective review. Do not equate release status with complete path coverage, current-code verification or observed effectiveness. Preserve the distinctions among source authority, human origin, revocation history and recovery-channel behavior.",
+            "kitchen": "Different entrances still use their own checks. A stable announcement does not show that every route back into service is protected identically. We reviewed selected passages rather than testing the kitchen, and keep that limit attached to the rule."
+          },
+          "fr": {
+            "cuisine": "Les différentes entrées de la cuisine gardent leurs propres vérifications. L'annonce ne prouve pas que toutes les reprises suivent exactement la même règle. Notre lecture reste partielle et aucun essai indépendant n'a été fait. La leçon est de vérifier l'accord actuel sans oublier ceux qui ont été retirés.",
+            "expert": "Legacy channels, Control UI, child completion et livraison queue-owned restent des chemins de contrôle distincts. La lecture sélectionne 24 sous-sections sur 206, sans reproduction. La guidance research_only n'étend pas ces annonces en garantie uniforme de recovery, malgré le statut stable de la publication."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The restart paths still have separate checks"
+        },
+        "fr": {
+          "cuisine": "Chaque entrée de reprise garde ses propres contrôles",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "restart-recovery-rechecks-live-authority-and-revocation",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:40:53.846901+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-02",
+  "id": "dossier:a2a-cli-exposes-a-scriptable-task-test-surface",
+  "relationships": {
+    "dossiers": [
+      "subagents-delegation-control-plane"
+    ],
+    "patterns": [
+      "protocols",
+      "testing",
+      "headless-contract"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/a2a-cli-exposes-a-scriptable-task-test-surface/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A2A's official announcement describes a non-agent CLI surface for discovery, messaging and task lifecycle operations. Structured output and exit status make the interface suitable for scripted tests. No interoperability exchange was run in this review.",
+            "kitchen": "The house announces a test counter for finding a cook, sending an order and watching its progress. Consistent records and success-or-failure signals can support repeatable checks. We verified the announcement, not an installed or exercised counter."
+          },
+          "fr": {
+            "cuisine": "La maison présente un comptoir pour trouver un cuisinier, lui transmettre une commande et suivre son travail. Des fiches régulières et des signes de réussite ou d'échec doivent aider aux essais. L'annonce est vérifiée ; nous n'avons pas installé ni essayé ce comptoir.",
+            "expert": "Le document officiel présente A2A CLI v1.0 : découverte d'Agent Cards, envoi de messages, suivi des tâches et streaming. JSON et codes de sortie fournissent une interface exploitable par scripts. L'annonce et son patch sont lus, sans installation ni round-trip exécuté."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "A2A introduces an official scriptable task client",
+          "kitchen": "A test counter can follow the order without another cook interpreting it"
+        },
+        "fr": {
+          "cuisine": "Un comptoir d'essai pour suivre la commande du début à la fin",
+          "expert": "A2A annonce un CLI officiel pour les messages et tâches"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A scriptable client can separate test orchestration from agent reasoning. Its existence does not validate endpoint behavior, transport parity or task semantics by itself. Those claims require observed exchanges and bounded test coverage, absent here.",
+            "kitchen": "Several routes are advertised for carrying an order, while the test counter produces records a checker can inspect. That makes a test surface available in principle. It does not establish that every receiving kitchen handles every route correctly."
+          },
+          "fr": {
+            "cuisine": "Le comptoir annonce plusieurs façons de transmettre les billets. Le chef peut préparer le même contrôle sans demander à un autre commis d'en deviner le résultat. Cela ne prouve pas encore que tous les cuisiniers comprennent chaque trajet.",
+            "expert": "Le client écrit en Go vise JSON-RPC, REST et gRPC. Ses sorties JSON et codes de sortie permettent de confronter les scripts aux résultats du protocole. Le support annoncé n'est pas une certification de tous les agents, endpoints ou transports."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A common counter still needs each delivery route tested"
+        },
+        "fr": {
+          "cuisine": "Plusieurs façons de porter le ticket, un résultat à vérifier",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Preserve both dates: editorial date is 1 October; verified document merge is 2 October 2026. The client announcement and explicitly non-production servers are the established evidence. Installation, successful exchanges and production readiness have not been validated here.",
+            "kitchen": "The supplied example stations are for lessons and demonstrations, not a working restaurant. The announcement is dated 1 October and its document was accepted on 2 October. We performed no trial. Keep those boundaries when planning a real test."
+          },
+          "fr": {
+            "cuisine": "Les petits postes fournis en exemple servent à apprendre et à essayer, pas à servir de vrais clients. L'annonce porte la date du 1er octobre et a été acceptée le 2. Aucun essai de notre part ne permet d'en dire davantage. La leçon est de vérifier le trajet réel avant de promettre son succès.",
+            "expert": "Les modes serveur echo/exec, qui enveloppent stdin/stdout, sont explicitement réservés à l'apprentissage, aux démonstrations et aux tests. Le document est daté du 1er octobre mais fusionné le 2 octobre 2026. La guidance reste research_only, avec zéro round-trip exécuté et aucune certification inférée."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Practice stations are not production kitchens"
+        },
+        "fr": {
+          "cuisine": "Les petits postes d'exemple ne sont pas faits pour le service",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "a2a-cli-exposes-a-scriptable-task-test-surface",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:29:47.066169+00:00"
+}

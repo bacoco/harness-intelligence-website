@@ -14,6 +14,10 @@
     ],
     "patterns": [],
     "dossiers": [
+      "approved-install-revision-and-retry-result-must-stay-bound",
+      "command-rewriting-must-preserve-host-permission-verdict",
+      "control-policy-must-survive-reload-and-async-waits",
+      "later-action-score-must-not-release-an-earlier-pending-review",
       "permission-ui-approved-wrong-action"
     ]
   },

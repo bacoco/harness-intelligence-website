@@ -1,0 +1,128 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:control-policy-must-survive-reload-and-async-waits",
+  "relationships": {
+    "dossiers": [
+      "permission-ui-approved-wrong-action"
+    ],
+    "patterns": [
+      "permissions",
+      "semantic-approval",
+      "state-split"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/control-policy-must-survive-reload-and-async-waits/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The session cap and saved preference are reported to contaminate each other in opposite directions. Reload can lift a tighter session constraint, while saving a preference can persist the temporary cap.",
+            "kitchen": "A reported rehearsal lowers the allowance for one service, then restores a higher one when the house rulebook is opened. Saving an unrelated preference can also turn that temporary ceiling into a lasting house rule."
+          },
+          "fr": {
+            "cuisine": "Dans un essai rapporté, consulter les habitudes de la maison relève la limite abaissée pour le service en cours. Sauver ensuite une préférence peut aussi inscrire cette limite provisoire parmi les habitudes permanentes.",
+            "expert": "Un rapport décrit RUFLO_CONSOLE_CONTROL abaissé puis relevé par le reload des préférences à l'ouverture de Settings. Sauvegarder une préférence AI peut inversement persister ce plafond temporaire comme niveau enregistré."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Reports describe Console 0.33.20 policy drift across reloads",
+          "kitchen": "Opening the house rulebook can undo tonight's tighter limit"
+        },
+        "fr": {
+          "cuisine": "Ouvrir le classeur relève une limite prévue pour ce service",
+          "expert": "Ruflo Console 0.33.20 : des limites temporaires se mêlent aux préférences"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Reported effective operations bypass the gate through read-only classification. Separately, a deferred ask can overwrite the pending confirmation, breaking the association between the displayed action and the decision being requested.",
+            "kitchen": "During the rehearsal, tasks marked as looking only can still purchase, write or contact outsiders without asking. A delayed request can also displace the different order slip the diner was already being asked to sign."
+          },
+          "fr": {
+            "cuisine": "Certains gestes étiquetés « regarder seulement » passent sans accord alors qu'ils achètent, écrivent ou contactent l'extérieur dans la répétition. Une demande arrivée tard peut aussi remplacer le bon que le client s'apprêtait à signer.",
+            "expert": "Un second rapport décrit des entrées isReadOnly produisant des dépenses, écritures ou accès réseau hors gate, avec contrôleur réel et hôte simulé. Un ask asynchrone tardif peut remplacer la carte de confirmation d'une autre action."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A late request replaces the slip already awaiting a signature"
+        },
+        "fr": {
+          "cuisine": "Une demande tardive prend la place du bon à signer",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The third report describes redispatch on each idle after failed hand-out state change, stale cost off the Missions page, and zero treated as unlimited. Proposed controls separate preferences from session caps, bind approval to its action, and require successful transition plus current cost before dispatch; none is a verified deployed repair.",
+            "kitchen": "Another rehearsal resends work after its hand-out record fails, keeps an old total away from the mission ledger and reads a zero ceiling as unlimited. The proposed rule checks the accepted ticket and fresh total before each departure, with the approval slip kept tied to its own order."
+          },
+          "fr": {
+            "cuisine": "Une autre répétition renvoie la commande malgré une inscription ratée, garde un vieux total hors du cahier des missions et traite zéro comme illimité. Il faudrait vérifier l'inscription et le total à jour avant chaque départ, sans laisser changer le bon soumis au client.",
+            "expert": "Le troisième rapport décrit redispatch à chaque idle après échec de transition, coût stale hors vue Missions et plafond zéro traité sans limite. Réponses proposées : lier confirmation/action, séparer préférences et cap, puis conditionner dispatch à une transition réussie et un coût frais."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Check the current bill and ticket before sending the helper"
+        },
+        "fr": {
+          "cuisine": "Relire le total et le ticket avant d'envoyer le commis",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep the reports bounded to 0.33.20 and their simulated-host setup. Open repair proposals are not confirmation that 0.34 remains affected or that another later change resolves these issues.",
+            "kitchen": "The October 5 reports use real working components inside a simulated house; we did not repeat them and no real spending was observed. Repairs remain proposed, without establishing whether the next edition retains or fixes these paths."
+          },
+          "fr": {
+            "cuisine": "Les trois rapports du 5 octobre utilisent du matériel réel avec une maison imitée ; nous n'avons pas refait les essais ni observé de dépense réelle. Les réparations proposées restent ouvertes, sans preuve que l'édition suivante garde ces défauts ou les corrige.",
+            "expert": "Repros upstream sur 0.33.20 avec composants réels et hôte simulé, non reproduites ; aucune dépense réelle observée. Propositions ouvertes, sans conclure à l'exploitabilité dans 0.34 ni attribuer la résolution à une autre correction ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The rehearsals do not establish a real bill or a later repair"
+        },
+        "fr": {
+          "cuisine": "Ces répétitions ne prouvent pas une dépense réelle",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "control-policy-must-survive-reload-and-async-waits",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:57:40.105920+00:00"
+}

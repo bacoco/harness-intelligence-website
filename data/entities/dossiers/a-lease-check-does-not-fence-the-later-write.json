@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:a-lease-check-does-not-fence-the-later-write",
+  "relationships": {
+    "dossiers": [
+      "multiuser-connection-ownership"
+    ],
+    "patterns": [
+      "ownership",
+      "concurrency",
+      "credential-lifecycle"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/a-lease-check-does-not-fence-the-later-write/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The new internal API couples expected-value comparison and credential mutation atomically. It targets the time-of-check/write gap left by a lease holder that resumes after expiry and replacement.",
+            "kitchen": "A cook checks that the book is theirs, then pauses while someone else takes over. The accepted primitive checks the saved value at writing time so the returning cook cannot overwrite the replacement's entry merely on old authority."
+          },
+          "fr": {
+            "cuisine": "Un commis vérifie qu'il tient le cahier, puis s'arrête pendant qu'un autre prend sa place. Une nouvelle méthode acceptée compare encore la fiche au moment de l'écriture pour protéger le remplaçant.",
+            "expert": "ToolHive fusionne une primitive DCR compare-and-set contre les écritures d'un détenteur de lease suspendu puis périmé. Vérifier la lease avant l'écriture ne suffit pas si une relève survient entre les deux."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "ToolHive adds atomic DCR compare-and-set updates",
+          "kitchen": "The former cook can wake up after the record has changed"
+        },
+        "fr": {
+          "cuisine": "L'ancien responsable peut revenir après que la fiche a changé",
+          "expert": "ToolHive ajoute un CAS pour les credentials DCR"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The expected credential value and target key must both match. A conflict is a no-effect rejection, rather than permission to recreate or overwrite a different row.",
+            "kitchen": "Nobody may slip a different note between the comparison and replacement. A missing entry, changed value or reference to another entry means leave the book untouched."
+          },
+          "fr": {
+            "cuisine": "La comparaison et le remplacement se font sans laisser une autre main changer la fiche entre les deux. Si la fiche manque, a changé ou n'est pas la bonne, rien n'est écrit.",
+            "expert": "Redis utilise WATCH/MULTI, et le backend mémoire un mutex. La primitive refuse sans mutation une ligne absente, une valeur modifiée ou un expected appartenant à une autre clé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The saved copy must still match this exact entry"
+        },
+        "fr": {
+          "cuisine": "Comparer la même fiche avant de la remplacer",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Merged API availability is distinct from consumer migration. Reported unit and Redis Sentinel tests do not establish Redis Cluster behavior or an independently verified deployed fence.",
+            "kitchen": "The primitive is merged, with neither universal use nor a published delivery established. The author reports tests, which we did not repeat, and one storage arrangement remains untested."
+          },
+          "fr": {
+            "cuisine": "La méthode est acceptée, mais rien ne prouve que chaque poste l'utilise déjà ou qu'elle soit distribuée. Les essais sont rapportés par l'auteur, pas refaits ici ; une organisation du stockage reste non testée.",
+            "expert": "L'adoption par tous les consommateurs et la release porteuse ne sont pas établies. Tests unitaires et Redis Sentinel sont rapportés, non reproduits ; Redis Cluster n'a pas été testé. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A new method does not prove every station uses it"
+        },
+        "fr": {
+          "cuisine": "La méthode existe, tous les postes ne sont pas prouvés l'utiliser",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "a-lease-check-does-not-fence-the-later-write",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:17:42.400047+00:00"
+}

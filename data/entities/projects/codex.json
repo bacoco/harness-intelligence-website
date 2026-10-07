@@ -43,6 +43,7 @@
       "worktrees"
     ],
     "dossiers": [
+      "background-work-keeps-its-originating-turn-permissions",
       "branch-name-roadmap-decay",
       "codex-managed-worktrees",
       "codex-skills-context-budget",
@@ -52,9 +53,11 @@
       "encrypted-subagents-lost-audit-trail",
       "hooks-cross-harness-convergence",
       "human-gate-timeout",
+      "later-action-score-must-not-release-an-earlier-pending-review",
       "mcp-common-protocol-local-policy",
       "memory-kept-history-lost-mission",
       "observability-became-outage",
+      "queued-mail-wake-preserves-the-existing-work-attribution",
       "recovery-state-convergence",
       "reject-path-shaped-fallback-names-before-io",
       "release-does-not-equal-observed-fix",
@@ -64,6 +67,7 @@
       "skills-cross-harness-convergence",
       "subagent-routing-hidden-capability",
       "subagents-delegation-control-plane",
+      "wake-startup-must-recheck-reservation-identity-after-preparation",
       "worktree-isolation-convergence"
     ]
   },

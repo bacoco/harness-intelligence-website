@@ -14,6 +14,8 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a2a-cli-exposes-a-scriptable-task-test-surface",
+      "displaying-an-agent-terminal-does-not-own-its-process",
       "goose-protocol-pivot-acp",
       "task-snapshot-needs-coherent-ordering"
     ]

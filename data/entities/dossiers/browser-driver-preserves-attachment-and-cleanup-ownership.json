@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-02",
+  "id": "dossier:browser-driver-preserves-attachment-and-cleanup-ownership",
+  "relationships": {
+    "dossiers": [
+      "archon-session-resume-checkpoint"
+    ],
+    "patterns": [
+      "ownership",
+      "runtime-identity",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/browser-driver-preserves-attachment-and-cleanup-ownership/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged Anthropic driver offers 31 browser/Bash actions while separating session creation from attachment. A listed action does not itself transfer lifecycle ownership of an attached browser.",
+            "kitchen": "The new cook can work at a station they open or one already owned by the house. The accepted October 2 driver keeps those two kinds of responsibility distinct."
+          },
+          "fr": {
+            "cuisine": "Le nouveau commis sait utiliser un poste qu'il prépare ou un poste qu'on lui prête. Le changement accepté le 2 octobre garde le poste prêté sous la responsabilité de la maison.",
+            "expert": "Le driver Anthropic Browser Use fusionné le 2 octobre expose 31 actions navigateur et Bash. Il gère les navigateurs qu'il crée, tandis que les sessions attachées restent sous contrôle applicatif."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Browser Use defines browser ownership through the driver lifecycle",
+          "kitchen": "Borrowing a station does not make it yours to close"
+        },
+        "fr": {
+          "cuisine": "Utiliser un poste prêté ne donne pas le droit de le fermer",
+          "expert": "Browser Use sépare création, attachement et autorité de cleanup"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Document references, host filesystem paths and negotiated scope are separate identities. The integration must preserve them through approval and cleanup instead of assuming that one toolset makes them interchangeable.",
+            "kitchen": "The borrowed station must be tidied under the permission already given. Each mark points to its own page; the house staff must arrange delivery of papers between the two kitchens."
+          },
+          "fr": {
+            "cuisine": "L'accord reçu et ses limites restent nécessaires jusqu'au rangement. Les repères désignent la bonne page ; la brigade responsable du service doit porter les feuilles entre les deux maisons.",
+            "expert": "Le driver conserve la version de scope Cloud accordée pour le cleanup et les callbacks d'approbation. Les références suivent l'identité du document ; les transferts de fichiers entre hôtes restent à la charge de l'application."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Keep the granted scope attached until cleanup is done"
+        },
+        "fr": {
+          "cuisine": "Garder la bonne autorisation jusqu'au rangement",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Merge and description are verified, but no driver was executed here. The reported 13-check Cloud audit does not close the exact Anthropic-package smoke or HN cleanup work and cannot certify every SDK version.",
+            "kitchen": "Thirteen controlled checks are reported, not repeated by us. The exact public package trial and the broader audit, including cleanup, are unfinished, so compatibility across versions is not established."
+          },
+          "fr": {
+            "cuisine": "L'auteur annonce treize contrôles maîtrisés, que nous n'avons pas rejoués. L'essai du paquet public exact et un audit plus large, rangement compris, restent incomplets ; toutes les versions ne sont pas certifiées.",
+            "expert": "Un audit Cloud déterministe de 13 checks est annoncé, sans reproduction ici. Le smoke du paquet Anthropic public exact et l'audit HN, dont cleanup, restent ouverts ; compatibilité de toutes versions SDK et succès complet ne sont pas revendiqués. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A tool catalog is not a completed end-to-end check"
+        },
+        "fr": {
+          "cuisine": "Le catalogue est là, l'essai complet reste ouvert",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "browser-driver-preserves-attachment-and-cleanup-ownership",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:25:11.563566+00:00"
+}

@@ -14,7 +14,10 @@
     ],
     "patterns": [],
     "dossiers": [
-      "nested-skills-discovery-drift"
+      "extension-discovery-must-match-the-host-capability",
+      "nested-skills-discovery-drift",
+      "rediscovered-tools-need-policy-before-callable-exposure",
+      "server-cards-locate-connections-without-granting-capabilities"
     ]
   },
   "slots": [

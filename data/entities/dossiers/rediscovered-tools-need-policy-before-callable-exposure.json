@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-02",
+  "id": "dossier:rediscovered-tools-need-policy-before-callable-exposure",
+  "relationships": {
+    "dossiers": [
+      "remote-tools-injected-without-local-ownership"
+    ],
+    "patterns": [
+      "mcp",
+      "permissions",
+      "discovery"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/rediscovered-tools-need-policy-before-callable-exposure/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged change extends local SecureMCPToolProxy policy across dynamic discovery, reuse and progressive disclosure. Callable exposure follows labeling rather than preceding it.",
+            "kitchen": "The opening check covers the first utensils, but more can arrive later or return to the station. The accepted change applies the house rule before those utensils become available to the cook too."
+          },
+          "fr": {
+            "cuisine": "Le chef a vérifié les ustensiles du début de service, puis d'autres arrivent ou reviennent au poste. La correction acceptée leur applique aussi la règle locale avant de les confier au commis.",
+            "expert": "Le correctif Python applique les labels de SecureMCPToolProxy aux outils redécouverts, réutilisés ou exposés progressivement. La politique est appliquée avant leur publication comme fonctions appelables."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Agent Framework labels dynamically exposed MCP tools",
+          "kitchen": "Late-arriving utensils still need the house check"
+        },
+        "fr": {
+          "cuisine": "L'ustensile arrivé après l'ouverture doit aussi passer au contrôle",
+          "expert": "Agent Framework applique la politique aux outils MCP chargés dynamiquement"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Dynamic refresh is part of the security-policy lifecycle, not merely a listing operation. This fix concerns the secure proxy's exposure path and does not create an equivalent gate for unrelated connections.",
+            "kitchen": "An opening inventory cannot cover everything that appears later. Whenever a utensil is offered again through this guarded route, it must keep the house's instruction."
+          },
+          "fr": {
+            "cuisine": "Le contrôle ne s'arrête pas à l'inventaire du matin. Chaque nouvelle présentation d'un ustensile dans ce circuit doit retrouver la consigne de la maison.",
+            "expert": "Le catalogue peut évoluer après la connexion : la politique doit suivre ces nouvelles fonctions, pas seulement celles du chargement initial. Cette règle s'applique aux connexions utilisant SecureMCPToolProxy."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The checking rule must follow each new utensil"
+        },
+        "fr": {
+          "cuisine": "Le contrôle accompagne la liste quand elle change",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Retain release-note inclusion and unverified test behavior as distinct facts. Protection depends on SecureMCPToolProxy use; the evidence does not generalize across all MCP mappings, transports or clients.",
+            "kitchen": "The release announces the repair, without an independent trial here. Routes lacking this guard keep their previous behavior, so the announcement cannot certify every entrance."
+          },
+          "fr": {
+            "cuisine": "La version publiée annonce cette réparation, mais nous n'avons pas refait les essais. Les entrées sans ce poste de contrôle restent inchangées ; tous les trajets ne sont donc pas certifiés.",
+            "expert": "Python 1.20.0 annonce la correction ; PR et release lues, tests non reproduits. Connexions sans proxy inchangées, sans couverture automatique de tous les mappings, transports ou clients MCP. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The announced repair does not guard every entrance"
+        },
+        "fr": {
+          "cuisine": "La réparation publiée ne garde pas toutes les entrées",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "rediscovered-tools-need-policy-before-callable-exposure",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:35:17.531866+00:00"
+}

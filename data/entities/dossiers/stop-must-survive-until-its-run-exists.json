@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:stop-must-survive-until-its-run-exists",
+  "relationships": {
+    "dossiers": [
+      "background-artifacts-need-terminal-lifecycle"
+    ],
+    "patterns": [
+      "ownership",
+      "runtime-visible-state",
+      "state-isolation"
+    ],
+    "projects": [
+      "Cline"
+    ]
+  },
+  "route": "/dossiers/stop-must-survive-until-its-run-exists/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The release addresses cancellation arriving before an active run exists. Retaining and later delivering Stop closes the described preparation-to-run gap rather than trusting the client's stopped appearance.",
+            "kitchen": "The chef calls stop before the cook has finished setting up, while the board may already look stopped. The announced repair keeps that instruction and delivers it when the cook's work becomes available to stop."
+          },
+          "fr": {
+            "cuisine": "Le chef demande l'arrêt alors que le commis prépare encore son poste ; le tableau peut déjà dire arrêté sans que le travail cesse. La correction annoncée garde cette demande et la remet au commis dès que son travail commence.",
+            "expert": "SDK 0.0.88 conserve Stop reçu pendant la préparation puis le réémet quand le run existe. Le correctif cible la fenêtre où l'interface pouvait montrer arrêté tandis que le travail continuait."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Cline preserves Stop across the pre-run preparation window",
+          "kitchen": "Keep the stop instruction until its cook is ready to receive it"
+        },
+        "fr": {
+          "cuisine": "Garder l'ordre d'arrêt jusqu'à l'arrivée du commis",
+          "expert": "Cline conserve Stop avant la création du run"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Cancellation state is bounded to the intended turn instead of leaking into the next prompt. A separate resume correction narrows an overbroad duplicate-start guard that prevented legitimate continuation.",
+            "kitchen": "The previous stop note is cleared before the next request so a new dish does not inherit it. The delivery also restores a legitimate return to work that an overbroad rule against duplicate starts had blocked."
+          },
+          "fr": {
+            "cuisine": "Le billet d'arrêt de l'ancien travail est retiré avant la prochaine demande, pour ne pas bloquer un autre plat. La même livraison rend aussi possible une vraie reprise qu'une consigne contre les doubles départs interdisait trop largement.",
+            "expert": "L'ancien abort inter-tours est effacé pour ne pas annuler le prochain prompt. La release rétablit également resume après un garde duplicate-start trop large : reprise légitime et double démarrage ne sont pas interchangeables."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Do not let the old stop slip cancel the next order"
+        },
+        "fr": {
+          "cuisine": "L'ancien arrêt ne doit pas suivre la commande suivante",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep the claim at the announced SDK/client cancellation boundary. Independent reproduction, descendant termination, complete Hub-path coverage and rollback of committed effects are not established.",
+            "kitchen": "The September 30 notes announce the repair, without a trial by us. They do not show every helper stopping through every entrance, and they cannot establish that dishes already served were taken back."
+          },
+          "fr": {
+            "cuisine": "Les notes du 30 septembre annoncent la correction ; nous ne l'avons pas essayée. Elles ne prouvent ni l'arrêt de tous les aides ou de toutes les entrées de la maison, ni le retour des plats déjà servis.",
+            "expert": "Correction annoncée le 30 septembre, non reproduite. Aucune preuve d'arrêt de tous les descendants, de couverture de tous les chemins Hub ou d'annulation des effets déjà commis ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Reaching the right station does not prove every helper stopped"
+        },
+        "fr": {
+          "cuisine": "Un arrêt livré au bon poste n'arrête pas forcément toute la brigade",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "stop-must-survive-until-its-run-exists",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:26:00.698318+00:00"
+}

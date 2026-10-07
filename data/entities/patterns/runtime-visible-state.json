@@ -18,11 +18,26 @@
     ],
     "patterns": [],
     "dossiers": [
+      "approved-install-revision-and-retry-result-must-stay-bound",
       "archon-installed-skill-drift",
       "background-artifacts-need-terminal-lifecycle",
+      "cron-tool-inventory-repair-preserves-explicit-authority",
+      "displaying-an-agent-terminal-does-not-own-its-process",
+      "extension-discovery-must-match-the-host-capability",
+      "headless-folder-trust-must-preserve-the-resolved-state",
+      "late-send-results-must-respect-the-started-turn-generation",
+      "mcp-app-visibility-filters-the-model-not-server-authority",
+      "one-inference-uses-one-resolved-extension-set",
+      "only-deliverable-completions-should-wake-a-waiter",
       "plugin-init-before-control-load",
+      "portable-skill-profile-needs-offline-load-proof",
       "release-does-not-equal-observed-fix",
-      "runtime-skill-inventory-not-filesystem"
+      "replayed-dispatch-keeps-first-clock-and-final-state",
+      "runtime-skill-inventory-not-filesystem",
+      "settlement-waits-for-observed-background-work",
+      "skill-tool-availability-follows-retained-context",
+      "stop-must-survive-until-its-run-exists",
+      "synthetic-wakeups-must-not-become-human-memory"
     ]
   },
   "slots": [

@@ -18,8 +18,11 @@
       "mission-state"
     ],
     "dossiers": [
+      "cron-tool-inventory-repair-preserves-explicit-authority",
+      "delegated-results-return-to-requester-with-unresolved-delivery-reports",
       "delivery-finished-user-got-nothing",
-      "memory-kept-history-lost-mission"
+      "memory-kept-history-lost-mission",
+      "restart-recovery-rechecks-live-authority-and-revocation"
     ]
   },
   "slots": [

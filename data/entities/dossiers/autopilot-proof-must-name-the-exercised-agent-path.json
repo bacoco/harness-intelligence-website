@@ -1,0 +1,103 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:autopilot-proof-must-name-the-exercised-agent-path",
+  "relationships": {
+    "dossiers": [
+      "green-test-wrong-seam",
+      "agent-claims-need-evidence-labels"
+    ],
+    "patterns": [
+      "evidence-boundary",
+      "verification",
+      "installed-vs-source"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/autopilot-proof-must-name-the-exercised-agent-path/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The release identifies separate npm and marketplace-plugin delivery tracks. Console 0.34's approved scope envelope describes the offered control boundary, not an end-to-end proof of every deployed agent path.",
+            "kitchen": "The October 6 notice separates a new catalogue label from the equipment actually changed at working stations. Its control desk offers continued cooking within agreed limits, with narrower evidence than a complete service trial."
+          },
+          "fr": {
+            "cuisine": "L'annonce du 6 octobre sépare le nouveau numéro du catalogue des nouveaux équipements réellement livrés aux postes. Le pupitre propose de laisser la brigade avancer dans des limites approuvées ; cela ne prouve pas encore tout le service.",
+            "expert": "Ruflo 3.53.0 distingue mise à jour de version/catalogue npm et changements de plugins marketplace. Console 0.34 ajoute contrôle et autopilot sous enveloppe approuvée, sans valider pour autant tous les chemins déployés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Ruflo separates its npm train from marketplace plugin changes",
+          "kitchen": "A delivery label does not say which kitchen stations changed"
+        },
+        "fr": {
+          "cuisine": "Une nouvelle livraison ne change pas tous les postes",
+          "expert": "Ruflo distingue train npm et plugins de contrôle"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Background Agent-tool checks cannot establish control over workflow-internal agents. Live SendMessage delivery and permission-dialog behavior remain unverified rather than implicitly covered by the control tests.",
+            "kitchen": "The reported checks cover helpers sent to separate stations, not the cooks working inside a larger recipe. Carrying messages and obtaining permission still lack trials during an actual service."
+          },
+          "fr": {
+            "cuisine": "Les contrôles ont été éprouvés sur des commis envoyés travailler à part, pas sur ceux cachés dans une longue recette. Porter les messages et demander les accords reste à essayer pendant le vrai service.",
+            "expert": "La preuve de contrôle porte sur les agents background Agent-tool, pas sur les agents internes des workflows. Delivery SendMessage et permission dialogs ne sont pas vérifiés en live ; ces limites doivent suivre toute affirmation de contrôle."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Trying the separately assigned helpers does not test every brigade"
+        },
+        "fr": {
+          "cuisine": "Les essais de quelques commis ne couvrent pas toute la brigade",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "No local execution or interactive autopilot proof is available. The live-session dependency and parallel-test timeouts limit the evidence for operation beyond the exercised agent path.",
+            "kitchen": "No interactive rehearsal has exercised the self-running service, which still needs its control desk kept open. The 216-test report includes parallel timeouts; we did not install or try the equipment."
+          },
+          "fr": {
+            "cuisine": "Aucun service autonome n'a été essayé avec le chef présent ; son poste doit rester ouvert pour que le travail continue. Le relevé de 216 essais cite des dépassements de délai en parallèle, et nous n'avons ni installé ni essayé l'équipement.",
+            "expert": "Autopilot sans test interactif, dépendant de la session/loop vivante. Le compte rendu de 216 tests comporte des timeouts parallèles ; aucune installation ou reproduction ici. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The self-running service has not had its live rehearsal"
+        },
+        "fr": {
+          "cuisine": "Le service autonome attend encore son essai en salle",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "autopilot-proof-must-name-the-exercised-agent-path",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:54:34.618170+00:00"
+}

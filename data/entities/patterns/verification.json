@@ -15,9 +15,19 @@
     "patterns": [],
     "dossiers": [
       "agent-claims-need-evidence-labels",
-      "health-verdict-must-preserve-status-and-coverage",
+      "ambiguous-report-must-preserve-previous-evaluation",
+      "autopilot-proof-must-name-the-exercised-agent-path",
+      "completion-schema-must-not-default-an-absent-verdict-to-success",
+      "detector-verdicts-need-the-context-actually-seen",
+      "evaluation-diagnostics-must-not-rewrite-the-verdict",
       "existing-first-admission-landed",
-      "mechanical-rules-belong-in-deterministic-checks"
+      "failed-security-review-must-stay-retryable",
+      "health-verdict-must-preserve-status-and-coverage",
+      "mechanical-rules-belong-in-deterministic-checks",
+      "media-presence-is-not-behavioral-proof",
+      "portable-skill-profile-needs-offline-load-proof",
+      "skill-admission-checks-completeness-and-received-bytes",
+      "workflow-egress-controls-have-bounded-coverage"
     ]
   },
   "slots": [

@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:memory-mutations-bind-project-continuation-and-storage-generation",
+  "relationships": {
+    "dossiers": [
+      "session-scope-lock-became-global-state"
+    ],
+    "patterns": [
+      "ownership",
+      "checkpoint",
+      "stale-control"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/memory-mutations-bind-project-continuation-and-storage-generation/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The releases describe three distinct invariants: mutation target agreement, valid session continuation and database-generation lifecycle. They establish published claims, not end-to-end verification of every integration. Neither release's scope should be borrowed to fill the other's gaps.",
+            "kitchen": "A cook changing an old note must name the intended kitchen. Resuming a closed service needs a continuation rather than reopening its finished book. Two published versions describe these controls and stopping an unusable station; no independent service trial supports this account."
+          },
+          "fr": {
+            "cuisine": "Le commis veut corriger une note : il doit d'abord nommer la cuisine attendue. Reprendre un service fermé demande une suite distincte, pas de rouvrir l'ancien cahier. Deux annonces décrivent ces règles et l'arrêt d'un poste devenu inutilisable. Nous ne les avons pas essayées.",
+            "expert": "Engram v3 exige expected_project pour les updates/deletes d'observations HTTP/MCP et documente une continuation atomique des sessions terminées. v3.1 annonce l'arrêt borné du serveur après invalidation permanente de génération de base. Les notes sont lues, sans reproduction des comportements."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Engram separates project assertions, session continuation and storage validity",
+          "kitchen": "Check whose notebook and which service before changing the record"
+        },
+        "fr": {
+          "cuisine": "Avant de corriger le carnet, vérifier la bonne cuisine et le bon service",
+          "expert": "Engram documente des contrôles distincts de mutation et de reprise"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Target comparison and access control answer different questions. Session-linked writes additionally depend on confirmed hook identity. A skipped or expired hook, or a manual MCP save, is outside that session guard and must not be described as covered by it.",
+            "kitchen": "A name on the request can catch a wrong destination without proving who holds the keys. The announced rejection leaves both the note and its change record untouched. A resumed job obtains its continuation while the completed service keeps its closed status."
+          },
+          "fr": {
+            "cuisine": "Le nom attendu aide à éviter de corriger la mauvaise note. Il ne prouve pas que le commis est autorisé à entrer dans cette maison. La règle annonce qu'un refus laisse note et registre inchangés. Pour reprendre, une nouvelle suite est créée ou retrouvée sans rouvrir le service terminé.",
+            "expert": "expected_project est une assertion du client, sans authentification ou isolation de tenant. Le rejet annoncé laisse observation, révision et queue de sync inchangées. La continuation est créée ou réutilisée atomiquement ; la session terminée ne redevient pas ouverte."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Naming the kitchen is not proof that you may enter it"
+        },
+        "fr": {
+          "cuisine": "Dire le nom de la maison ne prouve pas qu'on en a la clé",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The v3.1 shutdown claim avoids retaining an unusable listener after permanent invalidation; it does not prove every client can resume an ended session. Its paginated topic_key history is non-retroactive. All guidance remains research_only, with no independent runtime validation or blanket tenant-isolation claim.",
+            "kitchen": "Some omitted or expired checks and handwritten additions sit outside the stated guard. A station already running does not receive the repair merely because a new core is published. The helper's package has its own version, and reported resume problems remain unresolved."
+          },
+          "fr": {
+            "cuisine": "Certains contrôles sautés ou expirés et les notes ajoutées à la main échappent à cette garde. Un poste déjà ouvert ne reçoit pas la réparation tout seul. Le paquet de l'aide suit aussi sa propre version, et des reprises restent signalées en panne. Les annonces ne prouvent donc pas une reprise réussie partout.",
+            "expert": "La garde ne couvre pas les hooks ignorés/expirés ni les sauvegardes MCP manuelles. Le core et le paquet Pi, resté à 0.2.0, ont des canaux distincts ; les anciens processus ne reçoivent pas le correctif. Les incidents de reprise cités restent ouverts, sans revendication de résolution par v3.1."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The updated core does not update every running station"
+        },
+        "fr": {
+          "cuisine": "Une réparation au bureau ne répare pas le poste déjà ouvert",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "memory-mutations-bind-project-continuation-and-storage-generation",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:06:37.030517+00:00"
+}

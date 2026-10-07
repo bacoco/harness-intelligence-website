@@ -15,6 +15,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "completion-schema-must-not-default-an-absent-verdict-to-success",
       "tool-results-need-execution-receipts"
     ]
   },

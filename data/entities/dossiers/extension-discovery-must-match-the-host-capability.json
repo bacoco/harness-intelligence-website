@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:extension-discovery-must-match-the-host-capability",
+  "relationships": {
+    "dossiers": [
+      "runtime-skill-inventory-not-filesystem"
+    ],
+    "patterns": [
+      "discovery",
+      "runtime-visible-state",
+      "mcp"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/extension-discovery-must-match-the-host-capability/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified merge enables extension-provider discovery specifically for VS Code. Cursor and unverified forks are excluded because filesystem similarity does not establish host registration semantics. This is a bounded static-scan change, not live inventory evidence.",
+            "kitchen": "Two kitchens may keep the same utensil card while only one knows how to put those utensils into service. The accepted discovery change respects that difference. We inspected selected parts, without testing the counter or establishing its release delivery."
+          },
+          "fr": {
+            "cuisine": "Deux cuisines gardent la même fiche d'ustensiles. L'une sait les mettre à disposition ; l'autre ne suit pas forcément cette fiche. Le nouveau comptage tient compte de cette différence. Son changement est accepté, sans essai ni livraison établis ici.",
+            "expert": "Agent Scan fusionne une découverte statique de providers MCP d'extensions VS Code. Elle est désactivée pour Cursor et les forks non vérifiés, dont les fichiers peuvent exister sans capacité runtime d'enregistrement. Les patches ciblés sont lus, sans tests exécutés ni release porteuse établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Agent Scan gates extension discovery on host capability",
+          "kitchen": "Matching recipe cards do not prove matching working stations"
+        },
+        "fr": {
+          "cuisine": "La même fiche ne met pas le même ustensile en service partout",
+          "expert": "Agent Scan adapte la découverte MCP au host vérifié"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Static extraction and host-capability gating answer different questions: what the source declares, and whether that host supports the registration path. Neither alone observes actual registration. Unknown dynamic values remain a coverage limit rather than evidence of absence.",
+            "kitchen": "The counter reads the stored lists and written preparation instructions. It does not stand at the working station and watch what is actually made available. Choices made only during service can escape it, so its gaps must remain visible."
+          },
+          "fr": {
+            "cuisine": "Le comptage lit les listes et les indications rangées avec les ustensiles. Il ne regarde pas directement le service en cours. Certaines indications ne prennent forme qu'au travail et peuvent lui échapper. Ce qui manque reste inconnu, pas automatiquement absent.",
+            "expert": "Le scan lit les déclarations des manifests puis extrait les constructeurs MCP du JavaScript installé. Cette analyse best-effort n'exécute pas le runtime. Des définitions ou valeurs dynamiques peuvent manquer ; le résultat ne doit pas être promu en catalogue actif exhaustif."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Reading the cards cannot reveal every utensil chosen during service"
+        },
+        "fr": {
+          "cuisine": "Compter ce qui est écrit ne montre pas tout ce qui travaille",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The established state is merged source with targeted review. Coverage, parser completeness and release adoption remain unvalidated here. Retain host-specific interpretation and distinguish absent, unsupported and statically unresolved capabilities.",
+            "kitchen": "The inspected change names which kitchen is covered and which look-alike kitchens are not. We did not audit the entire counting method or run its checks. Keep that scope attached to every conclusion instead of calling the list complete."
+          },
+          "fr": {
+            "cuisine": "Nous avons lu le choix des cuisines couvertes et les principaux passages du comptage, sans tout examiner. Les essais n'ont pas été faits ici. La leçon est de nommer ce qu'on sait compter et de ne pas inventer le reste du service.",
+            "expert": "La vérification couvre les métadonnées, le branchement et la politique de scan, pas le parser complet. Tests et introspection runtime ne sont pas exécutés, et la distribution n'est pas démontrée. La recommandation research_only conserve les exclusions par host et les limites de l'analyse statique."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "An explicit limit is better than an invented complete inventory"
+        },
+        "fr": {
+          "cuisine": "Le comptage a des limites annoncées, pas une vue complète",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "extension-discovery-must-match-the-host-capability",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:31:31.706672+00:00"
+}

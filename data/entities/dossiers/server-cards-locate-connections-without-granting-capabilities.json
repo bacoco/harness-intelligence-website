@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:server-cards-locate-connections-without-granting-capabilities",
+  "relationships": {
+    "dossiers": [
+      "mcp-common-protocol-local-policy"
+    ],
+    "patterns": [
+      "mcp",
+      "discovery",
+      "trust-boundary"
+    ],
+    "projects": [
+      "MCP ecosystem"
+    ]
+  },
+  "route": "/dossiers/server-cards-locate-connections-without-granting-capabilities/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The finalized Server Cards charter is about out-of-band connection metadata. It does not turn a catalog entry into a runtime capability inventory or authorization decision. Evidence establishes the document's status, not deployed behavior.",
+            "kitchen": "The cook finds a supplier on an address card. Reaching that door does not establish which utensils the cook may receive there. The accepted charter keeps location and actual access separate; we reviewed the rule rather than trying a working installation."
+          },
+          "fr": {
+            "cuisine": "Le chef trouve l'adresse d'un fournisseur dans un carnet. Cette fiche ne dit pas tout ce qu'il pourra obtenir une fois arrivé. Une règle désormais acceptée garde ces deux questions séparées. Nous avons lu le texte, sans essayer les cuisines qui pourraient l'appliquer.",
+            "expert": "La charte MCP Server Cards devient Final et définit des métadonnées de connexion hors bande dans une extension optionnelle. Les primitives et capacités ne sont pas annoncées statiquement par la carte. Le texte et sa fusion sont vérifiés, sans inspection du schéma ni test d'implémentation."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "MCP Server Cards separate connection discovery from runtime authority",
+          "kitchen": "A supplier's address card is not a key to the storeroom"
+        },
+        "fr": {
+          "cuisine": "L'adresse du fournisseur ne donne pas les clés de sa réserve",
+          "expert": "MCP finalise la charte de découverte Server Cards"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Connection discovery precedes identity-dependent capability validation. Catalog linkage does not bypass negotiation or establish trust in the discovered server. Static metadata must not override live discovery values merely because the charter is marked Final.",
+            "kitchen": "Two cooks can arrive with the same address yet receive different permitted supplies. The current answer at the counter matters more than an old note when they disagree. Finding the supplier is the first step, not a settled list of what can be taken."
+          },
+          "fr": {
+            "cuisine": "Ce que le fournisseur remet dépend de la personne qui se présente et de l'accord trouvé sur place. Si le vieux carnet contredit sa réponse actuelle, la réponse actuelle compte. La fiche aide donc à trouver la porte, pas à décider seul ce qu'on emportera.",
+            "expert": "Outils, ressources, prompts, capacités négociées et extensions restent hors de l'annonce statique. Leur disponibilité dépend de l'identité et de la négociation ; server/discover live fait autorité en cas de désaccord. Un AI Catalog peut référencer les cartes sans remplacer cette vérification."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "What the supplier says now can differ from the old card"
+        },
+        "fr": {
+          "cuisine": "Demander sur place ce qui est réellement accessible",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep charter finalization, normative-format evolution and actual implementation as separate evidence states. This review verifies only the first through primary text and merge status. Neither universal compatibility nor automatic deployment authority follows.",
+            "kitchen": "The precise card format has its own versioned notebook, separate from the accepted charter. That format and the early implementations were not checked here. Nothing proves universal use or a safe supplier, and the card grants no permission to install anything."
+          },
+          "fr": {
+            "cuisine": "Le dessin détaillé des fiches continue d'évoluer dans un autre cahier daté. Nous ne l'avons pas examiné ni essayé les premières versions. La règle acceptée ne prouve pas que tous les fournisseurs l'utilisent ou soient sûrs. Elle ne donne aucun accord pour installer quoi que ce soit.",
+            "expert": "La charte historique renvoie au dépôt d'extension pour le format normatif versionné. Ce schéma et les implémentations expérimentales n'ont pas été inspectés ou testés. Final n'établit ni adoption universelle ni sécurité d'un serveur ; la guidance reste research_only, sans autorisation d'activation automatique."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "An accepted card design does not certify every supplier"
+        },
+        "fr": {
+          "cuisine": "La règle est acceptée, pas toutes les cuisines certifiées",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "server-cards-locate-connections-without-granting-capabilities",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:01:03.210017+00:00"
+}

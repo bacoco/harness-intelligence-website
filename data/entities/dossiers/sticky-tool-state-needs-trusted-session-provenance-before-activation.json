@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-03",
+  "id": "dossier:sticky-tool-state-needs-trusted-session-provenance-before-activation",
+  "relationships": {
+    "dossiers": [
+      "multiuser-connection-ownership"
+    ],
+    "patterns": [
+      "ownership",
+      "state-isolation",
+      "runtime-identity"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/sticky-tool-state-needs-trusted-session-provenance-before-activation/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged work establishes storage and trusted-identity contracts for sticky tool sets. It does not activate live selection; there is no attached dataplane manager and the feature remains disabled by default.",
+            "kitchen": "The house prepares a notebook that can keep one service's utensils separate from another's. The foundation is accepted, but the working service has not been connected to use it."
+          },
+          "fr": {
+            "cuisine": "La maison prépare un carnet pour retrouver les ustensiles d'un même service sans les mélanger avec ceux d'un autre. Ce travail est accepté, mais personne n'a encore branché son usage dans le service courant.",
+            "expert": "La phase 1 du sticky tool-set est fusionnée : modèle d'état, stockage local concurrent et résolution d'identité fiable. Aucun manager n'est attaché au dataplane et le défaut reste désactivé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Semantic Router lands tool-set state foundations without live selection",
+          "kitchen": "Prepare the utensil notebook before putting it into service"
+        },
+        "fr": {
+          "cuisine": "Préparer le carnet des ustensiles avant de l'utiliser au service",
+          "expert": "Semantic Router fusionne la fondation du sticky tool-set"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Data minimization excludes raw tool schemas and prompts. Trusted session provenance, rather than heuristic message hashing, anchors catalog and policy fingerprints in the bounded local store.",
+            "kitchen": "The notebook stores a small list with checking marks and times, bounded in size and lifetime. Its owner must come from a trusted service record, not a guess made from the wording of an order."
+          },
+          "fr": {
+            "cuisine": "Le carnet garde des noms, des marques de contrôle et des heures, avec une limite de place et de durée. Il exige une origine fiable du service au lieu de deviner son propriétaire d'après les mots échangés.",
+            "expert": "L'état garde noms, fingerprints de catalogue/politique et temps sous quotas et TTL, sans schémas ni prompts bruts. L'identité opaque HMAC vient d'une provenance explicite et authentifiée ; les identités heuristiques sont refusées."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Know which service owns the list without copying every conversation"
+        },
+        "fr": {
+          "cuisine": "Nommer le bon service sans recopier toute la conversation",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not infer deployed sticky selection from merged state contracts. The Redis backend and runtime integration remain separate work, and the intended prompt-prefix stability is not an observed operational result.",
+            "kitchen": "The described checks concern the prepared notebook, not a full meal using it. Remote storage and end-to-end integration remain unestablished, with no measured live stability or isolation benefit here."
+          },
+          "fr": {
+            "cuisine": "Les essais décrits concernent seulement ce carnet préparatoire. Le rangement à distance et l'usage complet restent à établir ; ni un service plus stable ni une meilleure séparation ne sont mesurés ici.",
+            "expert": "Les tests décrits portent sur la fondation, pas sur une sélection live qualifiée. Redis et intégration de bout en bout restent distincts et non établis ; les bénéfices de stabilité des préfixes et d'isolation ne sont pas mesurés ici. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The foundation is not an end-to-end service result"
+        },
+        "fr": {
+          "cuisine": "La fondation n'a pas encore servi un repas complet",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "sticky-tool-state-needs-trusted-session-provenance-before-activation",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:32:20.284257+00:00"
+}

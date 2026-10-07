@@ -2,6 +2,742 @@
   "schema": "argh/public-activity/v1",
   "events": [
     {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/a-lease-check-does-not-fence-the-later-write.json",
+      "kind": "new",
+      "entity_path": "dossiers/a-lease-check-does-not-fence-the-later-write.json",
+      "entity_hash": "517599ffa318197b68528b6ba0a92c19177b155f",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/a-poll-token-is-not-proof-that-tool-effects-are-uncommitted.json",
+      "kind": "new",
+      "entity_path": "dossiers/a-poll-token-is-not-proof-that-tool-effects-are-uncommitted.json",
+      "entity_hash": "cb2da8868eb1a4987a922c0cb737e9d434d34142",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/a2a-cli-exposes-a-scriptable-task-test-surface.json",
+      "kind": "new",
+      "entity_path": "dossiers/a2a-cli-exposes-a-scriptable-task-test-surface.json",
+      "entity_hash": "c6e1657149d26d0eec750b011089c0d01414129d",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/ambiguous-report-must-preserve-previous-evaluation.json",
+      "kind": "new",
+      "entity_path": "dossiers/ambiguous-report-must-preserve-previous-evaluation.json",
+      "entity_hash": "05831050ea2e8bfa1783037345f5aa9bb7e03e31",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/an-empty-tool-allowlist-is-not-an-unset-restriction.json",
+      "kind": "new",
+      "entity_path": "dossiers/an-empty-tool-allowlist-is-not-an-unset-restriction.json",
+      "entity_hash": "fcd9be32fc686962816803155f7fd8c288a49799",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/append-only-history-should-append-differences-not-the-entire-past.json",
+      "kind": "new",
+      "entity_path": "dossiers/append-only-history-should-append-differences-not-the-entire-past.json",
+      "entity_hash": "94f1408b3593e07485f856f9cbf9ea5ac8f86ad3",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/approval-resume-settles-deferred-history-even-without-new-output.json",
+      "kind": "new",
+      "entity_path": "dossiers/approval-resume-settles-deferred-history-even-without-new-output.json",
+      "entity_hash": "40ecfcdf02c8b2814edac3ed3eaaf2be9768fda0",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/approved-install-revision-and-retry-result-must-stay-bound.json",
+      "kind": "new",
+      "entity_path": "dossiers/approved-install-revision-and-retry-result-must-stay-bound.json",
+      "entity_hash": "6e10cb8d9853025eec08da28dfdfa6338ab61abc",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/atomic-snapshot-replacement-can-still-lose-other-writers.json",
+      "kind": "new",
+      "entity_path": "dossiers/atomic-snapshot-replacement-can-still-lose-other-writers.json",
+      "entity_hash": "845caaaed4be346ae24e23e343796d0d0649e159",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/auth-errors-must-survive-cleanup-and-cache-fallbacks.json",
+      "kind": "new",
+      "entity_path": "dossiers/auth-errors-must-survive-cleanup-and-cache-fallbacks.json",
+      "entity_hash": "0507c1e0dc985c9fb1688a453f7ef074a28fe5eb",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/automation-migration-preserves-work-and-mode-boundaries.json",
+      "kind": "new",
+      "entity_path": "dossiers/automation-migration-preserves-work-and-mode-boundaries.json",
+      "entity_hash": "6cd707056e74dafda5e846fcfadce1fb04c3a51c",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/autopilot-proof-must-name-the-exercised-agent-path.json",
+      "kind": "new",
+      "entity_path": "dossiers/autopilot-proof-must-name-the-exercised-agent-path.json",
+      "entity_hash": "bd4728c7599225fd8065e0f45c7652927288166b",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/background-completion-must-own-the-current-task-instance.json",
+      "kind": "new",
+      "entity_path": "dossiers/background-completion-must-own-the-current-task-instance.json",
+      "entity_hash": "7d3b5f600f09f4ad87e72380f96ba91742d521d2",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/background-work-keeps-its-originating-turn-permissions.json",
+      "kind": "new",
+      "entity_path": "dossiers/background-work-keeps-its-originating-turn-permissions.json",
+      "entity_hash": "1c7bcfd6cf9af9da331a55e7264cead5499e17c4",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/bounded-tool-preview-needs-a-scoped-retrieval-contract.json",
+      "kind": "new",
+      "entity_path": "dossiers/bounded-tool-preview-needs-a-scoped-retrieval-contract.json",
+      "entity_hash": "1a4e19f2224443b9523cde2514e28f8f99c50c5c",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/browser-driver-preserves-attachment-and-cleanup-ownership.json",
+      "kind": "new",
+      "entity_path": "dossiers/browser-driver-preserves-attachment-and-cleanup-ownership.json",
+      "entity_hash": "cfcc7e93797878854d25f337120603787f61db1e",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/budget-cancellation-allows-explicit-resume-not-automatic-retry.json",
+      "kind": "new",
+      "entity_path": "dossiers/budget-cancellation-allows-explicit-resume-not-automatic-retry.json",
+      "entity_hash": "5c80bf87c1a02201db630404948082cb792b908f",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/caller-cancellation-must-not-discard-an-engaged-token-rotation.json",
+      "kind": "new",
+      "entity_path": "dossiers/caller-cancellation-must-not-discard-an-engaged-token-rotation.json",
+      "entity_hash": "dfff6065af803dfe67fcf48f523d59c1a2f54123",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/checkpoint-provenance-and-image-retry-boundaries.json",
+      "kind": "new",
+      "entity_path": "dossiers/checkpoint-provenance-and-image-retry-boundaries.json",
+      "entity_hash": "15784d482cc0c7113dd067a1f8eb2b2eb0e4ab86",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/child-environment-needs-explicit-minimal-inheritance.json",
+      "kind": "new",
+      "entity_path": "dossiers/child-environment-needs-explicit-minimal-inheritance.json",
+      "entity_hash": "a3356567d841f3f8f9ce5d9cc7d76672ddec0712",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/cli-auth-probes-share-the-filtered-environment.json",
+      "kind": "new",
+      "entity_path": "dossiers/cli-auth-probes-share-the-filtered-environment.json",
+      "entity_hash": "8a18e84b6157d44c7abb5d8a178a22d5d3d64b62",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/command-rewriting-must-preserve-host-permission-verdict.json",
+      "kind": "new",
+      "entity_path": "dossiers/command-rewriting-must-preserve-host-permission-verdict.json",
+      "entity_hash": "513a468bc8bfa5f21c2c2794531788b83b2275a8",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/competing-session-writers-need-distinct-descendant-identities.json",
+      "kind": "new",
+      "entity_path": "dossiers/competing-session-writers-need-distinct-descendant-identities.json",
+      "entity_hash": "f8edb121d0f41ca688a5759c7d1d35fb4d8f8036",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/completion-schema-must-not-default-an-absent-verdict-to-success.json",
+      "kind": "new",
+      "entity_path": "dossiers/completion-schema-must-not-default-an-absent-verdict-to-success.json",
+      "entity_hash": "3e88016eb458784a66cecad9a6d4b4e66705729f",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/concurrent-approval-gates-stay-unfinished-until-admitted.json",
+      "kind": "new",
+      "entity_path": "dossiers/concurrent-approval-gates-stay-unfinished-until-admitted.json",
+      "entity_hash": "5860b556fc953e2e77d640b99a5710949fa34431",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/control-policy-must-survive-reload-and-async-waits.json",
+      "kind": "new",
+      "entity_path": "dossiers/control-policy-must-survive-reload-and-async-waits.json",
+      "entity_hash": "1fffc6c3908d1da8bd700b6804ab3f5fb437b0cb",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/cron-tool-inventory-repair-preserves-explicit-authority.json",
+      "kind": "new",
+      "entity_path": "dossiers/cron-tool-inventory-repair-preserves-explicit-authority.json",
+      "entity_hash": "87d4c2b30fad01970a158496d96fd21f94038527",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/delegated-results-return-to-requester-with-unresolved-delivery-reports.json",
+      "kind": "new",
+      "entity_path": "dossiers/delegated-results-return-to-requester-with-unresolved-delivery-reports.json",
+      "entity_hash": "79986e5a4ee2eaf7f7ef930d4aeac433411cc250",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/derived-context-cache-keeps-a-single-owner-contract.json",
+      "kind": "new",
+      "entity_path": "dossiers/derived-context-cache-keeps-a-single-owner-contract.json",
+      "entity_hash": "8c420b4da8f9f1a63f4c7f0e95ee68f42cf18ca2",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/detector-verdicts-need-the-context-actually-seen.json",
+      "kind": "new",
+      "entity_path": "dossiers/detector-verdicts-need-the-context-actually-seen.json",
+      "entity_hash": "913d3e396bab74e0af43a5c60b3212c212097f2d",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/displaying-an-agent-terminal-does-not-own-its-process.json",
+      "kind": "new",
+      "entity_path": "dossiers/displaying-an-agent-terminal-does-not-own-its-process.json",
+      "entity_hash": "1b4f684053d81b2e12c183802ad2deeacb2ca8d1",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/durable-forks-reuse-recorded-effects-not-new-run-keys.json",
+      "kind": "new",
+      "entity_path": "dossiers/durable-forks-reuse-recorded-effects-not-new-run-keys.json",
+      "entity_hash": "de573f91d5aec9851fd3b3dd1474455b9fdadf86",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/empty-tool-policy-must-survive-cron-roundtrips.json",
+      "kind": "new",
+      "entity_path": "dossiers/empty-tool-policy-must-survive-cron-roundtrips.json",
+      "entity_hash": "cc65cd72076ba9b2c4375a7092cc842f7254aedb",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/evaluation-diagnostics-must-not-rewrite-the-verdict.json",
+      "kind": "new",
+      "entity_path": "dossiers/evaluation-diagnostics-must-not-rewrite-the-verdict.json",
+      "entity_hash": "3a433a59442eded1ae21c3cc42473abce26e44fa",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/evaluation-fallback-must-respect-delegation-authority.json",
+      "kind": "new",
+      "entity_path": "dossiers/evaluation-fallback-must-respect-delegation-authority.json",
+      "entity_hash": "2034d7fa67439eac2a3b0fddd14135b14467536f",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/explicit-resume-must-find-the-requested-session.json",
+      "kind": "new",
+      "entity_path": "dossiers/explicit-resume-must-find-the-requested-session.json",
+      "entity_hash": "b0af0699e48caff9e5a87d30c1efc373c5615a55",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/extension-discovery-must-match-the-host-capability.json",
+      "kind": "new",
+      "entity_path": "dossiers/extension-discovery-must-match-the-host-capability.json",
+      "entity_hash": "e491460f3edf1ae727fe8f5c873d289f57e84a54",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/external-directory-defaults-can-expand-existing-tool-authority.json",
+      "kind": "new",
+      "entity_path": "dossiers/external-directory-defaults-can-expand-existing-tool-authority.json",
+      "entity_hash": "5b259bee4851ab39678d070988dc571a2bdd8511",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/failed-security-review-must-stay-retryable.json",
+      "kind": "new",
+      "entity_path": "dossiers/failed-security-review-must-stay-retryable.json",
+      "entity_hash": "32d1be3ce4119fa33645d51cfff5312965be0084",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/file-edit-lock-and-atomic-replacement-protect-different-boundaries.json",
+      "kind": "new",
+      "entity_path": "dossiers/file-edit-lock-and-atomic-replacement-protect-different-boundaries.json",
+      "entity_hash": "a40b2580c598d77af36176f47bf35e6d77e4ba6e",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/guard-policy-defaults-off-with-explicit-retained-controls.json",
+      "kind": "new",
+      "entity_path": "dossiers/guard-policy-defaults-off-with-explicit-retained-controls.json",
+      "entity_hash": "82605ddb4abcb852a9d37d3c262897edb6004c03",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/handoff-text-must-not-be-reparsed-as-shell-code.json",
+      "kind": "new",
+      "entity_path": "dossiers/handoff-text-must-not-be-reparsed-as-shell-code.json",
+      "entity_hash": "8940d4b48d02fece51478ec1b060ec47a9984ef9",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/headless-folder-trust-must-preserve-the-resolved-state.json",
+      "kind": "new",
+      "entity_path": "dossiers/headless-folder-trust-must-preserve-the-resolved-state.json",
+      "entity_hash": "8efc081a018536b00d1a5ae80228522166a09aca",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/hook-denial-must-reach-the-host-as-a-denial.json",
+      "kind": "new",
+      "entity_path": "dossiers/hook-denial-must-reach-the-host-as-a-denial.json",
+      "entity_hash": "b0b2d15691a651eff368b1b0fce3b3bc08484b2e",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/interrupted-call-history-can-close-without-replaying-the-effect.json",
+      "kind": "new",
+      "entity_path": "dossiers/interrupted-call-history-can-close-without-replaying-the-effect.json",
+      "entity_hash": "d68eceb96f3f854fcb4cb7aafb7d0da6b1eaaee2",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/late-send-results-must-respect-the-started-turn-generation.json",
+      "kind": "new",
+      "entity_path": "dossiers/late-send-results-must-respect-the-started-turn-generation.json",
+      "entity_hash": "88d957dbbe0846ff51464a561d4015523c8f2b33",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/later-action-score-must-not-release-an-earlier-pending-review.json",
+      "kind": "new",
+      "entity_path": "dossiers/later-action-score-must-not-release-an-earlier-pending-review.json",
+      "entity_hash": "3072f06d573e00df6805ab042dad4c22870c0404",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/local-checkpoint-writes-require-current-ownership.json",
+      "kind": "new",
+      "entity_path": "dossiers/local-checkpoint-writes-require-current-ownership.json",
+      "entity_hash": "d69be8f6ef199e0796487d99a117c871d62f53da",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/mcp-app-visibility-filters-the-model-not-server-authority.json",
+      "kind": "new",
+      "entity_path": "dossiers/mcp-app-visibility-filters-the-model-not-server-authority.json",
+      "entity_hash": "2d377233a9e1ae9dc01d6320463af1eb7e401a46",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/media-presence-is-not-behavioral-proof.json",
+      "kind": "new",
+      "entity_path": "dossiers/media-presence-is-not-behavioral-proof.json",
+      "entity_hash": "40880623bd20aacbb145e45941a4a9c24d400ca5",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/memory-mutations-bind-project-continuation-and-storage-generation.json",
+      "kind": "new",
+      "entity_path": "dossiers/memory-mutations-bind-project-continuation-and-storage-generation.json",
+      "entity_hash": "d6837cee77d3b3df0d193743962cb2c3d4e50c6b",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/one-inference-uses-one-resolved-extension-set.json",
+      "kind": "new",
+      "entity_path": "dossiers/one-inference-uses-one-resolved-extension-set.json",
+      "entity_hash": "01408486eaa22000e603c23d74894ed2d4d159ed",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/only-deliverable-completions-should-wake-a-waiter.json",
+      "kind": "new",
+      "entity_path": "dossiers/only-deliverable-completions-should-wake-a-waiter.json",
+      "entity_hash": "79de88e597fb2cf8b31d748764a73704de77f574",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/outbound-image-serialization-is-not-model-reception-proof.json",
+      "kind": "new",
+      "entity_path": "dossiers/outbound-image-serialization-is-not-model-reception-proof.json",
+      "entity_hash": "334295df1f6cbbe814f632faba2b7e53b33305c0",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/permission-hooks-survive-worker-restart.json",
+      "kind": "new",
+      "entity_path": "dossiers/permission-hooks-survive-worker-restart.json",
+      "entity_hash": "7d15f7514ac5dbcf4505c366690b617719c0dcac",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/plan-approval-survives-compaction-within-the-same-scope.json",
+      "kind": "new",
+      "entity_path": "dossiers/plan-approval-survives-compaction-within-the-same-scope.json",
+      "entity_hash": "c4f97251bad5a0018aeb6ce63c542feb8dd3d1c6",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/plugin-approval-must-bind-the-original-project-path.json",
+      "kind": "new",
+      "entity_path": "dossiers/plugin-approval-must-bind-the-original-project-path.json",
+      "entity_hash": "ea12d0fae56ca3f241fa95aefc70eccfb2cdcef1",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/portable-skill-profile-needs-offline-load-proof.json",
+      "kind": "new",
+      "entity_path": "dossiers/portable-skill-profile-needs-offline-load-proof.json",
+      "entity_hash": "44577015329e6536236d6af7e253ca5fd77d719c",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/protective-tests-need-realistic-limits-and-the-right-failure.json",
+      "kind": "new",
+      "entity_path": "dossiers/protective-tests-need-realistic-limits-and-the-right-failure.json",
+      "entity_hash": "ace21bf183389920bbdcfeb940829502aa23c2dd",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/queued-mail-wake-preserves-the-existing-work-attribution.json",
+      "kind": "new",
+      "entity_path": "dossiers/queued-mail-wake-preserves-the-existing-work-attribution.json",
+      "entity_hash": "f6376f03faf761e588f7ba7c3fdea2451558263a",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/read-only-scanning-does-not-isolate-host-confidentiality.json",
+      "kind": "new",
+      "entity_path": "dossiers/read-only-scanning-does-not-isolate-host-confidentiality.json",
+      "entity_hash": "91bfc57b327683a14c058af48bacee4de70c873a",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/recursion-limits-need-a-harness-owner.json",
+      "kind": "new",
+      "entity_path": "dossiers/recursion-limits-need-a-harness-owner.json",
+      "entity_hash": "9c87438376fb5152fafb6aebd5299e4a3311304c",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/rediscovered-tools-need-policy-before-callable-exposure.json",
+      "kind": "new",
+      "entity_path": "dossiers/rediscovered-tools-need-policy-before-callable-exposure.json",
+      "entity_hash": "9f8841c80ea5e3f2225b39944a112536a52b7770",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/remote-browser-file-navigation-needs-its-own-boundary.json",
+      "kind": "new",
+      "entity_path": "dossiers/remote-browser-file-navigation-needs-its-own-boundary.json",
+      "entity_hash": "319565dedee3b1af2d9046d1d834b4413a8344ce",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/replayed-checkpoints-must-fork-before-writing.json",
+      "kind": "new",
+      "entity_path": "dossiers/replayed-checkpoints-must-fork-before-writing.json",
+      "entity_hash": "a8248c6c22759fa5ebe61a283e0f01c6611b458a",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/replayed-dispatch-keeps-first-clock-and-final-state.json",
+      "kind": "new",
+      "entity_path": "dossiers/replayed-dispatch-keeps-first-clock-and-final-state.json",
+      "entity_hash": "cb95b8888d1e4f0956fed2f627f7e99879bc73b6",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/restart-preserves-pending-work-not-duplicate-effects.json",
+      "kind": "new",
+      "entity_path": "dossiers/restart-preserves-pending-work-not-duplicate-effects.json",
+      "entity_hash": "f23a647a9912c83f8b6a11b58f6f2e18db8de3a1",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/restart-recovery-rechecks-live-authority-and-revocation.json",
+      "kind": "new",
+      "entity_path": "dossiers/restart-recovery-rechecks-live-authority-and-revocation.json",
+      "entity_hash": "080ed5ad0ba83a2815a157b11a95e7fd09bab7d9",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/resumable-child-still-needs-parent-policy.json",
+      "kind": "new",
+      "entity_path": "dossiers/resumable-child-still-needs-parent-policy.json",
+      "entity_hash": "f73d13b5a777da593f0f6eb0097079d642481f1b",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/resume-requires-the-recorded-hook-context.json",
+      "kind": "new",
+      "entity_path": "dossiers/resume-requires-the-recorded-hook-context.json",
+      "entity_hash": "f1381f7463f35d94cf54c59de9d50aae13280f5c",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/resumed-ai-policy-is-pinned-but-credentials-stay-live.json",
+      "kind": "new",
+      "entity_path": "dossiers/resumed-ai-policy-is-pinned-but-credentials-stay-live.json",
+      "entity_hash": "2e83b5c194e7a2fd123dbc3591d07672873b5f2f",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/resumed-teammate-address-needs-current-inbox.json",
+      "kind": "new",
+      "entity_path": "dossiers/resumed-teammate-address-needs-current-inbox.json",
+      "entity_hash": "91774cdf59c58e5381473d58aad60781cc093304",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/resuming-an-unsaved-tool-result-can-repeat-a-committed-effect.json",
+      "kind": "new",
+      "entity_path": "dossiers/resuming-an-unsaved-tool-result-can-repeat-a-committed-effect.json",
+      "entity_hash": "72fa7afe4c797a0e47ad6a7319c17e319e4718a2",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/scheduled-occurrence-does-not-prove-worker-claim.json",
+      "kind": "new",
+      "entity_path": "dossiers/scheduled-occurrence-does-not-prove-worker-claim.json",
+      "entity_hash": "33d34a4c8ab3165c0dcaf9ab728562d6b7ce8148",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/serializable-job-records-do-not-recover-workers.json",
+      "kind": "new",
+      "entity_path": "dossiers/serializable-job-records-do-not-recover-workers.json",
+      "entity_hash": "0ae9614b1e2739c0eb13dd8354f98f606f15142c",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/server-cards-locate-connections-without-granting-capabilities.json",
+      "kind": "new",
+      "entity_path": "dossiers/server-cards-locate-connections-without-granting-capabilities.json",
+      "entity_hash": "e4491ee8fc8c826ff265ae4d6478de2fdab03be3",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/session-correlation-headers-are-not-authority-attestations.json",
+      "kind": "new",
+      "entity_path": "dossiers/session-correlation-headers-are-not-authority-attestations.json",
+      "entity_hash": "f46f2d3b0cea9df77f994bb9b8874fd3dcd6b7bd",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/settlement-waits-for-observed-background-work.json",
+      "kind": "new",
+      "entity_path": "dossiers/settlement-waits-for-observed-background-work.json",
+      "entity_hash": "c61f0afe6d1ca153e72548ab1d424a6fc8291476",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/skill-admission-checks-completeness-and-received-bytes.json",
+      "kind": "new",
+      "entity_path": "dossiers/skill-admission-checks-completeness-and-received-bytes.json",
+      "entity_hash": "46deebdcd052b479bee46d42b323ef42cd71027b",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/skill-tool-availability-follows-retained-context.json",
+      "kind": "new",
+      "entity_path": "dossiers/skill-tool-availability-follows-retained-context.json",
+      "entity_hash": "f7a8e1076b642d7eae52611f3b8717306defa70a",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/sticky-tool-state-needs-trusted-session-provenance-before-activation.json",
+      "kind": "new",
+      "entity_path": "dossiers/sticky-tool-state-needs-trusted-session-provenance-before-activation.json",
+      "entity_hash": "b71652aebc515bbcede04f5a5c6f2813133daa4a",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/stop-must-survive-until-its-run-exists.json",
+      "kind": "new",
+      "entity_path": "dossiers/stop-must-survive-until-its-run-exists.json",
+      "entity_hash": "8e3c7a8911a44f25e45921a419d4cb5a4f8ae907",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/stream-recovery-must-stop-at-the-first-missing-event.json",
+      "kind": "new",
+      "entity_path": "dossiers/stream-recovery-must-stop-at-the-first-missing-event.json",
+      "entity_hash": "258085750c63e0c1e79886fa915f9ab20f1ed18f",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/stream-watchdogs-bound-silence-not-total-runtime.json",
+      "kind": "new",
+      "entity_path": "dossiers/stream-watchdogs-bound-silence-not-total-runtime.json",
+      "entity_hash": "65a77cc3fd5e579346cbf73bd84f38918476d266",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/subagent-briefs-are-not-human-approval-evidence.json",
+      "kind": "new",
+      "entity_path": "dossiers/subagent-briefs-are-not-human-approval-evidence.json",
+      "entity_hash": "db49ef8740d80420e09842efbf87a8a108f57f18",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/synthetic-wakeups-must-not-become-human-memory.json",
+      "kind": "new",
+      "entity_path": "dossiers/synthetic-wakeups-must-not-become-human-memory.json",
+      "entity_hash": "2c1815ff5b46a3456de6d78af5cd1eb533bf8084",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/team-state-needs-durable-deltas-not-stream-snapshots.json",
+      "kind": "new",
+      "entity_path": "dossiers/team-state-needs-durable-deltas-not-stream-snapshots.json",
+      "entity_hash": "7573a722836bd649e00647e59f7125b0e6f3ea7e",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/transcript-access-does-not-grant-worker-resume-ownership.json",
+      "kind": "new",
+      "entity_path": "dossiers/transcript-access-does-not-grant-worker-resume-ownership.json",
+      "entity_hash": "db716f0c10977fbc8b73097f589b414f14b66f7a",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/transcript-consent-is-the-intersection-of-all-roots.json",
+      "kind": "new",
+      "entity_path": "dossiers/transcript-consent-is-the-intersection-of-all-roots.json",
+      "entity_hash": "79b04a24a5afb5ebb6cd2e2aad420c5a672bdfef",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/unsupported-security-options-must-block-connection.json",
+      "kind": "new",
+      "entity_path": "dossiers/unsupported-security-options-must-block-connection.json",
+      "entity_hash": "d52e4f57657adf71a242c6001643d5aecc80dc35",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/wake-startup-must-recheck-reservation-identity-after-preparation.json",
+      "kind": "new",
+      "entity_path": "dossiers/wake-startup-must-recheck-reservation-identity-after-preparation.json",
+      "entity_hash": "8c7e2790af4d50c1233275bb70830bbccc1bd702",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
+      "id": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44:dossiers/workflow-egress-controls-have-bounded-coverage.json",
+      "kind": "new",
+      "entity_path": "dossiers/workflow-egress-controls-have-bounded-coverage.json",
+      "entity_hash": "93d593c4155a9248fbaedcd85e523789f8cb1ee3",
+      "detected_at": "2026-10-07T07:12:08Z",
+      "source_head": "ebfa8967e1d8ea00bab1c6e458da75d0e4df3b44"
+    },
+    {
       "id": "fed83dcc150300f903e8e924bf63d8052bda44f3:dossiers/agent-identity-does-not-prove-independent-authority.json",
       "kind": "new",
       "entity_path": "dossiers/agent-identity-does-not-prove-independent-authority.json",

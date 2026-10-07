@@ -17,10 +17,14 @@
     ],
     "patterns": [],
     "dossiers": [
-      "second-fix-real-boundary",
-      "green-test-wrong-seam",
       "apply-patch-add-overwrite",
-      "heredoc-write-truncation"
+      "cli-auth-probes-share-the-filtered-environment",
+      "green-test-wrong-seam",
+      "heredoc-write-truncation",
+      "outbound-image-serialization-is-not-model-reception-proof",
+      "read-only-scanning-does-not-isolate-host-confidentiality",
+      "second-fix-real-boundary",
+      "stream-watchdogs-bound-silence-not-total-runtime"
     ]
   },
   "slots": [

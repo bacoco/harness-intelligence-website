@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:portable-skill-profile-needs-offline-load-proof",
+  "relationships": {
+    "dossiers": [
+      "runtime-skill-inventory-not-filesystem"
+    ],
+    "patterns": [
+      "installed-vs-source",
+      "runtime-visible-state",
+      "verification"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/portable-skill-profile-needs-offline-load-proof/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The pi/core profile curates 123 skills and 24 commands without extensions, hooks or runtime downloads. Explicit lists and documented exclusions make the build deterministic rather than treating every repository file as portable content.",
+            "kitchen": "The September 30 pack selects 123 recipe cards and 24 calls for using them, without added machinery or deliveries needed during service. Its written selection can be rebuilt identically, with reasons recorded for leaving other cards out."
+          },
+          "fr": {
+            "cuisine": "La livraison du 30 septembre prépare 123 fiches et 24 façons de demander leur usage, sans mécanisme ajouté ni livraison à réclamer pendant le service. Le choix est écrit à l'avance, reconstruit à l'identique et accompagné des raisons d'écarter les autres fiches.",
+            "expert": "ECC 2.2.2 publie pi/core : 123 skills et 24 commandes, sans extension, hook ni téléchargement runtime. Build déterministe sur listes explicites, avec exclusions motivées plutôt qu'une copie indifférenciée de tout le dépôt."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "ECC publishes a skills-and-prompts-only Pi profile",
+          "kitchen": "The smaller recipe pack must actually reach the working station"
+        },
+        "fr": {
+          "cuisine": "Le petit carnet doit vraiment arriver au poste",
+          "expert": "ECC publie un profil Pi limité aux skills et prompts"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Build-time filtering rejects fetch-and-run forms, secrets, private paths, symlinks and duplicate names. Reported CI loads the profile offline in Pi and asserts command registration, testing a boundary that a filesystem inventory cannot establish.",
+            "kitchen": "The pack rejects secret notes, private addresses, pointers to other sheets, duplicate names and instructions to fetch outside work and immediately use it. The reported rehearsal allows no outside deliveries and checks that all 24 calls register at the station."
+          },
+          "fr": {
+            "cuisine": "Le tri refuse secrets, adresses privées, renvois vers d'autres papiers, noms doubles et consignes faisant venir puis agir un fournisseur. L'essai annoncé ferme les livraisons extérieures et vérifie que le poste reconnaît chacune des 24 demandes.",
+            "expert": "Le build refuse fetch-and-run, secrets, chemins privés, symlinks et noms dupliqués. La CI revendique un chargement Pi offline avec assertion d'enregistrement de chaque commande, au-delà de la simple présence des fichiers."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Check which calls the station recognizes with no outside deliveries"
+        },
+        "fr": {
+          "cuisine": "Compter les demandes reconnues sans appeler de fournisseur",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The release is verified, while offline loading remains an upstream claim here. Version 2.2.3 changes npm-availability timing, not profile content; build filtering and reduced runtime dependencies do not certify universal correctness, safety or authorization.",
+            "kitchen": "We read the delivery notes without repeating the rehearsal; the next delivery keeps the contents and changes only the wait for availability. The selection cannot guarantee every recipe in every kitchen or give blanket permission to use it."
+          },
+          "fr": {
+            "cuisine": "Nous avons lu la livraison, sans refaire l'essai ; la suivante garde le contenu et ajuste seulement l'attente avant disponibilité. Le tri ne garantit pas chaque recette dans chaque cuisine, et un carnet léger ne donne pas l'autorisation de tout faire.",
+            "expert": "Chargement CI rapporté, non reproduit ici ; 2.2.3 conserve le contenu et ajuste le délai de disponibilité npm. Filtrage borné, sans preuve générale de correction ou sûreté des skills ni barrière universelle d'autorisation ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Recognizing a recipe card does not guarantee every dish"
+        },
+        "fr": {
+          "cuisine": "Une fiche reconnue n'est pas un plat garanti",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "portable-skill-profile-needs-offline-load-proof",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:12:19.287648+00:00"
+}

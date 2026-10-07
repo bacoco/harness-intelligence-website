@@ -15,9 +15,14 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a2a-cli-exposes-a-scriptable-task-test-surface",
       "apply-patch-add-overwrite",
+      "evaluation-diagnostics-must-not-rewrite-the-verdict",
       "green-test-wrong-seam",
       "mechanical-rules-belong-in-deterministic-checks",
+      "media-presence-is-not-behavioral-proof",
+      "outbound-image-serialization-is-not-model-reception-proof",
+      "protective-tests-need-realistic-limits-and-the-right-failure",
       "shared-contract-prevents-provider-drift"
     ]
   },

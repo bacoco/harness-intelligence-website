@@ -15,8 +15,16 @@
     ],
     "patterns": [],
     "dossiers": [
+      "background-work-keeps-its-originating-turn-permissions",
+      "codex-managed-worktrees",
+      "derived-context-cache-keeps-a-single-owner-contract",
+      "durable-forks-reuse-recorded-effects-not-new-run-keys",
+      "file-edit-lock-and-atomic-replacement-protect-different-boundaries",
       "hook-shared-state-crossed-workers",
-      "codex-managed-worktrees"
+      "late-send-results-must-respect-the-started-turn-generation",
+      "replayed-checkpoints-must-fork-before-writing",
+      "sticky-tool-state-needs-trusted-session-provenance-before-activation",
+      "stop-must-survive-until-its-run-exists"
     ]
   },
   "slots": [

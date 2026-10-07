@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:ambiguous-report-must-preserve-previous-evaluation",
+  "relationships": {
+    "dossiers": [
+      "unknown-flattened-to-empty"
+    ],
+    "patterns": [
+      "atomic-write",
+      "uncertainty",
+      "verification"
+    ],
+    "projects": [
+      "SWE-agent"
+    ]
+  },
+  "route": "/dossiers/ambiguous-report-must-preserve-previous-evaluation/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The report describes destructive ordering in evaluation collection: the prior result is removed before a unique incoming report is confirmed. The open proposal reverses that order. Available evidence is its body and status, not independent execution evidence.",
+            "kitchen": "The old inspection sheet is discarded before the chef checks what arrived to replace it. There may be no new sheet, or an unclear choice between several. A proposal would keep the previous one safe; no delivered or independently tested repair is established."
+          },
+          "fr": {
+            "cuisine": "Le chef jette le dernier bilan avant de compter les nouveaux. Il peut alors n'en trouver aucun, ou plusieurs sans savoir lequel choisir. Une réparation est proposée pour garder l'ancien bilan. Elle reste ouverte et n'a pas été essayée ici.",
+            "expert": "Une PR SWE-agent ouverte rapporte une suppression prématurée de results.json dans move_sb_cli_report. Le nombre de rapports entrants serait vérifié après cette suppression. Le diagnostic et le correctif proposé ne sont pas reproduits ni établis comme livrés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "SWE-agent proposes validation before evaluation-report replacement",
+          "kitchen": "Do not discard the last check sheet before its replacement arrives"
+        },
+        "fr": {
+          "cuisine": "Le vieux bilan part à la poubelle avant l'arrivée du nouveau",
+          "expert": "SWE-agent propose de préserver le rapport précédent en cas de collecte ambiguë"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Precondition validation and atomic replacement solve different problems. Atomicity cannot compensate for deleting the existing result before eligibility is known. The contributor reports regression coverage for absent and ambiguous inputs, which has not been reproduced here.",
+            "kitchen": "Keep the previous sheet on the clipboard while counting the candidates. No sheet or several sheets means leave it there and report the problem. Only a single replacement is eligible for the proposed swap."
+          },
+          "fr": {
+            "cuisine": "La règle proposée commence par chercher exactement un nouveau bilan. S'il n'y en a aucun ou s'il y en a plusieurs, l'ancien reste en place. Ce n'est qu'après cette vérification que le chef le remplace.",
+            "expert": "Le changement proposé valide la cardinalité avant Path.replace. Les cas zéro et multiples rapports doivent conserver le précédent résultat ; un remplacement unique peut ensuite être installé atomiquement. Des régressions pour les deux cas négatifs sont annoncées, sans exécution dans cette veille."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "First find one replacement, then change the sheet"
+        },
+        "fr": {
+          "cuisine": "Compter les nouveaux bilans avant de toucher à l'ancien",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "This is a bounded proposed repair, not verified production behavior. Preserve last-known evidence across failed collection and expose the collection failure separately. The retained artifact's existence alone must not imply a successful current evaluation.",
+            "kitchen": "The examined proposal remains open, so there is no proven service repair to announce. Keeping the last sheet is useful while the new one is missing or unclear. It should still be identified as the previous inspection, not a fresh result."
+          },
+          "fr": {
+            "cuisine": "La proposition n'est pas acceptée dans les éléments examinés. Nous ne pouvons pas annoncer une réparation en service. La leçon est de garder le dernier bilan pendant la vérification, tout en disant clairement que le nouveau manque ou reste ambigu.",
+            "expert": "La PR reste ouverte et non fusionnée. Aucun correctif livré ni succès indépendant des tests n'est établi. La recommandation research_only est de préserver l'ancien artefact tout en signalant l'échec de collecte, sans le présenter comme une nouvelle évaluation."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Preserved evidence still belongs to its original inspection"
+        },
+        "fr": {
+          "cuisine": "Garder l'ancien bilan ne le rend pas nouveau",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "ambiguous-report-must-preserve-previous-evaluation",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:04:40.856443+00:00"
+}

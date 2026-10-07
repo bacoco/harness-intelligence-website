@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:approval-resume-settles-deferred-history-even-without-new-output",
+  "relationships": {
+    "dossiers": [
+      "memory-kept-history-lost-mission"
+    ],
+    "patterns": [
+      "human-gates",
+      "checkpoint",
+      "state-split"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/approval-resume-settles-deferred-history-even-without-new-output/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged Agents SDK proposal preserves held history across serialized retries and approval-resume paths. Its stated target includes orphaned tool calls around guardrails and custom tool behavior. Evidence is the verified merge and primary description, not independent runtime validation.",
+            "kitchen": "The chef has held some order notes while deciding. After work resumes, those notes still need an outcome even if nothing new arrives. An accepted repair describes keeping them through the interruption; we have not tested it or established its distribution."
+          },
+          "fr": {
+            "cuisine": "Des notes de commande attendent l'accord du chef. Après une interruption, elles doivent revenir même si aucun nouveau ticket n'arrive. Une réparation acceptée décrit cette conservation et leur reprise finale. Nous n'avons pas essayé la réparation, qui n'est pas établie comme distribuée.",
+            "expert": "Une PR fusionnée du SDK Agents Python traite l'historique différé des approbations et les appels d'outil orphelins décrits lors de reprises. Les éléments retenus traversent sérialisation, reprise détachée et approbations partielles. La description est vérifiée, sans inspection complète du patch, tests reproduits ou publication établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Agents SDK retains deferred approval history across resumes",
+          "kitchen": "No new order does not mean the held notes are settled"
+        },
+        "fr": {
+          "cuisine": "Aucun nouveau ticket, mais des notes encore à reprendre",
+          "expert": "Le SDK Agents conserve l'historique différé des reprises d'approbation"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Settlement is driven by deferred state, not merely by the presence of fresh output. The described recovery preserves handoff filtering, redaction and response-storage policy. It therefore must not be interpreted as bypassing those controls to fill missing history.",
+            "kitchen": "A final trip can bring back an empty basket while earlier notes remain unresolved. Both serving routes must account for those notes. The existing rules about keeping or hiding information still apply; completing the record is not permission to copy everything."
+          },
+          "fr": {
+            "cuisine": "Les deux façons de servir doivent reprendre les notes encore retenues. Le dernier passage peut ne rien apporter de nouveau et avoir quand même ce travail à finir. Les consignes sur ce qu'on garde ou masque restent les mêmes. Réparer l'oubli ne donne pas le droit de tout recopier.",
+            "expert": "Le règlement partagé des deux runners s'applique aussi quand la tentative finale ne produit aucun item nouveau. L'état différé traverse les retries après erreur de callback. Les filtres de handoff, la redaction et la politique de stockage de la réponse continuent de s'appliquer."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "An empty final basket cannot erase what was already waiting"
+        },
+        "fr": {
+          "cuisine": "Les notes retenues ne disparaissent pas avec un dernier panier vide",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Merge status does not establish package availability. Schema 1.18 is unpublished, 1.17 remains readable, and the change follows 0.23.1. Keep the design lesson separate from full-patch review, test execution and installed-version behavior.",
+            "kitchen": "The new record format still reads the older one, but its added fields are not published. This change follows the last version named in the evidence. We checked the accepted description, not every changed part or its tests, so a deployed repair remains unestablished."
+          },
+          "fr": {
+            "cuisine": "Le nouveau cahier sait encore lire l'ancienne forme, mais ses nouvelles rubriques ne sont pas publiées. La réparation vient après la dernière version citée. Nous n'avons lu que sa description vérifiée, sans examiner chaque changement ni refaire les essais. Il faut garder cette limite avant de promettre une reprise réparée.",
+            "expert": "Les champs nouveaux utilisent le schéma 1.18 explicitement non publié, tout en gardant 1.17 lisible. Le changement est postérieur à 0.23.1 ; aucune disponibilité PyPI n'est affirmée. Les 27 fichiers n'ont pas été intégralement inspectés et les tests annoncés n'ont pas été reproduits ; la guidance reste research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The accepted notebook format is not yet a shipped one"
+        },
+        "fr": {
+          "cuisine": "Le nouveau cahier est accepté, mais pas encore distribué",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "approval-resume-settles-deferred-history-even-without-new-output",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T02:58:41.994340+00:00"
+}

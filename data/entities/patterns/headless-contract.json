@@ -14,6 +14,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a2a-cli-exposes-a-scriptable-task-test-surface",
       "aider-false-success-family",
       "scheduled-success-needs-effect-proof"
     ]

@@ -16,6 +16,8 @@
       "timeout"
     ],
     "dossiers": [
+      "replayed-checkpoints-must-fork-before-writing",
+      "resuming-an-unsaved-tool-result-can-repeat-a-committed-effect",
       "timeout-left-descendants-running"
     ]
   },

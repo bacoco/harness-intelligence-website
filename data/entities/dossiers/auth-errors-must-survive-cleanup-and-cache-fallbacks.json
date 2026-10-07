@@ -1,0 +1,103 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:auth-errors-must-survive-cleanup-and-cache-fallbacks",
+  "relationships": {
+    "dossiers": [
+      "retryable-auth-errors-must-not-delete-credentials",
+      "unknown-flattened-to-empty"
+    ],
+    "patterns": [
+      "credential-lifecycle",
+      "uncertainty",
+      "false-green"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/auth-errors-must-survive-cleanup-and-cache-fallbacks/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged teardown path makes incomplete token cleanup an explicit failure before configuration mutation. It distinguishes full teardown from partial removal, which preserves shared tokens unless explicitly requested otherwise.",
+            "kitchen": "The accepted October 1 change clears local keys before crossing the last station out of the book. Failed cleanup leaves that change pending; removing only one station normally keeps shared keys."
+          },
+          "fr": {
+            "cuisine": "La règle acceptée le 1er octobre nettoie les clés locales avant de barrer le dernier poste du cahier. Si ce rangement échoue, le cahier attend ; retirer un seul poste garde les clés partagées sauf demande contraire.",
+            "expert": "Le teardown LLM complet fusionné purge les tokens locaux avant mutation de configuration et rend l'échec fatal, pour garder la commande retryable. Une suppression partielle conserve les tokens partagés sauf demande explicite."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "ToolHive orders token cleanup before full configuration teardown",
+          "kitchen": "Do not mark the cleanup done while local keys remain"
+        },
+        "fr": {
+          "cuisine": "Ne pas cocher le rangement tant que les clés locales sont encore là",
+          "expert": "ToolHive fait échouer le teardown si la purge locale échoue"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Authentication failure and transient unavailability receive different fallback semantics. The proposal does not allow stale cache to conceal a revoked registry credential, and it is not established as merged.",
+            "kitchen": "The separate open proposal keeps refused access visible instead of returning an empty list or an old one. An older list would be usable only during temporary trouble; with no saved list, that trouble remains an error."
+          },
+          "fr": {
+            "cuisine": "Une autre règle, encore proposée, refuse de remplacer un accès refusé par une liste vide ou un vieux carnet. L'ancien carnet ne servirait que pendant une panne passagère ; sans carnet, cette panne reste une erreur.",
+            "expert": "La PR registre encore ouverte propagerait l'échec d'authentification même avec cache chaud. Le stale resterait réservé aux pannes transitoires ; une panne sans cache serait propagée plutôt que convertie en succès vide."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Yesterday's list cannot restore revoked access"
+        },
+        "fr": {
+          "cuisine": "Une ancienne liste ne rend pas une clé retirée valable",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Local purge must not be sold as IdP revocation. HTTP 503 mapping remains unimplemented, and neither targeted tests nor the wider incomplete verification were reproduced here. Preserve the merged/open distinction between the two changes.",
+            "kitchen": "Running cooks may recreate the local keys, and the supplier's lock is unaffected. The promised outward error response remains separate work; targeted tests are reported, while broader checks were unsuccessful or blocked by tooling."
+          },
+          "fr": {
+            "cuisine": "Les commis encore actifs peuvent refaire les clés locales ; la serrure du fournisseur n'est pas changée. Le signal d'erreur extérieur attendu reste à ajouter. Les essais ciblés sont seulement rapportés, et les grandes vérifications restent non réussies ou bloquées par l'outillage.",
+            "expert": "Aucune révocation IdP n'est effectuée et les processus actifs peuvent recréer les tokens. Le handler ne mappe pas encore HTTP 503. Tests ciblés rapportés, suites complètes non vertes ou bloquées par outillage, aucun test exécuté ici ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Clearing local keys does not revoke them at the supplier"
+        },
+        "fr": {
+          "cuisine": "Jeter la clé locale ne change pas la serrure du fournisseur",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "auth-errors-must-survive-cleanup-and-cache-fallbacks",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:20:11.961215+00:00"
+}

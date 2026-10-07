@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:displaying-an-agent-terminal-does-not-own-its-process",
+  "relationships": {
+    "dossiers": [
+      "timeout-left-descendants-running"
+    ],
+    "patterns": [
+      "ownership",
+      "runtime-visible-state",
+      "protocols"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/displaying-an-agent-terminal-does-not-own-its-process/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "An ACP presentation buffer does not imply a locally owned process. Agent-provided exit status preserves its code or signal instead of inferring completion from local process absence.",
+            "kitchen": "The board shows updates from another kitchen; finding no oven in this room does not mean that the cooking has finished. The responsible kitchen must send its completion notice and outcome or stopping reason."
+          },
+          "fr": {
+            "cuisine": "Le tableau reçoit les nouvelles d'une cuisine extérieure ; l'absence de four dans cette salle ne signifie pas que sa cuisson est terminée. On attend le mot de fin de la cuisine responsable, avec son résultat ou son motif d'arrêt.",
+            "expert": "Le buffer ACP n'est pas un processus local détenu par Zed. Sa complétion vient de l'agent avec code ou signal ; l'absence de process local ne suffit plus à le déclarer terminé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Zed separates ACP terminal display from local process ownership",
+          "kitchen": "Showing another kitchen's cooking does not give control of its oven"
+        },
+        "fr": {
+          "cuisine": "Afficher la cuisson d'ailleurs ne donne pas la main sur son four",
+          "expert": "Zed sépare terminal ACP affiché et processus local possédé"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Late output and lifecycle transitions remain separate. The client updates presentation without inventing another completion, and removes Stop from agent-managed terminals rather than implying process ownership it lacks.",
+            "kitchen": "A late kitchen note can update what the board says without replacing the finish already recorded. The board loses its Stop lever because that lever has no authority over the other kitchen's oven."
+          },
+          "fr": {
+            "cuisine": "Une note arrivée après la fin complète le tableau sans changer le verdict déjà reçu. Le levier Stop disparaît de ce tableau puisqu'il ne commande pas le four extérieur.",
+            "expert": "Une sortie tardive rafraîchit le contenu sans réécrire l'état terminal. Stop est retiré des terminaux gérés par l'agent, où le client ne détient pas l'autorité locale nécessaire."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A late note adds detail without ending the service again"
+        },
+        "fr": {
+          "cuisine": "Une note tardive ajoute des détails sans refaire la fin du service",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "This is the September 30 stable publication of a September 21 merge, not a new in-window merge. Local wait/kill and cleanup are reported unchanged; no independent test or complete remote-termination guarantee is established.",
+            "kitchen": "The September 21 accepted change is announced in the September 30 delivery, without a trial by us. Waiting on, stopping and clearing local stations remain unchanged, and complete stopping of the outside kitchen is unproven."
+          },
+          "fr": {
+            "cuisine": "La règle acceptée le 21 septembre est annoncée dans la livraison du 30 ; nous ne l'avons pas essayée. Attendre, arrêter et ranger les vrais postes locaux restent inchangés ; aucun arrêt complet de la cuisine extérieure n'est prouvé.",
+            "expert": "Fusion du 21 septembre, publication stable 1.22.0 le 30 septembre : seule cette publication est nouvelle dans la fenêtre. Aucun test ici ; wait/kill et cleanup locaux annoncés inchangés, sans preuve d'arrêt distant complet. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The board changes while the local ovens keep their controls"
+        },
+        "fr": {
+          "cuisine": "Le tableau change, les vrais fourneaux locaux gardent leurs commandes",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "displaying-an-agent-terminal-does-not-own-its-process",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:00:44.051162+00:00"
+}

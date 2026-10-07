@@ -15,6 +15,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "automation-migration-preserves-work-and-mode-boundaries",
       "memory-kept-history-lost-mission"
     ]
   },

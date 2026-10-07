@@ -14,6 +14,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "guard-policy-defaults-off-with-explicit-retained-controls",
       "skills-default-on-docs-lag"
     ]
   },

@@ -22,10 +22,11 @@
       "state-isolation"
     ],
     "dossiers": [
+      "ambiguous-report-must-preserve-previous-evaluation",
       "hook-shared-state-crossed-workers",
-      "sweagent-repository-identity-move",
+      "project-mortality-state-machine",
       "sweagent-cost-guard-retry-rebilling",
-      "project-mortality-state-machine"
+      "sweagent-repository-identity-move"
     ]
   },
   "slots": [

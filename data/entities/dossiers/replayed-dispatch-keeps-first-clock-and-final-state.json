@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:replayed-dispatch-keeps-first-clock-and-final-state",
+  "relationships": {
+    "dossiers": [
+      "task-snapshot-needs-coherent-ordering"
+    ],
+    "patterns": [
+      "observability",
+      "runtime-visible-state",
+      "retry"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/replayed-dispatch-keeps-first-clock-and-final-state/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A verified release includes replay-aware subagent-panel state in DeepAgents. Repeated dispatch starts reuse the existing record instead of replacing it. This is evidence of a shipped UI change, with no independent test execution in this review.",
+            "kitchen": "The board receives the same order number again. Starting its clock over would hide how long the guest has already waited. A published repair keeps that history; we inspected the change without testing it in service."
+          },
+          "fr": {
+            "cuisine": "Le même ticket revient au tableau et fait paraître la commande toute neuve. La maison publie une réparation pour garder l'attente déjà écoulée. Nous avons lu le changement et ses essais, sans les refaire.",
+            "expert": "DeepAgents Code 0.1.81 conserve l'enregistrement d'un sous-agent lorsque QuickJS réémet un démarrage avec le même identifiant. Le patch fusionné protège l'heure initiale et les états terminaux de l'UI. Les tests ont été lus, pas exécutés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "DeepAgents preserves dispatch UI history across replay",
+          "kitchen": "A repeated order ticket must not erase the wait"
+        },
+        "fr": {
+          "cuisine": "Le même ticket ne remet pas l'attente à zéro",
+          "expert": "DeepAgents préserve durée et état UI lors du rejeu"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The timing contract is deliberately conditional: replayed dispatches use elapsed time from first UI start, while ordinary dispatches retain producer duration. Duplicate completion handling is terminal-state preservation, not a new completion. Correct correlation depends on stable dispatch identifiers.",
+            "kitchen": "An order can spend part of its time waiting for the chef's answer. The repeated ticket keeps that wait on the clock. Once the board records a final result and duration, another completion notice leaves them alone; unrepeated orders retain the cook's reported time."
+          },
+          "fr": {
+            "cuisine": "Quand le ticket revient, le tableau compte depuis sa première arrivée, même pendant l'attente de l'accord du chef. Une seconde annonce de fin ne change plus le résultat ni la première durée finale. Si le ticket ne revient pas, le tableau garde la durée annoncée par le commis.",
+            "expert": "Pour un dispatch rejoué, la durée part du démarrage UI initial et inclut les pauses d'approbation. Les événements de fin dupliqués préservent l'état terminal et la première durée finale. Hors rejeu, la mesure du producteur demeure la référence."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Waiting for the chef still counts as waiting"
+        },
+        "fr": {
+          "cuisine": "Compter depuis la première arrivée du ticket",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not promote replay-safe presentation into an exactly-once execution guarantee. The implementation and its tests were inspected, with merge and release verified. Preserve the first clock and final projection state, then assess business effects separately.",
+            "kitchen": "This repair concerns what the board remembers, and it needs the repeated ticket to keep the same number. It does not prove that cooking or delivery happened only once. No outside trial accompanies this account of the published change."
+          },
+          "fr": {
+            "cuisine": "La réparation est publiée pour le tableau et ses durées. Elle suppose que le même ticket garde son numéro. Rien ici ne prouve que le plat n'a été préparé ou servi qu'une fois. Notre lecture ne remplace pas un essai de la réparation.",
+            "expert": "La portée établie est l'observabilité UI, sous l'hypothèse d'identifiants stables réémis par QuickJS. Ni l'absence de réexécution métier ni une livraison exactly-once ne sont démontrées. Les sources viennent d'une même équipe et la leçon reste research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A truthful board cannot count the plates by itself"
+        },
+        "fr": {
+          "cuisine": "Un tableau fidèle ne prouve pas qu'un seul plat est sorti",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "replayed-dispatch-keeps-first-clock-and-final-state",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:58:08.806727+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-04",
+  "id": "dossier:caller-cancellation-must-not-discard-an-engaged-token-rotation",
+  "relationships": {
+    "dossiers": [
+      "retryable-auth-errors-must-not-delete-credentials"
+    ],
+    "patterns": [
+      "credential-lifecycle",
+      "ownership",
+      "concurrency"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/caller-cancellation-must-not-discard-an-engaged-token-rotation/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Cancellation of the caller is separated from completion of an engaged token rotation. Once refresh may have invalidated the old credential, discarding its result can lose the only new valid identity.",
+            "kitchen": "The chef stops waiting after the locksmith has begun replacing the pantry key, and the old key may already be useless. The repair keeps the new key rather than throwing it away with the cancelled request."
+          },
+          "fr": {
+            "cuisine": "Le chef cesse d'attendre alors que le serrurier a commencé à remplacer la clé de réserve ; l'ancienne peut déjà ne plus ouvrir. La correction conserve la nouvelle clé au lieu de la jeter avec la demande abandonnée.",
+            "expert": "Le refresh commencé peut déjà avoir invalidé l'ancien token. Le patch sépare l'annulation de l'appelant de la clôture de cette rotation afin de conserver son résultat valide plutôt que de l'abandonner."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Pi preserves an OAuth rotation already in progress",
+          "kitchen": "Leaving the waiting line must not discard the new pantry key"
+        },
+        "fr": {
+          "cuisine": "Partir sans attendre ne doit pas faire jeter la clé neuve",
+          "expert": "Pi conserve le résultat d'un refresh OAuth déjà engagé"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Caller cancellation applies while waiting for the lock. After refresh starts, its bounded completion and persistence remain under that lock even if the caller promptly receives cancellation; the rule preserves an engaged effect rather than granting fresh authority.",
+            "kitchen": "The chef can leave while waiting to reserve the key peg; once recutting begins, the locksmith has a fifteen-second limit. The new key is stored before releasing the peg, while the chef can stop waiting and no new job is authorized."
+          },
+          "fr": {
+            "cuisine": "Avant de réserver le crochet, le chef peut partir ; après le début du changement, quinze secondes bornent l'attente du serrurier. La clé neuve est rangée avant de rendre le crochet libre, sans autoriser un nouveau travail après l'annulation.",
+            "expert": "L'attente du verrou est annulable ; un refresh commencé reste sous timeout 15 s et persiste le token avant libération du verrou. L'appelant peut retourner rapidement annulé en parallèle : cette clôture n'autorise aucune nouvelle opération."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Finish preserving this key change without ordering another job"
+        },
+        "fr": {
+          "cuisine": "Finir ce changement de clé, sans en commander un autre",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The patch and 1.0.3 announcement do not establish universal recovery after storage failure or timeout, nor all MCP OAuth cancellation paths. Tests were not executed here and no real credentials were accessed or changed.",
+            "kitchen": "The October 4 repair is announced in the delivery, without a repeat trial here or handling real keys. It does not establish recovery from every delay or storage failure, or protection at every supplier entrance."
+          },
+          "fr": {
+            "cuisine": "La correction du 4 octobre est annoncée dans la livraison, sans essai refait ici ni vraie clé manipulée. Elle ne prouve pas la récupération après tout retard ou rangement raté, ni la protection de chaque porte de fournisseur.",
+            "expert": "Patch du 4 octobre annoncé en 1.0.3 ; tests non exécutés ici, aucun credential réel lu ou modifié. Pas de garantie après toute panne de stockage/timeout, ni de couverture de tous les chemins MCP OAuth ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The changed rule does not solve every lost-key failure"
+        },
+        "fr": {
+          "cuisine": "La nouvelle règle ne couvre pas toutes les clés perdues",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "caller-cancellation-must-not-discard-an-engaged-token-rotation",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:31:49.522343+00:00"
+}

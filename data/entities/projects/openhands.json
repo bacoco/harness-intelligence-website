@@ -23,13 +23,15 @@
       "trust-boundary"
     ],
     "dossiers": [
-      "openhands-hook-blocking-state",
-      "mcp-common-protocol-local-policy",
-      "skills-cross-harness-convergence",
+      "control-plane-convergence",
       "hooks-cross-harness-convergence",
-      "subagents-delegation-control-plane",
+      "mcp-common-protocol-local-policy",
+      "media-presence-is-not-behavioral-proof",
+      "openhands-hook-blocking-state",
       "recovery-state-convergence",
-      "control-plane-convergence"
+      "skills-cross-harness-convergence",
+      "stream-recovery-must-stop-at-the-first-missing-event",
+      "subagents-delegation-control-plane"
     ]
   },
   "slots": [

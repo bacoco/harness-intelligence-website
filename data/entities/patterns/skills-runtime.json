@@ -22,14 +22,17 @@
     ],
     "patterns": [],
     "dossiers": [
-      "nested-skills-discovery-drift",
-      "skills-default-on-docs-lag",
-      "runtime-skill-inventory-not-filesystem",
+      "agent-claims-need-evidence-labels",
       "codex-skills-context-budget",
-      "superpowers-skills-methodology-rise",
-      "skills-cross-harness-convergence",
       "control-plane-convergence",
-      "agent-claims-need-evidence-labels"
+      "evaluation-fallback-must-respect-delegation-authority",
+      "handoff-text-must-not-be-reparsed-as-shell-code",
+      "nested-skills-discovery-drift",
+      "runtime-skill-inventory-not-filesystem",
+      "skill-tool-availability-follows-retained-context",
+      "skills-cross-harness-convergence",
+      "skills-default-on-docs-lag",
+      "superpowers-skills-methodology-rise"
     ]
   },
   "slots": [

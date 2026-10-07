@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:skill-admission-checks-completeness-and-received-bytes",
+  "relationships": {
+    "dossiers": [
+      "archon-installed-skill-drift"
+    ],
+    "patterns": [
+      "installed-vs-source",
+      "verification",
+      "false-green"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/skill-admission-checks-completeness-and-received-bytes/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The two upstream signals concern different admission checks: completeness and digest agreement with received bytes. They are not a demonstrated exploit or a single confirmed root cause. The available remediation proposal is open and bounded to incomplete downloads.",
+            "kitchen": "One account says a recipe packet may be accepted with a missing page. Another says the supplier's label can be copied without checking what actually arrived. An open proposal addresses the incomplete packet, but we have reproduced neither report nor established a shipped repair."
+          },
+          "fr": {
+            "cuisine": "Un récit décrit des recettes acceptées malgré une page manquante. Un autre dit que l'étiquette du fournisseur est recopiée sans vérifier le paquet reçu. Une réparation est proposée pour le paquet incomplet. Aucun de ces récits n'a été reproduit ici, ni la réparation livrée établie.",
+            "expert": "Une PR ouverte rapporte qu'un téléchargement legacy peut ignorer une erreur HTTP sur un fichier référencé. Une issue distincte décrit un hash serveur recopié dans le lock sans comparaison locale. La proposition traite la complétude ; reproduction, fusion et inclusion dans 1.7.1 ne sont pas établies."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Vercel Skills reports separate completeness and digest-validation gaps",
+          "kitchen": "A reassuring label does not prove every recipe page arrived"
+        },
+        "fr": {
+          "cuisine": "Un paquet incomplet peut arriver avec une étiquette rassurante",
+          "expert": "Vercel Skills : deux signaux distincts sur l'admission des contenus"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Stage the selected content, validate completeness and only then mutate installation state or lock data. That ordering addresses the reported partial-download path. It does not by itself validate a server-provided digest or establish the separately reported hash mismatch's cause.",
+            "kitchen": "Choose the recipes first and collect their pages before installing them at the station. The proposed rule rejects an incomplete batch instead of recording it as ready. Checking the label against the received contents is still a separate requirement, not a verified result of this proposal."
+          },
+          "fr": {
+            "cuisine": "La proposition choisit d'abord les recettes utiles et reçoit leurs pages avant de les mettre au poste. Si une page manque, le lot est refusé et le registre n'est pas rempli. Vérifier soi-même le contenu de l'étiquette reste une autre tâche, pas une réparation démontrée par cette proposition.",
+            "expert": "La PR sépare découverte et téléchargement des skills sélectionnées, puis reporte installation et écriture du lock jusqu'à validation de complétude. Le lot incomplet est refusé. Le recalcul local du digest est une exigence distincte ; la vérification v0.2 et la politique de retry restent hors scope."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Complete the selected packet before putting it into service"
+        },
+        "fr": {
+          "cuisine": "Choisir les recettes, recevoir toutes les pages, puis les ranger",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep author-reported test results, the open proposal and the separate issue at their own evidence levels. No local reproduction or shipped fix is established. A recomputed digest and a complete selected file set are complementary checks, not interchangeable success signals.",
+            "kitchen": "The proposer reports successful focused checks and says the broader failures also occur before the change. We did not repeat those checks. Neither stolen content nor failure of every delivery is established. Inspect the packet itself rather than treating its label as sufficient proof."
+          },
+          "fr": {
+            "cuisine": "L'auteur annonce des essais ciblés réussis et dit que les échecs plus larges existent aussi avant sa proposition. Nous ne les avons pas refaits. Aucun vol ni défaut de toutes les livraisons n'est prouvé. La leçon reste de vérifier le paquet reçu avant de croire son étiquette.",
+            "expert": "L'auteur rapporte 92 tests ciblés réussis et six échecs de suite complète également présents sur main, sans reproduction ici. Le rapport de digest décrit quatre probes sur des contenus identiques à upstream ; il ne démontre pas d'exploitation. Aucun correctif fusionné ou livré dans 1.7.1 n'est établi ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Reported checks do not close both questions"
+        },
+        "fr": {
+          "cuisine": "Les essais sont annoncés, pas refaits dans notre cuisine",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "skill-admission-checks-completeness-and-received-bytes",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:03:32.830809+00:00"
+}

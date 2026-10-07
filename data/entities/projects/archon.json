@@ -23,8 +23,11 @@
     "dossiers": [
       "archon-installed-skill-drift",
       "archon-session-resume-checkpoint",
+      "concurrent-approval-gates-stay-unfinished-until-admitted",
       "recovery-state-convergence",
       "release-does-not-equal-observed-fix",
+      "resumed-ai-policy-is-pinned-but-credentials-stay-live",
+      "settlement-waits-for-observed-background-work",
       "shared-contract-prevents-provider-drift"
     ]
   },

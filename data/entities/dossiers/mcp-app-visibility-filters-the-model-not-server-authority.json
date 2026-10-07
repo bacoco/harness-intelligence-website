@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:mcp-app-visibility-filters-the-model-not-server-authority",
+  "relationships": {
+    "dossiers": [
+      "runtime-skill-inventory-not-filesystem"
+    ],
+    "patterns": [
+      "mcp",
+      "runtime-visible-state",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/mcp-app-visibility-filters-the-model-not-server-authority/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged change applies MCP App visibility metadata to the model-facing tool catalog. UI-only exposure no longer implies model exposure through MCPToolset.",
+            "kitchen": "An utensil may belong at the counter without appearing on the cook's selection sheet. The accepted change follows the declared audience when building that sheet."
+          },
+          "fr": {
+            "cuisine": "Certains ustensiles sont prévus pour le comptoir, pas pour la liste du commis. Le changement accepté les retire de cette liste lorsque la consigne ne demande pas de les lui montrer.",
+            "expert": "MCPToolset retire du catalogue modèle les outils dont _meta.ui.visibility exclut model. Le filtrage couvre notamment les outils app-only et les listes de visibilité vides."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Pydantic AI honors MCP App model visibility",
+          "kitchen": "The counter's utensils do not all belong on the cook's list"
+        },
+        "fr": {
+          "cuisine": "Les ustensiles du comptoir ne sont pas tous montrés au commis",
+          "expert": "Pydantic AI filtre le catalogue selon la visibilité MCP App"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Absent metadata is not an explicit empty audience. The direct-call path remains available, so hidden-from-model must not be interpreted as server-side denial.",
+            "kitchen": "If the supplied audience list leaves out the cook, an empty list included, the utensil stays off that sheet. Missing instructions preserve the old behavior, and a direct request remains possible."
+          },
+          "fr": {
+            "cuisine": "Une liste donnée sans le commis, même vide, retire l'ustensile de sa fiche. Sans cette consigne, ou si elle nomme aussi le commis, rien ne change ; la demande directe reste possible.",
+            "expert": "Une visibilité absente ou app+model ne change pas le comportement ; une liste sans model, même vide, filtre l'outil. direct_call_tool peut toujours l'appeler : exposition et autorisation serveur ne sont pas le même contrôle."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "No listed audience differs from no audience instruction"
+        },
+        "fr": {
+          "cuisine": "Une liste de destinataires vide n'est pas une consigne absente",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep model exposure, direct-call availability and server authorization separate. The verified merge is later than 2.54.0, with no independent reproduction of the reported in-process test.",
+            "kitchen": "The change follows the cited stable version, and we did not repeat its reported trial. It governs what the cook sees rather than proving a new refusal at the counter."
+          },
+          "fr": {
+            "cuisine": "Le changement est accepté après la version stable citée, et l'essai annoncé n'a pas été refait ici. Il règle ce que le commis voit, sans prouver une nouvelle interdiction au guichet.",
+            "expert": "PR fusionnée après la stable 2.54.0 ; test in-process rapporté non reproduit. Ce filtre n'est pas une politique d'autorisation côté serveur et n'est pas attribué à cette stable antérieure. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Changing the list does not install a new lock"
+        },
+        "fr": {
+          "cuisine": "Changer la liste ne pose pas une nouvelle serrure",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "mcp-app-visibility-filters-the-model-not-server-authority",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:32:29.243609+00:00"
+}

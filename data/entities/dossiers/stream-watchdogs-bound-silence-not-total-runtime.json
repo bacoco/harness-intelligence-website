@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-04",
+  "id": "dossier:stream-watchdogs-bound-silence-not-total-runtime",
+  "relationships": {
+    "dossiers": [
+      "timeout-left-descendants-running"
+    ],
+    "patterns": [
+      "timeout",
+      "retry",
+      "runtime-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/stream-watchdogs-bound-silence-not-total-runtime/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified merge adds first-event and idle watchdogs to each model attempt. Racing iterator.next against a stop signal decouples local reader exit from provider cooperation with abort. This is an inspected patch, not a reproduced runtime result.",
+            "kitchen": "The chef waits for the first update, then watches each quiet spell. The default is five minutes for each kind of wait, not five minutes for the whole meal. An accepted change lets the listener stop waiting; we have not tested it or established its release delivery."
+          },
+          "fr": {
+            "cuisine": "Le chef attend d'abord la première nouvelle, puis surveille chaque silence. Chaque attente peut durer cinq minutes par défaut, pas toute la préparation. Une correction acceptée lui permet de cesser d'écouter même si le fournisseur ignore l'arrêt. Nous avons lu le changement, sans l'essayer ni établir sa livraison.",
+            "expert": "MiniMax Code fusionne deux timeouts par tentative, de 300 secondes par défaut : premier événement puis inactivité. Une course avec le signal d'arrêt permet de quitter la lecture même si abort est ignoré. Le patch est lu ; tests, exécution live et release porteuse ne sont pas établis."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "MiniMax adds first-event and idle stream watchdogs",
+          "kitchen": "A silence timer does not set the meal's total cooking time"
+        },
+        "fr": {
+          "cuisine": "Cinq minutes sans nouvelles ne sont pas cinq minutes de cuisine",
+          "expert": "MiniMax borne le premier événement et l'inactivité du flux"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The visible-output boundary constrains retry policy, but it does not prove absence of remote effects before output. First-event timeout, idle timeout and total-turn budget are different contracts. The patch establishes only the first two bounds and the described local recovery behavior.",
+            "kitchen": "A supplier who keeps sending updates can work longer than five minutes, and another attempt adds more time. The retry rule changes once something has been shown to the guest. Before that point a retry is possible; afterward the failure is surfaced without an automatic repeat."
+          },
+          "fr": {
+            "cuisine": "Si des nouvelles continuent d'arriver, la préparation peut dépasser cinq minutes. Recommencer ajoute encore du temps. La règle permet une nouvelle tentative avant qu'un contenu soit montré ; après un début de réponse, elle annonce l'échec sans recommencer automatiquement.",
+            "expert": "Les seuils ne constituent pas une deadline totale : des événements continus prolongent la tentative et les retries prolongent le tour. L'erreur timeout emprunte le chemin de retry existant avant sortie visible. Après contenu déjà présenté, la tentative échoue sans retry automatique."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Regular updates can keep the task running longer"
+        },
+        "fr": {
+          "cuisine": "Une nouvelle régulière peut prolonger la préparation",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Preserve the distinction between local liveness recovery and remote termination. Neither live-provider behavior nor ACP integration is validated by this review. A merged wrapper must not be promoted into a released total-duration or cancellation guarantee.",
+            "kitchen": "The listener may stop while the supplier is still cooking. Pausing the broader order also differs from interrupting the answer being given now. The change is accepted, but no independent trial appears here and the known release predates it."
+          },
+          "fr": {
+            "cuisine": "Le chef peut quitter l'écoute sans savoir si le fournisseur a vraiment arrêté. Mettre une commande générale en pause reste différent d'interrompre la réponse en cours. La réparation est acceptée, mais les essais n'ont pas été faits ici. La dernière livraison connue la précède.",
+            "expert": "La sortie locale ne prouve pas l'arrêt distant. Le TUI distingue pause du goal et interruption de la réponse courante. Les tests ne sont pas exécutés, ACP et services live ne sont pas validés, et la release 0.6.2 précède la fusion ; la guidance reste research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Leaving the listening post does not switch off the supplier's stove"
+        },
+        "fr": {
+          "cuisine": "Ne plus écouter ne coupe pas le feu chez le fournisseur",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "stream-watchdogs-bound-silence-not-total-runtime",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:28:05.164873+00:00"
+}

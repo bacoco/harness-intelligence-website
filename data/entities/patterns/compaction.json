@@ -15,8 +15,13 @@
     ],
     "patterns": [],
     "dossiers": [
+      "append-only-history-should-append-differences-not-the-entire-past",
       "append-only-snapshots-need-retention-bound",
-      "memory-kept-history-lost-mission"
+      "memory-kept-history-lost-mission",
+      "plan-approval-survives-compaction-within-the-same-scope",
+      "restart-preserves-pending-work-not-duplicate-effects",
+      "skill-tool-availability-follows-retained-context",
+      "team-state-needs-durable-deltas-not-stream-snapshots"
     ]
   },
   "slots": [

@@ -1,0 +1,129 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:local-checkpoint-writes-require-current-ownership",
+  "relationships": {
+    "dossiers": [
+      "hook-shared-state-crossed-workers",
+      "multiuser-connection-ownership"
+    ],
+    "patterns": [
+      "concurrency",
+      "ownership",
+      "checkpoint"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/local-checkpoint-writes-require-current-ownership/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The released DeepAgents change protects local checkpoint history with both OS-level reservation and ownership-token checks. This addresses concurrent takeover and stale writers as separate failure paths. Source inspection confirms the mechanism's presence, not independent runtime effectiveness.",
+            "kitchen": "A cook takes over an order book, but the former cook still has notes to add. The published safeguard checks who owns the book now. This review examined the change rather than running a busy service with it."
+          },
+          "fr": {
+            "cuisine": "Deux commis reprennent le même cahier et risquent d'effacer leurs notes respectives. La maison publie une règle qui réserve le cahier et vérifie qui écrit. Nous avons lu la réparation, sans la mettre à l'épreuve.",
+            "expert": "DeepAgents Code 0.1.81 combine un verrou système par thread avec un jeton contrôlé lors des mutations SQLite. La réservation empêche la reprise concurrente ; le jeton rejette les écritures d'un propriétaire remplacé. Fusion et publication sont vérifiées, sans reproduction des tests."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "DeepAgents combines local thread reservation with writer fencing",
+          "kitchen": "Only the current cook may change the shared order book"
+        },
+        "fr": {
+          "cuisine": "L'ancien commis ne doit plus écrire dans le cahier repris",
+          "expert": "DeepAgents réserve l'historique local et invalide les writers périmés"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Reservation continuity matters during ownership rotation: draining pending writes must not expose a takeover gap. Fencing is enforced where checkpoint mutations occur, rather than relying only on admission checks. Busy-thread handling also covers resume selection and explicit requests.",
+            "kitchen": "Keep the book assigned while the last accepted notes are finished. Then issue the replacement badge and reject the old one at writing time. Someone else cannot take over or erase an occupied book through the protected path."
+          },
+          "fr": {
+            "cuisine": "Avant de changer le badge du responsable, on attend la fin des notes déjà en cours. Le cahier reste réservé pendant cette attente. Ensuite, l'ancien badge ne permet plus d'écrire ; un cahier occupé ne peut pas être repris ou effacé.",
+            "expert": "La rotation du jeton attend les écritures en cours sans libérer la réservation. Les mutations d'un serveur remplacé ou d'un client disparu sont ensuite refusées. La reprise ignore les threads occupés ou refuse une demande explicite ; la suppression des checkpoints les refuse aussi."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Changing the badge must not free the book"
+        },
+        "fr": {
+          "cuisine": "Garder le cahier réservé pendant la relève",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not generalize checkpoint fencing into global cancellation or all-state atomicity. Cooperative local clients are the supported boundary. The raw deletion path retains a documented metadata side effect before checkpoint deletion is denied.",
+            "kitchen": "The rule covers participating cooks at this shared local book. Old procedures and books kept elsewhere are outside it, as are actions already underway. A direct erasure request may even alter the cover label before the pages are protected from deletion."
+          },
+          "fr": {
+            "cuisine": "La protection vaut pour les commis qui suivent cette règle et partagent ce cahier local. Les anciens usages et les cahiers ailleurs restent hors preuve. Elle n'arrête pas les gestes déjà lancés. Une demande d'effacement directe peut aussi changer l'étiquette avant que l'effacement du cahier soit refusé.",
+            "expert": "La garantie exclut les anciens clients, les stockages externes et les effets de bord d'outils déjà en cours. Une suppression via l'API brute peut encore modifier les métadonnées runtime avant le refus de mutation des checkpoints. Le refus n'est donc pas une transaction sans effet sur tout l'état."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Protecting the book does not stop a dish already on its way"
+        },
+        "fr": {
+          "cuisine": "La règle du cahier ne retient pas une assiette déjà partie",
+          "expert": "Réponse"
+        }
+      },
+      "id": "limits",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The evidence establishes a merged and released implementation with upstream-reported tests. It does not establish complete review or field validation. Retain admission control, continuous reservation and mutation-time fencing as distinct requirements with explicit scope.",
+            "kitchen": "We read the key parts of the repair and the house's report of successful checks. We did not repeat those checks or inspect every part. Retain the practical rule: the current badge must be checked whenever someone changes the book."
+          },
+          "fr": {
+            "cuisine": "La maison annonce ses essais réussis ; nous ne les avons pas rejoués. Seuls les principaux passages de la réparation ont été examinés. La leçon retenue est de vérifier le badge à chaque écriture, tout en gardant le cahier réservé pendant la relève.",
+            "expert": "L'auteur annonce 1 392 tests unitaires et le lint réussis. La veille a lu les principaux fichiers et chemins, sans audit des 21 fichiers ni exécution indépendante. La recommandation reste research_only et ne modifie aucun système."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A published repair still has a bounded claim"
+        },
+        "fr": {
+          "cuisine": "La réparation est publiée, notre essai reste à faire",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "local-checkpoint-writes-require-current-ownership",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:55:49.001703+00:00"
+}

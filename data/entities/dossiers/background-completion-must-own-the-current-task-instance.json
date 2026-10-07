@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:background-completion-must-own-the-current-task-instance",
+  "relationships": {
+    "dossiers": [
+      "hook-shared-state-crossed-workers"
+    ],
+    "patterns": [
+      "ownership",
+      "concurrency",
+      "runtime-identity"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/background-completion-must-own-the-current-task-instance/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged .NET changes defer metadata visibility until child-session creation and recheck parent release. Shared synchronization keeps publication and later updates aligned with lifecycle state.",
+            "kitchen": "The helper's station should not appear on the board before it has been set up. The accepted changes also check that the head chef has not closed the service while that was happening."
+          },
+          "fr": {
+            "cuisine": "Le poste de l'aide ne doit pas apparaître au tableau avant d'exister. Les corrections acceptées vérifient aussi que le chef n'a pas déjà fermé le service pendant cette préparation.",
+            "expert": "Les métadonnées de tâche sont publiées après création de la session enfant, puis l'état release du parent est revérifié. Les updates utilisent le même verrou pour coordonner ces transitions."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Agent Framework .NET publishes background metadata after creation",
+          "kitchen": "Put the helper on the board only after the station exists"
+        },
+        "fr": {
+          "cuisine": "Inscrire l'aide au tableau seulement après son arrivée",
+          "expert": "Agent Framework .NET retarde la publication des tâches de fond"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Instance identity fences late completion against a newer continuation under the same logical ID. Invocation-local handoff tracking and ordered removal prevent completed or cancelled-invocation candidates from contaminating later routing.",
+            "kitchen": "A reused number does not let the former waiter close the new cook's ticket. Leaving the waiting post does not stop the cooking, and answered requests must leave the current service's own list."
+          },
+          "fr": {
+            "cuisine": "Un ancien commis ne peut pas rayer le nouveau travail qui porte le même numéro : il doit encore reconnaître sa propre fiche. Arrêter d'attendre ne coupe pas la cuisson ; les demandes déjà terminées quittent la liste du passage concerné.",
+            "expert": "Le waiter ne finalise que la même instance Task encore enregistrée ; annuler son attente n'annule pas la tâche. Le handoff vérifie rôle assistant, identité d'agent, call ID et déclaration, puis retire les requêtes complétées en ordre de stream avec suivi local à l'invocation."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The reused ticket number does not belong to the old waiter"
+        },
+        "fr": {
+          "cuisine": "Le même numéro ne donne pas à l'ancien commis le droit de tout rayer",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not credit the changes to the earlier .NET 1.23 release. Verified merges and reported local tests do not establish external-service behavior or universal exactly-once recovery.",
+            "kitchen": "These October 5 changes follow the October 1 delivery, with no established shipment of the repairs. Local trials are reported, but outside suppliers remain untested and nobody promises that every dish is prepared only once."
+          },
+          "fr": {
+            "cuisine": "Les corrections du 5 octobre viennent après la livraison du 1er et leur distribution n'est pas établie. Les essais locaux sont rapportés, sans essai des fournisseurs extérieurs ni promesse que chaque travail ne se fasse qu'une fois.",
+            "expert": "Fusions postérieures à .NET 1.23, sans inclusion publiée établie. Tests locaux rapportés, non exécutés ici ; services externes non testés et aucune garantie générale de recovery exactly-once. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The fixes follow the named release and still need field checks"
+        },
+        "fr": {
+          "cuisine": "Les corrections viennent après la livraison stable citée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "background-completion-must-own-the-current-task-instance",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:38:41.279525+00:00"
+}

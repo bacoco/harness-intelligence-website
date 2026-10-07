@@ -1,0 +1,105 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:queued-mail-wake-preserves-the-existing-work-attribution",
+  "relationships": {
+    "dossiers": [
+      "multiuser-connection-ownership",
+      "wake-startup-must-recheck-reservation-identity-after-preparation"
+    ],
+    "patterns": [
+      "ownership",
+      "checkpoint",
+      "runtime-identity"
+    ],
+    "projects": [
+      "Codex"
+    ]
+  },
+  "route": "/dossiers/queued-mail-wake-preserves-the-existing-work-attribution/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A new turn_id does not replace the causal attribution of existing sleeping work. Queue-only wake retains the reserved trigger, parent/root and initiating agent rather than assigning the delegated result to the latest mail arrival.",
+            "kitchen": "A note wakes the cook without ordering a new dish, so the work keeps its original table and requester. The resumed service gets a new round number without making the latest messenger the owner of that order."
+          },
+          "fr": {
+            "cuisine": "Un billet vient réveiller le commis sans commander un nouveau plat ; le travail garde alors sa table et celui qui l'avait demandé. La reprise reçoit un nouveau numéro de passage, mais ne devient pas la commande du dernier messager.",
+            "expert": "Le réveil queue-only conserve trigger, parent/root et agent initiateur capturés sous réservation, malgré un nouveau turn_id. Cette continuité permet au résultat délégué de rester lié au tour qui avait initié le travail."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Codex preserves existing-work attribution on queue-only wakes",
+          "kitchen": "A reminder wakes the dish without changing its table"
+        },
+        "fr": {
+          "cuisine": "Un simple courrier réveille le plat sans changer sa table",
+          "expert": "Codex préserve l'attribution d'un réveil queue-only"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Explicit new-task mail remains a new attribution source. Nullable lineage preserves unknown historical roots as null, and the described preservation of selected fields does not establish that every prior setting survives.",
+            "kitchen": "Mail that actually requests a new dish uses its own order slip rather than inheriting the previous service's names. If an older notebook lacks the original source, the house leaves that unknown instead of inventing one."
+          },
+          "fr": {
+            "cuisine": "Si le courrier commande vraiment un nouveau plat, son propre bon fait foi au lieu de reprendre celui de l'ancien service. Quand un vieux carnet ignore l'origine de la commande, la maison la laisse inconnue plutôt que de l'inventer.",
+            "expert": "Le courrier déclenchant explicitement une nouvelle tâche garde sa propre attribution. La lignée nullable exposée et persistée par le changement parent laisse les anciens roots inconnus à null ; la description porte sur ces champs, pas sur tous les réglages."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A genuinely new order carries its own attribution"
+        },
+        "fr": {
+          "cuisine": "Une vraie nouvelle commande porte ses propres noms",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The October 6 merge is supported by inspected simulated live/reload tests, not independent execution. Reload explicitly inserts SleepItem to stand in for extension restoration; that is not end-to-end sleep durability or preservation of every setting.",
+            "kitchen": "The October 6 change is accepted; written trials cover waking the cook and returning to service, but we did not run them. In the return trial, the pause slip is deliberately put back to imitate restoration, so it cannot prove survival through the whole interruption."
+          },
+          "fr": {
+            "cuisine": "Le changement est accepté le 6 octobre ; les essais de réveil et de retour ont été examinés, pas joués ici. Dans celui du retour, on replace soi-même le billet de pause pour imiter sa restauration ; sa survie complète reste donc à prouver.",
+            "expert": "Fusion du 6 octobre ; tests live/reload simulés inspectés non exécutés. Reload insère explicitement SleepItem pour simuler l'extension : aucune preuve end-to-end de durabilité du sommeil ou de conservation de tous les réglages. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Putting the pause slip back during a trial does not prove it survived"
+        },
+        "fr": {
+          "cuisine": "Replacer un billet de pause pendant l'essai ne prouve pas sa survie",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "queued-mail-wake-preserves-the-existing-work-attribution",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:42:12.589507+00:00"
+}

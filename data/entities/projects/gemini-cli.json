@@ -31,10 +31,13 @@
       "trust-boundary"
     ],
     "dossiers": [
+      "append-only-history-should-append-differences-not-the-entire-past",
       "background-artifacts-need-terminal-lifecycle",
       "control-files-interoperability",
       "control-plane-convergence",
+      "file-edit-lock-and-atomic-replacement-protect-different-boundaries",
       "gemini-trust-couples-hooks-mcp-instructions",
+      "headless-folder-trust-must-preserve-the-resolved-state",
       "hooks-cross-harness-convergence",
       "mcp-common-protocol-local-policy",
       "redact-before-model-boundary",

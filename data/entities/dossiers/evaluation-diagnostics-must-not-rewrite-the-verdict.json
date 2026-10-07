@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:evaluation-diagnostics-must-not-rewrite-the-verdict",
+  "relationships": {
+    "dossiers": [
+      "health-verdict-must-preserve-status-and-coverage"
+    ],
+    "patterns": [
+      "testing",
+      "evidence-boundary",
+      "verification"
+    ],
+    "projects": [
+      "gstack"
+    ]
+  },
+  "route": "/dossiers/evaluation-diagnostics-must-not-rewrite-the-verdict/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Bounded failure categories and supporting artifacts enrich the report without altering its verdict. Product, fixture and detector failures are distinguished, and diagnostic trials do not enter counted panels; session and cost-known status remain visible.",
+            "kitchen": "The inspection sheet separates a bad dish, a faulty rehearsal dish and a faulty check while keeping the original grade. It records the evidence, service and known or unknown bill; investigative tastings stay outside the scored tasting round."
+          },
+          "fr": {
+            "cuisine": "La fiche distingue un mauvais plat, un mauvais plat d'essai et un contrôle défaillant, sans changer la note donnée. Elle garde les pièces observées, le service concerné et le montant connu ou inconnu ; les essais d'enquête ne comptent pas dans la dégustation notée.",
+            "expert": "Les rapports ajoutent causes bornées, artefacts, sessions et cost_known sans modifier les verdicts. Défauts produit, fixtures et détecteurs sont distingués, avec diagnostics hors panels comptés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "gstack separates failure diagnostics from evaluation verdicts",
+          "kitchen": "Explain the poor grade without quietly changing it"
+        },
+        "fr": {
+          "cuisine": "Expliquer la mauvaise note sans la changer",
+          "expert": "gstack ajoute des diagnostics sans réécrire les verdicts"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Capture replay tests detection separately from the product. Non-discriminating rule-removal arms do not establish efficacy, while uncalibrated or excessively flipping judges remain unpromoted rather than being selected for a convenient isolated result.",
+            "kitchen": "Saved scenes are played back to check whether the inspectors notice what they should. If removing a rule reveals no violation, its wording stays without a claim of proven benefit; a wavering taster does not qualify through one welcome answer."
+          },
+          "fr": {
+            "cuisine": "La maison repasse les scènes conservées pour éprouver ses contrôles. Sans faute observée quand une règle est retirée, elle garde son texte sans prétendre avoir prouvé son utilité ; un goûteur trop changeant n'est pas retenu pour une seule bonne réponse.",
+            "expert": "Le rejeu de captures éprouve les détecteurs. Les arms sans règle ne produisant aucune violation restent non discriminants et leur texte est conservé ; un juge trop instable n'est pas promu grâce à un résultat favorable isolé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Test the taster as well as the recipe"
+        },
+        "fr": {
+          "cuisine": "Éprouver le goûteur autant que la recette",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A merge does not turn pending calibration, the current gate path or the marathon into passing evidence. The recorded upstream measurements were not reproduced here, no paid test ran, and broader effectiveness remains unestablished.",
+            "kitchen": "The October 4 and 6 changes are accepted, with some taster checks, an entrance check and the long rehearsal still pending. We repeated no trials and paid for no tasting; these results cannot speak for every kitchen."
+          },
+          "fr": {
+            "cuisine": "Les changements des 4 et 6 octobre sont acceptés, mais plusieurs vérifications du goûteur, un contrôle d'entrée et la longue répétition restent attendus. Nous n'avons répété aucun essai ni payé une dégustation ; les résultats de cette maison ne valent pas pour toutes.",
+            "expert": "Fusions vérifiées, mesures upstream non reproduites ni généralisables. Des calibrations, une voie gate actuelle et le marathon restent pending dans les descriptions ; aucun test payant ici, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Accepting the new sheet does not pass the unfinished trials"
+        },
+        "fr": {
+          "cuisine": "Les essais encore attendus ne deviennent pas bons par signature",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "evaluation-diagnostics-must-not-rewrite-the-verdict",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:04:52.339002+00:00"
+}

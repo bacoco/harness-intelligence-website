@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:detector-verdicts-need-the-context-actually-seen",
+  "relationships": {
+    "dossiers": [
+      "agent-claims-need-evidence-labels"
+    ],
+    "patterns": [
+      "evidence-boundary",
+      "verification",
+      "observability"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/detector-verdicts-need-the-context-actually-seen/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The trajectory bench adds per-step context witnesses and temporal error reporting, including pre-tool assertions. This makes context loss distinguishable from a detector that simply reacts late or misses an error.",
+            "kitchen": "The inspector's verdict arrives after someone has shortened the evidence folder. The accepted benchmark change records what was actually supplied, where the first mistake occurred and how late it was detected."
+          },
+          "fr": {
+            "cuisine": "Le goûteur reçoit un carnet raccourci et donne son avis. Le changement accepté du banc d'essai montre quelles pages il avait réellement, où la première erreur apparaît et quand il la remarque.",
+            "expert": "Le benchmark fusionné expose contexte visible, premier faux pas et retard de détection par étape, après troncature aux frontières de tokens. Il peut aussi tester une affirmation avant tout appel outil."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Semantic Router's benchmark exposes each detector context",
+          "kitchen": "The inspector can judge only the pages actually provided"
+        },
+        "fr": {
+          "cuisine": "Le goûteur juge avec les pages qu'on lui a laissées",
+          "expert": "Semantic Router instrumente le contexte vu par le détecteur"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported failure sequence separates initial miss, detection latency and a truncation-related false positive. Evidence available to the benchmark author must not be mistaken for evidence available to the detector.",
+            "kitchen": "The reported trial first misses a false claim. Later it flags a correct answer after the supporting page was removed from what the inspector could see."
+          },
+          "fr": {
+            "cuisine": "Dans l'essai raconté, le goûteur manque une première affirmation fausse. Plus tard, il accuse à tort une réponse correcte parce que sa preuve ne figure plus dans les pages reçues.",
+            "expert": "L'essai CPU rapporté manque une fausse affirmation initiale puis produit un faux positif sur une réponse correcte dont la preuve a été tronquée. Le verdict doit donc rester lié au contexte effectif, pas au dossier complet connu de l'évaluateur."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A missing proof can make a correct answer look wrong"
+        },
+        "fr": {
+          "cuisine": "Une preuve retirée peut faire accuser un bon plat",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not promote merged instrumentation into detector improvement. The limited CPU trajectory results are author-reported and provide neither independent reproduction nor a general reliability estimate.",
+            "kitchen": "Only the test bench changed, not the working inspector. The author reports a small set of trials that we did not repeat, so the result exposes errors rather than certifying overall reliability."
+          },
+          "fr": {
+            "cuisine": "Ce changement concerne seulement le banc d'essai, pas le goûteur en service. L'auteur rapporte un petit nombre de parcours ; nous ne les avons pas rejoués et aucune fiabilité générale n'en découle.",
+            "expert": "Le changement est limité au bench, sans modification revendiquée du détecteur runtime. Petit corpus et essais CPU de l'auteur non reproduits : aucune estimation générale de fiabilité. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Making failures visible is not the same as fixing the detector"
+        },
+        "fr": {
+          "cuisine": "Mieux voir les erreurs ne les a pas encore réparées",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "detector-verdicts-need-the-context-actually-seen",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:34:23.771734+00:00"
+}

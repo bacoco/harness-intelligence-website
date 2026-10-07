@@ -15,7 +15,11 @@
     ],
     "patterns": [],
     "dossiers": [
-      "human-gate-timeout"
+      "approval-resume-settles-deferred-history-even-without-new-output",
+      "concurrent-approval-gates-stay-unfinished-until-admitted",
+      "human-gate-timeout",
+      "plan-approval-survives-compaction-within-the-same-scope",
+      "subagent-briefs-are-not-human-approval-evidence"
     ]
   },
   "slots": [

@@ -19,9 +19,19 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a-lease-check-does-not-fence-the-later-write",
+      "atomic-snapshot-replacement-can-still-lose-other-writers",
+      "background-completion-must-own-the-current-task-instance",
+      "caller-cancellation-must-not-discard-an-engaged-token-rotation",
+      "competing-session-writers-need-distinct-descendant-identities",
+      "concurrent-approval-gates-stay-unfinished-until-admitted",
+      "file-edit-lock-and-atomic-replacement-protect-different-boundaries",
       "hook-shared-state-crossed-workers",
-      "worktree-isolation-convergence",
-      "retryable-auth-errors-must-not-delete-credentials"
+      "local-checkpoint-writes-require-current-ownership",
+      "retryable-auth-errors-must-not-delete-credentials",
+      "serializable-job-records-do-not-recover-workers",
+      "wake-startup-must-recheck-reservation-identity-after-preparation",
+      "worktree-isolation-convergence"
     ]
   },
   "slots": [

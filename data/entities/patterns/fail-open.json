@@ -16,9 +16,18 @@
     ],
     "patterns": [],
     "dossiers": [
-      "human-gate-timeout",
+      "an-empty-tool-allowlist-is-not-an-unset-restriction",
+      "empty-tool-policy-must-survive-cron-roundtrips",
+      "explicit-resume-must-find-the-requested-session",
       "goose-hooks-observer-to-enforcer",
-      "safety-control-failure-became-permission"
+      "headless-folder-trust-must-preserve-the-resolved-state",
+      "hook-denial-must-reach-the-host-as-a-denial",
+      "human-gate-timeout",
+      "permission-hooks-survive-worker-restart",
+      "read-only-scanning-does-not-isolate-host-confidentiality",
+      "resume-requires-the-recorded-hook-context",
+      "safety-control-failure-became-permission",
+      "unsupported-security-options-must-block-connection"
     ]
   },
   "slots": [

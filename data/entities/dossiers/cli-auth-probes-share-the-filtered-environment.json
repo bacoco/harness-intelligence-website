@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:cli-auth-probes-share-the-filtered-environment",
+  "relationships": {
+    "dossiers": [
+      "consent-before-command-capable-config"
+    ],
+    "patterns": [
+      "privacy-boundary",
+      "configuration-drift",
+      "runtime-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/cli-auth-probes-share-the-filtered-environment/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified merge changes child-environment construction to explicit allowed names and applies it to Claude's authentication probe. Static inspection supports implementation presence. It does not establish authenticated compatibility or release delivery.",
+            "kitchen": "The cook no longer receives every note except a few forbidden labels. The house has accepted a permitted list, also used for a readiness visit. The change has no established new release or confirmed trial with real access in this account."
+          },
+          "fr": {
+            "cuisine": "La maison choisit désormais les billets permis dans le panier du commis. Même une visite pour vérifier son accès reçoit ce panier réduit. Le changement est accepté, sans nouvelle livraison établie. Les essais avec de vrais accès n'ont pas été confirmés ici.",
+            "expert": "SkillSpector fusionne le passage d'une liste de préfixes sensibles à une allowlist fermée de noms de variables. Le contrôle claude auth status reçoit aussi l'environnement filtré. Le patch est vérifié, sans nouvelle release ni essais authentifiés établis."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "SkillSpector aligns CLI environment filtering and Claude auth probing",
+          "kitchen": "A readiness visit gets the same restricted basket"
+        },
+        "fr": {
+          "cuisine": "La visite de contrôle reçoit le même petit panier que le travail",
+          "expert": "SkillSpector partage une allowlist d'environnement avec le probe Claude"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A closed name set limits unrecognized secret names and arbitrary loader configuration. Explicit proxy, certificate and local-session-discovery exceptions preserve selected enterprise-network and session behaviors. Probe parity is tested in source, not observed through a live authenticated run here.",
+            "kitchen": "The list rejects unfamiliar labels while keeping directions and selected information needed to find the local entrance. The inspection visit follows the same packing rule. That closes a different gap from merely limiting what is handed over for the main job."
+          },
+          "fr": {
+            "cuisine": "Un billet au nom inconnu reste dehors. La maison garde toutefois les indications de trajet, de langue et certains moyens de retrouver les accès locaux. La même sélection sert à la visite de contrôle ; elle ne doit pas emporter davantage que le travail principal.",
+            "expert": "Les noms sont comparés en majuscules. Variables inconnues, clés de providers, NODE_OPTIONS et PYTHONPATH sont exclues ; chemins, locale, découverte de sessions locales, proxy et certificats restent admis. Les tests inspectés couvrent les inconnues et env=_scrub_env() sur le probe Claude."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "An unfamiliar label no longer gets a free pass"
+        },
+        "fr": {
+          "cuisine": "Un nom inconnu ne gagne pas une place dans le panier",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep the merged-code claim separate from operational compatibility. Tests were inspected but not executed, and no new release is established. The research_only lesson is consistent filtering across launch paths followed by explicit validation of retained exceptions and actual authentication.",
+            "kitchen": "If the removed note was the only way to gain admission, the entrance procedure must change. Kept directions and access hints do not lock every cupboard. Real-access checks remain unconfirmed, so a smaller basket is not proof of a fully isolated kitchen."
+          },
+          "fr": {
+            "cuisine": "Si l'unique moyen d'entrer était un billet désormais exclu, il faut adapter cette entrée. Les billets de trajet et d'accès conservés ne ferment pas tous les placards. Les essais réels restent non confirmés. La règle réduit ce qui part, sans promettre une maison entièrement isolée.",
+            "expert": "L'authentification fondée uniquement sur des variables exclues doit être adaptée. Le mainteneur signalait encore les essais Claude/Gemini authentifiés sur macOS et Linux comme non vérifiés le matin de la fusion ; aucun résultat ultérieur n'est établi. Les exceptions conservées ne prouvent ni isolement complet des secrets ni confinement filesystem."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The filter may remove the only admission note"
+        },
+        "fr": {
+          "cuisine": "Un panier réduit peut aussi retirer le seul billet d'entrée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "cli-auth-probes-share-the-filtered-environment",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:22:04.294450+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-03",
+  "id": "dossier:checkpoint-provenance-and-image-retry-boundaries",
+  "relationships": {
+    "dossiers": [
+      "archon-session-resume-checkpoint"
+    ],
+    "patterns": [
+      "checkpoint",
+      "evidence-boundary",
+      "retry"
+    ],
+    "projects": [
+      "gstack"
+    ]
+  },
+  "route": "/dossiers/checkpoint-provenance-and-image-retry-boundaries/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Remaining tasks retain both path provenance and a separate target-state check. Restore preserves mission order while putting unproven steps behind verification, rather than treating their saved presence as evidence of readiness.",
+            "kitchen": "For unfinished work, the notebook says whether the method was tried, read or guessed, separately from whether the intended station was checked. On return, the cooks verify uncertain steps before acting without rearranging the service."
+          },
+          "fr": {
+            "cuisine": "Pour chaque geste restant, le carnet précise si la méthode a été essayée, lue ou seulement imaginée, et si le poste visé a été vérifié. Au retour, la brigade contrôle d'abord ce qui reste incertain, sans changer l'ordre du service.",
+            "expert": "Le checkpoint sépare chemin exécuté, lu ou supposé et état cible contrôlé. Restore conserve l'ordre de mission, avec vérification préalable des étapes non prouvées plutôt que promotion implicite en travail prêt à exécuter."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "gstack preserves the provenance of remaining checkpoint steps",
+          "kitchen": "The notebook distinguishes a tried method from a recipe merely read"
+        },
+        "fr": {
+          "cuisine": "Le carnet distingue le geste essayé de la recette seulement lue",
+          "expert": "gstack qualifie la provenance des étapes à reprendre"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Non-overwriting persistence and local artifact recovery sit outside the provider API retry boundary. A save failure after a successful response must not trigger another paid generation call.",
+            "kitchen": "Once the menu illustrator's drawing has arrived, a storage mishap calls for recovering that drawing without covering an older one. Retrying the supplier order must remain separate from repairing its place in the kitchen's cabinet."
+          },
+          "fr": {
+            "cuisine": "Si le dessin commandé pour le menu est arrivé mais a été mal rangé, on récupère celui-là sans recouvrir un dessin existant. Une nouvelle tentative concerne la commande au fournisseur, pas un simple échec de rangement dans la maison.",
+            "expert": "Les images reçues sont conservées sans écrasement et récupérées localement. Le retry est borné à l'appel API fournisseur : un échec de persistance après réception ne doit pas relancer l'achat."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Recover the drawing already delivered instead of buying it again"
+        },
+        "fr": {
+          "cuisine": "Ranger le dessin reçu plutôt que le racheter",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merge and reported evidence establish a bounded change, not universal recovery validation. Full self-verification and end-to-end image-turn accounting remain follow-ups; checkpoint provenance cannot grant user authorization.",
+            "kitchen": "The October 3 accepted change reports three recovery trials; we did not run it ourselves. Complete self-checking and counting image orders through the full service remain unfinished, and knowing a method never supplies the diner's permission."
+          },
+          "fr": {
+            "cuisine": "Le changement accepté le 3 octobre rapporte trois essais de reprise ; nous n'avons rien exécuté ici. Les vérifications complètes et le compte final des commandes de dessins restent à faire, et connaître une méthode ne donne pas l'accord du client.",
+            "expert": "Fusion du 3 octobre, preuves rapportées et évaluation de reprise sur trois essais, sans reproduction ici. Auto-vérification complète et comptage E2E des tours d'image en suivi ; provenance distincte de l'autorisation utilisateur, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Three rehearsed returns do not prove every service"
+        },
+        "fr": {
+          "cuisine": "Trois reprises essayées ne valent pas tous les services",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "checkpoint-provenance-and-image-retry-boundaries",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:00:03.186162+00:00"
+}

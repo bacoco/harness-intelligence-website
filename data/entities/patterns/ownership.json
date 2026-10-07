@@ -16,9 +16,26 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a-lease-check-does-not-fence-the-later-write",
+      "background-completion-must-own-the-current-task-instance",
+      "background-work-keeps-its-originating-turn-permissions",
+      "browser-driver-preserves-attachment-and-cleanup-ownership",
+      "caller-cancellation-must-not-discard-an-engaged-token-rotation",
+      "competing-session-writers-need-distinct-descendant-identities",
+      "derived-context-cache-keeps-a-single-owner-contract",
+      "displaying-an-agent-terminal-does-not-own-its-process",
+      "local-checkpoint-writes-require-current-ownership",
+      "memory-mutations-bind-project-continuation-and-storage-generation",
+      "multiuser-connection-ownership",
+      "queued-mail-wake-preserves-the-existing-work-attribution",
       "remote-tools-injected-without-local-ownership",
+      "restart-recovery-rechecks-live-authority-and-revocation",
+      "scheduled-occurrence-does-not-prove-worker-claim",
+      "sticky-tool-state-needs-trusted-session-provenance-before-activation",
+      "stop-must-survive-until-its-run-exists",
       "timeout-left-descendants-running",
-      "multiuser-connection-ownership"
+      "transcript-access-does-not-grant-worker-resume-ownership",
+      "wake-startup-must-recheck-reservation-identity-after-preparation"
     ]
   },
   "slots": [

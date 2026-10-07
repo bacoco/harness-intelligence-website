@@ -1,0 +1,105 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-01",
+  "id": "dossier:append-only-history-should-append-differences-not-the-entire-past",
+  "relationships": {
+    "dossiers": [
+      "append-only-snapshots-need-retention-bound",
+      "memory-kept-history-lost-mission"
+    ],
+    "patterns": [
+      "compaction",
+      "budget",
+      "state-split"
+    ],
+    "projects": [
+      "Gemini CLI"
+    ]
+  },
+  "route": "/dossiers/append-only-history-should-append-differences-not-the-entire-past/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The change addresses what is appended, not merely whether writes are append-only. Delta/patch recording avoids repeatedly persisting the full conversation history at each turn.",
+            "kitchen": "Each new order used to bring another copy of the entire evening into the notebook. The repair records changes instead; adding pages is no economy when each repeats all the earlier ones."
+          },
+          "fr": {
+            "cuisine": "À chaque nouvelle commande, le commis ajoutait encore une copie de toute la soirée. La correction note seulement les changements : ajouter des pages ne suffit pas si chacune répète toutes les précédentes.",
+            "expert": "ChatRecordingService remplace les réécritures de l'historique complet par des deltas et patchs ajoutés au journal. La forme append-only seule ne borne pas le coût si chaque entrée réembarque tout le passé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Gemini CLI appends history deltas instead of repeated full snapshots",
+          "kitchen": "A new page should not copy the whole evening again"
+        },
+        "fr": {
+          "cuisine": "Une nouvelle page ne devrait pas recopier tout le service",
+          "expert": "Gemini CLI ajoute des deltas au lieu de l'historique complet"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A 50-message in-memory window is distinct from the durable JSONL history. Full reconstruction remains available on demand rather than treating the working window as the entire record.",
+            "kitchen": "Only fifty notes stay in front of the cook; the ledger can reconstruct the rest when needed. Clearing space at the pass does not mean throwing away the earlier orders."
+          },
+          "fr": {
+            "cuisine": "Le commis garde 50 billets devant lui et retourne au carnet pour reconstituer le reste lorsque c'est nécessaire. Alléger le passe ne signifie pas jeter les commandes plus anciennes.",
+            "expert": "La fenêtre mémoire est bornée à 50 messages, avec reconstruction à la demande depuis JSONL. Cette borne de vue n'est pas une suppression de l'histoire antérieure."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Keep fifty notes at the pass and the history recoverable in the ledger"
+        },
+        "fr": {
+          "cuisine": "Cinquante billets au passe, l'histoire retrouvable au carnet",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Retain the October 1 merge and October 2 nightly, excluding the post-cutoff stable release. The reported 100-turn journal reduction from 396.6 MB to 7.86 MB is unreproduced, Linux-limited evidence rather than a general performance or cross-platform guarantee.",
+            "kitchen": "The October 1 accepted change appears in the October 2 trial edition, with no ordinary shipment credited here. One hundred-round trial reports a much smaller ledger; we did not repeat it, and other kitchen setups remain unvalidated."
+          },
+          "fr": {
+            "cuisine": "La correction acceptée le 1er octobre paraît dans l'édition d'essai du 2, sans livraison ordinaire attribuée ici. Un essai de 100 tours annonce un carnet beaucoup plus petit ; nous ne l'avons pas refait, et les autres équipements restent non vérifiés.",
+            "expert": "Fusion du 1er octobre et nightly du 2 ; stable post-cutoff exclue. Benchmark upstream 100 tours : 396,6 Mo à 7,86 Mo, non reproduit, validation Linux limitée et autres plateformes non validées. Aucune garantie générale ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A hundred-round trial does not certify every kitchen"
+        },
+        "fr": {
+          "cuisine": "Un essai de cent tours ne garantit pas toutes les cuisines",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "append-only-history-should-append-differences-not-the-entire-past",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:08:03.072627+00:00"
+}

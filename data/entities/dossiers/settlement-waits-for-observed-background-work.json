@@ -1,0 +1,131 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:settlement-waits-for-observed-background-work",
+  "relationships": {
+    "dossiers": [
+      "background-artifacts-need-terminal-lifecycle",
+      "unknown-flattened-to-empty"
+    ],
+    "patterns": [
+      "runtime-visible-state",
+      "observability",
+      "timeout"
+    ],
+    "projects": [
+      "Archon"
+    ]
+  },
+  "route": "/dossiers/settlement-waits-for-observed-background-work/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified Archon merge introduces runtime-informed completion for Claude. Settlement waits for observed non-ambient work to finish and then for a fresh idle state. The evidence is targeted source and test inspection, not field validation.",
+            "kitchen": "The pass has a finished plate while a known task is still running behind it. The accepted change waits for that task before calling the work settled. It is a development change, with no established release or independent service trial."
+          },
+          "fr": {
+            "cuisine": "Un plat est prêt, mais un commis travaille encore à une préparation connue du chef. La nouvelle règle attend sa fin avant d'annoncer que tout est terminé. Elle est acceptée dans le chantier de la maison, sans livraison ni essai indépendant établis ici.",
+            "expert": "Archon fusionne sur dev un contrat backgroundWork confrontant les événements terminaux à l'état runtime. Pour Claude, un résultat ne suffit plus tant que des tâches non ambiantes observées restent actives. La fusion est vérifiée ; ni release ni exécution indépendante des tests ne sont établies."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Archon reconciles Claude settlement with observed background work",
+          "kitchen": "One finished plate does not end every job in the kitchen"
+        },
+        "fr": {
+          "cuisine": "Une assiette prête ne ferme pas toute la cuisine",
+          "expert": "Archon retarde le settled tant que du travail Claude observé reste actif"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The patch separates reported work, reported absence and lack of observability. Completion and stop states must not be synthesized from observation loss. Accounting remains attached to the retained final result through accumulated costs and token usage.",
+            "kitchen": "Quiet work is still work, so the silence alarm pauses while the chef knows a task is active. A request to stop is still checked. Losing sight of that task cannot truthfully turn its card into stopped or finished."
+          },
+          "fr": {
+            "cuisine": "Tant qu'un travail connu continue, le chef ne ferme pas la cuisine simplement parce que personne ne parle. Il vérifie encore si l'arrêt a été demandé. S'il ne voit plus le commis, il n'écrit pas pour autant « arrêté » ou « fini ».",
+            "expert": "L'exécuteur suspend le watchdog de silence lorsqu'un travail rapporté reste actif, tout en vérifiant l'annulation. Les états absent et non observable restent distincts du travail rapporté. Une observation perdue ne fabrique ni stopped ni settled ; le résultat final conserve coûts et tokens cumulés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Keep watching the known job, even when nobody speaks"
+        },
+        "fr": {
+          "cuisine": "Le silence ne suffit pas à renvoyer le dernier commis",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "This is neither process-tree supervision nor a universal deadline. Suspending a silence watchdog changes liveness handling but does not bound task duration. Do not transfer Claude's inspected settlement behavior to other providers without their own evidence.",
+            "kitchen": "A cook can start something the chef is never told about; this rule does not make it visible. Nor does it add a latest finishing time. A known job that never ends needs cancellation, and the same behavior is not established for every supplier."
+          },
+          "fr": {
+            "cuisine": "Les préparations lancées sans être signalées restent hors du regard du chef. La règle ne fixe pas non plus une heure limite pour chaque tâche. Si une tâche connue ne finit jamais, il faut demander son arrêt. Rien ne prouve ici le même comportement avec tous les fournisseurs.",
+            "expert": "Les processus shell lancés par cmd & restent invisibles à ce contrat. Aucun timeout maximal de tâche n'est ajouté : un travail rapporté sans fin nécessite une annulation. La garantie analysée concerne Claude ; le changement Codex ultérieur n'a pas été approfondi."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Waiting for known work cannot reveal an unseen stove"
+        },
+        "fr": {
+          "cuisine": "Le chef ne surveille pas les casseroles qu'on ne lui a pas signalées",
+          "expert": "Réponse"
+        }
+      },
+      "id": "limits",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The established state remains merged on dev. The useful invariant is to condition settlement on the runtime evidence actually available, preserving unknown when that evidence disappears. Its effectiveness and delivery remain separate questions.",
+            "kitchen": "We inspected the central changes and their written checks, without running them. That supports a bounded account of the accepted repair. Keep finished output, known active work and lost visibility as different answers until the evidence permits closure."
+          },
+          "fr": {
+            "cuisine": "Les principaux mécanismes et les essais écrits ont été lus, sans être exécutés. La maison n'est donc pas annoncée comme entièrement protégée. La leçon est de garder séparés le plat prêt, le travail encore connu et ce que le chef ne peut plus voir.",
+            "expert": "L'inspection couvre des mécanismes ciblés parmi 35 fichiers, dont traduction Claude, conformance, suivi des subtasks, exécuteur et watchdog. Elle ne constitue pas un audit exhaustif ni une reproduction. La règle reste research_only : préserver les états d'observation avant toute conclusion terminale."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Completion needs observation within a named boundary"
+        },
+        "fr": {
+          "cuisine": "La fin doit être vue, pas devinée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "settlement-waits-for-observed-background-work",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:15:11.815718+00:00"
+}

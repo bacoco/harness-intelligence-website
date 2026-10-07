@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:resume-requires-the-recorded-hook-context",
+  "relationships": {
+    "dossiers": [
+      "resume-must-reconcile-control-state"
+    ],
+    "patterns": [
+      "checkpoint",
+      "hooks-enforcement",
+      "fail-open"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/resume-requires-the-recorded-hook-context/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified patch and official release establish a per-turn hook-context gate in DeepAgents Code 0.1.81. Expected hooks and their event set are checkpointed at turn entry. Test code was inspected, not run.",
+            "kitchen": "The cook returns to a half-finished order. Its checking instructions must still be there before work continues. The house has published this safeguard, but we have not tried it during service."
+          },
+          "fr": {
+            "cuisine": "Un plat attend après une pause. Avant de reprendre, le commis doit retrouver la fiche de contrôle prévue pour cette préparation. La maison publie cette protection ; nous ne l'avons pas essayée.",
+            "expert": "DeepAgents Code 0.1.81 publie la vérification du contexte de hooks attendu à la reprise. Le patch fusionné enregistre le snapshot et les événements dès l'entrée du tour. La lecture établit le changement, sans exécution des tests."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "DeepAgents records hook expectations for resumed turns",
+          "kitchen": "The paused dish still needs its checking instructions"
+        },
+        "fr": {
+          "cuisine": "Reprendre le plat avec sa bonne fiche de contrôle",
+          "expert": "DeepAgents lie la reprise au contexte de hooks attendu"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Context equality is a precondition for resumption, not authorization of the tool call. The patch tests preserve hook denial and permit a subsequent hook-free turn after the marker is refreshed. These are inspected assertions rather than independently observed outcomes.",
+            "kitchen": "A saved note identifies which checks belong to the interrupted dish. Missing or changed instructions mean stop; matching instructions still allow the chef to say no. A fresh order gets a fresh note and may require none of these checks."
+          },
+          "fr": {
+            "cuisine": "Si la note gardée réclame une fiche, son absence ou son remplacement arrête la préparation. Retrouver la bonne fiche n'efface pas un refus. Une nouvelle commande reçoit sa propre note et peut ne demander aucun contrôle de ce genre.",
+            "expert": "En présence du marqueur attendu, un contexte manquant ou divergent provoque une erreur avant hooks et outils. Les tests lus conservent le refus avec un contexte correspondant, en synchrone comme en asynchrone. Un nouveau tour remplace le marqueur et peut donc fonctionner sans hook."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A different ticket cannot silently replace the old one"
+        },
+        "fr": {
+          "cuisine": "La bonne fiche reste obligatoire après la pause",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Evidence comes from one upstream team. Release status does not establish protection for markerless historical checkpoints or universal hook coverage. The design lesson is to bind recovery to recorded control expectations while making compatibility gaps explicit.",
+            "kitchen": "We can confirm that the house published the change. We cannot promise that old orders lacking the saved note are protected, and we ran no trial. Keep that limit visible when relying on the new checking procedure."
+          },
+          "fr": {
+            "cuisine": "La protection publiée dépend de cette note gardée. Rien ne prouve ici qu'elle couvre les anciens tickets qui n'en ont pas. La leçon est de reprendre avec les contrôles du bon plat, sans promettre que tout ancien service est protégé.",
+            "expert": "La fusion et la publication sont vérifiées, sans reproduction indépendante. Le contrôle est conditionné au marqueur attendu : aucune protection rétroactive des anciens checkpoints sans marqueur ni garantie générale sur les hooks n'est établie. La règle retenue reste research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Old orders without the note need separate attention"
+        },
+        "fr": {
+          "cuisine": "Les vieux tickets sans note restent une question ouverte",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "resume-requires-the-recorded-hook-context",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:53:44.514166+00:00"
+}

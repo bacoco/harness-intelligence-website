@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:replayed-checkpoints-must-fork-before-writing",
+  "relationships": {
+    "dossiers": [
+      "conversation-rewind-workspace-stayed-mutated"
+    ],
+    "patterns": [
+      "checkpoint",
+      "state-isolation",
+      "retry-semantics"
+    ],
+    "projects": [
+      "LangGraph"
+    ]
+  },
+  "route": "/dossiers/replayed-checkpoints-must-fork-before-writing/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged changes move fork creation ahead of update/replay writes and snapshot DeltaChannels. Their target is cross-descendant contamination from an older checkpoint, not conversation/filesystem rewind in general.",
+            "kitchen": "Other dishes still depend on the old recipe page when a cook returns to change it. The documented repair makes the resumed preparation's own copy before adding any new notes."
+          },
+          "fr": {
+            "cuisine": "Plusieurs préparations suivent la même ancienne fiche ; la corriger sur place peut les mélanger. Les correctifs annoncés créent d'abord une copie propre à la préparation reprise.",
+            "expert": "Les correctifs LangGraph isolent un update/replay d'ancien checkpoint en créant le fork avant toute écriture et en snapshotant les DeltaChannels. Ils empêchent ainsi les nouvelles écritures de viser l'historique partagé par d'autres descendants, selon les sources lues."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "LangGraph isolates replayed checkpoints before writing",
+          "kitchen": "Copy the old recipe before changing the shared page"
+        },
+        "fr": {
+          "cuisine": "Copier l'ancienne fiche avant de la corriger",
+          "expert": "LangGraph crée le fork avant les écritures de replay"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Fork ancestry is not current exclusive ownership. The documented fix checks the descendant situation before mutation rather than relying on the fact that the checkpoint was originally a fork.",
+            "kitchen": "A page that once belonged to one dish may later guide several others. The old label cannot grant exclusive use now; separating the resumed work adds reading and copying effort."
+          },
+          "fr": {
+            "cuisine": "La fiche peut avoir été copiée autrefois puis servir maintenant à plusieurs préparations. Son ancien nom ne suffit plus : il faut isoler la nouvelle écriture, avec du travail de lecture et de copie supplémentaire.",
+            "expert": "Un checkpoint déjà marqué comme fork n'est pas nécessairement isolé s'il possède désormais des enfants. La nouvelle séparation et les snapshots entraînent un coût de lecture et de copie documenté, sans mesure indépendante ici."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A page once copied may now be shared again"
+        },
+        "fr": {
+          "cuisine": "Une ancienne copie peut être devenue commune",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep the released-note inclusion separate from verified runtime behavior. The known stale-checkpoint Command(resume) case remains outside isolation, and the fix does not clean previously contaminated writes.",
+            "kitchen": "The release notes include the changes, without an independent trial here. Resuming an old pending interruption remains excluded, and pages already mixed together are not repaired afterward."
+          },
+          "fr": {
+            "cuisine": "Les notes de la version publiée incluent les corrections, mais nous n'avons pas refait les essais. Répondre à une ancienne demande restée en attente reste hors réparation, et les pages déjà mélangées ne sont pas nettoyées.",
+            "expert": "Les notes 1.2.13 incluent ces changements ; tests non reproduits. Command(resume) ciblant un checkpoint dépassé reste non isolé car un fork changerait les IDs d'interruption, et les anciennes écritures contaminées ne sont pas réparées. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Old contamination and one resume path remain outside the fix"
+        },
+        "fr": {
+          "cuisine": "Les anciennes taches et certaines reprises restent hors réparation",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "replayed-checkpoints-must-fork-before-writing",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:16:26.434788+00:00"
+}

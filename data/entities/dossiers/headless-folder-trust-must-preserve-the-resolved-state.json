@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-29",
+  "id": "dossier:headless-folder-trust-must-preserve-the-resolved-state",
+  "relationships": {
+    "dossiers": [
+      "unknown-flattened-to-empty"
+    ],
+    "patterns": [
+      "permissions",
+      "fail-open",
+      "runtime-visible-state"
+    ],
+    "projects": [
+      "Gemini CLI"
+    ]
+  },
+  "route": "/dossiers/headless-folder-trust-must-preserve-the-resolved-state/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Headless presentation no longer substitutes a constant true for resolved folder trust. The parent receives the existing decision rather than inferring approval from the lack of an interactive prompt.",
+            "kitchen": "With no question counter available, the messenger always called the pantry trusted even when the chef's recorded decision differed. The repair keeps that decision and removes only the unavailable counter."
+          },
+          "fr": {
+            "cuisine": "Sans guichet pour poser la question, le messager annonçait toujours que la réserve était sûre, même si le chef avait un autre avis. La correction garde l'avis déjà établi et retire seulement le guichet inutilisable.",
+            "expert": "Le callback headless retournait true malgré l'état de confiance résolu en interne. Il propage désormais cette valeur au parent, tout en supprimant seulement le dialogue interactif indisponible."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Gemini CLI propagates resolved trust in headless mode",
+          "kitchen": "Closing the question counter does not make the pantry trusted"
+        },
+        "fr": {
+          "cuisine": "Fermer le guichet des questions ne rend pas la réserve sûre",
+          "expert": "Gemini CLI ne force plus trusted dans le callback headless"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Preserving false/true/undefined prevents the callback from erasing uncertainty or contradicting an untrusted result. UI availability and the trust value remain separate parts of the contract.",
+            "kitchen": "Trusted, untrusted and still unknown remain three different answers on the messenger's slip. Removing the place to ask a question must not turn any of them into an automatic yes."
+          },
+          "fr": {
+            "cuisine": "Le message distingue réserve reconnue sûre, réserve non fiable et situation encore inconnue. Ces trois réponses gardent leur sens même lorsqu'aucune question ne peut être affichée au comptoir.",
+            "expert": "Les trois valeurs false, true et undefined traversent le callback sans conversion en oui automatique. L'absence de dialogue n'est ni une résolution de l'inconnu ni un changement d'autorité du workspace."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The messenger must be able to carry an unknown answer too"
+        },
+        "fr": {
+          "cuisine": "Le messager doit aussi pouvoir dire qu'on ne sait pas",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The September 29 merge verifies the described callback correction, not independent execution or universal shell/A2A hardening. Tests were not run and no local installation occurred; adjacent open proposals remain distinct.",
+            "kitchen": "The September 29 change was accepted and its description checked, with no repeated trials or equipment installed by us. It repairs this messenger; neighboring safeguards remain proposed rather than proving every door secure."
+          },
+          "fr": {
+            "cuisine": "Le changement a été accepté le 29 septembre ; sa description a été vérifiée, sans essais refaits ni équipement installé ici. Il concerne ce messager ; d'autres protections restent proposées et toutes les portes de la maison ne sont pas prouvées sûres.",
+            "expert": "Fusion du 29 septembre et description vérifiées, tests non exécutés, aucune installation locale. Le correctif concerne ce callback ; les politiques shell/A2A et propositions voisines ouvertes ne sont pas toutes couvertes. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Correcting the message does not certify every doorway"
+        },
+        "fr": {
+          "cuisine": "Le message est corrigé, toutes les portes ne sont pas certifiées",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "headless-folder-trust-must-preserve-the-resolved-state",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:14:32.144744+00:00"
+}

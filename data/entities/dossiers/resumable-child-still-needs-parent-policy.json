@@ -1,0 +1,105 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:resumable-child-still-needs-parent-policy",
+  "relationships": {
+    "dossiers": [
+      "human-gate-timeout",
+      "timeout-left-descendants-running"
+    ],
+    "patterns": [
+      "subagents",
+      "permissions",
+      "checkpoint"
+    ],
+    "projects": [
+      "Goose"
+    ]
+  },
+  "route": "/dossiers/resumable-child-still-needs-parent-policy/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged foreground path records child lifecycle state in parent messages and resumes nonterminal children at the next prompt after a crash. Child sessions exist before parallel execution, and Stop cancels the work.",
+            "kitchen": "The head chef sets up the helpers' stations, then sends them to work together while keeping their start, finish and stop slips. After a breakdown, the next order resumes unfinished work; a stop instruction cancels it."
+          },
+          "fr": {
+            "cuisine": "Le chef inscrit les postes avant de lancer les commis ensemble ; ses fiches gardent départs, résultats et arrêts. Après une panne, la prochaine commande reprend les travaux sans fin inscrite ; l'ordre d'arrêt les annule.",
+            "expert": "Sur GOOSE_STATE_MACHINE=1, delegate crée les sessions avant l'exécution parallèle des enfants, précédant le prochain appel parent. Les messages start/résultat/cancel permettent de reprendre les enfants non terminés au prochain prompt après crash ; Stop annule."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Goose separates child recovery from inherited approval policy",
+          "kitchen": "Finding the helpers again does not give them permission"
+        },
+        "fr": {
+          "cuisine": "Retrouver les commis ne leur donne pas carte blanche",
+          "expert": "Goose reprend des enfants sans prouver l'héritage de leur autorité"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Session recovery does not establish policy inheritance. The open proposal propagates parent approval mode and tool hooks, relays confirmations, and makes approval-required background actions fail closed without a responder.",
+            "kitchen": "A separate, still-pending repair would give each helper the chef's restrictions and checks, with a route for asking permission. A helper working alone must refuse a restricted action when nobody can answer."
+          },
+          "fr": {
+            "cuisine": "Une réparation encore proposée transmettrait aux commis les règles du chef et ses vérifications, avec un messager pour demander l'accord. Un commis isolé sans répondant devrait refuser le geste qui exige cet accord.",
+            "expert": "Une PR distincte encore ouverte traite les enfants auto sans hooks : héritage du mode d'approbation et des hooks outil, puis relais des confirmations. Un enfant background sans canal de réponse doit refuser une action nécessitant approbation."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The helpers must carry the chef's restrictions too"
+        },
+        "fr": {
+          "cuisine": "Les règles du chef doivent aussi suivre les commis",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep the merged state-machine recovery distinct from the open approval fix and unchanged legacy loop. Reported ACP and before/after tests were not reproduced; max-turns and centralized cancellation remain follow-up work, with no general exactly-once or stable permission-fix claim.",
+            "kitchen": "The October 5 recovery change applies only to the selected new kitchen arrangement; the old one stays as it was. The October 3 restrictions remain pending, trials were not repeated here, and round limits and one shared stop desk remain unfinished; duplicate dishes are not ruled out."
+          },
+          "fr": {
+            "cuisine": "La reprise acceptée le 5 octobre concerne une organisation choisie ; l'ancienne reste inchangée, et les règles proposées le 3 attendent encore. Nous n'avons pas refait les essais ; limiter les tours et réunir les arrêts reste à faire, sans garantie contre les plats doublés.",
+            "expert": "Fusion du 5 octobre limitée à la machine à états ; legacy inchangé. Héritage proposé le 3 toujours ouvert, tests ACP/avant-après non reproduits ; max-turns et annulation centralisée en suivi, sans exactly-once général ni permissions corrigées en stable. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The recovery change is accepted while the restrictions remain pending"
+        },
+        "fr": {
+          "cuisine": "La reprise est acceptée, les nouvelles limites restent proposées",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "resumable-child-still-needs-parent-policy",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:48:37.071954+00:00"
+}

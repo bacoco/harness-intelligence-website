@@ -15,6 +15,12 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a-poll-token-is-not-proof-that-tool-effects-are-uncommitted",
+      "interrupted-call-history-can-close-without-replaying-the-effect",
+      "only-deliverable-completions-should-wake-a-waiter",
+      "restart-preserves-pending-work-not-duplicate-effects",
+      "resuming-an-unsaved-tool-result-can-repeat-a-committed-effect",
+      "scheduled-occurrence-does-not-prove-worker-claim",
       "scheduled-success-needs-effect-proof",
       "tool-results-need-execution-receipts"
     ]

@@ -1,0 +1,105 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:bounded-tool-preview-needs-a-scoped-retrieval-contract",
+  "relationships": {
+    "dossiers": [
+      "codex-skills-context-budget",
+      "tool-results-need-execution-receipts"
+    ],
+    "patterns": [
+      "context-budget",
+      "scope-boundary",
+      "state-split"
+    ],
+    "projects": [
+      "Cline"
+    ]
+  },
+  "route": "/dossiers/bounded-tool-preview-needs-a-scoped-retrieval-contract/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Large MCP/Composio outputs move behind a bounded preview and line-paginated retrieval URI. Original content remains in history and events; reducing what the model receives does not mean replacing the original with the preview.",
+            "kitchen": "The cook sees a short slip instead of carrying the entire long account into every exchange. A reference lets the cook request the useful lines, while the original account remains in the service records."
+          },
+          "fr": {
+            "cuisine": "Le commis reçoit un court extrait plutôt que tout le long relevé à chaque échange. Une référence lui permet de demander les lignes utiles ; le relevé original reste dans les carnets du service.",
+            "expert": "SDK 0.0.89 fournit une preview bornée des gros résultats MCP/Composio et une URI paginable par lignes. L'original reste dans l'historique et les événements, distinct de l'extrait présenté au modèle."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Cline pairs bounded tool previews with paginated retrieval",
+          "kitchen": "Show the short slip and a way to read the remaining lines"
+        },
+        "fr": {
+          "cuisine": "Montrer l'extrait et indiquer où lire la suite",
+          "expert": "Cline fournit un aperçu d'outil et une récupération paginée"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Retrieval is bounded by a volatile, session-scoped cache: 16 MiB maximum and expiry after five unread iterations. Neither the pointer nor history retention proves that this same retrieval route survives eviction or process restart.",
+            "kitchen": "The reading copy sits in a size-limited drawer for the current service. Five rounds without consulting it end its stay, so the reference is not a promise that the drawer will remain available forever."
+          },
+          "fr": {
+            "cuisine": "La copie à consulter reste dans un petit tiroir réservé au service en cours, dont la place est limitée. Après cinq échanges sans lecture, elle expire : le papier qui indique ce tiroir ne promet pas de le retrouver toujours rempli.",
+            "expert": "Le cache est en mémoire et par session, plafonné à 16 MiB avec expiration après cinq itérations sans lecture. Son URI décrit un accès temporaire, pas une garantie après éviction ou redémarrage."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The quick-access drawer belongs to this service only"
+        },
+        "fr": {
+          "cuisine": "Le tiroir de consultation appartient à ce service",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The supported state is a released feature described in notes, not independent runtime or performance validation. Preserve both facts: original content remains in history/events, while the memory retrieval cache has no permanent-access guarantee.",
+            "kitchen": "The September 30 delivery describes this on-demand reading, without a trial by us. Keeping the original ledger does not keep the quick-access drawer open after the kitchen closes."
+          },
+          "fr": {
+            "cuisine": "La livraison du 30 septembre décrit cette lecture à la demande ; nous n'avons pas fait d'essai. Le carnet original et le tiroir de consultation ont des vies différentes : garder l'un ne garantit pas de retrouver l'autre après fermeture.",
+            "expert": "Release du 30 septembre, sans test effectué ici. Un cache de récupération volatil n'est pas un archivage permanent ; la rétention de l'original ne garantit pas l'accès par la même URI après sa disparition. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The delivery describes the drawer; we have not tried it"
+        },
+        "fr": {
+          "cuisine": "La livraison décrit le tiroir ; nous ne l'avons pas essayé",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "bounded-tool-preview-needs-a-scoped-retrieval-contract",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:23:43.728347+00:00"
+}

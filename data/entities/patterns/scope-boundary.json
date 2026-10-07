@@ -14,8 +14,22 @@
     ],
     "patterns": [],
     "dossiers": [
+      "an-empty-tool-allowlist-is-not-an-unset-restriction",
+      "automation-migration-preserves-work-and-mode-boundaries",
+      "bounded-tool-preview-needs-a-scoped-retrieval-contract",
+      "browser-driver-preserves-attachment-and-cleanup-ownership",
+      "derived-context-cache-keeps-a-single-owner-contract",
+      "empty-tool-policy-must-survive-cron-roundtrips",
+      "external-directory-defaults-can-expand-existing-tool-authority",
+      "mcp-app-visibility-filters-the-model-not-server-authority",
+      "one-inference-uses-one-resolved-extension-set",
+      "plugin-approval-must-bind-the-original-project-path",
+      "recursion-limits-need-a-harness-owner",
       "reject-path-shaped-fallback-names-before-io",
-      "session-scope-lock-became-global-state"
+      "remote-browser-file-navigation-needs-its-own-boundary",
+      "session-scope-lock-became-global-state",
+      "synthetic-wakeups-must-not-become-human-memory",
+      "transcript-consent-is-the-intersection-of-all-roots"
     ]
   },
   "slots": [

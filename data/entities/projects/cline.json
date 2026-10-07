@@ -28,15 +28,19 @@
       "worktrees"
     ],
     "dossiers": [
+      "apply-patch-add-overwrite",
+      "bounded-tool-preview-needs-a-scoped-retrieval-contract",
       "cline-hooks-control-layer",
-      "mcp-common-protocol-local-policy",
-      "skills-cross-harness-convergence",
-      "hooks-cross-harness-convergence",
-      "subagents-delegation-control-plane",
-      "recovery-state-convergence",
-      "worktree-isolation-convergence",
       "control-plane-convergence",
-      "apply-patch-add-overwrite"
+      "hooks-cross-harness-convergence",
+      "mcp-common-protocol-local-policy",
+      "recovery-state-convergence",
+      "scheduled-occurrence-does-not-prove-worker-claim",
+      "skills-cross-harness-convergence",
+      "stop-must-survive-until-its-run-exists",
+      "subagents-delegation-control-plane",
+      "team-state-needs-durable-deltas-not-stream-snapshots",
+      "worktree-isolation-convergence"
     ]
   },
   "slots": [

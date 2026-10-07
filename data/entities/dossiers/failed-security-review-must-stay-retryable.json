@@ -1,0 +1,130 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:failed-security-review-must-stay-retryable",
+  "relationships": {
+    "dossiers": [
+      "health-verdict-must-preserve-status-and-coverage"
+    ],
+    "patterns": [
+      "false-green",
+      "checkpoint",
+      "verification"
+    ],
+    "projects": [
+      "Claude Code"
+    ]
+  },
+  "route": "/dossiers/failed-security-review-must-stay-retryable/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The report supplies logs of authentication failure followed by a clean review result. Its author says the commit then enters the reviewed set, preventing subsequent review. Those two stages have not been independently reproduced here.",
+            "kitchen": "Imagine the inspector cannot get through the door, yet the dish receives a clean mark. Tomorrow's inspector skips it because of that mark. This is the concern in one unconfirmed report."
+          },
+          "fr": {
+            "cuisine": "Le goûteur n'a pas pu entrer. Pourtant, la fiche dirait que tout est bon et empêcherait un nouvel examen. Ce récit reste non vérifié.",
+            "expert": "Un signalement du 6 octobre 2026 sur security-guidance 2.0.8 avec Claude Code 2.1.286 décrit des erreurs OAuth 401 suivies d'un résultat sans vulnérabilité. L'auteur rapporte aussi un marquage du SHA comme déjà revu ; aucun essai indépendant ne le confirme."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "security-guidance report links failed review to durable clean status",
+          "kitchen": "The unchecked dish gets a passed stamp"
+        },
+        "fr": {
+          "cuisine": "Le contrôle raté reçoit quand même le tampon bon",
+          "expert": "security-guidance : un échec pourrait être conservé comme revue saine"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A false negative becomes persistent if the same outcome also advances a reviewed-SHA checkpoint. Preserve execution status independently from findings and from the state used to select future work.",
+            "kitchen": "An attractive inspection slip is bad enough when no one tasted the dish. Letting that slip cancel the next inspection makes the error last. The account points to both, without proving their exact cause."
+          },
+          "fr": {
+            "cuisine": "La première erreur serait d'appeler bon ce qui n'a pas été examiné. La seconde serait de retirer ce plat de la liste à contrôler. Le tampon cacherait alors l'oubli durablement.",
+            "expert": "Le risque combine confusion entre échec d'infrastructure et résultat négatif, puis déduplication fondée sur ce résultat. L'état terminal erroné peut supprimer l'éligibilité à une reprise, au-delà du seul affichage trompeur."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A failed check can disappear from tomorrow's list"
+        },
+        "fr": {
+          "cuisine": "Le faux tampon efface le contrôle de demain",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Evidence remains a single user report with logs. Root cause, maintained review-state behavior and any missed vulnerability are unconfirmed; no landed correction is established.",
+            "kitchen": "The available account includes a withdrawn entry key and no independent trial. It does not show an attack succeeding or a dangerous dish actually passing. There is no verified repair to report."
+          },
+          "fr": {
+            "cuisine": "Le récit reste ouvert, sans confirmation de la maison. La clé d'entrée avait été retirée ; cela ne prouve pas une attaque. Aucune réparation n'a été éprouvée ici.",
+            "expert": "L'issue reste ouverte, sans confirmation du mainteneur ni test local. Les logs concernent un token révoqué : ils ne prouvent pas une exploitation ni une vulnérabilité effectivement manquée."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The report proves neither an attack nor a repair"
+        },
+        "fr": {
+          "cuisine": "Aucune attaque ni réparation n'est démontrée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Require execution and coverage witnesses before finalizing a review checkpoint. Infrastructure failure must not become an empty finding set that also excludes future recovery.",
+            "kitchen": "An inspector who never entered cannot award a pass. Keep the dish on the waiting list and record why checking failed. That is the proposed response, still to be tested."
+          },
+          "fr": {
+            "cuisine": "La règle proposée garde séparément le contrôle impossible et le plat déclaré bon. Si personne n'a pu goûter, la fiche doit encore réclamer un examen. Ce n'est pas une réparation déjà livrée.",
+            "expert": "Conserver un état failed ou unverified reprenable et réserver reviewed à une exécution ayant la couverture requise. Cette recommandation research_only n'affirme aucune correction amont ni activation locale."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Lesson",
+          "kitchen": "Leave an unexamined dish waiting for inspection"
+        },
+        "fr": {
+          "cuisine": "Sans examen, garder le plat sur la liste",
+          "expert": "Leçon"
+        }
+      },
+      "id": "lesson",
+      "kind": "lesson"
+    }
+  ],
+  "slug": "failed-security-review-must-stay-retryable",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:49:20.877619+00:00"
+}

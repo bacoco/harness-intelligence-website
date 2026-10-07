@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-03",
+  "id": "dossier:unsupported-security-options-must-block-connection",
+  "relationships": {
+    "dossiers": [
+      "plugin-init-before-control-load"
+    ],
+    "patterns": [
+      "permissions",
+      "configuration-drift",
+      "fail-open"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/unsupported-security-options-must-block-connection/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged Dashboard change rejects stored security options it cannot enforce. Removing the placeholder OAuth transport is a fail-closed admission change, not delivery of OAuth support.",
+            "kitchen": "The station card promises a protected entrance even though its lock was never fitted. The accepted change blocks entry under that promise instead of treating the written setting as real protection."
+          },
+          "fr": {
+            "cuisine": "La fiche promet une porte protégée, mais personne n'a posé la serrure. La correction acceptée refuse d'ouvrir plutôt que de présenter cette promesse comme une protection réelle.",
+            "expert": "Le Dashboard refuse les paramètres MCP OAuth, local_only et allowed_origins qu'il stockait sans appliquer. Le changement fusionné retire aussi le transport OAuth factice, sans livrer OAuth réel."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Semantic Router rejects unenforced MCP security settings",
+          "kitchen": "Writing down a lock does not install one"
+        },
+        "fr": {
+          "cuisine": "Une consigne de serrure n'est pas une serrure posée",
+          "expert": "Semantic Router refuse les options de sécurité MCP inopérantes"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Connection admission covers legacy persisted records as well as new configurations. The author reports zero requests reaching the test server, a targeted assertion that was not independently reproduced here.",
+            "kitchen": "The rejection applies when a card is written or changed and again before departure, including automatic trips using an old card. The rule must hold before the first visit takes place."
+          },
+          "fr": {
+            "cuisine": "La règle refuse les nouvelles fiches et leurs changements, puis bloque aussi les départs automatiques fondés sur d'anciennes fiches. Le refus doit arriver avant la première visite, pas après.",
+            "expert": "Création et édition échouent explicitement ; Connect refuse avant tout transport. Les anciens enregistrements et auto-connect passent par ce refus, évitant qu'un contrôle limité aux nouvelles données laisse les anciens chemins ouverts."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Old cards must be checked before anyone leaves"
+        },
+        "fr": {
+          "cuisine": "Même l'ancienne fiche bloque avant le départ",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Preserve the distinction between blocking unsupported configuration and implementing its protections. Neither merged status nor a connected label authorizes silently removing the user's security requirements.",
+            "kitchen": "Deleting the promised lock from the card would change the chosen policy, so someone must explicitly decide that. We verified the accepted change but did not repeat its tests; the promised lock is still to be supplied."
+          },
+          "fr": {
+            "cuisine": "Effacer la consigne pour ouvrir la porte changerait la protection choisie et demande une décision explicite. La réparation est acceptée, mais nous n'avons pas refait les essais ; la vraie serrure reste à fournir.",
+            "expert": "Les essais sont rapportés, non reproduits, et le vrai support OAuth reste futur. Supprimer les options change la politique : ce n'est pas une réparation automatique autorisée. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Crossing out the lock requirement changes the rule"
+        },
+        "fr": {
+          "cuisine": "Rayer la demande de serrure change l'accord du chef",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "unsupported-security-options-must-block-connection",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:30:18.196891+00:00"
+}

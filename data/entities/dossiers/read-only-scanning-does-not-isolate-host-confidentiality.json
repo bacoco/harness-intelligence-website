@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:read-only-scanning-does-not-isolate-host-confidentiality",
+  "relationships": {
+    "dossiers": [
+      "redact-before-model-boundary"
+    ],
+    "patterns": [
+      "privacy-boundary",
+      "fail-open",
+      "runtime-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/read-only-scanning-does-not-isolate-host-confidentiality/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified SkillSpector merge blocks its Codex CLI integration at launch boundaries. The confidentiality rationale is maintainer-reported and integration-specific. It does not establish a reproduced incident or a claim about every Codex configuration.",
+            "kitchen": "A reader can reveal a notebook's contents without writing on its pages. The house has accepted a shutdown of one particular reading station because of that concern. We inspected the change, but did not reproduce the reported disclosure path or test a release."
+          },
+          "fr": {
+            "cuisine": "Un lecteur peut recopier ce qu'il voit sans changer la page. La maison craint ce risque à un poste précis et accepte d'en bloquer le départ. Le récit du risque n'a pas été reproduit ici. Le changement est accepté, sans nouvelle livraison ni essai établis.",
+            "expert": "SkillSpector fusionne une désactivation de codex_cli motivée par des lectures hôte possibles malgré read-only. Selon le mainteneur, ces données peuvent atteindre la réponse au modèle et le rapport du scanner. Le patch est vérifié, mais le scénario n'est pas reproduit indépendamment et aucune nouvelle release n'est établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "SkillSpector disables its Codex CLI provider before launch",
+          "kitchen": "Taking away the pencil does not hide the notebook"
+        },
+        "fr": {
+          "cuisine": "Interdire le crayon ne cache pas le carnet",
+          "expert": "SkillSpector désactive son intégration Codex CLI pour risque de lecture hôte"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "This is a concrete code-level disablement rather than a warning attached to an otherwise callable provider. Auxiliary authentication/availability checks share the no-launch requirement. Mock-based assertions were inspected, not executed as part of this review.",
+            "kitchen": "The accepted operating rule stops this reader before work begins, including when someone only checks readiness. The supplier's name may remain in the house book. That listing is not permission or ability to start the job."
+          },
+          "fr": {
+            "cuisine": "La nouvelle consigne refuse de lancer ce lecteur pour examiner une fiche. Même vérifier s'il est prêt ne le fait plus entrer. Son nom reste dans le carnet des fournisseurs, mais cela ne signifie pas qu'on peut lui confier le travail.",
+            "expert": "L'inférence lève AgentCLIError avant lancement. Le contrôle d'authentification retourne indisponible sans exécuter Codex, alors que le fournisseur reste enregistré. Les tests ajoutés utilisent des processus simulés pour vérifier l'absence de Popen et subprocess.run sur les chemins directs et de disponibilité ; ils n'ont pas été exécutés ici."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The readiness check must not start the blocked reader"
+        },
+        "fr": {
+          "cuisine": "Même la question « es-tu prêt ? » ne doit pas lancer le lecteur",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not extrapolate the integration's threat model or disablement to all Codex setups. Read-only describes a write restriction, not complete confidentiality isolation. Registration, launch permission and verified behavior remain separate states.",
+            "kitchen": "The changed instructions require a different supported reader if this kind of analysis is to continue. Nothing here proves every replacement safe. Keep the conclusion tied to this station and remember that the accepted change has no independent service trial in this account."
+          },
+          "fr": {
+            "cuisine": "Dans la version modifiée, la maison doit choisir un autre lecteur pris en charge pour continuer ce type d'analyse. Cela ne prouve pas que tous les autres lecteurs sont sûrs. Le changement ne concerne que ce poste ; notre lecture ne remplace pas son essai.",
+            "expert": "Les utilisateurs de cette intégration doivent choisir un autre fournisseur pris en charge pour conserver l'analyse LLM dans le code modifié. La désactivation est fusionnée dans main, sans nouvelle release ni tests indépendants établis. La recommandation research_only sépare permissions d'écriture, accès en lecture et sorties de données."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "One blocked station does not certify every alternative"
+        },
+        "fr": {
+          "cuisine": "Ce poste s'arrête, les autres restent à juger séparément",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "read-only-scanning-does-not-isolate-host-confidentiality",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:19:39.503006+00:00"
+}

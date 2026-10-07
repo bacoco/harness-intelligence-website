@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:handoff-text-must-not-be-reparsed-as-shell-code",
+  "relationships": {
+    "dossiers": [
+      "archon-installed-skill-drift"
+    ],
+    "patterns": [
+      "trust-boundary",
+      "skills-runtime",
+      "installed-vs-source"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/handoff-text-must-not-be-reparsed-as-shell-code/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified merge changes an experimental skill's shell example, not the entire handoff implementation. File-backed prompt transmission replaces inline interpolation. The maintainer explicitly excludes this skill from the published plugin.",
+            "kitchen": "A runner carries a handover note to the next chef. Reading parts of that note as departure orders can change what the runner does. The accepted instruction change separates those roles, but remains experimental, undistributed and untested in this review."
+          },
+          "fr": {
+            "cuisine": "Le commis reçoit un récit à porter au chef suivant. Certains mots du récit peuvent être pris pour des ordres avant son départ. Une consigne corrigée sépare les deux. Elle est acceptée au bureau, encore expérimentale et non distribuée ; nous ne l'avons pas essayée.",
+            "expert": "Le skill expérimental claude-handoff de mattpocock/skills remplace l'insertion directe du résumé dans le shell par un fichier temporaire lu dans un argument cité. Le changement est fusionné, mais le skill n'appartient pas au plugin distribué. Le diff a été lu sans exécution du scénario."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Experimental handoff moves prompt text out of inline shell syntax",
+          "kitchen": "The handover note must not become the runner's orders"
+        },
+        "fr": {
+          "cuisine": "Le récit à transmettre ne doit pas donner les ordres du départ",
+          "expert": "Un résumé de handoff est séparé de la syntaxe shell"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The targeted improvement is data-versus-shell-syntax separation using a quoted file read and an option terminator. It does not claim byte-perfect transport. The patch leaves model selection and the broader handoff mechanism unchanged.",
+            "kitchen": "Put the handover on its own sheet and pass its contents together. Keep a clear dividing point between instructions for the runner and the note for the receiving chef. That is the narrow change shown in the accepted example."
+          },
+          "fr": {
+            "cuisine": "La nouvelle consigne garde le récit sur une feuille à part. Le commis le transmet d'un seul tenant, au lieu de mêler ses mots aux ordres du départ. Un repère indique où ces ordres s'arrêtent et où commence le récit.",
+            "expert": "La lecture du fichier est placée dans une substitution de commande entre guillemets. Le contenu lu n'est pas réinterprété comme les backticks, substitutions ou expansions de variables d'un résumé inline. Le séparateur -- distingue le prompt des options ; le choix du modèle reste inchangé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Carry the note as one piece of text"
+        },
+        "fr": {
+          "cuisine": "Lire la note pour la porter, sans obéir à ses phrases",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Treat the merge as a bounded instruction-level control, with research_only guidance. Validate file handling and the actual launch environment separately before making stronger safety claims. Source acceptance must remain distinct from plugin delivery and observed execution.",
+            "kitchen": "We still need evidence about preparing the sheet, choosing the right one and preserving its contents. Other kitchens may handle it differently. The change was accepted at the office but is not part of the distributed instructions, and we did not try the journey."
+          },
+          "fr": {
+            "cuisine": "Il reste à vérifier comment la feuille est créée, choisie et portée sans changement. La consigne ne prouve pas que toutes les cuisines font ce trajet sûrement. Elle n'est pas distribuée aux postes ordinaires. Seule sa correction au bureau est établie, sans essai de notre part.",
+            "expert": "Ni création sûre du fichier, ni citation de son chemin, ni comportement des autres shells, ni conservation exacte des octets ne sont démontrés. Les releases antérieures à la fusion ne sont pas revendiquées porteuses du changement. L'état est merged, expérimental et non distribué, sans garantie générale de lancement sécurisé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A separate sheet does not certify the whole handover"
+        },
+        "fr": {
+          "cuisine": "La feuille séparée ne prouve pas tout le trajet",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "handoff-text-must-not-be-reparsed-as-shell-code",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:08:58.345045+00:00"
+}

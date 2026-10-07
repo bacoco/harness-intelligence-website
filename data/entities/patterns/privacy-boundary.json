@@ -14,7 +14,11 @@
     ],
     "patterns": [],
     "dossiers": [
-      "redact-before-model-boundary"
+      "child-environment-needs-explicit-minimal-inheritance",
+      "cli-auth-probes-share-the-filtered-environment",
+      "read-only-scanning-does-not-isolate-host-confidentiality",
+      "redact-before-model-boundary",
+      "transcript-consent-is-the-intersection-of-all-roots"
     ]
   },
   "slots": [

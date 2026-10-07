@@ -19,11 +19,15 @@
     ],
     "patterns": [],
     "dossiers": [
-      "remote-tools-injected-without-local-ownership",
+      "control-plane-convergence",
+      "extension-discovery-must-match-the-host-capability",
       "gemini-trust-couples-hooks-mcp-instructions",
       "goose-protocol-pivot-acp",
+      "mcp-app-visibility-filters-the-model-not-server-authority",
       "mcp-common-protocol-local-policy",
-      "control-plane-convergence"
+      "rediscovered-tools-need-policy-before-callable-exposure",
+      "remote-tools-injected-without-local-ownership",
+      "server-cards-locate-connections-without-granting-capabilities"
     ]
   },
   "slots": [

@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:protective-tests-need-realistic-limits-and-the-right-failure",
+  "relationships": {
+    "dossiers": [
+      "green-test-wrong-seam"
+    ],
+    "patterns": [
+      "testing",
+      "false-green",
+      "evidence-boundary"
+    ],
+    "projects": [
+      "Superpowers"
+    ]
+  },
+  "route": "/dossiers/protective-tests-need-realistic-limits-and-the-right-failure/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported fake models a more permissive service than production. The proposed correction names the real row cap, enforces it in the test double and exercises multi-page retrieval.",
+            "kitchen": "The practice tray takes 5000 tickets while the working tray holds only 1000, so the rehearsal misses the constraint. The October 6 report concerns a September 25 service, not a new incident on publication day."
+          },
+          "fr": {
+            "cuisine": "Le bac d'essai accepte 5000 billets, le vrai seulement 1000 : l'essai ne rencontre jamais la limite qu'il devrait vérifier. Ce récit publié le 6 octobre décrit un service du 25 septembre, pas une panne nouvelle ce jour-là.",
+            "expert": "Un rapport publié le 6 octobre décrit une session du 25 septembre : le fake accepte 5000 lignes face au cap réel de 1000, empêchant le garde-fou de complétude de se déclencher. La proposition impose le cap dans le fake et teste plus d'une page."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Superpowers reports an unrealistically permissive pagination fake",
+          "kitchen": "The practice tray is larger than the tray used in service"
+        },
+        "fr": {
+          "cuisine": "Le bac d'essai est plus grand que celui du vrai service",
+          "expert": "Superpowers : un fake de pagination peut rendre la protection impossible à tester"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Negative evidence must be causally tied to the removed protection rather than an unrelated environment error. A real mutation and named failure, paired with a positive control, test that distinction.",
+            "kitchen": "The other report warns that a rehearsal stopping for missing equipment proves nothing about the protective rule. Weaken the rule itself, require the expected failure, and keep a working positive case alongside it."
+          },
+          "fr": {
+            "cuisine": "L'autre récit rappelle qu'un essai arrêté faute d'ustensile ne prouve pas que la protection fonctionne. Il propose de retirer réellement la protection, d'attendre le défaut précis, puis de vérifier aussi le bon cas.",
+            "expert": "Le second rapport refuse module manquant, exit 127 ou mutation de commentaire comme preuves de sensibilité du garde-fou. Il propose mutation effective, diagnostic d'échec attendu et témoins positif/négatif pour le vérificateur."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "A missing oven does not prove the guard rejected the dish"
+        },
+        "fr": {
+          "cuisine": "Un four absent ne prouve pas que le garde a refusé le plat",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Preserve the reported status and separate the two mechanisms. The dated examples support better test design, not a demonstrated project-wide reliability estimate or a shipped correction.",
+            "kitchen": "Neither report has an established integrated repair or an independent replay here. They challenge the meaning of these test results, not the reliability of every recipe the house uses."
+          },
+          "fr": {
+            "cuisine": "Les deux récits restent ouverts, sans réparation intégrée ni essai refait ici. Ils enseignent comment juger ces contrôles, pas la fiabilité de toutes les recettes de la maison.",
+            "expert": "Signalements et propositions seulement, sans correctif intégré ni reproduction indépendante. Aucun résultat global sur la fiabilité de Superpowers n'est déduit ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The reports are open and the remedies remain proposals"
+        },
+        "fr": {
+          "cuisine": "Deux récits ouverts, pas une réparation démontrée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "protective-tests-need-realistic-limits-and-the-right-failure",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:37:11.489719+00:00"
+}

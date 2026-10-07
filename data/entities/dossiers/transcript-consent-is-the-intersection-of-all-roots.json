@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-04",
+  "id": "dossier:transcript-consent-is-the-intersection-of-all-roots",
+  "relationships": {
+    "dossiers": [
+      "consent-before-command-capable-config"
+    ],
+    "patterns": [
+      "privacy-boundary",
+      "scope-boundary",
+      "permissions"
+    ],
+    "projects": [
+      "gstack"
+    ]
+  },
+  "route": "/dossiers/transcript-consent-is-the-intersection-of-all-roots/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged policy uses the most restrictive common scope across roots, with off taking precedence. Repository allowlists and time cutoffs combine by intersection rather than permissive override.",
+            "kitchen": "The kitchen checks every permission book and keeps only the service pages they all allow. One refusal stops collection; a more generous list or date in one book cannot overrule the narrower others."
+          },
+          "fr": {
+            "cuisine": "Quand plusieurs classeurs donnent les permissions de copier les carnets de service, on garde seulement les pages permises par tous. Un seul refus arrête la collecte, et les listes de maisons comme les dates autorisées se resserrent ensemble.",
+            "expert": "Toutes les racines de consentement sont combinées : off prévaut, allowlists et cutoffs s'intersectent. Aucun périmètre plus large d'une racine ne remplace la restriction portée par une autre."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "gstack takes the intersection of transcript-consent roots",
+          "kitchen": "A page may be copied only when every rulebook permits it"
+        },
+        "fr": {
+          "cuisine": "Tous les classeurs doivent permettre la même copie",
+          "expert": "gstack intersecte les consentements de toutes les racines"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Repository and session-creation scope is enforced through a shared policy at ingestion, synchronization and the push guard. The existing recent mode continues to use modification time and must not be described as equivalent to the creation-date cutoff.",
+            "kitchen": "The new choice admits notebooks opened after a common-clock date, with the same rule at collection, copying and the departure check. The older recent choice still means last touched, not first opened."
+          },
+          "fr": {
+            "cuisine": "Une nouvelle règle choisit les carnets ouverts après une date donnée sur la même horloge ; elle suit lecture, copie et contrôle avant départ. L'ancienne sélection « récente » regarde encore la dernière retouche du carnet, pas sa naissance.",
+            "expert": "Un nouveau mode sélectionne les sessions créées après une date UTC, avec filtrage par dépôt partagé entre ingest, sync et garde push. recent reste basé sur mtime : modification récente et création récente demeurent deux critères distincts."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Keep the same copying rule at every handover"
+        },
+        "fr": {
+          "cuisine": "La même règle accompagne les pages jusqu'à la sortie",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Disabling collection and purging staged pages are separate operations under the retained contract. The merge does not establish independent runtime validation; no private transcripts were ingested in this review.",
+            "kitchen": "The October 4 accepted change leaves already prepared pages on the tray when collection is switched off; only narrower choices trigger removal. We neither tried the rule during service nor gathered private notebooks."
+          },
+          "fr": {
+            "cuisine": "Le changement accepté le 4 octobre garde les pages déjà préparées quand on arrête la collecte ; seuls des choix plus étroits déclenchent leur retrait. Nous n'avons ni essayé la règle en service ni recueilli de carnets privés.",
+            "expert": "Fusion du 4 octobre, sans vérification runtime indépendante. off conserve le staging selon le contrat existant ; seuls des choix plus étroits déclenchent purge. Aucune donnée privée ingérée ici ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Stopping new copies does not empty the prepared tray"
+        },
+        "fr": {
+          "cuisine": "Arrêter de copier ne vide pas le plateau déjà rempli",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "transcript-consent-is-the-intersection-of-all-roots",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:02:27.859497+00:00"
+}

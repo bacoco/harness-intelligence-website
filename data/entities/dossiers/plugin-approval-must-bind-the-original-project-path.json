@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:plugin-approval-must-bind-the-original-project-path",
+  "relationships": {
+    "dossiers": [
+      "session-scope-lock-became-global-state"
+    ],
+    "patterns": [
+      "permissions",
+      "runtime-identity",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/plugin-approval-must-bind-the-original-project-path/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Approval binds the project-resolved declaration rather than a relative string whose meaning changes with the working directory. The merged correction targets cross-project reuse of an old path-based grant.",
+            "kitchen": "Permission given for one kitchen's recipe does not approve a namesake in another house. The accepted repair fixes which address is meant before approval is requested."
+          },
+          "fr": {
+            "cuisine": "Le chef approuve une fiche dans sa maison ; une fiche du même nom ailleurs ne reçoit pas cet accord. Le correctif accepté fixe l'adresse avant de demander la permission.",
+            "expert": "Le correctif CLAI2 fusionné ancre les chemins de plugins à la racine du projet avant approbation. Il empêche qu'un accord repoA soit réinterprété comme autorisation de lancer un homonyme repoB."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "CLAI2 anchors project-plugin approval before paths can be reinterpreted",
+          "kitchen": "A recipe's name cannot carry approval into another kitchen"
+        },
+        "fr": {
+          "cuisine": "L'accord pour une recette ne suit pas son nom dans une autre maison",
+          "expert": "CLAI2 ancre l'approbation à la déclaration du projet d'origine"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Legacy rejection preserves the original decision boundary. Rebuilding an old grant under a new project context would silently authorize a different target, even if its filename matches.",
+            "kitchen": "An old slip with an ambiguous address is rejected instead of being rewritten for whichever kitchen is now open. Choose the intended recipe and obtain approval for it again."
+          },
+          "fr": {
+            "cuisine": "Les anciens billets sans adresse assez précise sont refusés, pas réécrits selon la cuisine où l'on se trouve. Il faut retrouver la bonne fiche et demander son accord de nouveau.",
+            "expert": "Les approbations legacy relatives sont refusées sans migration depuis le répertoire courant. L'utilisateur doit sélectionner et approuver de nouveau la bonne déclaration : la migration automatique reproduirait la confusion d'autorité."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Do not repair an ambiguous permission slip by guessing its address"
+        },
+        "fr": {
+          "cuisine": "L'ancien billet ambigu doit repasser devant le chef",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not generalize this path-binding change to factory-only sys.path imports or content-integrity guarantees. The evidence establishes the merge and reported local tests, not an independently verified installed fix.",
+            "kitchen": "The author reports 115 tests, not repeated here, and a stable delivery of the repair is unestablished. Another route for finding recipes stays outside it, while a fixed address alone does not guarantee the page's contents."
+          },
+          "fr": {
+            "cuisine": "L'auteur rapporte 115 essais, que nous n'avons pas refaits, et aucune livraison stable contenant la réparation n'est établie. Une autre façon d'aller chercher les recettes reste hors contrôle ; l'adresse seule ne garantit pas leur contenu.",
+            "expert": "115 tests locaux rapportés, non reproduits ; stable porteuse non établie. Les imports factory-only via sys.path restent hors scope, et ancrer un chemin ne démontre pas l'intégrité des octets. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A fixed address does not certify every word on the page"
+        },
+        "fr": {
+          "cuisine": "La bonne adresse ne certifie pas chaque mot de la fiche",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "plugin-approval-must-bind-the-original-project-path",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:25:49.520117+00:00"
+}

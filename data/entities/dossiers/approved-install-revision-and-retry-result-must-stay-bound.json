@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:approved-install-revision-and-retry-result-must-stay-bound",
+  "relationships": {
+    "dossiers": [
+      "permission-ui-approved-wrong-action"
+    ],
+    "patterns": [
+      "semantic-approval",
+      "installed-vs-source",
+      "runtime-visible-state"
+    ],
+    "projects": [
+      "Hermes"
+    ]
+  },
+  "route": "/dossiers/approved-install-revision-and-retry-result-must-stay-bound/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reviewed patch forwards the approved commit and rejects reuse when stored catalog-SHA metadata disagrees. Matching metadata binds the declared revision but is not cryptographic attestation of the local bytes.",
+            "kitchen": "The signed slip's chosen edition travels with the work of putting it at the station. An existing stack is reused only when its label matches, which does not independently certify every page inside."
+          },
+          "fr": {
+            "cuisine": "Le bon signé indique l'édition choisie, et cette indication accompagne sa mise en place au poste. Une pile déjà présente n'est réutilisée que si son étiquette correspond ; cela ne certifie pas chaque page à l'intérieur.",
+            "expert": "Le commit approuvé est transmis à l'installateur ; un arbre existant aux métadonnées catalog SHA différentes n'est pas réutilisé. Ce contrôle compare des métadonnées et ne constitue pas une attestation cryptographique des octets disque."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Hermes carries the approved commit into catalog installation",
+          "kitchen": "The approved edition must be the one sent to the station"
+        },
+        "fr": {
+          "cuisine": "L'édition signée doit arriver jusqu'au poste",
+          "expert": "Hermes transmet le commit approuvé à l'installation catalogue"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Retry UI derives from the actual returned installation result, including enabled state, tools and remaining setup. Sharing a callID with a previous search card does not make that card evidence of the new attempt.",
+            "kitchen": "The new attempt's receipt says whether the station is open for work, which utensils are available and which preparations are still missing. An earlier catalogue slip with the same number cannot tell that story."
+          },
+          "fr": {
+            "cuisine": "Après une nouvelle tentative, le reçu doit dire si le poste est ouvert, quels ustensiles sont là et ce qu'il reste à préparer. Une ancienne fiche de recherche portant le même numéro ne raconte pas ce nouvel essai.",
+            "expert": "La carte de retry est reconstruite depuis son résultat réel : enabled, outils et setup manquant. Une carte de search antérieure partageant le callID ne sert plus de substitut au résultat d'installation."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "After another attempt, read that attempt's own receipt"
+        },
+        "fr": {
+          "cuisine": "Après un nouvel essai, lire son propre reçu",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The October 6 merge does not make every PR claim independently verified. Inspection covers pin/result handling; targeted tests are reported, broader failures are not fully classified, and no plugin was installed or test executed here.",
+            "kitchen": "The October 6 change is accepted, with these two handovers inspected and the rest described. Targeted trials are reported, broader sets retain unexplained failures, and we neither installed anything nor repeated the trials."
+          },
+          "fr": {
+            "cuisine": "Le changement est accepté le 6 octobre : ces deux passages ont été examinés, tandis que le reste est décrit. Les essais ciblés sont annoncés, mais des séries plus larges gardent des échecs inexpliqués ; nous n'avons rien installé ni refait les essais.",
+            "expert": "Fusion du 6 octobre ; patch ciblé inspecté pour pin/résultat, autres volets connus par le rapport de PR. Tests ciblés annoncés, suites plus larges avec échecs non tous classifiés ; aucune installation ni reproduction ici, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Inspecting two handovers does not validate the entire setup"
+        },
+        "fr": {
+          "cuisine": "Deux passages examinés ne prouvent pas toute l'installation",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "approved-install-revision-and-retry-result-must-stay-bound",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:57:43.343968+00:00"
+}

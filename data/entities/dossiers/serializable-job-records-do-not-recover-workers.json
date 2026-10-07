@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-03",
+  "id": "dossier:serializable-job-records-do-not-recover-workers",
+  "relationships": {
+    "dossiers": [
+      "recovery-state-convergence"
+    ],
+    "patterns": [
+      "checkpoint",
+      "concurrency",
+      "atomic-write"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/serializable-job-records-do-not-recover-workers/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged Flow job foundation retains step outputs and controls incoming updates while decoupling workers from conversation turns. Serialized parent commits and serializable records do not provide durable recovery of the excluded live handles.",
+            "kitchen": "The accepted experiment lets cooks keep working while conversation continues and retains their completed preparations. Saving that record does not bring a stopped cook back after a restart."
+          },
+          "fr": {
+            "cuisine": "La maison accepte un essai où les commis continuent leur travail pendant la conversation et gardent les plats déjà préparés. Le carnet conservé ne sait pas pour autant faire revenir un commis après une coupure.",
+            "expert": "La fondation Flow fusionnée est opt-in et expérimentale : sorties d'étapes conservées, workers indépendants des tours de conversation, updates étrangères/périmées/dupliquées/terminales rejetées et commits parent sérialisés. Les handles ne font pas partie de l'état sérialisable."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "CrewAI adds experimental jobs, not durable worker recovery",
+          "kitchen": "The order book can survive without bringing the cook back"
+        },
+        "fr": {
+          "cuisine": "Le cahier peut garder le plat sans rappeler le cuisinier",
+          "expert": "CrewAI introduit des jobs expérimentaux sans recovery durable"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Prevalidation does not make sequential field assignment atomic. The proposed grouped installation preserves identity and private attributes, but it is not yet merged into the experimental foundation.",
+            "kitchen": "A separate open repair addresses a card left half-changed when a later check fails. It prepares the whole candidate before updating linked entries together, rather than treating prior validation as enough."
+          },
+          "fr": {
+            "cuisine": "Une autre proposition évite de changer la moitié d'une fiche avant qu'une vérification ne bloque la suite. Elle prépare la fiche entière puis remplace ensemble les lignes liées ; cette réparation n'est pas encore acceptée.",
+            "expert": "La PR atomique reste ouverte : valider et sérialiser le candidat complet, puis installer les champs liés ensemble en conservant identité et attributs privés. Elle traite la mutation partielle sous validation Pydantic à l'assignation, distincte de la sérialisation des commits parent."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "A checked replacement must still be installed as one change"
+        },
+        "fr": {
+          "cuisine": "Vérifier toute la fiche avant de remplacer ses lignes ensemble",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not promote the merged record/runner foundation into a restartable worker system. The open atomic fix and unresolved Linux 3.10 telemetry CI failure retain separate status; neither independent test success nor patch causality is established.",
+            "kitchen": "Durable restart, pause, resume, cancellation and automatic replies remain future work. The author reports 181 local tests, which we did not repeat, while a broader check still fails for an unestablished reason."
+          },
+          "fr": {
+            "cuisine": "Reprise après coupure, pause, annulation et réponses automatiques restent à construire. Les 181 essais locaux sont rapportés, pas refaits ici ; un contrôle plus large échoue sans cause établie.",
+            "expert": "Recovery durable, pause/reprise/cancel et réponses automatiques ne sont pas fournis. Les 181 tests locaux rapportés ne sont pas reproduits ; l'échec CI télémétrie Linux 3.10 reste inexpliqué et n'est pas attribué au patch. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Recovery controls and the atomic repair remain unfinished"
+        },
+        "fr": {
+          "cuisine": "Reprendre, suspendre et annuler restent à construire",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "serializable-job-records-do-not-recover-workers",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:11:48.822062+00:00"
+}

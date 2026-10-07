@@ -14,7 +14,12 @@
     ],
     "patterns": [],
     "dossiers": [
-      "heredoc-write-truncation"
+      "ambiguous-report-must-preserve-previous-evaluation",
+      "atomic-snapshot-replacement-can-still-lose-other-writers",
+      "file-edit-lock-and-atomic-replacement-protect-different-boundaries",
+      "heredoc-write-truncation",
+      "serializable-job-records-do-not-recover-workers",
+      "team-state-needs-durable-deltas-not-stream-snapshots"
     ]
   },
   "slots": [

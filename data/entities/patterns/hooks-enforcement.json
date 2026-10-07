@@ -22,12 +22,15 @@
     "dossiers": [
       "cline-hooks-control-layer",
       "control-plane-convergence",
+      "existing-first-admission-landed",
       "gemini-trust-couples-hooks-mcp-instructions",
       "goose-hooks-observer-to-enforcer",
+      "hook-denial-must-reach-the-host-as-a-denial",
       "hook-shared-state-crossed-workers",
       "hooks-cross-harness-convergence",
-      "existing-first-admission-landed",
       "openhands-hook-blocking-state",
+      "permission-hooks-survive-worker-restart",
+      "resume-requires-the-recorded-hook-context",
       "safety-control-failure-became-permission",
       "stop-hook-authority-overreach"
     ]

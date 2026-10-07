@@ -14,7 +14,12 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a-poll-token-is-not-proof-that-tool-effects-are-uncommitted",
+      "automation-migration-preserves-work-and-mode-boundaries",
       "background-artifacts-need-terminal-lifecycle",
+      "durable-forks-reuse-recorded-effects-not-new-run-keys",
+      "replayed-checkpoints-must-fork-before-writing",
+      "resuming-an-unsaved-tool-result-can-repeat-a-committed-effect",
       "retryable-auth-errors-must-not-delete-credentials"
     ]
   },

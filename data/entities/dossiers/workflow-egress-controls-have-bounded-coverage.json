@@ -1,0 +1,103 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:workflow-egress-controls-have-bounded-coverage",
+  "relationships": {
+    "dossiers": [
+      "mechanical-rules-belong-in-deterministic-checks"
+    ],
+    "patterns": [
+      "authority-scope",
+      "verification"
+    ],
+    "projects": [
+      "Claude Code"
+    ]
+  },
+  "route": "/dossiers/workflow-egress-controls-have-bounded-coverage/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified merge combines runner-level egress filtering, an enforced host list and security-parameter checks. Its scope is three repository workflows; no workflow was executed as part of this review.",
+            "kitchen": "The house has accepted instructions limiting where three stations may send things and which utensils they may use. We read the change, but did not watch those stations work."
+          },
+          "fr": {
+            "cuisine": "Le 30 septembre 2026, la maison accepte des règles pour trois postes. Certaines destinations et certains ustensiles sont interdits. Personne n'a vérifié ici leur application pendant un vrai service.",
+            "expert": "La fusion du 30 septembre équipe trois workflows de filtrage réseau sortant enforce et d'un contrôle statique de configuration. Le triage et le dédoublonnage interdisent certains outils web et d'édition. Les patches sont vérifiés, sans essai end-to-end."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Claude Code merges bounded workflow egress enforcement",
+          "kitchen": "Three kitchen stations get explicit delivery rules"
+        },
+        "fr": {
+          "cuisine": "Trois postes reçoivent des règles de sortie précises",
+          "expert": "Claude Code rend vérifiable la configuration de trois workflows"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Network reachability, tool exposure and decision policy are different control surfaces. Static configuration checks cover recognized invocation forms and do not detect every alternative way to call Claude.",
+            "kitchen": "The pantry door can be guarded more closely while the cook receives permission to make some new choices. Neither fact cancels the other. Count the restrictions and the newly allowed choices separately."
+          },
+          "fr": {
+            "cuisine": "Limiter les livreurs ne dit pas tout ce que le commis peut décider. La nouvelle règle peut aussi lui permettre certains gestes autrefois refusés. Il faut lire les deux changements ensemble.",
+            "expert": "Le mode auto, associé à un modèle compatible, peut autoriser après classification des actions hors allowlist que headless acceptEdits refusait. Le changement n'est donc pas une réduction uniforme des permissions, malgré des restrictions réseau et d'outils plus explicites."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A tighter delivery list can coexist with more discretion"
+        },
+        "fr": {
+          "cuisine": "Fermer une porte ne décide pas de chaque geste",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not generalize the patch to product-wide containment. A bounded static check and a verified merge are useful evidence, but they do not replace runtime validation or justify a uniform least-privilege claim.",
+            "kitchen": "This account stops at the accepted change. It proves neither every kitchen entrance is covered nor that the new checks worked in service. The useful next step is to test each promised restriction where it applies."
+          },
+          "fr": {
+            "cuisine": "Les règles sont acceptées pour ces trois postes, pas pour toute la maison. Elles n'ont pas été éprouvées ici. La leçon est de vérifier chaque règle et les postes qu'elle couvre vraiment.",
+            "expert": "L'état établi est merged, soutenu par l'équipe amont, sans corroboration indépendante d'efficacité. La recommandation reste research_only : tester séparément sorties réseau, exposition d'outils et autorisations, puis expliciter les chemins hors couverture."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Accepted instructions still need a service trial"
+        },
+        "fr": {
+          "cuisine": "Le cahier change ; le service reste à observer",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "workflow-egress-controls-have-bounded-coverage",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:50:33.430970+00:00"
+}

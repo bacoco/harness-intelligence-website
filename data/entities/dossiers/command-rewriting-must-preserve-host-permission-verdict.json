@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:command-rewriting-must-preserve-host-permission-verdict",
+  "relationships": {
+    "dossiers": [
+      "permission-ui-approved-wrong-action"
+    ],
+    "patterns": [
+      "permissions",
+      "semantic-approval",
+      "trust-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/command-rewriting-must-preserve-host-permission-verdict/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged RTK integration evaluates both command forms under OpenCode's own ordered policy. It forgoes token savings when the verdict differs rather than widening or editing user permissions.",
+            "kitchen": "A cook tries a shorter way to pass on the order. The accepted change abandons that shortcut if it turns the chef's approval, question or refusal into a different answer."
+          },
+          "fr": {
+            "cuisine": "Le commis propose un bon plus court pour gagner du temps. Si le chef répond autrement au nouveau bon, la correction acceptée garde l'original plutôt que ce gain.",
+            "expert": "RTK compare original et réécriture avec les règles ordonnées propres à OpenCode. Un changement allow/ask/deny annule l'optimisation, sans ajouter de règle au fichier utilisateur."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "RTK rejects rewrites that alter the host's permission verdict",
+          "kitchen": "A shorter ticket must keep the chef's original decision"
+        },
+        "fr": {
+          "cuisine": "Raccourcir le bon ne doit pas changer le oui ou le non du chef",
+          "expert": "RTK conserve le verdict de permission pendant la réécriture"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Parser hardening and rewrite-verdict preservation are separate changes. Deny/ask normalization does not imply identical allow behavior for every redirected command; those changed cases are documented explicitly.",
+            "kitchen": "The companion repair stops the way an order is written from hiding another action. It asks when that writing cannot be established reliably, while openly retaining some changed approval behavior."
+          },
+          "fr": {
+            "cuisine": "Un autre correctif rend visibles des gestes cachés par l'écriture du bon et demande un accord quand cette écriture reste incertaine. Certaines façons de permettre un geste changent aussi : tout n'est pas présenté comme inchangé.",
+            "expert": "La correction de segmentation expose les commandes derrière redirections et résidus de grammaire ; le quoting ANSI-C non attestable passe par ask. Le stripping vise deny/ask seulement, et certains cas allow derrière redirection changent explicitement."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Every action must remain visible on the ticket"
+        },
+        "fr": {
+          "cuisine": "Le second geste ne doit pas disparaître derrière le premier",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Coverage excludes per-agent OpenCode rules and hook check. Reported tests and three-version sessions were not independently reproduced, and the later develop merges must not be credited to the earlier 0.51.0 stable release.",
+            "kitchen": "The described check cannot see every cook's personal rule or cover a separate checking route. Tests and trials are author-reported, not repeated here; these development changes follow the named stable version."
+          },
+          "fr": {
+            "cuisine": "Les règles propres à chaque commis et une vérification auxiliaire restent hors du contrôle décrit. Les essais sont annoncés, pas refaits ici ; les corrections sont acceptées dans le chantier après la dernière livraison stable citée.",
+            "expert": "Les règles OpenCode par agent et hook check restent hors couverture. L'auteur rapporte 3850 tests, une matrice de préfixes et des sessions sur trois versions OpenCode, sans reproduction ici. Les fusions develop des 2 et 5 octobre ne sont pas incluses par preuve dans la stable 0.51.0 antérieure ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Some local rules remain outside the checked view"
+        },
+        "fr": {
+          "cuisine": "Les règles propres à chaque commis restent hors du contrôle décrit",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "command-rewriting-must-preserve-host-permission-verdict",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:15:33.756230+00:00"
+}

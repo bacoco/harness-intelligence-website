@@ -1,0 +1,112 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:late-send-results-must-respect-the-started-turn-generation",
+  "relationships": {
+    "dossiers": [
+      "hook-shared-state-crossed-workers"
+    ],
+    "patterns": [
+      "state-isolation",
+      "runtime-visible-state",
+      "runtime-identity"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/late-send-results-must-respect-the-started-turn-generation/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The preview release guards prompt cleanup and error display against stale send responses once the successor turn actually starts. A response's generation determines whether it may mutate the current view.",
+            "kitchen": "Once the next preparation has started, the first cook's late reply must not erase its ticket or attach the old mistake to it. The announced rule checks which service owns that reply."
+          },
+          "fr": {
+            "cuisine": "Quand la nouvelle préparation a commencé, le retour tardif du premier commis ne doit plus effacer son bon ni y ajouter son erreur. La règle annoncée rattache chaque réponse au service qui l'a produite.",
+            "expert": "La préversion protège le nettoyage du prompt et l'affichage d'erreur contre les réponses send périmées après le démarrage effectif du successeur. La génération du tour, pas la simple arrivée d'une réponse, détermine son droit de modifier la vue."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Zed fences late send results by the started turn's generation",
+          "kitchen": "The first cook's late reply must not erase the next order"
+        },
+        "fr": {
+          "cuisine": "Le retour du premier commis ne raye pas la nouvelle commande",
+          "expert": "Zed lie les réponses send à la génération du tour démarré"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Cancellation alone leaves the view generation valid. An older error may surface during successor preparation; actual successor start is the boundary that clears it and activates stale-response protection.",
+            "kitchen": "Calling stop does not yet replace the service mark on the board. An old mistake may show while the next station is being prepared, but it must be cleared when that new work actually begins."
+          },
+          "fr": {
+            "cuisine": "Dire d'arrêter ne change pas encore la marque du service sur le tableau. Une vieille erreur peut revenir pendant la préparation du poste suivant, mais doit disparaître lorsque ce nouveau travail commence vraiment.",
+            "expert": "Cancel seul n'invalide pas la génération de vue. Une erreur ancienne peut apparaître pendant la préparation, mais doit être retirée au start du tour successeur : la garantie commence à cette transition."
+          }
+        },
+        {
+          "en": {
+            "expert": "A shared fallback uses the latest retained raw output when structured content is empty. Display, search and export therefore derive from the same fallback rather than preserving inconsistent older projections.",
+            "kitchen": "When the formatted sheet is empty, the brigade uses the latest original note it kept instead of leaving an older presentation. The board, notebook search and take-away copy all use that same note."
+          },
+          "fr": {
+            "cuisine": "Si la belle fiche est vide, la brigade relit la dernière note originale gardée, au lieu de conserver une ancienne présentation. Le tableau, la recherche dans le carnet et la copie à emporter utilisent tous cette même note.",
+            "expert": "Quand le contenu structuré est vide, le dernier raw output conservé sert de fallback commun à l'affichage, la recherche et l'export. Le changement évite une projection ancienne distincte de la dernière valeur brute retenue."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Cancelling the first dish does not yet start the next one"
+        },
+        "fr": {
+          "cuisine": "Annuler le premier plat ne commence pas encore le suivant",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The new event is the September 30 publication of 1.23.1-pre, based on earlier PRs. Do not attribute it to stable 1.22 or claim local validation; retain the precise cancellation/preparation/start boundary.",
+            "kitchen": "These rules appear in the September 30 trial edition, not the named ordinary delivery. They were accepted earlier, and we ran no trial of this publication."
+          },
+          "fr": {
+            "cuisine": "Ces règles paraissent dans l'édition d'essai du 30 septembre, pas dans la livraison ordinaire citée. Elles avaient été acceptées auparavant ; nous n'avons fait aucun essai de cette publication.",
+            "expert": "Publication 1.23.1-pre du 30 septembre, pas stable 1.22. Les PR sont antérieures à la fenêtre ; aucun essai local, et la limite préparation/start reste explicite. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The trial edition is not the ordinary delivery"
+        },
+        "fr": {
+          "cuisine": "Le cahier d'essai ne remplace pas la livraison ordinaire",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "late-send-results-must-respect-the-started-turn-generation",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:04:09.761592+00:00"
+}

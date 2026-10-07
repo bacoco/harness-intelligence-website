@@ -14,7 +14,16 @@
     ],
     "patterns": [],
     "dossiers": [
-      "agent-claims-need-evidence-labels"
+      "agent-claims-need-evidence-labels",
+      "autopilot-proof-must-name-the-exercised-agent-path",
+      "checkpoint-provenance-and-image-retry-boundaries",
+      "detector-verdicts-need-the-context-actually-seen",
+      "evaluation-diagnostics-must-not-rewrite-the-verdict",
+      "later-action-score-must-not-release-an-earlier-pending-review",
+      "media-presence-is-not-behavioral-proof",
+      "outbound-image-serialization-is-not-model-reception-proof",
+      "protective-tests-need-realistic-limits-and-the-right-failure",
+      "scheduled-occurrence-does-not-prove-worker-claim"
     ]
   },
   "slots": [

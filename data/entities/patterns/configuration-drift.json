@@ -14,7 +14,13 @@
     ],
     "patterns": [],
     "dossiers": [
-      "remote-tools-injected-without-local-ownership"
+      "child-environment-needs-explicit-minimal-inheritance",
+      "cli-auth-probes-share-the-filtered-environment",
+      "cron-tool-inventory-repair-preserves-explicit-authority",
+      "remote-browser-file-navigation-needs-its-own-boundary",
+      "remote-tools-injected-without-local-ownership",
+      "resumed-ai-policy-is-pinned-but-credentials-stay-live",
+      "unsupported-security-options-must-block-connection"
     ]
   },
   "slots": [

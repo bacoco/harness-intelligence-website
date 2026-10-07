@@ -1,0 +1,114 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:delegated-results-return-to-requester-with-unresolved-delivery-reports",
+  "relationships": {
+    "dossiers": [
+      "delivery-finished-user-got-nothing"
+    ],
+    "patterns": [
+      "delivery-stages",
+      "subagents",
+      "checkpoint"
+    ],
+    "projects": [
+      "OpenClaw"
+    ]
+  },
+  "route": "/dossiers/delegated-results-return-to-requester-with-unresolved-delivery-reports/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The stable changelog states an explicit delegation completion contract, not an observed exactly-once transport guarantee. Producer completion, requester admission and consumption remain distinct. The new reports are counter-signals, not reproduced regressions or proof that every path fails.",
+            "kitchen": "A helper finishes the assigned preparation and owes its result to the cook who requested it. The stable notes say that return happens once and can no longer be hidden by the old silence settings. Two open reports describe stalled returns; neither the reports nor a once-only delivery guarantee was independently tested here."
+          },
+          "fr": {
+            "cuisine": "Le chef confie un plat à un aide et attend son retour. La maison annonce que ce résultat revient une fois au demandeur, sans être caché par une consigne de silence. Deux récits signalent pourtant des retours restés bloqués. Ni ces récits ni une livraison unique garantie n'ont été éprouvés ici.",
+            "expert": "OpenClaw 2026.9.8 documente un retour au demandeur une fois, tandis que le travail interne doit rendre un résultat ou continuer. REPLY_SKIP et ANNOUNCE_SKIP ne masquent plus ces retours. Deux signalements non résolus qualifient ce contrat ; aucune garantie exactly-once de bout en bout n'est établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "OpenClaw documents requester-bound delegated completion",
+          "kitchen": "The helper owes a result to the cook who asked"
+        },
+        "fr": {
+          "cuisine": "Le commis doit rendre son résultat à celui qui l'a demandé",
+          "expert": "OpenClaw explicite le retour des résultats délégués"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Migration concerns consumers that relied on silent suppression. A returned result is part of the delegation contract; subsequent follow-up messaging is separately requested. This is documented September stable behavior, not evidence transferred from October beta or August extended-stable tracks.",
+            "kitchen": "A custom routine must accept the result instead of depending on its disappearance. Extra follow-up messages need an explicit request. The announced settings migration preserves group-chat silence, so returned work and later conversation must not be conflated."
+          },
+          "fr": {
+            "cuisine": "Les recettes de travail doivent désormais traiter ce qui revient et demander clairement les messages supplémentaires souhaités. La maison annonce déplacer les anciens réglages tout en gardant le silence prévu dans les échanges de groupe. Recevoir le plat et demander d'autres nouvelles restent deux décisions différentes.",
+            "expert": "Les workflows personnalisés doivent consommer les résultats rendus et demander explicitement les messages de suivi. Doctor migre les anciens réglages en préservant le silence en groupe. Ce changement de compatibilité ne démontre ni durabilité après crash ni comportement effectif de chaque chemin."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "A formerly silent workflow must now handle the returned dish"
+        },
+        "fr": {
+          "cuisine": "Les anciennes recettes silencieuses doivent apprendre à recevoir",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The first report contains sanitized state/log observations but no deterministic timing reproduction. The second lacks a version. Keep these as unresolved reports alongside the release contract rather than labeling the entire stable delivery system broken.",
+            "kitchen": "One account on the published version leaves two results waiting for sixty-nine minutes with no wake attempt. Another describes a result abandoned after interrupted admission but does not identify a version. These accounts remain unverified and cannot establish one shared defect."
+          },
+          "fr": {
+            "cuisine": "Un récit sur la version publiée décrit deux résultats encore en attente après soixante-neuf minutes, sans tentative de réveil. Un autre parle d'un retour abandonné après interruption, sans préciser la version. Ces récits n'ont pas été reproduits et ne prouvent pas une seule panne commune.",
+            "expert": "Le rapport du 3 octobre sur 2026.9.8 décrit pending et zéro tentative de wake après announce interrompu, avec un enfant réussi et un autre en erreur. Celui du 6 octobre décrit une admission native Codex interrompue puis un abandon après requester-recovery-blocked, sans version nommée. Aucune reproduction déterministe ni cause commune n'est établie."
+          }
+        },
+        {
+          "en": {
+            "expert": "Release publication on 3 October and the later report date must remain separate. Waived Telegram source QA, Package Acceptance and published-package E2E limit validation claims. The retained research lesson is observable completion across every handoff, with uncertainty preserved.",
+            "kitchen": "Some major release checks were explicitly waived rather than run, and this review tried none of the paths. The later October 6 date belongs to a report, not a fresh release. Follow the result to its requester without claiming evidence that is still missing."
+          },
+          "fr": {
+            "cuisine": "La publication a aussi dispensé certains grands essais, qui n'ont donc pas été faits. Nous n'avons essayé aucun de ces chemins. Le 6 octobre est la date du dernier récit, pas celle d'une nouvelle livraison. La leçon reste de suivre le retour jusqu'au bon demandeur.",
+            "expert": "La publication dispense explicitement Telegram source QA, Package Acceptance et published-package E2E ; ils n'ont pas été exécutés. Aucun test amont n'est réalisé ici. La release date du 3 octobre, le dernier rapport du 6 ; la guidance demeure research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Interrupted handoffs remain unresolved reports"
+        },
+        "fr": {
+          "cuisine": "Deux retours interrompus restent des récits à vérifier",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "delegated-results-return-to-requester-with-unresolved-delivery-reports",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:43:20.602556+00:00"
+}

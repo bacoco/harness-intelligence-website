@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-04",
+  "id": "dossier:a-poll-token-is-not-proof-that-tool-effects-are-uncommitted",
+  "relationships": {
+    "dossiers": [
+      "tool-results-need-execution-receipts"
+    ],
+    "patterns": [
+      "retry-semantics",
+      "execution-receipts",
+      "state-split"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/a-poll-token-is-not-proof-that-tool-effects-are-uncommitted/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported fault separates successful tool execution from failed result submission. Reusing a continuation token that still denotes the tool request can replay the functions rather than merely retry the submission.",
+            "kitchen": "The published rehearsal has a cook finish a dish before its receipt fails to be sent. Asking again with the old slip makes the dish get prepared again; we did not repeat that rehearsal."
+          },
+          "fr": {
+            "cuisine": "Dans l'exercice publié, le commis prépare le plat puis échoue à faire partir son reçu. Redemander l'état avec le même billet lui fait préparer encore ce plat ; nous n'avons pas rejoué l'exercice.",
+            "expert": "Le rapport Python décrit un poll qui exécute les fonctions puis échoue en soumettant leurs résultats. Le token resté sur la requête d'outils peut faire répéter les effets au re-poll ; le repro upstream n'est pas exécuté ici."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Agent Framework: reported duplicate effects after failed poll submission",
+          "kitchen": "The receipt failed to leave, but the cook already made the dish"
+        },
+        "fr": {
+          "cuisine": "Le reçu ne part pas, mais le plat a déjà été préparé",
+          "expert": "Agent Framework : un re-poll peut répéter des outils déjà exécutés"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A transport cursor is not an effect ledger. The retained recommendation is to preserve or reconcile executed work and retry only the failed delivery stage; it is not an implemented fix established by this report.",
+            "kitchen": "The old slip records where the exchange stopped, not whether the dish exists. Keep the produced receipt or reconcile the preparation before deciding that another order is needed."
+          },
+          "fr": {
+            "cuisine": "Le vieux billet dit où la conversation s'est arrêtée, pas si le plat existe. La règle étudiée garde le reçu déjà produit ou vérifie la préparation avant de commander de nouveau.",
+            "expert": "La continuité doit conserver les résultats produits ou l'identité durable de l'effet. Reprise de soumission et nouvelle exécution doivent rester distinctes : le token de poll seul n'établit pas l'état des effets."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Retry the receipt, not the cooking already done"
+        },
+        "fr": {
+          "cuisine": "Renvoyer le reçu ne doit pas relancer la cuisson",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep author-reported core 1.20/openai 1.15 behavior at its reported level. This is not independent validation, a real payment incident or proof that unrelated recovery fixes failed.",
+            "kitchen": "Both the supplier and the payment ledger are simulated, with no real transaction observed. The author reports checking again, which we did not do; this account does not overturn repairs to other parts of the service."
+          },
+          "fr": {
+            "cuisine": "Le fournisseur et le registre de paiement sont simulés, sans transaction réelle observée. L'auteur annonce une nouvelle vérification que nous n'avons pas refaite ; ce récit ne juge pas les autres réparations de la maison.",
+            "expert": "Repro avec API modèle et registre de paiement simulés ; revérification core 1.20/openai 1.15 rapportée par l'auteur. Aucun essai ici ni transaction réelle ; le cas n'annule pas les corrections d'autres boucles. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The payment ledger in the rehearsal is simulated"
+        },
+        "fr": {
+          "cuisine": "Les paiements de l'exercice sont fictifs",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "a-poll-token-is-not-proof-that-tool-effects-are-uncommitted",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:41:42.467439+00:00"
+}

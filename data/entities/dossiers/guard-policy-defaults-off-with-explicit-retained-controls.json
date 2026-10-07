@@ -1,0 +1,128 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:guard-policy-defaults-off-with-explicit-retained-controls",
+  "relationships": {
+    "dossiers": [
+      "skills-default-on-docs-lag"
+    ],
+    "patterns": [
+      "defaults",
+      "authority-scope",
+      "release-state"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/guard-policy-defaults-off-with-explicit-retained-controls/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified merge changes scope defaults for newly created work, not every existing intent. Nine defaults move to off, enterprise remains strict and express remains off. Selected code excerpts and the PR body were inspected, without runtime execution.",
+            "kitchen": "The house changes the starting rules for nine kinds of new orders. One exception keeps strict rules, and work already booked retains its recorded choice. Human-presence checks and approval questions remain part of the arrangement; this review did not test it in service."
+          },
+          "fr": {
+            "cuisine": "La maison accepte de baisser certaines barrières pour neuf façons de préparer de nouvelles commandes. Une exception garde les règles strictes ; les commandes déjà ouvertes gardent leur choix. Les questions au chef et sa présence restent prévues. Nous avons lu le changement, sans l'essayer.",
+            "expert": "Le 30 septembre, AI-DLC fusionne neuf changements de défaut vers off : security-patch et infra depuis strict, sept scopes depuis relaxed. express était déjà off ; enterprise demeure strict. Les intents existants conservent leur valeur enregistrée, sans preuve ici de l'enforcement de tous les chemins."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "AI-DLC defaults new non-enterprise scopes to Guard Policy off",
+          "kitchen": "New orders get fewer automatic stops while human checks remain"
+        },
+        "fr": {
+          "cuisine": "Des barrières baissent pour les nouvelles commandes, le chef reste présent",
+          "expert": "AI-DLC change les défauts de Guard Policy pour les nouveaux intents"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The selected policy and its scope default are distinct inputs. Off is a specific reduction in switchable execution fences, not removal of all human oversight. Preserve that bounded meaning rather than inferring either unchanged protection or unrestricted execution.",
+            "kitchen": "The changed arrangement lowers four automatic stops while keeping the chef's questions and attendance checks. Changes are written down rather than reopening that approval step. A stricter choice is still possible, so the starting rule does not erase every other safeguard."
+          },
+          "fr": {
+            "cuisine": "Quatre barrières automatiques sont abaissées, mais les questions d'accord ne disparaissent pas. Si les ingrédients changent, on note le changement au lieu de redemander cet accord. Le responsable peut encore choisir une règle plus stricte que celle proposée au départ.",
+            "expert": "Off abaisse les fences plan-approval, review-freeze, state-transition et reviewer read-scope. Les changements d'entrées sont journalisés plutôt que de rouvrir l'approbation. Checks de présence humaine, questions d'approbation et audit demeurent ; la composition accepte une politique choisie plus stricte que le défaut off."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Name each lowered stop and each retained check"
+        },
+        "fr": {
+          "cuisine": "Moins d'arrêts automatiques ne veut pas dire plus aucune question",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Preview publication and full-suite success are independent events here. The official notes report failure; this review did not reproduce it. Do not claim a green or stable release, or attribute that failure to the policy change without additional evidence.",
+            "kitchen": "All five preview announcements in the period report a failed full check. The latest is dated 6 October, with no new stable release established. We did not repeat the checks, and nothing ties their failure causally to the lowered policy defaults."
+          },
+          "fr": {
+            "cuisine": "Les cinq annonces d'essai de la période indiquent que la vérification complète a échoué. La plus récente est du 6 octobre ; aucune nouvelle version stable n'est établie. Nous n'avons pas refait ces essais. Rien ne montre que la baisse des barrières soit la cause de cet échec.",
+            "expert": "La dernière publication est v2.10.1-preview.20261006.1 et avertit de Full Suite failed, comme les quatre autres previews de la fenêtre. L'échec rapporté touche live_windows, notamment t-tui-t51-poc-scope.serial. La publication n'attend pas cette suite ; aucune nouvelle stable ni causalité avec Guard Policy n'est établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The preview is published despite a failed full check"
+        },
+        "fr": {
+          "cuisine": "La version d'essai est publiée avec des vérifications en échec",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Review scope defaults, explicit stricter selection and stored policies independently from release validation. Static inspection can establish a configuration change without certifying every enforcement path. The preview's published failure warning must remain visible alongside the merged-policy finding.",
+            "kitchen": "Find the actual rule attached to the order before deciding how much oversight remains. Then read the test report rather than treating publication as a pass. This is a proposed checking discipline; we have changed no kitchen's operating rules."
+          },
+          "fr": {
+            "cuisine": "Avant de se fier à la nouvelle règle, regarder quelles barrières changent et quelles commandes sont concernées. Lire ensuite le bilan des essais, même si l'annonce est déjà sortie. Cette prudence est étudiée ici, sans modifier les règles d'aucune cuisine.",
+            "expert": "La recommandation research_only est de vérifier la politique effective du nouvel intent, les contrôles conservés et son traitement des changements d'entrées. Relier séparément la version testée au résultat de suite. Ni le nom off ni l'existence d'une preview ne résume ces deux états."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Lesson",
+          "kitchen": "Check the order's policy and the test result as separate facts"
+        },
+        "fr": {
+          "cuisine": "Lire la règle choisie et le bilan des essais séparément",
+          "expert": "Leçon"
+        }
+      },
+      "id": "lesson",
+      "kind": "lesson"
+    }
+  ],
+  "slug": "guard-policy-defaults-off-with-explicit-retained-controls",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:34:24.620828+00:00"
+}

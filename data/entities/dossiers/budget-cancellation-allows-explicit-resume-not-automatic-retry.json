@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:budget-cancellation-allows-explicit-resume-not-automatic-retry",
+  "relationships": {
+    "dossiers": [
+      "sweagent-cost-guard-retry-rebilling"
+    ],
+    "patterns": [
+      "cost-guards",
+      "retry",
+      "subagents"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/budget-cancellation-allows-explicit-resume-not-automatic-retry/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The October 6 release 18.6.3 announcement addresses a subagent reported cancelled while still issuing requests. Automatic retry must not recreate active execution after the budget-stop notification.",
+            "kitchen": "The earlier account described a helper marked stopped at the spending limit who nevertheless kept requesting more work. The October 6 delivery announces that automatic attempts stop after that cancellation."
+          },
+          "fr": {
+            "cuisine": "Un ancien récit décrivait un commis annoncé arrêté à la limite de dépense, mais qui continuait à réclamer du travail. La livraison du 6 octobre annonce que ces nouvelles tentatives automatiques cessent après l'arrêt.",
+            "expert": "Le rapport antérieur décrivait un enfant cancelled mais encore en boucle de requêtes. La release 18.6.3 du 6 octobre annonce l'arrêt des retries automatiques après annulation de budget."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Oh My Pi 18.6.3 blocks automatic retries after budget cancellation",
+          "kitchen": "The cook stopped at the spending limit must not restart alone"
+        },
+        "fr": {
+          "cuisine": "Le commis arrêté à la limite ne doit pas repartir tout seul",
+          "expert": "Oh My Pi 18.6.3 bloque les retries après annulation de budget"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Queryable state and explicit resumability are preserved while automatic re-entry is disabled. The live execution controller must not be recreated merely because retry logic still has access to the child.",
+            "kitchen": "The helper remains available to answer questions or resume when the chef explicitly asks. Being reachable does not let an automatic second attempt switch the stove back on."
+          },
+          "fr": {
+            "cuisine": "Le chef peut encore interroger le commis ou lui demander clairement de reprendre. Cette disponibilité ne permet pas au commis de rallumer seul son poste par habitude de réessayer.",
+            "expert": "L'enfant reste interrogeable et disponible pour une reprise explicite. Cette disponibilité ne vaut pas permission de réentrée automatique ni de recréation du contrôleur d'exécution par retry."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "You can question the helper without telling them to cook again"
+        },
+        "fr": {
+          "cuisine": "On peut parler au commis sans lui demander de recuisiner",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The evidence supports an announced released correction rather than independent execution or measured savings. Cancellation is not rollback of prior effects, and the closed issue alone is not used to establish the fix.",
+            "kitchen": "The delivery announcement supports the stated repair; closing the complaint alone would not, and we did not repeat the trial. Stopping the helper does not undo dishes already served."
+          },
+          "fr": {
+            "cuisine": "L'annonce de livraison porte la résolution ; classer la plainte ne l'aurait pas prouvée à lui seul, et nous n'avons pas refait l'essai. Arrêter le commis ne retire pas ce qu'il a déjà servi.",
+            "expert": "Résolution annoncée en release, non reproduite ici ; la clôture du signalement seule n'est pas la preuve retenue. Cancelled ne supprime pas les effets déjà commis, et aucune économie mesurée n'est établie ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The repair announcement cannot take back dishes already served"
+        },
+        "fr": {
+          "cuisine": "L'annonce de réparation ne reprend pas les plats déjà servis",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "budget-cancellation-allows-explicit-resume-not-automatic-retry",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:45:54.340013+00:00"
+}

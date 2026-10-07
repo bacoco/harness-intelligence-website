@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:session-correlation-headers-are-not-authority-attestations",
+  "relationships": {
+    "dossiers": [
+      "agent-identity-does-not-prove-independent-authority"
+    ],
+    "patterns": [
+      "observability",
+      "runtime-identity",
+      "authority-scope"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/session-correlation-headers-are-not-authority-attestations/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The two namespaced headers provide session correlation and immediate parentage, omitting the parent at the root. They do not change cache keys or supply a complete ancestry root.",
+            "kitchen": "Each slip carries its notebook's number and the number of the notebook it directly came from; the first has no parent entry. These marks help trace orders without changing how saved copies are filed."
+          },
+          "fr": {
+            "cuisine": "Le billet porte le numéro de son carnet et celui du carnet dont il vient directement ; le tout premier n'a pas de parent inscrit. Ces marques aident à relier les commandes sans changer le classement des copies déjà gardées.",
+            "expert": "x-opencode-session-id et x-opencode-parent-session-id relient la requête à sa session et à son parent immédiat ; le parent est absent à la racine. Les clés de cache restent inchangées."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "OpenCode adds session and immediate-parent correlation headers",
+          "kitchen": "The slip names its notebook and its immediate parent"
+        },
+        "fr": {
+          "cuisine": "Le billet porte son carnet et son parent direct",
+          "expert": "OpenCode ajoute session et parent immédiat aux headers"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Provider-independent insertion precedes later configuration overrides. Treat the resulting values as mutable telemetry rather than authenticated identity, authorization, tenant isolation or complete lineage evidence.",
+            "kitchen": "The marks are added before the supplier is chosen, but a later instruction can still replace them. Their numbers cannot prove who holds the book, who may place the order or the full story behind it."
+          },
+          "fr": {
+            "cuisine": "Les marques sont posées avant de choisir le fournisseur, mais une consigne ultérieure peut encore les remplacer. Lire ces numéros ne prouve ni qui tient réellement le carnet, ni son droit de commander, ni toute son histoire.",
+            "expert": "Les headers sont ajoutés avant la branche provider, puis des surcharges de configuration restent possibles. Cette télémétrie modifiable n'atteste ni identité, ni autorisation, ni isolation tenant, ni racine complète de filiation."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A label that can be rewritten does not grant permission"
+        },
+        "fr": {
+          "cuisine": "Une étiquette réinscriptible ne donne pas le droit de commander",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The September 30 merge is targeted by release v1.18.34. Static code/test inspection is not an executed proxy trial or proof of universal provider acceptance, and supplies no stronger authority guarantee.",
+            "kitchen": "The September 30 accepted change is the one referenced by the announced delivery. Written rules and trials were inspected, without passing an order through an intermediary here or proving every supplier accepts the labels."
+          },
+          "fr": {
+            "cuisine": "Le changement accepté le 30 septembre est celui que référence la livraison annoncée. Les règles et essais écrits ont été examinés, sans passage réel par un intermédiaire ici ni preuve que tous les fournisseurs acceptent ces marques.",
+            "expert": "Fusion du 30 septembre, ciblée par v1.18.34. Code et tests statiques inspectés, aucun proxy exécuté ; pas de preuve d'acceptation universelle côté fournisseurs ou d'attestation forte. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The accepted labels have not been tried at every supplier"
+        },
+        "fr": {
+          "cuisine": "Le marquage accepté n'a pas été éprouvé chez chaque fournisseur",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "session-correlation-headers-are-not-authority-attestations",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:18:20.455930+00:00"
+}

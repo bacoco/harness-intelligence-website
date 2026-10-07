@@ -1,0 +1,103 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-02",
+  "id": "dossier:hook-denial-must-reach-the-host-as-a-denial",
+  "relationships": {
+    "dossiers": [
+      "safety-control-failure-became-permission",
+      "archon-installed-skill-drift"
+    ],
+    "patterns": [
+      "fail-open",
+      "hooks-enforcement",
+      "installed-vs-source"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/hook-denial-must-reach-the-host-as-a-denial/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The release changes pre-bash denials from exit 1, a non-blocking hook error to Claude Code, to the blocking exit 2 contract. Detecting denial and successfully conveying it are separate requirements.",
+            "kitchen": "The guard spotted a forbidden plate but used the signal the pass treats as a faulty guard station. The October 2 delivery announces the stop signal that actually keeps the plate from leaving."
+          },
+          "fr": {
+            "cuisine": "Le garde reconnaît un plat interdit, mais son signal signifie seulement « mon poste a un problème » pour le passe. La livraison du 2 octobre annonce le remplacement par le signal qui retient l'assiette.",
+            "expert": "Ruflo 3.51.1 annonce le passage des refus pre-bash d'exit 1 à exit 2. Claude Code interprétait le premier comme erreur de hook non bloquante ; le second porte la décision bloquante attendue."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Ruflo 3.51.1 fixes the host-facing denial exit code",
+          "kitchen": "The guard says no in a signal the pass does not obey"
+        },
+        "fr": {
+          "cuisine": "Le garde refuse, mais le passe entend une panne",
+          "expert": "Ruflo 3.51.1 corrige le code de sortie des refus pre-bash"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Distribution and generation changes do not update every retained project helper automatically. The same release separately announces destination binding for credential-bearing requests and rejection of redirects.",
+            "kitchen": "The new printed sheets and their master carry the repaired signal; an old sheet still hanging at a station needs replacing. The delivery also says packets carrying the house’s secret passphrase go only to the chosen supplier, with no onward change of address."
+          },
+          "fr": {
+            "cuisine": "Les nouvelles feuilles et leur modèle portent le bon signal, mais chaque poste gardant l'ancienne feuille doit la remplacer. La même livraison annonce aussi que les plis portant un secret vont au fournisseur choisi, sans détour vers une autre adresse.",
+            "expert": "Le correctif concerne les copies distribuées et le générateur ; un projet conservant son ancien helper doit le mettre à jour. La release annonce aussi des destinations credential-bearing fixées au service configuré et le refus des redirects."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Replace the instruction sheet the working guard actually uses"
+        },
+        "fr": {
+          "cuisine": "Changer aussi la fiche accrochée au poste",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Released notes establish the announced change, not independent runtime validation or universal local deployment. Preserve the limits: denial transport is addressed, rule completeness and general sandboxing are not established.",
+            "kitchen": "The house has published its repair and trial claims; we have not repeated those trials. Carrying a refusal correctly does not show that every rule catches everything or that the entire kitchen is enclosed."
+          },
+          "fr": {
+            "cuisine": "Nous avons les annonces de livraison et d'essais, sans avoir refait ces essais. Le bon signal de refus ne prouve ni que toutes les règles sont complètes, ni que toute la cuisine est enfermée.",
+            "expert": "Notes de release primaires, manifestes et tests annoncés par upstream, non reproduits. La correction porte sur le transport du refus, sans preuve d'exhaustivité des règles ni de sandbox général ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A proper stop signal does not prove every plate was checked"
+        },
+        "fr": {
+          "cuisine": "Le bon signal ne prouve pas que tous les plats sont contrôlés",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "hook-denial-must-reach-the-host-as-a-denial",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:51:19.446713+00:00"
+}

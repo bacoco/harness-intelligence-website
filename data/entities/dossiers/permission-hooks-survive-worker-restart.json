@@ -1,0 +1,130 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:permission-hooks-survive-worker-restart",
+  "relationships": {
+    "dossiers": [
+      "safety-control-failure-became-permission"
+    ],
+    "patterns": [
+      "fail-open",
+      "hooks-enforcement",
+      "authority-scope"
+    ],
+    "projects": [
+      "Claude Code"
+    ]
+  },
+  "route": "/dossiers/permission-hooks-survive-worker-restart/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Published releases cover hook matching and serialization failures, worker restart windows, and failures after next(e). They establish announced fixes, with no independent runtime reproduction in this review.",
+            "kitchen": "When the checking chef is being replaced, the waiter still needs approval before taking a plate. The house reports changes to enforce this. We have not watched the new procedure during service."
+          },
+          "fr": {
+            "cuisine": "Le chef chargé de vérifier les plats quitte son poste un instant. Les assiettes ne doivent pas partir sans contrôle. La maison annonce des réparations, sans essai de notre part.",
+            "expert": "Du 2 au 6 octobre 2026, Claude Code annonce des corrections de chemins fail-open des hooks. Elles couvrent préparation impossible, remplacement du worker et erreurs après délégation du contrôle. La preuve est documentaire."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Claude Code closes hook restart and preparation bypasses",
+          "kitchen": "A change of guard cannot wave the plates through"
+        },
+        "fr": {
+          "cuisine": "La relève du chef ne doit pas ouvrir le passe",
+          "expert": "Claude Code : la permission reste requise pendant le redémarrage des hooks"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Authorization must bind the effective post-rewrite action. Preserving availability alone is insufficient if argument repair happens after inspection; fail-closed preparation and final-action revalidation protect different boundaries.",
+            "kitchen": "Checking soup does not approve the different dish placed on the tray afterward. Keep the check attached to the actual plate. A missing chef and an unreadable ticket are both reasons to wait."
+          },
+          "fr": {
+            "cuisine": "Une assiette vérifiée peut encore être changée avant de partir. Le chef doit examiner ce qui sort réellement. Son absence ou une fiche illisible ne remplacent pas son accord.",
+            "expert": "La réécriture PreToolUse impose une nouvelle application des règles ; les hooks doivent voir les arguments finalement exécutés. Ce contrôle d'identité de l'action complète la politique d'échec fermé, sans se confondre avec elle."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A changed plate needs a fresh look"
+        },
+        "fr": {
+          "cuisine": "Le chef doit voir le plat qui sort vraiment",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Evidence is limited to the upstream team's release publications. An open organizational-ceiling proposal is not deployment evidence for its implementation, even alongside related release terminology.",
+            "kitchen": "The house has published the repairs, but this account includes no outside trial. A separate proposed protection is still only proposed. The two states must stay distinct."
+          },
+          "fr": {
+            "cuisine": "Les annonces appartiennent toutes à la même maison. Nous n'avons pas essayé les réparations. Une autre protection, encore proposée, ne doit pas être racontée comme déjà en place.",
+            "expert": "Les changements sont décrits comme livrés, sans reproduction indépendante. La proposition publique de ceiling organisationnel reste ouverte au cutoff ; sa présence ne permet pas d'affirmer que cette implémentation est livrée."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Announcements do not replace a service check"
+        },
+        "fr": {
+          "cuisine": "Une réparation annoncée reste à éprouver",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A control must retain authority throughout its own lifecycle and over the final operation. Treat failure, absence and approval as distinct states; do not infer permission from a gap in enforcement.",
+            "kitchen": "Keep plates at the pass until the checking post is ready. Show any altered dish again. This is the working rule we retain, not a claim that we installed it anywhere."
+          },
+          "fr": {
+            "cuisine": "Le remplaçant doit reprendre la vérification avant que les plats repartent. Si une assiette change, on la présente de nouveau. Cette règle est étudiée ici, sans changer cette cuisine.",
+            "expert": "Exiger le contrôle de l'action effective après mutation et pendant les transitions du composant qui l'autorise. La recommandation reste research_only : aucune configuration ni politique n'est activée par cette analyse."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Lesson",
+          "kitchen": "The plate waits for its own check"
+        },
+        "fr": {
+          "cuisine": "Pas de contrôle, pas de départ",
+          "expert": "Leçon"
+        }
+      },
+      "id": "lesson",
+      "kind": "lesson"
+    }
+  ],
+  "slug": "permission-hooks-survive-worker-restart",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:46:37.124119+00:00"
+}

@@ -19,9 +19,21 @@
     ],
     "patterns": [],
     "dossiers": [
-      "gstack-false-green-second-fix",
       "archon-session-resume-checkpoint",
-      "recovery-state-convergence"
+      "background-completion-must-own-the-current-task-instance",
+      "browser-driver-preserves-attachment-and-cleanup-ownership",
+      "competing-session-writers-need-distinct-descendant-identities",
+      "explicit-resume-must-find-the-requested-session",
+      "gstack-false-green-second-fix",
+      "late-send-results-must-respect-the-started-turn-generation",
+      "plugin-approval-must-bind-the-original-project-path",
+      "queued-mail-wake-preserves-the-existing-work-attribution",
+      "recovery-state-convergence",
+      "resumed-teammate-address-needs-current-inbox",
+      "session-correlation-headers-are-not-authority-attestations",
+      "sticky-tool-state-needs-trusted-session-provenance-before-activation",
+      "stream-recovery-must-stop-at-the-first-missing-event",
+      "wake-startup-must-recheck-reservation-identity-after-preparation"
     ]
   },
   "slots": [

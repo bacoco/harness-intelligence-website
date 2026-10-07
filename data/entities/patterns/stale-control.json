@@ -15,6 +15,7 @@
     "patterns": [],
     "dossiers": [
       "decisions-need-active-lifecycle",
+      "memory-mutations-bind-project-continuation-and-storage-generation",
       "session-scope-lock-became-global-state"
     ]
   },

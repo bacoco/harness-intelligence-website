@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:recursion-limits-need-a-harness-owner",
+  "relationships": {
+    "dossiers": [
+      "mechanical-rules-belong-in-deterministic-checks"
+    ],
+    "patterns": [
+      "authority-scope",
+      "subagents",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/recursion-limits-need-a-harness-owner/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified merge is an architecture and maintenance decision. It assigns recursion depth and subagent tool/skill availability to the harness layer, rejecting repeated per-skill prose guards. It is not a delivered anti-loop implementation.",
+            "kitchen": "A recipe may tell a cook to ask for help, and the helper may ask again. The house has accepted a decision about who should limit that chain. It places responsibility with the brigade's operating rules, without proving that such a limit is already enforced."
+          },
+          "fr": {
+            "cuisine": "Des récits parlent de commis qui demandent sans cesse l'aide d'autres commis. La maison décide que la limite appartient à l'organisation de la brigade. Elle refuse de recopier cet avertissement sur chaque recette. La décision est acceptée, mais aucun arrêt réellement appliqué n'est prouvé ici.",
+            "expert": "mattpocock/skills fusionne une décision qui refuse les consignes anti-récursion dans chaque skill. Le contrôle de profondeur et de capacités des sous-agents est attribué au harness. Cette PR ne modifie aucun code runtime et ne démontre aucune protection active."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Recursion limits are assigned to the harness, not each skill",
+          "kitchen": "Who stops the next cook from calling yet another cook?"
+        },
+        "fr": {
+          "cuisine": "Qui arrête le commis qui appelle encore un commis ?",
+          "expert": "Une décision de périmètre place la récursion sous contrôle du harness"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Depth limits and capability scoping are related but distinct controls. The decision identifies their intended enforcement layer rather than specifying a tested runtime mechanism. Central placement is a design argument, not evidence of universal coverage in existing harnesses.",
+            "kitchen": "A reminder on one recipe reaches only the cook who follows it. The proposed division of responsibility puts the limit where every request for another helper passes. It also controls what the helper may use, but this document does not implement either restriction."
+          },
+          "fr": {
+            "cuisine": "Recopier « n'appelle plus personne » sur chaque fiche dépend de ce que chaque commis en fait. La décision préfère une limite commune sur le nombre de relais et les ustensiles confiés aux aides. Elle décrit où cette limite devrait agir, pas un essai réussi.",
+            "expert": "La décision rejette notamment les consignes de reviewer feuille, les limites de profondeur en prose et l'interdiction de réinvoquer un skill. Son argument est qu'un contrôle au niveau du harness couvre les skills de manière commune, alors que les prompts répètent une règle dépendante de l'obéissance du modèle."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The brigade needs one enforced limit, not copied reminders"
+        },
+        "fr": {
+          "cuisine": "Une règle commune plutôt qu'un avertissement sur chaque recette",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "No downstream harness is shown enforcing these bounds. Preserve the merged-document status and leave effectiveness unresolved. A maintenance refusal can clarify ownership while still leaving the runtime control as separate, unproven work.",
+            "kitchen": "The records establish the accepted decision, not a tested end to the repeated calls for help. The cited trouble reports were not replayed here. Check who actually stops the chain and where that stop is active before claiming the kitchen is protected."
+          },
+          "fr": {
+            "cuisine": "Nous avons lu la décision acceptée, sans rejouer les récits de commis qui se rappellent. Aucun mécanisme d'arrêt n'est démontré en service. La leçon est de vérifier la limite réellement appliquée avant de raconter que les appels sans fin sont réglés.",
+            "expert": "Les rapports de récursion cités n'ont pas été reproduits et les garde-fous proposés au niveau des skills ne sont pas établis comme livrés. La preuve concerne uniquement la décision documentaire fusionnée. La recommandation research_only demande de distinguer responsable désigné, contrôle implémenté et activation vérifiée."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "An assigned responsibility still needs a working stop"
+        },
+        "fr": {
+          "cuisine": "Nommer le responsable ne ferme pas encore la chaîne",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "recursion-limits-need-a-harness-owner",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:11:06.285513+00:00"
+}

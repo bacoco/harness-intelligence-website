@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:file-edit-lock-and-atomic-replacement-protect-different-boundaries",
+  "relationships": {
+    "dossiers": [
+      "heredoc-write-truncation"
+    ],
+    "patterns": [
+      "atomic-write",
+      "concurrency",
+      "state-isolation"
+    ],
+    "projects": [
+      "Gemini CLI"
+    ]
+  },
+  "route": "/dossiers/file-edit-lock-and-atomic-replacement-protect-different-boundaries/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The in-process path mutex serializes reading, edit calculation and writing. Atomic replacement handles another boundary: readers should not observe half-written content, which does not by itself prevent stale edit calculations.",
+            "kitchen": "Two cooks must not both revise the same old menu and then overwrite each other's changes. One keeps the book reserved through reading and editing, while the replacement page is displayed only when complete."
+          },
+          "fr": {
+            "cuisine": "Deux commis ne doivent pas préparer chacun leur correction depuis le même vieux menu, puis perdre celle de l'autre. Le carnet reste réservé pendant lecture et correction ; la nouvelle page n'est affichée qu'entièrement prête.",
+            "expert": "Un mutex par chemin résolu couvre read-modify-write pour empêcher deux outils du même process de calculer depuis le même état ancien. Le remplacement atomique protège séparément les lecteurs contre un fichier partiel."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Gemini CLI protects edit calculation and atomic publication separately",
+          "kitchen": "Reserve the menu while editing, then display a complete page"
+        },
+        "fr": {
+          "cuisine": "Réserver le menu pour l'éditer, puis afficher une page entière",
+          "expert": "Gemini CLI sépare exclusion d'édition et remplacement atomique"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A sibling temporary file precedes the rename, with Windows retry handling. Shadow Git snapshots serialize per root separately from the resolved-path file-tool mutex.",
+            "kitchen": "The cook completes a spare page beside the old one before swapping it in; some cupboards require another attempt at that swap. Copies in the work record also take turns for each shared pantry."
+          },
+          "fr": {
+            "cuisine": "Le commis écrit sur une page voisine puis la met à la place de l'ancienne ; certaines armoires demandent de retenter ce remplacement. Les copies du carnet de suivi attendent aussi leur tour pour chaque réserve commune.",
+            "expert": "L'écriture utilise un temporaire sibling puis rename, avec retries Windows. Les snapshots Git shadow sont sérialisés par racine, en plus du mutex des outils par chemin résolu."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Prepare the page beside the old one and coordinate the record book too"
+        },
+        "fr": {
+          "cuisine": "Préparer la page à côté et coordonner aussi le carnet de suivi",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The record covers the September 30 merge and eligible nightly publication, excluding the post-cutoff stable. Reported Linux testing is unreproduced; the mutex coordinates only this process and guarantees neither external-writer exclusion nor every filesystem's behavior.",
+            "kitchen": "The September 30 accepted change appears in a trial edition, with no ordinary release credited here; we did not repeat the reported trials. The reservation covers this brigade, not outside cooks, and every cupboard design has not been validated."
+          },
+          "fr": {
+            "cuisine": "La correction acceptée le 30 septembre paraît dans une édition d'essai, sans livraison ordinaire attribuée ici ; les essais rapportés n'ont pas été refaits. La réservation ne lie que cette brigade, pas un commis extérieur, et toutes les armoires ne sont pas prouvées compatibles.",
+            "expert": "Fusion du 30 septembre et nightly éligible, pas stable post-cutoff. Tests et essais Linux rapportés non reproduits ; mutex in-process seulement, sans garantie contre writers externes ni tous filesystems. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The reservation does not bind a cook outside this brigade"
+        },
+        "fr": {
+          "cuisine": "La réservation ne s'impose pas à un commis venu d'ailleurs",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "file-edit-lock-and-atomic-replacement-protect-different-boundaries",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:11:30.391401+00:00"
+}

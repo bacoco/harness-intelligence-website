@@ -1,0 +1,112 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:derived-context-cache-keeps-a-single-owner-contract",
+  "relationships": {
+    "dossiers": [
+      "multiuser-connection-ownership"
+    ],
+    "patterns": [
+      "state-isolation",
+      "ownership",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/derived-context-cache-keeps-a-single-owner-contract/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Range and derived-view reuse depend on the same conversation head marker. Frozen entries and per-read view arrays preserve separation while only appended entries need scanning.",
+            "kitchen": "The documented rule keeps previously read notes and checks only additions while the ledger marker still matches. Saved pages stay unchanged, and each reader gets a separate reading sheet."
+          },
+          "fr": {
+            "cuisine": "La règle garde les notes déjà lues et ne regarde que les ajouts si le repère du carnet correspond encore. Les pages gardées ne changent pas, et chaque commis reçoit sa propre feuille de lecture.",
+            "expert": "Le commit décrit range et vue dérivée par conversation, avec scan des seules entrées ajoutées si le head marker concorde. Entrées gelées et tableaux de vue propres à chaque read isolent les lectures."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Pi-durable binds derived-context reuse to the conversation head",
+          "kitchen": "Reuse the summary only while it belongs to the same ledger"
+        },
+        "fr": {
+          "cuisine": "Réutiliser le résumé seulement avec le bon carnet",
+          "expert": "Pi-durable conditionne son cache à la tête de conversation"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Busy work retains the cache; idle retention is ten minutes. Where an unref timer is unavailable, task transitions perform the expiry check rather than promising exact wall-clock eviction.",
+            "kitchen": "The summary stays while work is busy, then for ten idle minutes. Without a separate timer, its age is checked when the work changes."
+          },
+          "fr": {
+            "cuisine": "Le résumé reste tant que la brigade travaille, puis dix minutes au repos. Sans minuteur autonome, on contrôle sa péremption quand le travail change.",
+            "expert": "Le cache reste actif tant que busy, avec rétention idle de dix minutes. Sans timer unref, l'expiration est vérifiée aux changements de tâches, pas garantie à un instant mural précis."
+          }
+        },
+        {
+          "en": {
+            "expert": "The adapter does not change the documented single-process-owner contract or add interprocess locking. The open ownership-loss proposal reports generic waiter errors and a poisoned session after fencing, without necessarily stopping an already-running unsafe tool; typed signaling and activity fencing remain requested.",
+            "kitchen": "A new cabinet does not let several chefs write the same ledger together. A pending request asks for a clear warning when a chef loses control: refusing a new entry may still leave that chef's pot cooking."
+          },
+          "fr": {
+            "cuisine": "Le nouveau meuble à carnets ne donne pas le droit à plusieurs chefs d'écrire ensemble. Une demande encore ouverte voudrait prévenir clairement le chef dépossédé : lui refuser une inscription n'arrête pas forcément sa cuisson déjà lancée.",
+            "expert": "L'adaptateur SQLite DurableObject conserve un propriétaire process unique, sans serrure interprocessus. Une proposition ouverte demande ownership-lost typé, signal d'activité et fencing : un commit refusé empoisonne la session selon le rapport, mais n'arrête pas forcément l'outil en cours ; les waiters reçoivent une erreur générique."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The quick-reading ledger still has one responsible chef"
+        },
+        "fr": {
+          "cuisine": "Le carnet rapide reste sous la responsabilité d'un seul chef",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The evidence is the documented change and commit message after 1.0.4, not a verified published rollout or executed full implementation. Keep ownership-lost as an open proposal and effect termination as unproven.",
+            "kitchen": "The October 6 description follows the previous delivery, with no established shipment of this change. We did not try the full arrangement, and the proposed warning to a displaced chef is not proof that every pot stops."
+          },
+          "fr": {
+            "cuisine": "Le texte du 6 octobre vient après la livraison précédente ; aucune nouvelle livraison contenant ce changement n'est établie. Nous n'avons pas essayé l'ensemble, et l'avertissement proposé au chef dépossédé ne prouve pas que ses casseroles soient arrêtées.",
+            "expert": "Documentation et message de commit du 6 octobre lus, après 1.0.4 ; inclusion publiée non établie, implémentation/test complet non exécutés. Ownership-lost reste une proposition et ne garantit pas l'arrêt d'effets ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The new cabinet does not prove that every cook is coordinated"
+        },
+        "fr": {
+          "cuisine": "Le nouveau meuble ne prouve pas que toute la brigade est coordonnée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "derived-context-cache-keeps-a-single-owner-contract",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:34:47.653539+00:00"
+}

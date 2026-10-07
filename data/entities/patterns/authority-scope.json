@@ -15,7 +15,16 @@
     "patterns": [],
     "dossiers": [
       "agent-identity-does-not-prove-independent-authority",
-      "stop-hook-authority-overreach"
+      "evaluation-fallback-must-respect-delegation-authority",
+      "external-directory-defaults-can-expand-existing-tool-authority",
+      "guard-policy-defaults-off-with-explicit-retained-controls",
+      "later-action-score-must-not-release-an-earlier-pending-review",
+      "permission-hooks-survive-worker-restart",
+      "recursion-limits-need-a-harness-owner",
+      "session-correlation-headers-are-not-authority-attestations",
+      "stop-hook-authority-overreach",
+      "subagent-briefs-are-not-human-approval-evidence",
+      "workflow-egress-controls-have-bounded-coverage"
     ]
   },
   "slots": [

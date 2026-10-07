@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-01",
+  "id": "dossier:remote-browser-file-navigation-needs-its-own-boundary",
+  "relationships": {
+    "dossiers": [
+      "reject-path-shaped-fallback-names-before-io"
+    ],
+    "patterns": [
+      "trust-boundary",
+      "scope-boundary",
+      "configuration-drift"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/remote-browser-file-navigation-needs-its-own-boundary/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The new flag gates file-scheme navigation at the browser-tool boundary rather than validating a path against the MCP server's local roots. The restriction requires explicit configuration; file navigation remains enabled by default.",
+            "kitchen": "A rule around this kitchen's cupboard cannot define the files in another kitchen's cupboard. The accepted change offers an explicit way to block those visits, while keeping them allowed by default."
+          },
+          "fr": {
+            "cuisine": "Le chef borne les placards de sa cuisine, mais le commis peut lire ceux d'une autre maison. Un changement accepté permet d'interdire cette catégorie de visite ; elle reste permise par défaut.",
+            "expert": "file-navigations=false refuse file: dans new_page, navigate_page et slim navigate ; le défaut demeure true. La garde par schéma évite d'assimiler les MCP roots du serveur au filesystem d'un navigateur distant."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Chrome DevTools MCP adds an optional file-navigation gate",
+          "kitchen": "Our pantry boundary does not close the other kitchen's cupboard"
+        },
+        "fr": {
+          "cuisine": "Fermer notre placard ne ferme pas celui de l'autre cuisine",
+          "expert": "Chrome DevTools MCP ajoute une garde optionnelle sur file:"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Configuration contradiction is rejected instead of silently resolving away the intended restriction. That check is separate from the file-scheme navigation gate and does not expand its coverage.",
+            "kitchen": "A separate repair rejects the pair of instructions that both names a limited work area and removes every path limit. Either choice on its own, and the ordinary defaults, stay as before."
+          },
+          "fr": {
+            "cuisine": "Une correction séparée refuse de choisir ensemble un espace borné et un accès sans limite. Chaque choix pris seul et les réglages habituels restent inchangés.",
+            "expert": "L'autre PR rejette explicitement workspace avec allow-unrestricted-paths, combinaison auparavant acceptée malgré l'incompatibilité documentée. Les flags isolés et le défaut CLI restent inchangés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The same instruction cannot promise a boundary and remove it"
+        },
+        "fr": {
+          "cuisine": "Le même billet ne peut pas dire « limité » et « sans limite »",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Treat this as two bounded merged controls with unexecuted upstream tests. The evidence provides neither a full browser sandbox nor universal redirect/scheme enforcement, and file: remains enabled by default.",
+            "kitchen": "The changes are merged, but a release carrying them is not established. We did not repeat the reported tests, and this does not certify every detour or every way into the other house."
+          },
+          "fr": {
+            "cuisine": "Les changements sont acceptés, sans livraison contenant ces règles établie. Les essais sont rapportés, pas refaits ici ; ni les détours possibles ni toutes les façons d'entrer ne sont couverts.",
+            "expert": "PRs et descriptions vérifiées ; les 1243 tests réussis et deux ignorés rapportés ne sont pas reproduits. Aucune release porteuse, sandbox complète ou couverture de tous les redirects et schémas n'est établie. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "One guarded visit is not complete confinement"
+        },
+        "fr": {
+          "cuisine": "Une porte contrôlée n'est pas toute la maison enfermée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "remote-browser-file-navigation-needs-its-own-boundary",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:22:23.137274+00:00"
+}

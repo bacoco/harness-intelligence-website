@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:interrupted-call-history-can-close-without-replaying-the-effect",
+  "relationships": {
+    "dossiers": [
+      "tool-results-need-execution-receipts"
+    ],
+    "patterns": [
+      "subagents",
+      "checkpoint",
+      "execution-receipts"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/interrupted-call-history-can-close-without-replaying-the-effect/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged repair pairs outstanding tool calls with explicit synthetic interruption results during prompted subagent resume. It repairs conversation structure without turning missing output into automatic re-execution.",
+            "kitchen": "A fresh instruction arrives while an old ticket still lacks a reply. The accepted change marks that ticket interrupted before continuing, instead of placing the same order again on this path."
+          },
+          "fr": {
+            "cuisine": "Le chef reprend avec une nouvelle consigne et retrouve un ticket sans réponse. La correction acceptée ajoute la mention interrompu avant de continuer, sans commander ce plat une seconde fois.",
+            "expert": "Le correctif fusionné ajoute des résultats synthétiques interrupted aux appels sans réponse avant le nouveau prompt de delegate_task(resume=...). Ce chemin répare l'historique sans rejouer les appels concernés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Pydantic AI closes interrupted history before explicit prompted resume",
+          "kitchen": "Marking a ticket interrupted does not order the dish again"
+        },
+        "fr": {
+          "cuisine": "Écrire interrompu sur le ticket ne commande pas un second plat",
+          "expert": "Pydantic AI répare les appels interrompus avant un nouveau prompt"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Synthetic history repair and external-effect reconciliation remain separate contracts. The marker must not become evidence of success, non-execution or exactly-once behavior.",
+            "kitchen": "The added note describes the interrupted exchange, not what happened in the supplier's kitchen. The dish may already have been made, so this note alone cannot settle that question."
+          },
+          "fr": {
+            "cuisine": "La nouvelle mention explique pourquoi la réponse manque ; elle n'est pas un reçu du fournisseur. Le plat peut avoir été préparé avant la coupure, et cette fiche seule ne permet pas de trancher.",
+            "expert": "Un résultat interrupted est une clôture d'historique, pas un reçu d'effet. Il ne prouve ni exécution distante achevée ni absence d'effet avant l'interruption."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The interruption note cannot tell whether the supplier already cooked"
+        },
+        "fr": {
+          "cuisine": "La mention ne dit pas si le fournisseur avait déjà cuisiné",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep the scope at delegate_task resume with a prompt. The automated promptless turn after /resume is not covered, so the merge does not establish safe non-replay across every recovery route.",
+            "kitchen": "The change is merged, without an independent trial here. A restart that proceeds without a new instruction remains outside this fix and may still repeat the order."
+          },
+          "fr": {
+            "cuisine": "Le correctif est accepté, mais nous n'avons pas refait d'essai. Une reprise qui démarre sans nouvelle consigne reste hors correction et peut encore redemander le plat.",
+            "expert": "Aucun test exécuté ici. Le tour automatisé sans prompt immédiatement après /resume reste explicitement hors correction et susceptible de rejouer l'appel. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The promptless recovery route remains separate"
+        },
+        "fr": {
+          "cuisine": "La reprise sans nouvelle consigne suit encore une autre voie",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "interrupted-call-history-can-close-without-replaying-the-effect",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:29:55.483183+00:00"
+}

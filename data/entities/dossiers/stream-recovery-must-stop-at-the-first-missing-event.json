@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:stream-recovery-must-stop-at-the-first-missing-event",
+  "relationships": {
+    "dossiers": [
+      "task-snapshot-needs-coherent-ordering"
+    ],
+    "patterns": [
+      "checkpoint",
+      "runtime-identity",
+      "state-split"
+    ],
+    "projects": [
+      "OpenHands"
+    ]
+  },
+  "route": "/dossiers/stream-recovery-must-stop-at-the-first-missing-event/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Shared event identity replaces text matching, while a contiguous after_seq cursor records complete coverage rather than the highest observed sequence. Recovery therefore keeps gaps visible when durable events arrive out of order.",
+            "kitchen": "The pass uses the ticket's identity to match a spoken preview to its permanent slip, rather than comparing the order's words. Receiving a higher-numbered slip does not prove that every earlier one arrived."
+          },
+          "fr": {
+            "cuisine": "Le passe suit le numéro du bon, pas seulement les mots de la commande, pour reconnaître l'annonce et sa fiche définitive. Voir un bon plus récent ne permet pas d'oublier celui qui manque encore au milieu.",
+            "expert": "OpenHands remplace le rapprochement textuel par un item_id partagé entre stream et persistance. Le watermark contigu after_seq, plutôt que le numéro maximal reçu, préserve les événements durables retardés ou hors ordre."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "OpenHands resumes streams from contiguous event coverage",
+          "kitchen": "The highest ticket number can hide a missing order slip"
+        },
+        "fr": {
+          "cuisine": "Le dernier numéro vu peut cacher un bon manquant",
+          "expert": "OpenHands reprend le stream après le dernier événement contigu"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Retirement is identity-based and phase-aware: the durable event removes its streaming slot without being deduplicated against that preview. Disconnect clears volatile slots, and late deltas cannot resurrect completed events.",
+            "kitchen": "The permanent slip removes the matching temporary note at its station, but the two stages must not cause the real slip to be thrown away. A break clears temporary notes, and a late addition cannot reopen an order already closed."
+          },
+          "fr": {
+            "cuisine": "Le bon définitif retire à sa place l'annonce provisoire portant le même numéro ; ce sont deux étapes, pas deux bons à supprimer ensemble. Les annonces temporaires disparaissent après une coupure, et un ajout tardif ne rouvre pas un bon terminé.",
+            "expert": "L'événement durable retire en place le slot portant son item_id ; les phases volatile et durable restent distinctes pour ne pas dédupliquer le vrai message avec son aperçu. Déconnexion : suppression des slots volatils ; deltas tardifs : pas de réouverture d'un événement terminé."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Retire the temporary note without discarding the final slip"
+        },
+        "fr": {
+          "cuisine": "Retirer l'annonce provisoire sans jeter le bon définitif",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The 1.25.0 notes include the change, without independent runtime verification or an all-green suite claim. Preserve the five reported failures, full-history fallback when count/history fail, and the unresolved product question of temporal ordering after finalization.",
+            "kitchen": "Delivery notes include the September 30 change, but we did not repeat the reported trials and the full set had five failures. Failed counting or reading still falls back to the whole notebook; ordering after a ticket closes remains a house decision."
+          },
+          "fr": {
+            "cuisine": "La correction du 30 septembre figure dans les notes de livraison, mais nous n'avons pas refait les essais ; l'ensemble en signalait cinq en échec. Si comptage ou lecture échouent, on reprend tout le carnet ; l'ordre des bons après clôture reste à décider.",
+            "expert": "Fusion du 30 septembre incluse aux notes 1.25.0 ; tests/mock-LLM et essais non reproduits, suite complète avec cinq échecs. Fallback au journal entier si count/history échouent ; réordonnancement temporel après finalisation encore ouvert, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The announced repair still has recovery and test limits"
+        },
+        "fr": {
+          "cuisine": "La réparation annoncée garde des limites de reprise",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "stream-recovery-must-stop-at-the-first-missing-event",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:07:22.212162+00:00"
+}

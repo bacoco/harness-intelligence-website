@@ -14,9 +14,17 @@
     ],
     "patterns": [],
     "dossiers": [
+      "a-poll-token-is-not-proof-that-tool-effects-are-uncommitted",
+      "append-only-history-should-append-differences-not-the-entire-past",
+      "approval-resume-settles-deferred-history-even-without-new-output",
+      "atomic-snapshot-replacement-can-still-lose-other-writers",
+      "bounded-tool-preview-needs-a-scoped-retrieval-contract",
+      "control-policy-must-survive-reload-and-async-waits",
       "conversation-rewind-workspace-stayed-mutated",
       "resume-must-reconcile-control-state",
-      "task-snapshot-needs-coherent-ordering"
+      "stream-recovery-must-stop-at-the-first-missing-event",
+      "task-snapshot-needs-coherent-ordering",
+      "team-state-needs-durable-deltas-not-stream-snapshots"
     ]
   },
   "slots": [

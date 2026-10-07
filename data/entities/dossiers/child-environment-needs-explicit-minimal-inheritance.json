@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:child-environment-needs-explicit-minimal-inheritance",
+  "relationships": {
+    "dossiers": [
+      "redact-before-model-boundary"
+    ],
+    "patterns": [
+      "privacy-boundary",
+      "permissions",
+      "configuration-drift"
+    ],
+    "projects": [
+      "Aider"
+    ]
+  },
+  "route": "/dossiers/child-environment-needs-explicit-minimal-inheritance/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The Aider proposal targets arbitrary-name secrets inherited by repository-controlled child commands. It contrasts minimal inheritance with known-name filtering. The available evidence is the proposal's description and open status, not a demonstrated deployment or secret-exposure incident.",
+            "kitchen": "The cook hands a helper a basket of notes after removing only familiar private labels. An unfamiliar label may carry the same private information. A proposed rule would send a short permitted set instead; no delivered or independently tested protection is established."
+          },
+          "fr": {
+            "cuisine": "Avant de confier un panier au commis, on retire les billets portant quelques noms interdits. Un billet privé sous un autre nom peut rester. Une règle propose de ne donner que les billets nécessaires. Elle n'est pas livrée ni éprouvée ici.",
+            "expert": "Une PR Aider ouverte propose un environnement minimal opt-in pour les commandes enfant. Le motif déclaré est qu'une denylist de noms connus peut laisser passer des secrets .env nommés librement. Il s'agit d'une proposition examinée, sans protection livrée ni reproduction."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Aider proposes opt-in minimal child environments",
+          "kitchen": "A private note can travel under an ordinary label"
+        },
+        "fr": {
+          "cuisine": "Le billet privé change de nom et passe dans le panier",
+          "expert": "Aider propose de limiter l'environnement des sous-processus"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The proposed --sandbox name does not expand the mechanism's actual boundary. This is environment-variable selection with Git/SSH exceptions. Neither secure defaults nor comprehensive subprocess confinement follow from the option's existence.",
+            "kitchen": "The proposal does not replace the ordinary hand-off for everyone. Unless selected, the helper still receives the full basket. Some groups of notes are deliberately kept as exceptions, so their contents need a separate look."
+          },
+          "fr": {
+            "cuisine": "La nouvelle règle serait choisie volontairement. Sans ce choix, tous les billets du panier continueraient de partir. Certains lots de billets resteraient autorisés par exception et devraient être examinés séparément.",
+            "expert": "Le mode proposé est opt-in ; le comportement par défaut conserve l'héritage intégral de l'environnement. Le profil Git transmet encore GIT_* et SSH_*. Ces exceptions demandent une analyse propre et ne doivent pas être assimilées à une liste de valeurs sans risque."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The smaller basket is an optional choice"
+        },
+        "fr": {
+          "cuisine": "Le petit panier n'est prévu que si on le demande",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Keep three claims separate: reducing inherited variables, enabling an opt-in mode, and enforcing filesystem isolation. Only the first two are described by this proposal. Its exceptions and actual behavior remain unvalidated here.",
+            "kitchen": "The helper may still reach papers kept in an accessible cupboard. Choosing what goes in the basket does not seal that cupboard. The author reports new checks, which we have not repeated, and the change remains an open proposal."
+          },
+          "fr": {
+            "cuisine": "Le commis pourrait toujours lire les papiers du placard auquel il a accès. Réduire son panier ne ferme pas cette porte. L'auteur annonce des essais, mais nous ne les avons pas refaits. La règle reste proposée, avec ses exceptions à vérifier.",
+            "expert": "Le filtrage d'environnement ne bloque pas l'accès aux fichiers HOME et ne constitue pas un sandbox système. L'auteur annonce neuf nouveaux tests, non reproduits ; aucun résultat runtime ni livraison n'est établi. La leçon retenue reste research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Fewer notes in hand do not lock the cupboard"
+        },
+        "fr": {
+          "cuisine": "Choisir les billets ne ferme pas le placard",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "child-environment-needs-explicit-minimal-inheritance",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:02:37.176131+00:00"
+}

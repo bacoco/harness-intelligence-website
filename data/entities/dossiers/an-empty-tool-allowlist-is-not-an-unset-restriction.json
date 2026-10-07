@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:an-empty-tool-allowlist-is-not-an-unset-restriction",
+  "relationships": {
+    "dossiers": [
+      "safety-control-failure-became-permission"
+    ],
+    "patterns": [
+      "permissions",
+      "fail-open",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/an-empty-tool-allowlist-is-not-an-unset-restriction/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported StaticToolFilter behavior conflates an explicitly empty allowed-tool set with an omitted one. The proposed change preserves the meaning of a supplied restriction rather than inferring unrestricted access from its emptiness.",
+            "kitchen": "The chef supplies a list permitting no utensils, but the cook treats it like no restriction was supplied. An open proposal addresses that inversion."
+          },
+          "fr": {
+            "cuisine": "Le chef donne une liste qui ne permet aucun ustensile, mais le commis la traite comme s'il n'avait reçu aucune restriction. Une proposition ouverte corrige cette inversion.",
+            "expert": "Une PR ouverte rapporte que StaticToolFilter traitait allowed_tool_names=[] comme None via truthiness, exposant tous les outils. Elle propose de distinguer ces deux états."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "CrewAI proposes deny-all for an explicitly empty allowlist",
+          "kitchen": "An empty permitted list does not mean the whole cupboard"
+        },
+        "fr": {
+          "cuisine": "La liste sans ustensile ne veut pas dire tous les ustensiles",
+          "expert": "CrewAI propose de fermer une allowlist explicitement vide"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Preserve unset, empty and populated states explicitly, then apply the existing blocking precedence. Collection truthiness cannot represent that authorization contract.",
+            "kitchen": "A missing list and a provided list with no entries must lead to different decisions. The proposed rule also keeps a refusal stronger than a conflicting allowance."
+          },
+          "fr": {
+            "cuisine": "La règle proposée laisse la différence visible : pas de liste et liste vide ne demandent pas le même geste. Une interdiction reste prioritaire même lorsqu'un ustensile figure ailleurs comme permis.",
+            "expert": "None reste l'absence de restriction ; [] signifie aucun outil autorisé. La proposition conserve la priorité du blocage et annonce cinq tests unitaires pour les états concernés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Check whether the list is missing or deliberately permits nothing"
+        },
+        "fr": {
+          "cuisine": "Lire si la liste manque ou si elle ne permet rien",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Retain the reported status and bounded component scope. The evidence does not establish a deployed fix, exploitation or failure of all CrewAI authorization paths.",
+            "kitchen": "The proposal is unmerged, with no published repair or independent replay of its five reported tests. Its scope is this filter, not every rule in the house."
+          },
+          "fr": {
+            "cuisine": "La proposition n'est pas fusionnée ni publiée, et nous n'avons pas refait les cinq essais annoncés. Ce récit concerne ce filtre précis, pas toutes les règles de la maison.",
+            "expert": "PR ouverte et tests annoncés non reproduits ; aucun correctif publié n'est établi. La portée reste StaticToolFilter, sans conclusion sur l'ensemble des politiques CrewAI. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The repair remains an unverified proposal for this filter"
+        },
+        "fr": {
+          "cuisine": "La réparation reste proposée pour ce filtre précis",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "an-empty-tool-allowlist-is-not-an-unset-restriction",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:14:02.129626+00:00"
+}

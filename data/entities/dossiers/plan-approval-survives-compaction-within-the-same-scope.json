@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-01",
+  "id": "dossier:plan-approval-survives-compaction-within-the-same-scope",
+  "relationships": {
+    "dossiers": [
+      "memory-kept-history-lost-mission"
+    ],
+    "patterns": [
+      "human-gates",
+      "compaction",
+      "checkpoint"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/plan-approval-survives-compaction-within-the-same-scope/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified routing change looks ahead to the directive being issued rather than using whichever directive was previously active. It preserves existing code-plan approval through documented interruption paths. Inspection does not establish universal recovery correctness.",
+            "kitchen": "A guest signs the plan before the kitchen pauses or shortens its notes. Restarting that same plan should not discard the signature and ask again for no reason. The accepted repair targets these common paths, without a confirmed live trial in this account."
+          },
+          "fr": {
+            "cuisine": "Le client a accepté un plan, puis le cahier du service est raccourci ou le travail mis en pause. La maison ne devrait pas jeter cet accord si le même plan reprend. Un correctif est accepté pour ces chemins courants. Il n'a pas été essayé ici dans un service réel.",
+            "expert": "AI-DLC fusionne le 1er octobre un routage qui évalue l'approbation par rapport aux cibles du prochain directive. L'accord est conservé après compaction, parking/reprise et questions intercalées dans les chemins documentés. Le changement est fusionné, sans validation live ni garantie générale de récupération."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "AI-DLC retains scoped plan approval across common interruptions",
+          "kitchen": "The same plan should keep its signature through a break"
+        },
+        "fr": {
+          "cuisine": "Le même plan ne doit pas perdre sa signature pendant la pause",
+          "expert": "AI-DLC préserve l'approbation du même plan à la reprise"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Persisted approval is reused only within its existing identity constraints; compaction is not a grant of broader authority. Outstanding approval questions also remain open in the Copilot path. Neither restoration path permits treating missing human input as approval.",
+            "kitchen": "The signature is checked against the next actual preparation, keeping its original scope. It does not approve another plan or another attempt. An unanswered question keeps its place as a question, so a later guest reply can still be recorded."
+          },
+          "fr": {
+            "cuisine": "Le chef compare la signature au plan qu'il va réellement reprendre. Elle ne vaut que pour la même préparation et la même tentative. Une question encore sans réponse reste, elle, une question ouverte. Raccourcir le cahier ne doit ni effacer l'accord ni en inventer un.",
+            "expert": "L'identité d'approbation reste bornée au même intent, plan/cible, stage attempt et Unit, avec fingerprint et receipt. Copilot conserve l'ask Plan Approval ouvert pendant la compaction afin qu'une réponse humaine ultérieure soit enregistrée. Préserver un accord acquis et préserver une demande sans réponse sont deux transitions distinctes."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Match the saved answer to the work that comes next"
+        },
+        "fr": {
+          "cuisine": "Vérifier le plan qui vient, pas la dernière question posée",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Targeted tests are author-reported; none were executed by this review. Preview publication is not full-suite success. The research_only lesson is scoped decision continuity across common interruptions, with remaining re-review and adapter limits kept explicit.",
+            "kitchen": "Some later re-checking cases remain unresolved, and broad trials or live service were not verified. The preview announcements report a failed full check rather than a new stable version. That failure is not shown to have been caused by this repair."
+          },
+          "fr": {
+            "cuisine": "Des cas de nouvelle vérification après préparation restent à résoudre. Les essais larges et les services réels cités n'ont pas été vérifiés. Les versions d'essai annoncent une vérification complète en échec, sans nouvelle version stable. Rien ne prouve que cet échec vienne de ce correctif.",
+            "expert": "La PR exclut full unit tier, end-to-end, runners Windows/macOS et VS Code Copilot live ; sa revue relève encore des cas de re-review post-build. L'état édité manuellement hors Copilot est hors périmètre. Les previews, dont celle du 6 octobre, annoncent Full Suite failed ; aucune nouvelle stable ni causalité avec ce correctif n'est établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Some post-build returns still need separate checking"
+        },
+        "fr": {
+          "cuisine": "Certains retours après cuisson restent à vérifier",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "plan-approval-survives-compaction-within-the-same-scope",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:38:39.304049+00:00"
+}

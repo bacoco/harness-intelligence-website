@@ -15,6 +15,10 @@
     ],
     "patterns": [],
     "dossiers": [
+      "budget-cancellation-allows-explicit-resume-not-automatic-retry",
+      "checkpoint-provenance-and-image-retry-boundaries",
+      "replayed-dispatch-keeps-first-clock-and-final-state",
+      "stream-watchdogs-bound-silence-not-total-runtime",
       "sweagent-cost-guard-retry-rebilling",
       "timeout-left-descendants-running"
     ]

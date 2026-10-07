@@ -1,0 +1,114 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:one-inference-uses-one-resolved-extension-set",
+  "relationships": {
+    "dossiers": [
+      "goose-protocol-pivot-acp"
+    ],
+    "patterns": [
+      "permissions",
+      "runtime-visible-state",
+      "scope-boundary"
+    ],
+    "projects": [
+      "Goose"
+    ]
+  },
+  "route": "/dossiers/one-inference-uses-one-resolved-extension-set/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged lease resolves extension availability once for the inference and carries its configuration and execution context through prompt construction and dispatch. The claim concerns these paths, not general isolation.",
+            "kitchen": "The cook's instructions and the utensils handed over must come from the same chosen basket. The accepted changes reject mismatched setup rather than silently switching baskets before work begins."
+          },
+          "fr": {
+            "cuisine": "Le chef montre un panier au commis puis lui remet ce même choix pour cuisiner, sans le changer entre les deux. Les corrections acceptées écartent les consignes qui ne correspondent pas au panier retenu.",
+            "expert": "Une lease par inférence lie catalogue, prompt et dispatch au même set d'extensions, configuration, session et cwd. Les configurations discordantes sont exclues au lieu de produire une surface différente à l'exécution."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Goose binds each inference to one resolved extension set",
+          "kitchen": "Use the same utensil basket that the cook was shown"
+        },
+        "fr": {
+          "cuisine": "Le commis cuisine avec le panier qu'on lui a montré",
+          "expert": "Goose résout un ensemble d'extensions cohérent par inférence"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Explicit selection and omission retain different semantics. Exact nonempty selection has no negotiation flag, so clients cannot infer a new advertised capability marker from this change.",
+            "kitchen": "A supplied list sets the complete basket, even when it names nothing. The kitchen must not add its usual utensils; missing lists and the existing recipe arrangements still follow their former rules."
+          },
+          "fr": {
+            "cuisine": "Quand le chef donne une liste précise, aucun ustensile habituel ne s'y ajoute tout seul, même si la liste est vide. Sans cette liste, les anciennes habitudes et certaines recettes restent inchangées.",
+            "expert": "enabledExtensions présent devient le set ACP exact, y compris vide, sans ajout implicite de builtins, configuration ou serveurs de requête. Champ absent et recettes conservent leur comportement antérieur."
+          }
+        },
+        {
+          "en": {
+            "expert": "Tool-result content is not ambient authority to mutate extension state. The engine remains the applying authority and rejects mutation content from non-platform extensions.",
+            "kitchen": "A supplier's note may suggest changing the basket; it cannot itself grant that change. The house checks the source and keeps the decision with the responsible chef."
+          },
+          "fr": {
+            "cuisine": "Un livreur peut proposer un autre ustensile, mais il ne décide pas de changer le panier. La maison vérifie la demande et retire celles venant d'un livreur sans ce rôle.",
+            "expert": "Une mutation d'extension portée par un résultat reste une proposition validée et appliquée par le moteur. Les mutations forgées par une extension non plateforme sont retirées."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "An explicitly chosen empty basket still means empty"
+        },
+        "fr": {
+          "cuisine": "Un panier choisi reste exact, même vide",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not promote these merged contracts into a released 1.53.0 fix or universal isolation. Preserve the unchanged omission/recipe paths and the lack of a negotiation signal for exact nonempty selection.",
+            "kitchen": "The October 5–6 changes follow the October 2 stable delivery, and we did not repeat the tests. They offer no new sign that tells every neighboring kitchen this exact-choice rule is supported, nor protection for every other route."
+          },
+          "fr": {
+            "cuisine": "Les corrections des 5 et 6 octobre viennent après la livraison stable du 2 ; nous n'avons pas refait les essais. Aucun nouveau signe ne certifie aux autres cuisines cette sélection exacte, et les autres trajets ne sont pas tous protégés.",
+            "expert": "Tests non reproduits ; les fusions ne sont pas attribuées à la stable 1.53.0 antérieure. Absence de flag pour l'exactitude non vide et autres comportements de recettes/sélection absente limitent la portée. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The new basket rule is not a guarantee for every route"
+        },
+        "fr": {
+          "cuisine": "Le nouveau panier n'est pas prouvé dans toutes les cuisines",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "one-inference-uses-one-resolved-extension-set",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:46:14.309942+00:00"
+}

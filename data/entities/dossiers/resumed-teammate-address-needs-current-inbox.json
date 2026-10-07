@@ -1,0 +1,129 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:resumed-teammate-address-needs-current-inbox",
+  "relationships": {
+    "dossiers": [
+      "delivery-finished-user-got-nothing"
+    ],
+    "patterns": [
+      "delivery-stages",
+      "runtime-identity"
+    ],
+    "projects": [
+      "Claude Code"
+    ]
+  },
+  "route": "/dossiers/resumed-teammate-address-needs-current-inbox/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported failure separates successful mailbox writes from delivery to the current lead. The supplied reproduction was not run in this analysis, and the issue remained open at the evidence cutoff.",
+            "kitchen": "A returning cook puts finished reports where the old head chef used to look. The replacement sees nothing, although the cook thinks the notes were sent. This remains one person's untested account."
+          },
+          "fr": {
+            "cuisine": "Le commis revenu écrit au chef, mais ses billets restent dans l'ancien casier. Le nouveau chef attend toujours. Ce récit n'a pas été vérifié par un essai extérieur.",
+            "expert": "Un rapport du 6 octobre 2026 décrit des coéquipiers repris sur Claude Code 2.1.291/macOS conservant l'ancienne équipe. SendMessage confirmerait un envoi vers une boîte que le lead courant ne lit plus ; le signal n'est pas reproduit ici."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Claude Code reports describe stale teammate inbox routing",
+          "kitchen": "The new head chef never checks the old pigeonhole"
+        },
+        "fr": {
+          "cuisine": "Les messages du commis restent dans l'ancien casier",
+          "expert": "Claude Code : une adresse reprise pointe vers l'ancienne équipe"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported scope is resumed teammates following a lead restart. Counts and duration are user-reported; neither the precise internal cause nor a general failure rate has been independently established.",
+            "kitchen": "Writing the right role on a note does not help if it still goes into yesterday's pigeonhole. Newly arrived cooks reportedly find the right place. That contrast is part of the account, not an independent test."
+          },
+          "fr": {
+            "cuisine": "Le billet porte bien le nom du chef. Pourtant, le casier serait resté celui de l'ancienne équipe. Les nouveaux commis trouveraient le bon casier, selon ce même récit.",
+            "expert": "L'adresse logique team-lead ne suffit pas si son association à l'équipe n'est pas réconciliée après reprise. Le rapport indique dix-sept messages de quatre coéquipiers non lus pendant environ deux heures, tandis que les nouveaux coéquipiers fonctionnent."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Same name, a different place to leave the note"
+        },
+        "fr": {
+          "cuisine": "Le nom sur le billet ne choisit pas le bon casier",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "No landed fix or installed-version verification is established for this routing report. Publication order alone does not connect it causally to the later release.",
+            "kitchen": "A later announcement discusses other repairs. It does not clearly say that these misplaced notes now reach the new chef. The ending of this particular account remains unknown."
+          },
+          "fr": {
+            "cuisine": "La maison a annoncé d'autres réparations après ce récit. Elle ne nomme pas clairement ce problème de casier. On ne peut donc pas dire qu'il est réglé.",
+            "expert": "La release 2.1.292 paraît après le rapport mais ne mentionne pas explicitement cette cause. Ses correctifs de réveil ne constituent pas une preuve de résolution de ce défaut de routage."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "No verified repair closes this account"
+        },
+        "fr": {
+          "cuisine": "La réparation de ce cas reste inconnue",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Reconcile logical routing with current ownership after restart. A transport success must not substitute for the intended recipient's delivery state, especially when stale identities remain readable.",
+            "kitchen": "Before using yesterday's pigeonhole again, find out where the current chef collects reports. Keep the note pending until its journey is known. This is a proposed rule, not a repair we observed."
+          },
+          "fr": {
+            "cuisine": "La piste retenue est de vérifier où le chef actuel prend ses billets avant de reprendre les envois. Déposer un papier ne prouve pas sa réception. Cette réparation reste à étudier.",
+            "expert": "La réponse proposée revalide la liaison destinataire/équipe/boîte à la reprise et conserve un état de réception distinct. C'est une recommandation research_only, pas une implémentation amont démontrée."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Lesson",
+          "kitchen": "Check where today's chef receives the notes"
+        },
+        "fr": {
+          "cuisine": "À la relève, retrouver le chef et son casier",
+          "expert": "Leçon"
+        }
+      },
+      "id": "lesson",
+      "kind": "lesson"
+    }
+  ],
+  "slug": "resumed-teammate-address-needs-current-inbox",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:47:57.736774+00:00"
+}

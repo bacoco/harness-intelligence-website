@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:only-deliverable-completions-should-wake-a-waiter",
+  "relationships": {
+    "dossiers": [
+      "delivery-finished-user-got-nothing"
+    ],
+    "patterns": [
+      "delivery-stages",
+      "runtime-visible-state",
+      "execution-receipts"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/only-deliverable-completions-should-wake-a-waiter/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A queued row can outlive its useful delivery. The merged peek change skips consumed completions so wait is not interrupted by an entry that cannot supply a new message.",
+            "kitchen": "A ticket left at the pass keeps ringing the bell even though its dish has already been served. The waiter returns to find nothing new; the repair excludes that spent ticket from the wake-up check."
+          },
+          "fr": {
+            "cuisine": "Un bon reste sur le passe après que son plat a été servi, et sa présence fait encore sonner la cloche. Le serveur revient sans rien à porter ; la correction empêche ces interruptions répétées sans nouvelle assiette.",
+            "expert": "Une complétion consommée mais encore en queue pouvait interrompre wait sans message. Le peek corrigé l'ignore lorsqu'elle n'est plus livrable, évitant des réveils fondés sur la seule présence d'une entrée."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Oh My Pi wakes waiters only for deliverable completions",
+          "kitchen": "The bell rings for a dish that was already served"
+        },
+        "fr": {
+          "cuisine": "La cloche sonne pour un plat déjà servi",
+          "expert": "Oh My Pi ignore au peek les complétions déjà consommées"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Peek and drain retain different duties: decide whether a completion can wake the model, then remove stale entries and settle their receipts during draining. Consumed does not mean cleanup may be skipped.",
+            "kitchen": "Keeping the bell silent does not cancel the need to file the ticket and settle its receipt. The check for food to carry remains separate from clearing old paperwork."
+          },
+          "fr": {
+            "cuisine": "Ne plus sonner ne dispense pas de ranger le bon et de régler son reçu. La brigade sépare donc le contrôle des plats à servir du passage qui ferme les anciennes fiches.",
+            "expert": "Le drain conserve la purge des entrées stale et le règlement de leurs reçus. Le filtrage de livrabilité au peek ne retire pas ces obligations de clôture."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The old ticket still needs filing, not another waiter call"
+        },
+        "fr": {
+          "cuisine": "Le vieux bon reste à ranger, sans rappeler le serveur",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Reported AgentSession/WaitTool/AsyncJobManager tests and an RPC run are not independent reproduction. The October 6, post-18.6.3 merge has no established eligible release, and long-quota-wait eviction is outside this correction.",
+            "kitchen": "The accepted October 6 change follows the previous delivery, with no established shipment; its reported trials were not repeated here. Results lost during a long wait are a separate problem with no verified published repair."
+          },
+          "fr": {
+            "cuisine": "La correction acceptée le 6 octobre vient après la livraison précédente, sans nouvelle livraison établie ; ses essais sont rapportés, pas refaits ici. Les plats perdus pendant une longue attente restent une autre affaire, sans réparation de livraison vérifiée.",
+            "expert": "Fusion du 6 octobre après 18.6.3, sans release éligible établie ; tests ciblés sur vrais composants et run RPC rapportés, non reproduits. L'éviction pendant de longues attentes de quota reste distincte, sans correction publiée vérifiée ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Repairing the bell does not recover every missing dish"
+        },
+        "fr": {
+          "cuisine": "La correction de cloche ne récupère pas tous les plats perdus",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "only-deliverable-completions-should-wake-a-waiter",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:40:06.479050+00:00"
+}

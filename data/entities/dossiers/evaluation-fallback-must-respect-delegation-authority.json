@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-09-30",
+  "id": "dossier:evaluation-fallback-must-respect-delegation-authority",
+  "relationships": {
+    "dossiers": [
+      "agent-identity-does-not-prove-independent-authority"
+    ],
+    "patterns": [
+      "skills-runtime",
+      "authority-scope",
+      "subagents"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/evaluation-fallback-must-respect-delegation-authority/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported failure is a capability-versus-permission mismatch in skill-creator's evaluation workflow. It is specific to the reporter's host requirements. Neither independent reproduction nor a generally shipped fallback is established.",
+            "kitchen": "An evaluation recipe calls for several cooks to compare dishes. In one reported kitchen, calling them requires permission first. This is a single account, and the proposed alternative has not been established as delivered."
+          },
+          "fr": {
+            "cuisine": "La recette demande plusieurs commis pour comparer les plats. Dans la cuisine décrite, il faut pourtant un accord avant de les appeler. Cette difficulté vient d'un seul récit. La réparation proposée n'est pas établie en service.",
+            "expert": "Un utilisateur du projet Anthropic skills rapporte que skill-creator suppose une création de sous-agents soumise à autorisation explicite dans son harness. Le signalement n'a pas été reproduit. La proposition de fallback reste ouverte, sans livraison générale établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Delegation capability does not establish evaluation authority",
+          "kitchen": "Having extra cooks does not mean the chef may call them"
+        },
+        "fr": {
+          "cuisine": "Des commis disponibles ne sont pas encore autorisés à goûter",
+          "expert": "Un skill d'évaluation peut disposer de sous-agents sans pouvoir les utiliser"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A fallback should report its changed evaluation method and coverage rather than silently imitating the original workflow's guarantees. Inline execution is an alternative under study, not permission to bypass a host's delegation requirement. Capability detection alone cannot settle that requirement.",
+            "kitchen": "Before preparing the comparison, establish both whether helpers are available and whether they may be used. One cook could still perform a clearly labeled alternative check. That changes the evidence produced and cannot stand in for the planned parallel comparison."
+          },
+          "fr": {
+            "cuisine": "La règle proposée commence par vérifier si les commis existent et si leur aide est permise. Sinon, le chef pourrait goûter seul et le dire. Ce contrôle resterait utile, mais ne vaudrait pas plusieurs comparaisons menées en parallèle.",
+            "expert": "Le contrôle proposé sépare disponibilité technique et autorité avant la boucle. Si la délégation n'est pas autorisée, une évaluation inline explicite peut conserver un résultat utile. Elle ne doit pas revendiquer la couverture des évaluations appariées parallèles qu'elle remplace."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "Choose a permitted tasting before the main work starts"
+        },
+        "fr": {
+          "cuisine": "Demander qui peut aider avant de lancer la comparaison",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Retain the host-specific scope and unverified status. Existing guidance on portable capabilities is relevant, but neither portable tool names nor multiple agent identities establish permission or evaluation quality. These dimensions need separate evidence.",
+            "kitchen": "Another kitchen may permit a different arrangement. The useful lesson is to check the actual rules and say which tasting was possible. Here, the alternative remains proposed and the original account has not been independently tested."
+          },
+          "fr": {
+            "cuisine": "Le récit ne dit pas que toutes les cuisines demandent ce même accord. L'autre façon de goûter reste proposée, sans essai indépendant. La leçon est de vérifier les règles du lieu et d'annoncer honnêtement ce qui a pu être contrôlé.",
+            "expert": "Le fallback inline était documenté pour une surface particulière selon le signalement. Aucun déploiement général ni essai indépendant n'est établi par le bundle. La recommandation research_only n'extrapole pas l'exigence d'un harness aux autres et ne promet pas une couverture équivalente."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "One kitchen's permission rule does not govern every brigade"
+        },
+        "fr": {
+          "cuisine": "Une cuisine racontée ne fixe pas la règle de toutes les autres",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "evaluation-fallback-must-respect-delegation-authority",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:06:51.490296+00:00"
+}

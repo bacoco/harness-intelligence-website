@@ -25,10 +25,13 @@
       "worktrees"
     ],
     "dossiers": [
+      "checkpoint-provenance-and-image-retry-boundaries",
+      "evaluation-diagnostics-must-not-rewrite-the-verdict",
       "gstack-false-green-second-fix",
       "health-verdict-must-preserve-status-and-coverage",
       "session-scope-lock-became-global-state",
       "tool-results-need-execution-receipts",
+      "transcript-consent-is-the-intersection-of-all-roots",
       "worktree-isolation-convergence"
     ]
   },

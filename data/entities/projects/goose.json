@@ -33,6 +33,8 @@
       "goose-protocol-pivot-acp",
       "hooks-cross-harness-convergence",
       "mcp-common-protocol-local-policy",
+      "one-inference-uses-one-resolved-extension-set",
+      "resumable-child-still-needs-parent-policy",
       "retryable-auth-errors-must-not-delete-credentials",
       "safety-control-failure-became-permission",
       "skills-cross-harness-convergence",

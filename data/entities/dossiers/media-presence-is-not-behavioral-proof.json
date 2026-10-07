@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:media-presence-is-not-behavioral-proof",
+  "relationships": {
+    "dossiers": [
+      "green-test-wrong-seam"
+    ],
+    "patterns": [
+      "evidence-boundary",
+      "verification",
+      "testing"
+    ],
+    "projects": [
+      "OpenHands"
+    ]
+  },
+  "route": "/dossiers/media-presence-is-not-behavioral-proof/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Functional changes require evidence from a running Canvas and a before/after comparison, including backend changes. Declared chore status and frontend-path absence cannot determine the actual behavioral scope by themselves.",
+            "kitchen": "The new review rule asks for pictures from a kitchen actually running and a before-and-after when service changes. Work in the back still counts, even if someone labels it ordinary tidying."
+          },
+          "fr": {
+            "cuisine": "La nouvelle règle exige des photos d'une cuisine réellement ouverte et un avant/après lorsque la façon de servir change. Une modification au fond de la cuisine compte aussi, même si son étiquette annonce seulement du rangement.",
+            "expert": "La politique de revue exige des captures d'une Canvas réellement lancée et un avant/après pour les changements fonctionnels, backend inclus. Une étiquette chore ou l'absence de fichiers frontend ne suffit pas à les rendre non fonctionnels."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "OpenHands separates media presence from behavioral evidence",
+          "kitchen": "An attached photograph does not prove what the kitchen served"
+        },
+        "fr": {
+          "cuisine": "Une photo jointe ne prouve pas le plat servi",
+          "expert": "OpenHands distingue média présent et comportement démontré"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Automated presence checks are bounded by paths and declared type. Human or LLM review must establish authenticity, causal relevance and correct classification, while genuinely nonfunctional changes can use text-only evidence.",
+            "kitchen": "The sorter checks for a picture using the named stations and the work label; the chef checks that it is genuine and shows the claimed change. Written notes alone remain suitable when nothing about the service changes."
+          },
+          "fr": {
+            "cuisine": "Le trieur vérifie qu'une photo est jointe selon les postes cités et l'étiquette du travail ; le chef vérifie le vrai plat et le changement montré. Une simple note suffit seulement si la manière de servir n'a pas changé.",
+            "expert": "Le validateur contrôle la présence du média selon chemins et type déclaré. Les reviewers humains ou LLM contrôlent authenticité, causalité et classement correct ; le texte seul reste admissible pour les changements non fonctionnels."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The sorter finds the photographs; the reviewer checks their meaning"
+        },
+        "fr": {
+          "cuisine": "Le trieur compte les photos ; le chef vérifie ce qu'elles montrent",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The evidence verifies the merged documentation and stated validator boundary, not independent test execution or measured review effectiveness. The 57 reported tests do not make media presence a guarantee of truth or regression freedom.",
+            "kitchen": "The house accepted the instruction on October 5 and reported 57 trials, none repeated here. Finding a picture cannot establish a truthful account of service or show that every other dish remained sound."
+          },
+          "fr": {
+            "cuisine": "La consigne a été acceptée le 5 octobre, avec 57 essais annoncés que nous n'avons pas refaits. Trouver une photo ne prouve ni qu'elle raconte le vrai service, ni qu'aucun autre plat n'a été dégradé.",
+            "expert": "PR fusionnée le 5 octobre ; règle et frontière du validateur vérifiées dans la description, 57 tests annoncés non exécutés ici. Le gate seul ne prouve ni authenticité ni absence de régression ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "An accepted rule cannot make every photograph truthful"
+        },
+        "fr": {
+          "cuisine": "La consigne acceptée ne rend pas chaque photo vraie",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "media-presence-is-not-behavioral-proof",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:09:53.146294+00:00"
+}

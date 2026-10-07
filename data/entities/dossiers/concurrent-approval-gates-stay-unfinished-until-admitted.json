@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:concurrent-approval-gates-stay-unfinished-until-admitted",
+  "relationships": {
+    "dossiers": [
+      "human-gate-timeout"
+    ],
+    "patterns": [
+      "human-gates",
+      "concurrency",
+      "checkpoint"
+    ],
+    "projects": [
+      "Archon"
+    ]
+  },
+  "route": "/dossiers/concurrent-approval-gates-stay-unfinished-until-admitted/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified patch gives pause-admission conflicts their own meaning. A non-admitted gate remains incomplete and its invocation runs again on resume. This is source-backed behavior in a dev merge, not independently exercised production behavior.",
+            "kitchen": "Two approval requests arrive for the same work. Only one can occupy the waiting position, but losing that position does not finish the other request. An accepted development change preserves it for resumption, with no established release or independent trial."
+          },
+          "fr": {
+            "cuisine": "Deux commis demandent au chef de trancher pour le même plat. Une demande prend la place ; l'autre ne doit pas être déclarée traitée. Une correction acceptée la fera revenir à la reprise. Elle n'est pas établie comme livrée et nous n'avons pas refait les essais.",
+            "expert": "Archon fusionne sur dev un conflit de pause typé qui distingue concurrence CAS et erreur de stockage. Un seul gate du même run obtient la pause et le prompt ; son concurrent reste inachevé pour le prochain resume. Tests inspectés, sans exécution ni release établie."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Archon defers competing gates without completing their invocations",
+          "kitchen": "One approval takes the chair; the other is still unfinished"
+        },
+        "fr": {
+          "cuisine": "Deux demandes arrivent, une seule prend la place devant le chef",
+          "expert": "Archon conserve les gates non admis comme travail inachevé"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Atomic pause/suspension persistence protects the ordering before notification. Context-conditional failure handling protects ownership after notification races. These are separate controls; a delivery error is not authority to overwrite the current approval state unconditionally.",
+            "kitchen": "The wait and its suspension notice are saved together before the question leaves. A failed messenger may mark only the request that is still theirs. An answer already received, a cancellation or the next request must remain intact."
+          },
+          "fr": {
+            "cuisine": "Le chef fait noter ensemble la pause et sa raison avant que la question parte. Si le messager échoue, il ne peut barrer que la demande encore en cours. Il ne doit pas effacer une réponse déjà donnée, un arrêt décidé ou la demande suivante.",
+            "expert": "Pause et événement de suspension sont écrits dans une transaction avant l'envoi du prompt. failPausedApproval est conditionné au contexte exact encore actif. Un échec d'envoi tardif ne peut ainsi écraser une décision, une annulation ou un gate successeur selon le mécanisme fusionné."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Record the wait before carrying the question"
+        },
+        "fr": {
+          "cuisine": "Noter la pause avant d'envoyer la question",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The retained guidance is research_only: preserve unfinished admission losers and condition late mutations on current ownership. Do not infer durable queue ordering, global gate identity or exactly-once effects. The inspected change remains a dev-branch merge without runtime reproduction.",
+            "kitchen": "On resumption, unfinished requests are made again; this change does not create a new saved waiting list. Helpers keep their own requests. We read but did not run the checks, and cannot promise that every real action happens only once. Delivery remains unestablished."
+          },
+          "fr": {
+            "cuisine": "Les demandes inachevées sont redemandées à la reprise, sans nouvelle liste d'attente conservée. Les aides gardent leurs propres demandes. Les essais écrits ont été lus, pas rejoués ; rien ne prouve que tous les gestes ne se produisent qu'une fois. La correction reste acceptée dans le chantier, sans livraison établie.",
+            "expert": "La reprise réexécute les invocations inachevées : aucune queue persistée ni nouveau gate ID public n'est ajouté. Les child runs gardent leurs propres IDs et gates. L'inspection ciblée de 16 fichiers et des régressions de reprise à froid ne prouve ni l'exactly-once métier ni l'absence de toutes les courses."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A repeated request is not proof of a once-only action"
+        },
+        "fr": {
+          "cuisine": "La demande revient ; cela ne prouve pas que chaque geste n'arrive qu'une fois",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "concurrent-approval-gates-stay-unfinished-until-admitted",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:17:18.719168+00:00"
+}

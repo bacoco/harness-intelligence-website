@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-04",
+  "id": "dossier:resuming-an-unsaved-tool-result-can-repeat-a-committed-effect",
+  "relationships": {
+    "dossiers": [
+      "timeout-left-descendants-running"
+    ],
+    "patterns": [
+      "retry-semantics",
+      "checkpoint",
+      "execution-receipts"
+    ],
+    "projects": [
+      "LangGraph"
+    ]
+  },
+  "route": "/dossiers/resuming-an-unsaved-tool-result-can-repeat-a-committed-effect/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported simulation separates remote commit from local result persistence. Missing checkpoint output cannot establish that the remote operation did nothing.",
+            "kitchen": "The published rehearsal leaves a finished dish waiting while the kitchen never gets its receipt in time. Sending the ticket again makes the supplier prepare that same dish twice; we did not try the rehearsal ourselves."
+          },
+          "fr": {
+            "cuisine": "Dans l'exercice publié, le fournisseur prépare le plat, mais son reçu n'arrive pas à temps. Le même ticket fait préparer ce plat deux fois ; nous n'avons pas essayé cet exercice.",
+            "expert": "Le repro local publié sur LangGraph 1.2.12 fait commettre une API simulée avant timeout, puis invoke(None) rejoue le nœud outil : deux effets pour un tool_call_id. Il n'est pas exécuté dans cette analyse."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "LangGraph resume can repeat an effect whose response was lost",
+          "kitchen": "The dish may be finished before its receipt arrives"
+        },
+        "fr": {
+          "cuisine": "Le plat peut être prêt avant que son reçu arrive",
+          "expert": "LangGraph : un résultat non checkpointé peut cacher un effet déjà commis"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Effect identity must cross the external boundary. This is distinct from a model failure after the tool result was already checkpointed, and it does not imply that every provider supports deduplication.",
+            "kitchen": "A number kept only in our notebook cannot stop the supplier cooking twice. Carry the same identity to a supplier that honors it, or reconcile the saved receipt before repeating an uncertain order."
+          },
+          "fr": {
+            "cuisine": "Garder le numéro dans notre cahier ne suffit pas si le fournisseur ne le reçoit jamais. La règle étudiée lui transmet la même identité ou vérifie son reçu durable avant de recommencer.",
+            "expert": "Le tool_call_id survit au checkpoint, mais doit être transmis comme clé d'idempotence supportée ou rapproché d'un résultat durable avant retry. L'idempotence dépend du fournisseur et du wrapper, pas de la seule conservation de l'ID."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Response",
+          "kitchen": "The supplier must recognize the order's effect identity"
+        },
+        "fr": {
+          "cuisine": "Le fournisseur doit reconnaître le ticket déjà traité",
+          "expert": "Réponse"
+        }
+      },
+      "id": "response",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not promote the upstream repro into independent verification, a real financial effect or proof of a version-specific regression. The retained lesson concerns ambiguous external effects and application/provider-level retry contracts.",
+            "kitchen": "The rehearsal uses simulated local services, not a real transaction. It illustrates documented resume behavior without establishing a shipped fix or a new regression in later versions."
+          },
+          "fr": {
+            "cuisine": "Les cuisines de l'exercice sont fictives et aucune vraie transaction n'a été testée ici. Le récit montre une limite de reprise documentée, pas une réparation ni une panne nouvelle des versions suivantes.",
+            "expert": "Endpoints locaux fictifs, aucune transaction réelle ni test exécuté ici. Le comportement de reprise est documenté, sans bug corrigé établi ni régression attribuée à 1.2.13/14. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The simulation is neither a real transaction nor a verified repair"
+        },
+        "fr": {
+          "cuisine": "L'exercice ne décrit pas une vraie transaction ni une réparation livrée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "resuming-an-unsaved-tool-result-can-repeat-a-committed-effect",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:19:49.435789+00:00"
+}

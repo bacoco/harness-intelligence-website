@@ -1,0 +1,105 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:transcript-access-does-not-grant-worker-resume-ownership",
+  "relationships": {
+    "dossiers": [
+      "resume-must-reconcile-control-state",
+      "session-scope-lock-became-global-state"
+    ],
+    "patterns": [
+      "ownership",
+      "permissions",
+      "checkpoint"
+    ],
+    "projects": [
+      "Hermes"
+    ]
+  },
+  "route": "/dossiers/transcript-access-does-not-grant-worker-resume-ownership/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The guard follows Kanban ownership through compression lineage and rejects ordinary resume on positive identification. It runs before history loading across CLI, oneshot and gateway rather than treating transcript access as worker ownership.",
+            "kitchen": "The responsible brigade's mark stays with the notebook even after its notes are shortened. When the guard recognizes that mark, an ordinary request cannot turn its reader into an untracked replacement cook."
+          },
+          "fr": {
+            "cuisine": "La marque de la brigade responsable reste sur le carnet, même lorsqu'on en fait un résumé. Si le garde reconnaît cette marque, il refuse qu'un autre commis reprenne le poste sans passer par le suivi prévu.",
+            "expert": "La provenance Kanban traverse la lignée de compression. Une probe positive déclenche le refus central de reprise ordinaire avant chargement d'historique en CLI, oneshot et gateway, afin d'éviter un writer non suivi."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Hermes guards ordinary resume of identified Kanban workers",
+          "kitchen": "Reading the notebook does not make you its assigned cook"
+        },
+        "fr": {
+          "cuisine": "Lire le carnet ne donne pas le poste du commis",
+          "expert": "Hermes refuse la reprise ordinaire d'un worker Kanban reconnu"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Missing or failing probes preserve a fail-open path. The HERMES_KANBAN_TASK dispatcher exemption is not an attested authority boundary here, so the guard cannot be presented as complete authorization or fencing.",
+            "kitchen": "A missing or failed check still lets the request through. A dispatcher badge also gives an exemption, without this repair proving who is wearing it."
+          },
+          "fr": {
+            "cuisine": "Un contrôle absent ou en panne laisse pourtant passer la demande. Le badge du répartiteur permet aussi de passer, sans que cette réparation prouve l'identité de celui qui le porte.",
+            "expert": "La garde échoue ouvert en cas de probe absente ou en erreur. HERMES_KANBAN_TASK exempte le dispatcher, mais ce patch n'atteste pas cette identité : le refus ciblé ne vaut pas une frontière d'autorisation stricte."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "The gate still lets people through when the check cannot answer"
+        },
+        "fr": {
+          "cuisine": "Si le garde ne répond pas, la porte reste ouverte",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The October 6 merge establishes the inspected conditional guard, not an executed security validation. Pre-dispatch live-writer detection and continuation under a new claim remain follow-ups, with complete multi-writer fencing unproven.",
+            "kitchen": "The October 6 accepted change was inspected but not tried here. Checking whether the original cook is still working and formally assigning a new owner for continuation remain unfinished. The rule does not yet prove that only one cook can write."
+          },
+          "fr": {
+            "cuisine": "Le changement accepté le 6 octobre a été examiné, sans essais refaits ici. Vérifier si le premier commis travaille encore et attribuer formellement la reprise à un nouveau restent à faire. Personne ne garantit encore qu'un seul commis puisse écrire.",
+            "expert": "Fusion du 6 octobre, code inspecté et tests non exécutés. Détection du writer vivant avant dispatch et continuation sous nouvelle claim restent en suivi ; aucun verrouillage multi-writer complet n'est établi. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The accepted guard does not finish every change of cook"
+        },
+        "fr": {
+          "cuisine": "Le refus accepté ne règle pas encore tous les changements de commis",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "transcript-access-does-not-grant-worker-resume-ownership",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:54:42.242533+00:00"
+}

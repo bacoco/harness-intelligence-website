@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-02",
+  "id": "dossier:subagent-briefs-are-not-human-approval-evidence",
+  "relationships": {
+    "dossiers": [
+      "permission-ui-approved-wrong-action"
+    ],
+    "patterns": [
+      "human-gates",
+      "subagents",
+      "authority-scope"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/subagent-briefs-are-not-human-approval-evidence/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified 2 October merge prevents identified agent-written delegation inputs from satisfying human-turn evidence. Copilot and Codex use adapter-specific filters. Code inspection and reported targeted tests do not establish corrected live-session behavior.",
+            "kitchen": "A handover written by a cook can arrive where the kitchen expects a guest's reply. Counting it as the guest speaking would invent authority. An accepted repair distinguishes those origins, but no live service trial is established here."
+          },
+          "fr": {
+            "cuisine": "Un commis écrit une note pour son aide. La maison pouvait la compter comme une parole du client et s'en servir pour un accord. Un correctif accepté sépare ces deux origines. Il n'a pas été essayé ici dans un vrai service.",
+            "expert": "AI-DLC fusionne des filtres Copilot et Codex pour que les briefs de sous-agents ne produisent ni HUMAN_TURN ni feedback de gate. Le problème concerne la provenance de l'entrée, pas son apparence de prompt. Le patch est inspecté, sans validation live par l'auteur ni par cette veille."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "AI-DLC excludes delegated briefs from human-turn evidence",
+          "kitchen": "A cook's handover note cannot answer for the guest"
+        },
+        "fr": {
+          "cuisine": "La note du commis ne vaut pas réponse du client",
+          "expert": "AI-DLC sépare les briefs de sous-agents des tours humains"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Exact launch association and a temporal exclusion window offer different evidence quality. The fallback has a documented false-rejection cost. Additional Copilot launch aliases receive stage-rule delivery and developer-plan checks, but Kiro subagent prompt behavior was not checked in this PR.",
+            "kitchen": "Some notes are recognized by their link to the helper's departure. A five-second fallback also discards messages arriving just afterward, and a genuine guest reply can be caught in that gap. The guest may need to answer again; the filter does not prove perfect recognition."
+          },
+          "fr": {
+            "cuisine": "La règle reconnaît certaines notes envoyées au départ d'un aide. Elle écarte aussi, dans un cas, les messages arrivés pendant les cinq secondes suivantes. Une vraie réponse du client peut alors être perdue et devoir être redonnée. Ce compromis reste à éprouver.",
+            "expert": "Copilot combine digests liés au lancement et fallback d'exclusion post-lancement de cinq secondes, qui peut rejeter un vrai prompt humain. Codex exclut les prompts de sous-agent et de thread reviewer séparé identifiés. Copilot reconnaît aussi runSubagent et task pour livrer les stage rules et vérifier le developer plan."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Blocking the helper's note can also miss the guest's answer"
+        },
+        "fr": {
+          "cuisine": "Reconnaître la note, sans perdre une vraie réponse",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not promote a merged provenance filter into universal adapter correctness. No upstream code or tests were executed in this review, and preview publication does not certify full-suite success. The appropriate invariant is verified human origin with explicit handling of uncertain or rejected inputs.",
+            "kitchen": "The named kitchens have no confirmed live trial of this repair here. Preview announcements report a failed full check, with no new stable release established. That failure is not shown to come from this change. Preserve both the protection against false human authority and its possible rejection of real replies."
+          },
+          "fr": {
+            "cuisine": "Aucun service corrigé n'a été vérifié en direct dans les cuisines citées. Les versions d'essai de la période annoncent une vérification complète en échec, sans nouvelle version stable. Rien ne relie cet échec à ce correctif. La leçon est de vérifier qui parle tout en gardant visibles les réponses humaines écartées.",
+            "expert": "L'auteur exclut une validation live VS Code, Copilot CLI ou Codex ; le comportement Kiro reste non vérifié. La dernière preview du 6 octobre, comme les autres previews observées, avertit de Full Suite failed. Aucune nouvelle stable ni causalité avec ce changement n'est établie ; la guidance demeure research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The accepted repair does not make the preview fully tested"
+        },
+        "fr": {
+          "cuisine": "Le correctif est accepté, les essais complets ne sont pas verts",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "subagent-briefs-are-not-human-approval-evidence",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:36:25.472094+00:00"
+}

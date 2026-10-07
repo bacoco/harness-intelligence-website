@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:skill-tool-availability-follows-retained-context",
+  "relationships": {
+    "dossiers": [
+      "runtime-skill-inventory-not-filesystem"
+    ],
+    "patterns": [
+      "skills-runtime",
+      "compaction",
+      "runtime-visible-state"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/skill-tool-availability-follows-retained-context/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The released SkillsMiddleware implementation ties its own tools to skill-read evidence retained in model context. Exposure is refreshed per model call, including withdrawal after compaction removes that evidence. Two implementation files were inspected; runtime behavior was not independently exercised.",
+            "kitchen": "Reading a recipe makes its reserved utensils available to the cook. If that reading disappears from the working notes, the next planning step withdraws those utensils. The change is published, but this review includes no service trial."
+          },
+          "fr": {
+            "cuisine": "Le commis ouvre une recette et reçoit les ustensiles mis à part pour elle. Si cette lecture quitte son carnet de travail, ils sont retirés au prochain choix de travail. La maison publie cette règle ; nous ne l'avons pas essayée.",
+            "expert": "DeepAgents SDK 0.7.22 révèle les outils propres au SkillsMiddleware après un read_file réussi du skill. Le registre callable est recalculé à chaque appel modèle et retire ces outils si la compaction a supprimé la lecture. Fusion, implémentation ciblée et publication sont vérifiées, sans essai runtime."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "DeepAgents ships context-scoped skill tools",
+          "kitchen": "Special recipe utensils follow the card at the station"
+        },
+        "fr": {
+          "cuisine": "Les ustensiles de la recette suivent la fiche gardée au passe",
+          "expert": "DeepAgents publie des outils de skill à disponibilité contextuelle"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Model-time tool exposure and execution-time resolution are separate operations. The patch also changes middleware ordering. Cache-prefix preservation depends on provider/model support and resolver stability; it is not a universal performance guarantee.",
+            "kitchen": "A recipe does not hand out its special utensils forever. The working list is rebuilt for the next step, and the utensil supplier is consulted again when one is actually used. That keeps discovery and use as separate moments."
+          },
+          "fr": {
+            "cuisine": "La liste ne reste pas ouverte pour toujours après la première recette. Elle est revue quand le commis prépare son prochain geste. Le choix de l'ustensile est aussi revérifié au moment de s'en servir.",
+            "expert": "metadata.include_tools permet de sélectionner les outils fournis au middleware, directement ou par resolver synchrone/asynchrone. Ce resolver est réévalué lors de l'exécution. Sur modèles compatibles, les définitions sont ajoutées après la lecture afin de préserver le préfixe du cache."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Check the utensil list again when work moves forward"
+        },
+        "fr": {
+          "cuisine": "La liste d'ustensiles est refaite au prochain choix",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "A successful read is the trigger, not an instruction-comprehension or authorization proof. The bounded design lesson remains research_only: track actual exposed capabilities, preserve the exclusions, and separately test reading completeness and permission enforcement where required.",
+            "kitchen": "Even a partial reading can qualify, including one later shortened in the notes. Do not take that as proof the cook understood the whole recipe. Utensils supplied beforehand remain outside this rule, and we have not tested the published change."
+          },
+          "fr": {
+            "cuisine": "Lire un morceau de recette peut suffire, même si la page est ensuite raccourcie. Cela ne prouve pas que toutes les consignes ont été lues. Les ustensiles déjà sur le plan de travail ne suivent pas cette règle. Le changement publié n'a pas été essayé ici.",
+            "expert": "Une lecture partielle ou ultérieurement tronquée satisfait le critère : aucune lecture exhaustive n'est attestée. Les outils déjà fournis à l'agent, y compris les outils différés de recherche, restent hors de ce contrôle. Il s'agit d'un cycle de disponibilité publié, sans preuve runtime indépendante ni barrière générale de permission."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "An opened card does not prove every instruction was read"
+        },
+        "fr": {
+          "cuisine": "Ouvrir un coin de recette ne veut pas dire tout lire",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "skill-tool-availability-follows-retained-context",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T22:59:56.158684+00:00"
+}

@@ -17,6 +17,7 @@
     ],
     "patterns": [],
     "dossiers": [
+      "guard-policy-defaults-off-with-explicit-retained-controls",
       "release-does-not-equal-observed-fix"
     ]
   },

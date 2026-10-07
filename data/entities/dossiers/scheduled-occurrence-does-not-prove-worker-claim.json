@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:scheduled-occurrence-does-not-prove-worker-claim",
+  "relationships": {
+    "dossiers": [
+      "scheduled-success-needs-effect-proof"
+    ],
+    "patterns": [
+      "execution-receipts",
+      "ownership",
+      "evidence-boundary"
+    ],
+    "projects": [
+      "Cline"
+    ]
+  },
+  "route": "/dossiers/scheduled-occurrence-does-not-prove-worker-claim/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Scheduled-run materialization is reported to proceed while worker acquisition does not: queued state, zero attempts and absent claim tokens remain. These are reported observations, not independently inspected runtime state.",
+            "kitchen": "The account describes new scheduled tickets and advancing dates, but no cook signs for the work and the attempt count stays at zero. A ticket on the board is not evidence that preparation began."
+          },
+          "fr": {
+            "cuisine": "Un récit décrit des commandes ajoutées au tableau et des dates qui avancent, alors qu'aucun commis ne signe la prise en charge. Le nombre de tentatives reste à zéro : inscrire la commande ne prouve pas qu'on a commencé à la préparer.",
+            "expert": "Le rapport CLI 3.0.68/core 0.0.90 décrit des runs matérialisés mais queued, avec attempt_count égal à zéro et tokens de claim absents. L'avancement des dates ne démontre donc ni acquisition ni début d'exécution."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Cline report separates scheduled occurrences from worker claims",
+          "kitchen": "The ticket exists, but no cook has taken it"
+        },
+        "fr": {
+          "cuisine": "Le bon est au tableau, mais aucun commis ne l'a pris",
+          "expert": "Cline : des occurrences planifiées rapportées sans claim"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The named-parameter binding explanation is a hypothesis. Demonstrating SQL behavior with NULL values under Node does not by itself establish that the deployed bun:sqlite binding produces those values.",
+            "kitchen": "The reporter suspects how the time and available places reach the cook taking orders. The detailed trials mainly supply empty boxes in another kitchen; they do not replay the full suspected handover."
+          },
+          "fr": {
+            "cuisine": "L'auteur soupçonne la manière dont un commis transmet l'heure et le nombre de places libres. Mais ses essais montrent surtout des cases vides dans une autre cuisine, sans refaire tout le passage soupçonné.",
+            "expert": "L'auteur vise le binding objet de :now/:capacity par bun:sqlite dans claimDueRuns. Les expériences détaillées montrent principalement le comportement SQL avec NULL sous Node, pas une reproduction directe complète du binding Bun."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A trial in another kitchen cannot settle this kitchen's fault"
+        },
+        "fr": {
+          "cuisine": "Un essai dans une autre cuisine ne prouve pas la cause",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The report supports investigation, not a confirmed Bun cause or fix. Test the actual deployed driver/binary and retain separate evidence for materialization, claim and execution start; none of those proposed checks ran here.",
+            "kitchen": "The October 6 account remains open, with no repeat trial here or established repair. The proposed check uses the actual working equipment and records ticket creation, a cook taking responsibility and the first cooking action separately."
+          },
+          "fr": {
+            "cuisine": "Le récit du 6 octobre reste ouvert, sans essai refait ici ni réparation établie. Il faudrait vérifier la transmission avec le vrai équipement, puis constater séparément le bon créé, le commis qui le prend et son premier geste.",
+            "expert": "Signalement du 6 octobre ouvert, sans reproduction ici ni correctif établi. La vérification proposée doit utiliser le driver et le binaire déployés, puis distinguer occurrence créée, claim et exécution commencée ; guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Watch the ticket being taken in the kitchen that actually runs"
+        },
+        "fr": {
+          "cuisine": "Il faut voir la prise du bon dans la cuisine concernée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "scheduled-occurrence-does-not-prove-worker-claim",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:28:56.657855+00:00"
+}

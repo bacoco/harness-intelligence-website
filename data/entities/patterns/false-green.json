@@ -18,11 +18,16 @@
     "patterns": [],
     "dossiers": [
       "aider-false-success-family",
+      "auth-errors-must-survive-cleanup-and-cache-fallbacks",
+      "completion-schema-must-not-default-an-absent-verdict-to-success",
       "delivery-finished-user-got-nothing",
+      "failed-security-review-must-stay-retryable",
       "green-test-wrong-seam",
       "gstack-false-green-second-fix",
       "health-verdict-must-preserve-status-and-coverage",
+      "protective-tests-need-realistic-limits-and-the-right-failure",
       "scheduled-success-needs-effect-proof",
+      "skill-admission-checks-completeness-and-received-bytes",
       "unknown-flattened-to-empty"
     ]
   },

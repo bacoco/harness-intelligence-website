@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:empty-tool-policy-must-survive-cron-roundtrips",
+  "relationships": {
+    "dossiers": [
+      "an-empty-tool-allowlist-is-not-an-unset-restriction"
+    ],
+    "patterns": [
+      "permissions",
+      "fail-open",
+      "scope-boundary"
+    ],
+    "projects": [
+      "Hermes"
+    ]
+  },
+  "route": "/dossiers/empty-tool-policy-must-survive-cron-roundtrips/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Explicit empty policy survives cron creation, update and reload. The patch keeps [] separate from unset None so persistence cannot silently turn deny-all into a permissive default.",
+            "kitchen": "The chef supplies an empty permitted-utensil list for a planned service; filing it must not turn it into permission to use the cupboard. The repair preserves that choice when the sheet is created, amended and read back."
+          },
+          "fr": {
+            "cuisine": "Le chef remet une liste n'autorisant aucun ustensile pour un service prévu ; la ranger ne doit pas en changer le sens. La correction garde ce choix lorsqu'on crée la fiche, la modifie puis la ressort du classeur.",
+            "expert": "Le correctif conserve [] dans create, update et reload des cron jobs. None reste un réglage absent, distinct de l'ensemble vide explicitement choisi, qui ne doit pas revenir comme défaut permissif."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Hermes preserves empty tool policy across cron roundtrips",
+          "kitchen": "The stored order sheet must still allow no utensils"
+        },
+        "fr": {
+          "cuisine": "Le carnet rangé doit encore dire aucun ustensile",
+          "expert": "Hermes conserve une allowlist vide à travers les opérations cron"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The cron early return prevents implicit MCP additions from widening the empty set. TUI coverage is narrower: the inspected branch preserves an empty resolved set when no MCP is active, not a universal removal guarantee.",
+            "kitchen": "For the planned service, an empty list ends utensil selection before an outside supplier can add any. Another entrance preserves emptiness when no supplier is active there, without proving that it dismisses every supplier already working."
+          },
+          "fr": {
+            "cuisine": "Au départ du service prévu, la liste vide arrête le choix avant qu'un fournisseur extérieur ajoute ses ustensiles. Une autre entrée garde aussi ce vide lorsqu'aucun fournisseur n'y travaille déjà ; cela ne prouve pas qu'elle renvoie tous les fournisseurs présents.",
+            "expert": "Le dispatch cron retourne zéro toolset avant tout ajout MCP lorsque l'allowlist est explicitement vide. La passerelle TUI conserve également un set résolu vide sur la branche sans MCP actif, sans preuve de suppression générale des MCP déjà actifs."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Do not fill the empty basket with the supplier's utensils"
+        },
+        "fr": {
+          "cuisine": "Ne pas compléter le panier vide avec les outils du livreur",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The evidence establishes the October 6 merge and inspected patch/tests, not independent execution or a release after 2026.9.24 containing it. Preserve the stated cron and TUI scope instead of inferring a global MCP removal policy.",
+            "kitchen": "The accepted October 6 repair follows the September 24 delivery, with no shipment of this change established. Roundtrip tests were inspected rather than run here, and coverage of every other entrance is unproven."
+          },
+          "fr": {
+            "cuisine": "La correction acceptée le 6 octobre suit la livraison du 24 septembre, sans livraison contenant ce changement établie. Les essais d'aller-retour ont été examinés, pas refaits ici ; les autres entrées ne sont pas toutes prouvées couvertes.",
+            "expert": "Fusion du 6 octobre, sans release contenant le correctif établie après 2026.9.24. Patch et tests de roundtrip inspectés, non exécutés ici ; portée cron et branche TUI décrites, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The written repair is accepted; its shipment remains unestablished"
+        },
+        "fr": {
+          "cuisine": "Le choix est corrigé dans le cahier, la livraison reste à établir",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "empty-tool-policy-must-survive-cron-roundtrips",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:51:28.598591+00:00"
+}

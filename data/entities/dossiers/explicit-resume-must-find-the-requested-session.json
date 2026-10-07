@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:explicit-resume-must-find-the-requested-session",
+  "relationships": {
+    "dossiers": [
+      "archon-session-resume-checkpoint"
+    ],
+    "patterns": [
+      "checkpoint",
+      "runtime-identity",
+      "fail-open"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/explicit-resume-must-find-the-requested-session/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "An explicit missing session path no longer falls back to a fresh empty session. The merged change preserves the caller's request for continuity by reporting that the target could not be found.",
+            "kitchen": "The chef names a particular notebook to continue, but a typo leaves the requested notebook missing. The repair prevents handing over a blank book while claiming the old service has resumed."
+          },
+          "fr": {
+            "cuisine": "Le chef demande de reprendre un carnet précis, mais son nom comporte une faute et personne ne le trouve. La correction empêche de poser un carnet vide à sa place tout en annonçant que le service reprend.",
+            "expert": "Le chemin --resume <path> pouvait créer silencieusement une session vide quand le fichier demandé manquait. Le correctif fusionné fait remonter l'erreur au lieu de présenter ce nouveau départ comme une reprise."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Oh My Pi rejects a missing explicit resume target",
+          "kitchen": "An empty notebook cannot stand in for the one the chef requested"
+        },
+        "fr": {
+          "cuisine": "Le carnet demandé manque ; un carnet vide ne le remplace pas",
+          "expert": "Oh My Pi refuse une cible absente pour --resume <path>"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Reusing throwIfMissing closes this fallback path rather than introducing a new recovery identity. It establishes target existence, not universal correctness of restored workspace, model or control state.",
+            "kitchen": "The same missing-book check used by other ways of returning to work now covers this named request. A missing book produces an error; finding it still does not certify the rest of the station."
+          },
+          "fr": {
+            "cuisine": "La brigade applique à cette demande la même vérification de présence qu'aux autres façons de reprendre. Si le carnet manque, elle le dit ; trouver un carnet ne prouve toutefois pas que tout le poste est prêt.",
+            "expert": "Le chemin utilise throwIfMissing existant pour s'aligner sur les autres formes de reprise. La présence de la cible est une précondition explicite, distincte de la validation de tout l'état d'exécution restauré."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Check for the requested book before calling the service resumed"
+        },
+        "fr": {
+          "cuisine": "Vérifier la présence du bon carnet avant d'ouvrir le service",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not credit the merge to 18.6.3 or conflate it with that release's missing-saved-model fix. The two reported targeted tests were not executed here, and published inclusion within the evidence window is unestablished.",
+            "kitchen": "The October 6 repair comes after the previous delivery, with no included shipment established inside the reviewed period. Two focused before-and-after trials are reported, without a repeat by us."
+          },
+          "fr": {
+            "cuisine": "La correction du 6 octobre vient après la livraison précédente ; sa présence dans une livraison de la période n'est pas établie. Deux essais ciblés avant et après sont rapportés, mais nous ne les avons pas refaits.",
+            "expert": "Fusion du 6 octobre après 18.6.3, sans inclusion publiée établie dans la fenêtre. Deux tests ciblés avant/après rapportés non reproduits ; le correctif de modèle sauvegardé de 18.6.3 est distinct, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The accepted repair follows the previous delivery"
+        },
+        "fr": {
+          "cuisine": "La correction acceptée vient après la livraison précédente",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "explicit-resume-must-find-the-requested-session",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:37:29.014554+00:00"
+}

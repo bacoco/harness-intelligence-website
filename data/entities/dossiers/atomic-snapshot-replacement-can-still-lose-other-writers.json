@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:atomic-snapshot-replacement-can-still-lose-other-writers",
+  "relationships": {
+    "dossiers": [
+      "session-scope-lock-became-global-state"
+    ],
+    "patterns": [
+      "atomic-write",
+      "concurrency",
+      "state-split"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/atomic-snapshot-replacement-can-still-lose-other-writers/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Atomic byte replacement can still publish logically stale state. The open ECC proposal targets sql.js handles that overwrite another writer's committed rows by republishing an older snapshot.",
+            "kitchen": "The cook swaps in a perfectly intact copy of the order book, but it lacks the orders others added meanwhile. The proposed repair starts by rereading the shared book before making the next change."
+          },
+          "fr": {
+            "cuisine": "Un commis remplace proprement le carnet par sa copie, sans déchirer une page, mais cette copie oublie les commandes ajoutées par les autres. La réparation proposée lui ferait relire le carnet commun avant de changer quoi que ce soit.",
+            "expert": "Un rename atomique garantit un remplacement sans déchirure, pas la fraîcheur du snapshot. La PR ouverte décrit un ancien handle sql.js capable d'écraser les commits d'un autre writer et propose une relecture sérialisée avant mutation."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "ECC proposes serialized snapshots to prevent stale-writer losses",
+          "kitchen": "An untorn page can still erase another cook's orders"
+        },
+        "fr": {
+          "cuisine": "Une page impeccable peut effacer les commandes des autres",
+          "expert": "ECC propose de sérialiser les snapshots contre les writers périmés"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The lock spans reload, transaction and atomic snapshot publication instead of only the final rename. Reads are refreshed, and close loses its write side effect so stale handles cannot clobber newer state during cleanup.",
+            "kitchen": "The proposed rule keeps other writers waiting while one cook rereads, updates and returns the book; ordinary readers also get fresh pages. Closing a station must not put that cook's old notes back over the shared book."
+          },
+          "fr": {
+            "cuisine": "La proposition réserve le carnet le temps de relire, modifier et remettre la nouvelle page en place ; les consultations prennent aussi la copie fraîche. Un commis qui ferme son poste ne doit plus remplacer le carnet avec les vieilles notes qu'il gardait.",
+            "expert": "Reload, transaction et publication atomique restent sous le même verrou par opération. La proposition rafraîchit les lectures et supprime l'écriture au close, pour qu'un ancien handle ne republie pas un snapshot destructif en se fermant."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Keep the book reserved from rereading through replacement"
+        },
+        "fr": {
+          "cuisine": "Garder le carnet réservé de la relecture à la remise en place",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The reported local result is not a merged or independently reproduced fix. The full suite did not finish and a validation child timed out; storage serialization does not resolve the separate ownership-takeover problem.",
+            "kitchen": "The October 6 proposal reports three writers keeping 150 lines rather than the comparison's 50, without a repeat trial here. It remains unaccepted, the full trial set unfinished after one check timed out, and it does not decide who may take over the chef's mission."
+          },
+          "fr": {
+            "cuisine": "La proposition du 6 octobre rapporte 150 lignes gardées par trois commis contre 50 auparavant ; nous n'avons pas refait cet essai. Elle reste non acceptée, la série complète inachevée après une vérification trop longue, et ne règle pas qui peut reprendre la mission du chef.",
+            "expert": "PR ouverte du 6 octobre : test trois processus annoncé à 150 lignes contre 50 sur la base, non reproduit. Suite complète inachevée, child de validation timeout ; le takeover d'ownership distinct reste hors correctif, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The small trial settles neither the repair nor who owns the service"
+        },
+        "fr": {
+          "cuisine": "Le petit essai ne clôt ni la réparation ni la question du chef",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "atomic-snapshot-replacement-can-still-lose-other-writers",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T05:18:01.102138+00:00"
+}

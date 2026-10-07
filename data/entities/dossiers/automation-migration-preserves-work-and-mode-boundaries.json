@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-03",
+  "id": "dossier:automation-migration-preserves-work-and-mode-boundaries",
+  "relationships": {
+    "dossiers": [
+      "recovery-state-convergence"
+    ],
+    "patterns": [
+      "mission-state",
+      "scope-boundary",
+      "retry-semantics"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/automation-migration-preserves-work-and-mode-boundaries/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The verified release notes distinguish task-preserving automation migration from mode-scoped reminder tools and a separate message-queue repair. They establish published claims, not tested implementation behavior. No shared root cause is inferred.",
+            "kitchen": "The house says its reminder desk has moved while existing jobs have been kept. Reminder utensils are restricted to three working arrangements. The same announcement reports a fix for new tickets held after stop, restart and stop again; we have not tried these changes."
+          },
+          "fr": {
+            "cuisine": "La maison déplace son poste de rappels et annonce garder les tâches déjà notées. Certains ustensiles restent réservés à trois façons de travailler. Elle annonce aussi réparer des nouveaux billets bloqués après deux arrêts séparés par une reprise. Nous avons lu l'annonce, sans essayer ces changements.",
+            "expert": "DeepSeek Harness 0.2.1-alpha.1 annonce la conservation des tâches après retrait du bundle expérimental, avec Automation intégré au Web. Les outils de rappel sont exposés en Standard, Creator et PTC. Une correction stop/resume/stop est aussi annoncée ; la preuve est documentaire, sans exécution indépendante."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "DeepSeek Harness documents automation preservation and mode limits",
+          "kitchen": "Move the reminder desk without losing the work already booked"
+        },
+        "fr": {
+          "cuisine": "Changer le poste des rappels sans perdre les commandes déjà notées",
+          "expert": "DeepSeek Harness documente une migration des automatisations à portée explicite"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Use separate acceptance criteria for retained tasks, effective per-mode tool availability and post-transition message handling. These are design checks derived from the release account, not tests performed here. Tool presence alone cannot certify either migration or recovery.",
+            "kitchen": "A moved desk can retain old jobs while still mishandling the next arrival. A visible reminder utensil also says nothing about which station may use it. Preservation, availability and queue recovery are different questions, despite appearing in one announcement."
+          },
+          "fr": {
+            "cuisine": "Retrouver les billets déjà écrits ne prouve pas que le prochain billet passe. Voir l'ustensile de rappel ne prouve pas non plus qu'il soit permis à chaque poste. Ces trois questions doivent être vérifiées séparément, même si la maison les annonce le même jour.",
+            "expert": "La migration conserve les tâches ; la matrice de modes borne les capacités ; le correctif de file traite une transition répétée stop/resume/stop. La release ne suffit pas à établir les mécanismes internes ni une relation causale entre ces trois propriétés. Aucun lien avec un autre scheduler n'est démontré."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Old jobs and new arrivals need different checks"
+        },
+        "fr": {
+          "cuisine": "Les vieux billets et les nouveaux n'ont pas la même vérification",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Evidence remains upstream release documentation. The experimental Mods layer and restart requirement constrain broader compatibility claims, while inaccessible implementation references limit mechanism-level conclusions. Keep announced task preservation and queue repair distinct from independently verified operation.",
+            "kitchen": "The announcement is real, but this account contains no trial or inspection of the underlying repair. Replacing an installed package still requires restarting. Another advertised adaptation remains experimental, so it cannot be treated as a promise that every kitchen arrangement works."
+          },
+          "fr": {
+            "cuisine": "La publication est vérifiée, mais pas les essais ni les détails de la réparation. Un remplacement installé demande encore de redémarrer le poste. Une autre adaptation annoncée reste expérimentale et ne promet pas que tout fonctionne partout. La leçon garde chacune de ces limites.",
+            "expert": "Les PR référencées ne sont pas consultables dans les observations disponibles, et aucun test n'a été exécuté. Le remplacement d'une version installée exige encore un redémarrage. La couche Mods annoncée vise l'exploration du recouvrement des API, pas une compatibilité pratique complète ; la guidance demeure research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A release note still leaves service behavior to verify"
+        },
+        "fr": {
+          "cuisine": "L'annonce ne remplace pas un service essayé",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "automation-migration-preserves-work-and-mode-boundaries",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-06T23:24:15.077645+00:00"
+}

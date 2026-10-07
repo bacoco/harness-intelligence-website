@@ -14,9 +14,26 @@
     ],
     "patterns": [],
     "dossiers": [
+      "an-empty-tool-allowlist-is-not-an-unset-restriction",
+      "background-work-keeps-its-originating-turn-permissions",
+      "child-environment-needs-explicit-minimal-inheritance",
+      "command-rewriting-must-preserve-host-permission-verdict",
       "consent-before-command-capable-config",
+      "control-policy-must-survive-reload-and-async-waits",
+      "cron-tool-inventory-repair-preserves-explicit-authority",
+      "empty-tool-policy-must-survive-cron-roundtrips",
+      "external-directory-defaults-can-expand-existing-tool-authority",
+      "headless-folder-trust-must-preserve-the-resolved-state",
+      "one-inference-uses-one-resolved-extension-set",
       "permission-ui-approved-wrong-action",
-      "resume-must-reconcile-control-state"
+      "plugin-approval-must-bind-the-original-project-path",
+      "rediscovered-tools-need-policy-before-callable-exposure",
+      "restart-recovery-rechecks-live-authority-and-revocation",
+      "resumable-child-still-needs-parent-policy",
+      "resume-must-reconcile-control-state",
+      "transcript-access-does-not-grant-worker-resume-ownership",
+      "transcript-consent-is-the-intersection-of-all-roots",
+      "unsupported-security-options-must-block-connection"
     ]
   },
   "slots": [

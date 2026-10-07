@@ -1,0 +1,112 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-05",
+  "id": "dossier:durable-forks-reuse-recorded-effects-not-new-run-keys",
+  "relationships": {
+    "dossiers": [
+      "task-snapshot-needs-coherent-ordering"
+    ],
+    "patterns": [
+      "checkpoint",
+      "retry-semantics",
+      "state-isolation"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/durable-forks-reuse-recorded-effects-not-new-run-keys/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged Memory change addresses effect identity across DBOS forks, while Planning records store calls and their actual persisted IDs. A run-derived idempotency key cannot substitute for the engine's existing operation record when the run identity changes.",
+            "kitchen": "Giving the resumed service a new number can make the kitchen add the same note again. The accepted changes use the recorded work instead of treating the new number as proof that everything still needs doing."
+          },
+          "fr": {
+            "cuisine": "Un service repris reçoit un nouveau numéro et risque de refaire une note déjà ajoutée. Les corrections acceptées retrouvent les gestes enregistrés au lieu de croire que ce nouveau numéro désigne tout un nouveau travail.",
+            "expert": "Une fork DBOS changeait la clé run/tool et pouvait répéter un append Memory. Les corrections fusionnées enregistrent chaque appel Memory comme opération durable et réutilisent les steps existants ; Planning enregistre aussi ses appels de store et conserve les IDs persistés."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Pydantic AI reuses recorded operations across durable forks",
+          "kitchen": "A new service number does not make an old dish unprepared"
+        },
+        "fr": {
+          "cuisine": "Changer le numéro du service ne rend pas le plat déjà fait nouveau",
+          "expert": "Pydantic AI rattache Memory et Planning aux opérations durables"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Six external capabilities also gain recorded I/O and stable identities; differently configured instances need distinct IDs. This complements engine-specific ordering rather than establishing uniform scheduling or exactly-once semantics everywhere.",
+            "kitchen": "The preparation's steps are kept from mixing where the kitchen needs to retrace them in order. A note entered in the book stays one complete step, while the other kitchens keep their own working arrangements."
+          },
+          "fr": {
+            "cuisine": "La préparation du plan range ses gestes dans l'ordre lorsque la cuisine risquerait de les mélanger. L'ajout d'une note reste un geste entier ; les autres cuisines ne changent pas toutes leur façon de travailler.",
+            "expert": "Planning sérialise les outils sous des moteurs comme DBOS pour éviter l'entrelacement de leurs multiples opérations ; ailleurs et hors mode durable, le scheduling reste inchangé. Memory garde une opération par appel et s'exécute inline dans l'unité outil Temporal/Prefect."
+          }
+        },
+        {
+          "en": {
+            "expert": "The managed LocalStack exception must remain visible beside the durable-operation claims. Reconstruction and external-instance requirements differ by engine and are not proof of preserved external state.",
+            "kitchen": "One temporary workshop is deliberately rebuilt empty before its preparations are repeated. Other kitchens need an externally retained workshop for useful recovery, so a saved order does not preserve every worktop."
+          },
+          "fr": {
+            "cuisine": "Un atelier provisoire fait exception : une cuisine le reconstruit vide puis rejoue les gestes. Dans d'autres cuisines, une reprise utile exige que cet atelier soit conservé à l'extérieur.",
+            "expert": "LocalStack managé reste une exception : reconstruction vide puis replay des commandes sous DBOS. Sous Temporal/Prefect, une instance externe est nécessaire pour une récupération utile."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Each kitchen's replay rules still matter"
+        },
+        "fr": {
+          "cuisine": "Garder ensemble les gestes que le même service doit relire",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Verified merges and descriptions are not independently validated engine behavior or evidence of inclusion in 2.54.0. Keep external-hook and engine exceptions explicit rather than generalizing to end-to-end exactly-once delivery.",
+            "kitchen": "The October 4–5 changes follow the October 3 stable version, and we did not repeat their tests. They do not certify that every outside action happens only once."
+          },
+          "fr": {
+            "cuisine": "Les corrections des 4 et 5 octobre viennent après la livraison stable du 3 ; nous n'avons pas refait les essais. Elles ne prouvent pas que tous les gestes extérieurs ne se produisent qu'une fois.",
+            "expert": "Les fusions suivent la stable 2.54.0 du 3 octobre et ne lui sont pas attribuées. Tests non reproduits ; aucune garantie exactly-once générale pour hooks externes ou tous moteurs. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The named stable release predates these changes"
+        },
+        "fr": {
+          "cuisine": "Les corrections viennent après la version stable citée",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "durable-forks-reuse-recorded-effects-not-new-run-keys",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T04:23:33.872781+00:00"
+}

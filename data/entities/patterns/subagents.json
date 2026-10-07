@@ -20,10 +20,18 @@
     "patterns": [],
     "dossiers": [
       "agent-identity-does-not-prove-independent-authority",
+      "budget-cancellation-allows-explicit-resume-not-automatic-retry",
       "control-plane-convergence",
+      "delegated-results-return-to-requester-with-unresolved-delivery-reports",
       "encrypted-subagents-lost-audit-trail",
+      "evaluation-fallback-must-respect-delegation-authority",
+      "interrupted-call-history-can-close-without-replaying-the-effect",
+      "recursion-limits-need-a-harness-owner",
+      "resumable-child-still-needs-parent-policy",
+      "subagent-briefs-are-not-human-approval-evidence",
       "subagent-routing-hidden-capability",
-      "subagents-delegation-control-plane"
+      "subagents-delegation-control-plane",
+      "synthetic-wakeups-must-not-become-human-memory"
     ]
   },
   "slots": [

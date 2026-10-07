@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:later-action-score-must-not-release-an-earlier-pending-review",
+  "relationships": {
+    "dossiers": [
+      "permission-ui-approved-wrong-action"
+    ],
+    "patterns": [
+      "authority-scope",
+      "semantic-approval",
+      "evidence-boundary"
+    ],
+    "projects": [
+      "Codex"
+    ]
+  },
+  "route": "/dossiers/later-action-score-must-not-release-an-earlier-pending-review/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Accepted-score provenance is stored separately from coverage. A later action's score cannot release a review already pending for an earlier action merely because that score is now available.",
+            "kitchen": "The first dish is already waiting for inspection when the second receives a reassuring score. The repair remembers which dish produced that score and prevents it from releasing the earlier pending inspection."
+          },
+          "fr": {
+            "cuisine": "Le premier plat attend déjà son contrôle quand le second reçoit une note rassurante. La correction garde le numéro du plat qui a produit la note et empêche de s'en servir pour libérer cette première attente.",
+            "expert": "ScoreState conserve l'index source du score accepté, distinct de sa couverture. Un score issu d'une action ultérieure ne libère plus une revue Guardian antérieure déjà en attente."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Codex binds pending-review release to accepted-score provenance",
+          "kitchen": "A reassuring score for the second dish cannot release the first"
+        },
+        "fr": {
+          "cuisine": "La bonne note du second plat ne libère pas le premier en attente",
+          "expert": "Codex lie une revue pendante à l'origine du score accepté"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The restriction applies to releasing an already-engaged review. Pre-review cached fast paths remain available, and same-action or earlier-action scores still operate under the existing gates rather than being categorically rejected.",
+            "kitchen": "A kept score can still be used before inspection opens, so every dish need not receive a fresh tasting. Scores from the same dish or an earlier one remain usable when the other house rules permit them."
+          },
+          "fr": {
+            "cuisine": "Une note déjà gardée peut encore servir avant l'ouverture du contrôle ; chaque plat ne demande donc pas forcément une nouvelle dégustation. Les notes du même plat ou d'un précédent restent possibles si les autres règles les autorisent.",
+            "expert": "Le cache du chemin rapide avant revue reste permis. Les scores de la même action ou d'une action antérieure restent utilisables sous les autres gates existants : ce patch n'impose pas un nouveau score pour chaque action."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Previously kept scores are not all forbidden"
+        },
+        "fr": {
+          "cuisine": "Toutes les notes gardées ne sont pas interdites",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The October 6 merge and inspected mock-service test establish a targeted change, not an executed live-service result. The test expects the first synchronous denial to survive the second action's low score; no particular deployment or conversation version is inferred.",
+            "kitchen": "The October 6 accepted change includes a written trial with imitation stations, retaining the first dish's refusal despite the second score. We inspected rather than ran it, and it cannot establish the current rules in another kitchen."
+          },
+          "fr": {
+            "cuisine": "Le changement est accepté le 6 octobre ; l'essai écrit utilise des postes imités et garde le refus du premier plat malgré la seconde note. Nous l'avons examiné sans le jouer, et il ne prouve pas quelle règle fonctionne aujourd'hui dans une autre cuisine.",
+            "expert": "Fusion du 6 octobre ; test à deux actions avec services simulés inspecté, non exécuté. Le refus synchrone initial y reste attendu malgré le score faible ultérieur ; aucun état d'un déploiement particulier n'est établi. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "The written trial keeps the first dish refused"
+        },
+        "fr": {
+          "cuisine": "L'essai écrit conserve le refus du premier plat",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "later-action-score-must-not-release-an-earlier-pending-review",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:37:38.036119+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:external-directory-defaults-can-expand-existing-tool-authority",
+  "relationships": {
+    "dossiers": [
+      "remote-tools-injected-without-local-ownership"
+    ],
+    "patterns": [
+      "permissions",
+      "authority-scope",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/external-directory-defaults-can-expand-existing-tool-authority/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Removing the default external_directory ask exposes the catch-all allow, with an explicit allowance for Explore. This is an intentional authority-policy change rather than evidence of a new tool or a vulnerability.",
+            "kitchen": "The house deliberately drops the usual question before work outside the assigned station. No extra utensil is needed, and the cook who inspects the premises receives an explicit allowance too."
+          },
+          "fr": {
+            "cuisine": "La maison choisit de ne plus demander systématiquement l'accord avant de travailler hors du poste prévu. Les ustensiles peuvent rester identiques, tandis que le commis chargé d'inspecter les lieux reçoit aussi cette permission explicite.",
+            "expert": "La branche v2 retire external_directory:*→ask du défaut, laissant s'appliquer le catch-all allow. Explore autorise aussi external_directory explicitement : l'élargissement de portée vient de la politique, sans nécessiter de nouvel outil."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "OpenCode v2 changes the external-directory default to allow",
+          "kitchen": "The same utensils can gain permission to work beyond the station"
+        },
+        "fr": {
+          "cuisine": "Les mêmes ustensiles peuvent désormais servir au-delà du poste",
+          "expert": "OpenCode v2 autorise les répertoires externes par défaut"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "User configuration may override the defaults. The retained .env ask and Plan edit restrictions prevent this change from being described as unconditional permission over every file or role.",
+            "kitchen": "The chef can replace the usual house rule with specific instructions, so their priority still matters. Certain reserved sheets continue to require permission, and the planning cook retains limits on changing sheets."
+          },
+          "fr": {
+            "cuisine": "Le chef peut remplacer cette habitude par ses propres consignes, dont il faut vérifier la priorité. Certaines fiches réservées exigent encore un accord, et le commis chargé du plan garde ses limites pour modifier les fiches.",
+            "expert": "La configuration utilisateur peut surcharger les règles ; l'autorité effective dépend donc aussi de leur priorité. .env conserve ask et Plan conserve ses restrictions edit, malgré le nouveau défaut external_directory."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Specific house rules and some reserved doors still remain"
+        },
+        "fr": {
+          "cuisine": "Les consignes particulières et certaines portes restent réservées",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The evidence establishes the October 6 v2 merge and inspection of seven changed files, not stable publication or local test execution. One suite failure is described upstream as pre-existing; that causal attribution was not independently verified.",
+            "kitchen": "The October 6 decision is accepted in a separate working rulebook, without an established ordinary shipment. Seven pages were inspected; no trials were repeated here, and an author's claim that one failure predates the change remains unconfirmed independently."
+          },
+          "fr": {
+            "cuisine": "Le choix est accepté le 6 octobre dans un cahier de travail distinct, sans livraison ordinaire établie. Sept pages ont été examinées, sans essais refaits ici ; un échec est décrit par l'auteur comme antérieur, sans confirmation indépendante.",
+            "expert": "Fusion v2 du 6 octobre, pas de stable établie. Sept fichiers inspectés, tests non reproduits ; un échec de suite est signalé comme préexistant, sans confirmation indépendante de cette attribution. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A choice accepted in the working rulebook is not a general shipment"
+        },
+        "fr": {
+          "cuisine": "Un choix accepté dans le cahier de travail n'est pas une livraison générale",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "external-directory-defaults-can-expand-existing-tool-authority",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:28:29.092517+00:00"
+}

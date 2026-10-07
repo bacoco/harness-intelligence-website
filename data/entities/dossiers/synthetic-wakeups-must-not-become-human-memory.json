@@ -1,0 +1,102 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:synthetic-wakeups-must-not-become-human-memory",
+  "relationships": {
+    "dossiers": [
+      "background-artifacts-need-terminal-lifecycle"
+    ],
+    "patterns": [
+      "subagents",
+      "runtime-visible-state",
+      "scope-boundary"
+    ],
+    "projects": []
+  },
+  "route": "/dossiers/synthetic-wakeups-must-not-become-human-memory/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The merged Engram change separates input provenance from transport. Extension injections and Gentle Agents child inputs are excluded from automatic user capture, while human/RPC inputs remain supported.",
+            "kitchen": "The counter receives both guest requests and notes from helpers. An accepted October 6 change records where each came from before deciding what belongs in the guest's memory."
+          },
+          "fr": {
+            "cuisine": "Une note d'aide arrive au même guichet qu'une parole du client. La correction acceptée le 6 octobre distingue leur origine avant de remplir automatiquement le carnet.",
+            "expert": "La correction Engram fusionnée le 6 octobre exclut tâches déléguées et réveils d'extension de la capture utilisateur automatique. Elle suit la provenance par session avant les hooks asynchrones plutôt que de se fier au seul transport RPC."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Engram excludes synthetic inputs from automatic user memory",
+          "kitchen": "A helper's note must not enter the guest's remembered words"
+        },
+        "fr": {
+          "cuisine": "La note de l'aide ne devient pas un souvenir du client",
+          "expert": "Engram filtre la capture automatique selon l'origine de l'entrée"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Provenance is retained independently of queued input order. Legacy unknown-provenance inputs remain admissible, rather than being retrospectively proven human by the new filter.",
+            "kitchen": "Keep each note attached to its own source when several are waiting. Older stations lacking that information still work, so this fallback cannot certify that every accepted note came from a guest."
+          },
+          "fr": {
+            "cuisine": "Les notes qui attendent ne doivent pas changer l'origine de celle déjà au poste. Les anciens postes sans indication d'origine restent acceptés : cela ne prouve pas que chaque note vient d'un client.",
+            "expert": "Les entrées en file ne remplacent pas la provenance idle, évitant une attribution FIFO erronée. Les hôtes anciens sans provenance restent compatibles ; ce repli ne démontre pas une origine humaine."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "A waiting note cannot lend its author to the current one"
+        },
+        "fr": {
+          "cuisine": "La prochaine note ne change pas l'auteur de celle qu'on traite",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Merge and description are verified, while reported tests and the local Pi/SQLite probe are not independently reproduced. The probe is not a remote Claude Bridge validation, explicit capture and historical rows are untouched, and npm delivery remains unestablished.",
+            "kitchen": "This does not clean old synthetic memories or change explicit capture. The author reports tests and a local deterministic-model trial, which we did not repeat; a shipped package is not established."
+          },
+          "fr": {
+            "cuisine": "Les notes synthétiques déjà gardées et les ajouts explicites ne changent pas. L'auteur annonce des essais avec une réponse simulée sur place, pas un fournisseur distant ; nous ne les avons pas refaits. La distribution du correctif n'est pas établie.",
+            "expert": "L'auteur rapporte 13 régressions, 311 tests et une probe Pi/SQLite réelle avec modèle local déterministe, pas Claude Bridge distant ; rien n'est reproduit ici. Capture explicite et anciennes lignes restent inchangées, et aucune inclusion npm publiée n'est établie. Guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "Old notes remain, and the published package is still unestablished"
+        },
+        "fr": {
+          "cuisine": "Les anciennes notes restent, et la réparation n'est pas encore prouvée en service",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "synthetic-wakeups-must-not-become-human-memory",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T03:12:40.911604+00:00"
+}

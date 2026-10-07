@@ -15,6 +15,8 @@
     ],
     "patterns": [],
     "dossiers": [
+      "ambiguous-report-must-preserve-previous-evaluation",
+      "auth-errors-must-survive-cleanup-and-cache-fallbacks",
       "taskweaver-archive-cause-unknown",
       "unknown-flattened-to-empty"
     ]

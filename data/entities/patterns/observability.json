@@ -14,8 +14,12 @@
     ],
     "patterns": [],
     "dossiers": [
+      "detector-verdicts-need-the-context-actually-seen",
       "health-verdict-must-preserve-status-and-coverage",
-      "openhands-hook-blocking-state"
+      "openhands-hook-blocking-state",
+      "replayed-dispatch-keeps-first-clock-and-final-state",
+      "session-correlation-headers-are-not-authority-attestations",
+      "settlement-waits-for-observed-background-work"
     ]
   },
   "slots": [

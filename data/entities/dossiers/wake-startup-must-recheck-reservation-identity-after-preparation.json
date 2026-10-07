@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-06",
+  "id": "dossier:wake-startup-must-recheck-reservation-identity-after-preparation",
+  "relationships": {
+    "dossiers": [
+      "session-scope-lock-became-global-state"
+    ],
+    "patterns": [
+      "ownership",
+      "runtime-identity",
+      "concurrency"
+    ],
+    "projects": [
+      "Codex"
+    ]
+  },
+  "route": "/dossiers/wake-startup-must-recheck-reservation-identity-after-preparation/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Wake preparation can outlive the reservation that authorized it. The change addresses interruption during context construction, after which stale startup could otherwise recreate a turn.",
+            "kitchen": "The cook had a station reserved before fetching the instructions, but that reservation can be cancelled or replaced while the cook is away. Returning prepared does not restore the old claim to the station."
+          },
+          "fr": {
+            "cuisine": "Le commis avait un poste réservé avant d'aller chercher ses consignes, mais le chef peut retirer cette réservation pendant son absence. Revenir avec les consignes ne lui donne pas le droit de rallumer le poste annulé.",
+            "expert": "Une interruption pendant la construction du contexte pouvait invalider la réservation, puis start_task recréer un tour. Le correctif revérifie la propriété après cette attente, plutôt que de se fier à la validité antérieure."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Codex rechecks wake ownership after context construction",
+          "kitchen": "The reserved station may change hands while the cook prepares"
+        },
+        "fr": {
+          "cuisine": "Le poste réservé peut avoir été repris pendant la préparation",
+          "expert": "Codex revérifie la réservation avant le démarrage du réveil"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The guard compares the reservation's Arc identity with the active reservation after the await and before start_task. The added test targets cancellation during blocked construction and asserts no new model request.",
+            "kitchen": "Before work starts, the brigade checks that the active reservation is still the very same slip. The written trial holds back the instructions, cancels the reservation and requires that no new work request follows."
+          },
+          "fr": {
+            "cuisine": "Juste avant le départ, la brigade vérifie qu'il s'agit encore du même billet de réservation actif. L'essai écrit retient les consignes, annule le poste, puis exige qu'aucune nouvelle demande de travail ne parte.",
+            "expert": "La comparaison porte sur l'identité Arc de la réservation active, après construction et immédiatement avant start_task. Le test bloque la construction, interrompt, puis affirme qu'aucune nouvelle requête modèle n'est émise."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Compare the actual reservation slip when the cook returns"
+        },
+        "fr": {
+          "cuisine": "Comparer le vrai billet de réservation au retour",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The October 6 main merge establishes a targeted guard, not an executed test result, eligible release or hosted deployment. No lock spans the entire asynchronous start_task continuation, so all-race elimination is not established.",
+            "kitchen": "The October 6 repair is accepted; its trial was read rather than run here, with no delivery or use in another house established. No reservation lock covers the whole subsequent task, so this does not prove that every later clash is gone."
+          },
+          "fr": {
+            "cuisine": "La correction est acceptée le 6 octobre ; l'essai a été lu, pas exécuté ici, sans livraison ni mise en service ailleurs établie. La réservation n'est pas verrouillée pendant toute la suite du travail : toutes les courses entre commis ne sont pas prouvées supprimées.",
+            "expert": "Fusion main du 6 octobre, test inspecté statiquement non exécuté, sans release éligible ni déploiement hébergé établi. Aucun verrou sur toute la suite asynchrone de start_task : la garantie reste ciblée, guidance research_only."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A check at departure does not guard every later move"
+        },
+        "fr": {
+          "cuisine": "Un contrôle au départ ne surveille pas chaque geste ensuite",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "wake-startup-must-recheck-reservation-identity-after-preparation",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T06:33:35.824802+00:00"
+}

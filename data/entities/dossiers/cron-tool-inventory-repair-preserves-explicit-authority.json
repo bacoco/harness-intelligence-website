@@ -1,0 +1,104 @@
+{
+  "date_basis": "incident",
+  "event_date": "2026-10-02",
+  "id": "dossier:cron-tool-inventory-repair-preserves-explicit-authority",
+  "relationships": {
+    "dossiers": [
+      "remote-tools-injected-without-local-ownership"
+    ],
+    "patterns": [
+      "configuration-drift",
+      "permissions",
+      "runtime-visible-state"
+    ],
+    "projects": [
+      "OpenClaw"
+    ]
+  },
+  "route": "/dossiers/cron-tool-inventory-repair-preserves-explicit-authority/",
+  "schema": "argh/public-entity/v1",
+  "slots": [
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "The gateway-only August extended-stable notes report a bounded cron snapshot repair. Explicit allowlists remain authoritative while stale automatic inventory is refreshed. No implementation inspection or runtime test independently establishes that behavior here.",
+            "kitchen": "An old utensil list can leave a scheduled cook working from the wrong inventory. The house says it refreshes that list while keeping the chef's explicit restrictions. This is a published repair claim for one maintained station, not a repair we tested."
+          },
+          "fr": {
+            "cuisine": "Le commis reçoit une vieille liste d'ustensiles pour le prochain service. La maison annonce refaire ce compte sans élargir la liste que le chef a expressément permise. Nous avons lu l'annonce, sans essayer la réparation. Elle ne concerne qu'un poste de l'ancienne série entretenue.",
+            "expert": "OpenClaw 2026.8.35 annonce la réparation des snapshots automatiques d'outils cron périmés, avec conservation des allowlists explicites. La preuve est le corps officiel de release, sans lecture du code ni exécution. Le périmètre est le gateway de la ligne extended-stable d'août."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "OpenClaw extended-stable separates cron inventory repair from authority",
+          "kitchen": "A fresh utensil count must not rewrite the cook's permission slip"
+        },
+        "fr": {
+          "cuisine": "Refaire le compte des ustensiles sans changer les droits du commis",
+          "expert": "OpenClaw annonce une réparation cron respectant les allowlists explicites"
+        }
+      },
+      "id": "hero",
+      "kind": "hero"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Availability repair is not policy recomputation. Retaining the explicit restriction is the relevant invariant, and it remains a release-note claim. The evidence does not establish edge-case handling or a redesigned authorization system.",
+            "kitchen": "The stock list and the permission slip answer different questions. A new count may find something previously missing, but the cook's allowed set must remain the one explicitly chosen. The announcement describes that separation without supplying an independently observed trial."
+          },
+          "fr": {
+            "cuisine": "Le compte dit quels ustensiles la maison possède. La feuille du chef dit lesquels ce commis peut prendre. Corriger le premier ne doit pas réécrire la seconde. C'est la distinction annoncée, pas une protection éprouvée pendant notre lecture.",
+            "expert": "Le mécanisme annoncé traite différemment état dérivé automatique et autorité choisie par l'utilisateur. L'allowlist explicite n'est pas remplacée par l'inventaire découvert pendant la récupération. Les notes n'établissent ni nouveau système de permission ni couverture universelle de tous les chemins cron."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Mechanism",
+          "kitchen": "Finding another utensil does not authorize its use"
+        },
+        "fr": {
+          "cuisine": "L'ustensile existe, mais le chef ne l'a pas forcément permis",
+          "expert": "Mécanisme"
+        }
+      },
+      "id": "mechanism",
+      "kind": "paragraph"
+    },
+    {
+      "body": [
+        {
+          "en": {
+            "expert": "Do not transfer this gateway-only extended-stable claim to September stable or October beta. Bounded thinking-catalog hydration is another documented change, not measured latency evidence. The invariant is useful research guidance, with zero independent runtime verification.",
+            "kitchen": "This October announcement belongs to the older August line and only its entry station. It does not establish the same behavior in newer lines. We verified neither the preserved restrictions nor a speed improvement in service. Keep the inventory repair separate from any new grant of permission."
+          },
+          "fr": {
+            "cuisine": "L'annonce est publiée en octobre pour la série d'août maintenue plus longtemps, seulement à son poste d'entrée. Elle ne prouve pas le même fonctionnement dans les autres séries. Aucun essai n'a confirmé ici les droits conservés ni un gain de rapidité. La règle étudiée reste de réparer le compte sans donner de nouveaux droits.",
+            "expert": "La date du 2 octobre est celle de la publication, non une réattribution à la stable de septembre ou à la beta d'octobre. L'hydratation bornée du catalogue thinking est également annoncée, sans mesure de latence. La guidance reste research_only, avec comportement et exceptions non reproduits."
+          }
+        }
+      ],
+      "heading": {
+        "en": {
+          "expert": "Current state",
+          "kitchen": "A maintained older station cannot speak for every kitchen"
+        },
+        "fr": {
+          "cuisine": "L'annonce d'une ancienne série ne décrit pas toutes les cuisines",
+          "expert": "État actuel"
+        }
+      },
+      "id": "current",
+      "kind": "status"
+    }
+  ],
+  "slug": "cron-tool-inventory-repair-preserves-explicit-authority",
+  "template": "dossier",
+  "type": "dossier",
+  "updated_at": "2026-10-07T02:56:12.559583+00:00"
+}
